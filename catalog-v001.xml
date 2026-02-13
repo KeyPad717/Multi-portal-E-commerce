@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://MYproject.org/DBpedia" uri="DB.owl"/>
+    <uri id="Imports Wizard Entry" name="http://example.org/openlibrary" uri="OL.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1770992483457" name="duplicate:http://MYproject.org/DBpedia" uri="DB.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1770992483457" name="duplicate:http://MYproject.org/DBpedia" uri="DBpedia.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1770992483457" name="http://www.semanticweb.org/iiitb/ontologies/2026/1/untitled-ontology-4/" uri="Master.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1770992483457" name="http://www.semanticweb.org/iiitb/ontologies/2026/1/untitled-ontology-5/" uri="OL.owl"/>
+    </group>
+</catalog>

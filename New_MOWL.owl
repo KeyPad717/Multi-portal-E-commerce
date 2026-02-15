@@ -6,7 +6,11 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://example.org/mowl"/>
+    <owl:Ontology rdf:about="http://example.org/mowl">
+        <owl:imports rdf:resource="http://MYproject.org/DBpedia"/>
+        <owl:imports rdf:resource="http://example.org/openlibrary"/>
+        <owl:imports rdf:resource="http://example.org/wikidata"/>
+    </owl:Ontology>
     
 
 
@@ -24,6 +28,9 @@
     <!-- http://example.org/mowl#hasAuthor -->
 
     <owl:ObjectProperty rdf:about="http://example.org/mowl#hasAuthor">
+        <owl:equivalentProperty rdf:resource="http://example.org/openlibrary#ol_writtenBy"/>
+        <owl:equivalentProperty rdf:resource="http://example.org/wikidata#wk_writtenBy"/>
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2026/1/untitled-ontology-5#db_author"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -48,6 +55,9 @@
     <!-- http://example.org/mowl#hasPublisher -->
 
     <owl:ObjectProperty rdf:about="http://example.org/mowl#hasPublisher">
+        <owl:equivalentProperty rdf:resource="http://example.org/openlibrary#ol_publishedBy"/>
+        <owl:equivalentProperty rdf:resource="http://example.org/wikidata#wk_publishedBy"/>
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2026/1/untitled-ontology-5#db_publisher"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -67,6 +77,9 @@
     <!-- http://example.org/mowl#hasISBN -->
 
     <owl:DatatypeProperty rdf:about="http://example.org/mowl#hasISBN">
+        <owl:equivalentProperty rdf:resource="http://example.org/openlibrary#ol_isbn"/>
+        <owl:equivalentProperty rdf:resource="http://example.org/wikidata#wk_isbn"/>
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2026/1/untitled-ontology-5#db_isbn"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
@@ -75,6 +88,8 @@
     <!-- http://example.org/mowl#hasPublicationYear -->
 
     <owl:DatatypeProperty rdf:about="http://example.org/mowl#hasPublicationYear">
+        <owl:equivalentProperty rdf:resource="http://example.org/openlibrary#ol_publishYear"/>
+        <owl:equivalentProperty rdf:resource="http://example.org/wikidata#wk_publicationYear"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
@@ -83,6 +98,8 @@
     <!-- http://example.org/mowl#hasTitle -->
 
     <owl:DatatypeProperty rdf:about="http://example.org/mowl#hasTitle">
+        <owl:equivalentProperty rdf:resource="http://example.org/openlibrary#ol_title"/>
+        <owl:equivalentProperty rdf:resource="http://example.org/wikidata#wk_title"/>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
     </owl:DatatypeProperty>
     
@@ -101,13 +118,21 @@
 
     <!-- http://example.org/mowl#M_Author -->
 
-    <owl:Class rdf:about="http://example.org/mowl#M_Author"/>
+    <owl:Class rdf:about="http://example.org/mowl#M_Author">
+        <owl:equivalentClass rdf:resource="http://example.org/openlibrary#OL_Author"/>
+        <owl:equivalentClass rdf:resource="http://example.org/wikidata#WK_Author"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2026/1/untitled-ontology-5#DB_Author"/>
+    </owl:Class>
     
 
 
     <!-- http://example.org/mowl#M_Book -->
 
-    <owl:Class rdf:about="http://example.org/mowl#M_Book"/>
+    <owl:Class rdf:about="http://example.org/mowl#M_Book">
+        <owl:equivalentClass rdf:resource="http://example.org/openlibrary#OL_Book"/>
+        <owl:equivalentClass rdf:resource="http://example.org/wikidata#WK_Book"/>
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2026/1/untitled-ontology-5#DB_Book"/>
+    </owl:Class>
     
 
 
@@ -125,7 +150,17 @@
 
     <!-- http://example.org/mowl#M_Publisher -->
 
-    <owl:Class rdf:about="http://example.org/mowl#M_Publisher"/>
+    <owl:Class rdf:about="http://example.org/mowl#M_Publisher">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2026/1/untitled-ontology-5#DB_Publisher"/>
+    </owl:Class>
+    
+
+
+    <!-- http://example.org/wikidata#WK_Publisher -->
+
+    <rdf:Description rdf:about="http://example.org/wikidata#WK_Publisher">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2026/1/untitled-ontology-5#DB_Publisher"/>
+    </rdf:Description>
 </rdf:RDF>
 
 

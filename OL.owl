@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/iiitb/ontologies/2026/1/untitled-ontology-5/"
-     xml:base="http://www.semanticweb.org/iiitb/ontologies/2026/1/untitled-ontology-5/"
+<rdf:RDF xmlns="http://example.org/openlibrary#"
+     xml:base="http://example.org/openlibrary"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -108,6 +108,46 @@
     <!-- http://example.org/openlibrary#OL_Publisher -->
 
     <owl:Class rdf:about="http://example.org/openlibrary#OL_Publisher"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://example.org/openlibrary#author_george_orwell -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/openlibrary#author_george_orwell">
+        <rdf:type rdf:resource="http://example.org/openlibrary#OL_Author"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/openlibrary#book_1984 -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/openlibrary#book_1984">
+        <rdf:type rdf:resource="http://example.org/openlibrary#OL_Book"/>
+        <ol_publishedBy rdf:resource="http://example.org/openlibrary#publisher_secker_warburg"/>
+        <ol_writtenBy rdf:resource="http://example.org/openlibrary#author_george_orwell"/>
+        <ol_isbn>9999951524935</ol_isbn>
+        <ol_publishYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1949</ol_publishYear>
+        <ol_title>1984</ol_title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://example.org/openlibrary#publisher_secker_warburg -->
+
+    <owl:NamedIndividual rdf:about="http://example.org/openlibrary#publisher_secker_warburg">
+        <rdf:type rdf:resource="http://example.org/openlibrary#OL_Publisher"/>
+    </owl:NamedIndividual>
     
 
 

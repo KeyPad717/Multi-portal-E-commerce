@@ -1,0 +1,103 @@
+1.openlibrary
+classes: 
+OL_Author 
+OL_Book 
+OL_Publisher 
+
+ObjectProperty: 
+ol_publishedBy 
+ol_writtenBy 
+
+data properties 
+ol_isbn 
+ol_publishYear ol_title
+
+..............................................................................
+2. Dbpedia
+1️⃣ Classes
+
+Book
+
+Author
+
+Publisher
+
+Language
+
+
+Object Properties
+
+author
+(Domain: Book → Range: Author)
+
+publisher
+(Domain: Book → Range: Publisher)
+
+language
+(Domain: Book → Range: Language)
+
+
+Datatype Properties
+
+isbn
+(Domain: Book → Range: xsd:string)
+
+numberOfPages
+(Domain: Book → Range: xsd:int)
+
+publicationDate
+(Domain: Book → Range: xsd:date)
+..............................................................................
+3. Wikidata
+
+
+classes:
+ ├── WK_Agent
+ │      ├── WK_Human
+ │      │      └── WK_Author
+ │      │
+ │      └── WK_Organization
+ │             └── WK_Publisher
+ │
+ └── WK_CreativeWork
+        └── WK_LiteraryWork
+               └── WK_Book
+
+****object
+
+wk_creator
+Domain: WK_CreativeWork
+Range: WK_Agent
+
+
+wk_writtenBy
+Domain: WK_LiteraryWork
+Range: WK_Author
+
+
+wk_publishedBy
+Domain: WK_Book
+Range: WK_Publisher
+
+
+*****Datatypes
+
+wk_name
+Domain: WK_Agent
+Range: xsd:string
+
+
+wk_title
+Domain: WK_CreativeWork
+Range: xsd:string
+
+
+wk_isbn
+Domain: WK_Book
+Range: xsd:string
+
+
+wk_publicationYear
+Domain: WK_Book
+Range: xsd:gYear
+

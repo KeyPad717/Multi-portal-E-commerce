@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf  ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs ="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl  ="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd  ="http://www.w3.org/1999/XMLSchema#"
+  xmlns:dc   ="http://purl.org/dc/elements/1.1/"
+  xmlns:foaf ="http://xmlns.com/foaf/0.1/"
+  xmlns:B    ="http://www.iiitb.ac.in/ontology/IIITB#"
+  xml:base   ="http://www.iiitb.ac.in/ontology/IIITB#">
+
+  <!-- ════════════ ONTOLOGY HEADER ════════════ -->
+  <owl:Ontology rdf:about="http://www.iiitb.ac.in/ontology/IIITB#">
+    <dc:title>IIITB University Ontology</dc:title>
+    <dc:description>Comprehensive OWL ontology for IIITB covering faculty, programs, departments, research labs, placements, industry partners and facilities. All entities prefixed B_ for Master OWL mapping.</dc:description>
+    <dc:creator>IIITB HTML Parser v1.0 — RDF/XML Edition</dc:creator>
+    <dc:date>2025</dc:date>
+    <owl:versionInfo>1.0.0</owl:versionInfo>
+  </owl:Ontology>
+
+  <!-- ════════════════════════════════════════
+       OWL CLASSES  (prefix B_)
+  ════════════════════════════════════════ -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_University">
+    <rdfs:label xml:lang="en">B_University</rdfs:label>
+    <rdfs:comment xml:lang="en">A university or academic institution.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Department">
+    <rdfs:label xml:lang="en">B_Department</rdfs:label>
+    <rdfs:comment xml:lang="en">An academic department within the university.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty">
+    <rdfs:label xml:lang="en">B_FacultyMember</rdfs:label>
+    <rdfs:comment xml:lang="en">A faculty member of IIITB.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Program">
+    <rdfs:label xml:lang="en">B_Program</rdfs:label>
+    <rdfs:comment xml:lang="en">An academic program offered by a department.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_UGProgram">
+    <rdfs:label xml:lang="en">B_UGProgram</rdfs:label>
+    <rdfs:comment xml:lang="en">An undergraduate level academic program.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PGProgram">
+    <rdfs:label xml:lang="en">B_PGProgram</rdfs:label>
+    <rdfs:comment xml:lang="en">A postgraduate level academic program.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_DoctoralProgram">
+    <rdfs:label xml:lang="en">B_DoctoralProgram</rdfs:label>
+    <rdfs:comment xml:lang="en">A doctoral Ph.D research program.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Course">
+    <rdfs:label xml:lang="en">B_Course</rdfs:label>
+    <rdfs:comment xml:lang="en">An individual course or subject.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab">
+    <rdfs:label xml:lang="en">B_ResearchLab</rdfs:label>
+    <rdfs:comment xml:lang="en">A research laboratory or group.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Publication">
+    <rdfs:label xml:lang="en">B_Publication</rdfs:label>
+    <rdfs:comment xml:lang="en">A research paper or publication by faculty.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Placement">
+    <rdfs:label xml:lang="en">B_Placement</rdfs:label>
+    <rdfs:comment xml:lang="en">Annual placement record of the university.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter">
+    <rdfs:label xml:lang="en">B_Recruiter</rdfs:label>
+    <rdfs:comment xml:lang="en">A company that recruits from the university.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation">
+    <rdfs:label xml:lang="en">B_Accreditation</rdfs:label>
+    <rdfs:comment xml:lang="en">An accreditation or ranking body result.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Facility">
+    <rdfs:label xml:lang="en">B_Facility</rdfs:label>
+    <rdfs:comment xml:lang="en">A campus facility available to students.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner">
+    <rdfs:label xml:lang="en">B_IndustryPartner</rdfs:label>
+    <rdfs:comment xml:lang="en">An industry partner of the university.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Student">
+    <rdfs:label xml:lang="en">B_Student</rdfs:label>
+    <rdfs:comment xml:lang="en">A student enrolled at the university.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Award">
+    <rdfs:label xml:lang="en">B_Award</rdfs:label>
+    <rdfs:comment xml:lang="en">An award or recognition received.</rdfs:comment>
+    
+  </owl:Class>
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchProject">
+    <rdfs:label xml:lang="en">B_ResearchProject</rdfs:label>
+    <rdfs:comment xml:lang="en">A funded research project at the university.</rdfs:comment>
+    
+  </owl:Class>
+
+  <!-- ════════════════════════════════════════
+       DATA PROPERTIES  (prefix B_)
+  ════════════════════════════════════════ -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasName">
+    <rdfs:label xml:lang="en">B_hasName</rdfs:label>
+    <rdfs:comment xml:lang="en">Full name of the entity.</rdfs:comment>
+    <rdfs:domain><owl:Class><owl:unionOf rdf:parseType="Collection"><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_University"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Student"/></owl:unionOf></owl:Class></rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasShortName">
+    <rdfs:label xml:lang="en">B_hasShortName</rdfs:label>
+    <rdfs:comment xml:lang="en">Abbreviation or short name.</rdfs:comment>
+    <rdfs:domain><owl:Class><owl:unionOf rdf:parseType="Collection"><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_University"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/></owl:unionOf></owl:Class></rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasEstablishedYear">
+    <rdfs:label xml:lang="en">B_hasEstablishedYear</rdfs:label>
+    <rdfs:comment xml:lang="en">Year the university was established.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasUniversityType">
+    <rdfs:label xml:lang="en">B_hasUniversityType</rdfs:label>
+    <rdfs:comment xml:lang="en">Type of university such as Deemed, Central.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasLocation">
+    <rdfs:label xml:lang="en">B_hasLocation</rdfs:label>
+    <rdfs:comment xml:lang="en">Physical address.</rdfs:comment>
+    <rdfs:domain><owl:Class><owl:unionOf rdf:parseType="Collection"><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_University"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/></owl:unionOf></owl:Class></rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasWebsite">
+    <rdfs:label xml:lang="en">B_hasWebsite</rdfs:label>
+    <rdfs:comment xml:lang="en">Official website URL.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasEmail">
+    <rdfs:label xml:lang="en">B_hasEmail</rdfs:label>
+    <rdfs:comment xml:lang="en">Official email address.</rdfs:comment>
+    <rdfs:domain><owl:Class><owl:unionOf rdf:parseType="Collection"><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_University"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/></owl:unionOf></owl:Class></rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPhone">
+    <rdfs:label xml:lang="en">B_hasPhone</rdfs:label>
+    <rdfs:comment xml:lang="en">Contact phone number.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTotalStudents">
+    <rdfs:label xml:lang="en">B_hasTotalStudents</rdfs:label>
+    <rdfs:comment xml:lang="en">Total number of enrolled students.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTotalFaculty">
+    <rdfs:label xml:lang="en">B_hasTotalFaculty</rdfs:label>
+    <rdfs:comment xml:lang="en">Total number of faculty members.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCampusArea">
+    <rdfs:label xml:lang="en">B_hasCampusArea</rdfs:label>
+    <rdfs:comment xml:lang="en">Area of the campus.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasNIRFRank">
+    <rdfs:label xml:lang="en">B_hasNIRFRank</rdfs:label>
+    <rdfs:comment xml:lang="en">NIRF ranking of the university.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasNAACGrade">
+    <rdfs:label xml:lang="en">B_hasNAACGrade</rdfs:label>
+    <rdfs:comment xml:lang="en">NAAC accreditation grade.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasVision">
+    <rdfs:label xml:lang="en">B_hasVision</rdfs:label>
+    <rdfs:comment xml:lang="en">Vision statement of the university.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasResearchAreas">
+    <rdfs:label xml:lang="en">B_hasResearchAreas</rdfs:label>
+    <rdfs:comment xml:lang="en">Research areas of the department.</rdfs:comment>
+    <rdfs:domain><owl:Class><owl:unionOf rdf:parseType="Collection"><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/><rdf:Description rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/></owl:unionOf></owl:Class></rdfs:domain>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasDesignation">
+    <rdfs:label xml:lang="en">B_hasDesignation</rdfs:label>
+    <rdfs:comment xml:lang="en">Job designation of the faculty.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasSpecialization">
+    <rdfs:label xml:lang="en">B_hasSpecialization</rdfs:label>
+    <rdfs:comment xml:lang="en">Research specialization areas.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPhdFrom">
+    <rdfs:label xml:lang="en">B_hasPhdFrom</rdfs:label>
+    <rdfs:comment xml:lang="en">Institution where PhD was completed.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasGoogleScholarID">
+    <rdfs:label xml:lang="en">B_hasGoogleScholarID</rdfs:label>
+    <rdfs:comment xml:lang="en">Google Scholar profile identifier.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasExperienceYears">
+    <rdfs:label xml:lang="en">B_hasExperienceYears</rdfs:label>
+    <rdfs:comment xml:lang="en">Total years of academic experience.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasProgramLevel">
+    <rdfs:label xml:lang="en">B_hasProgramLevel</rdfs:label>
+    <rdfs:comment xml:lang="en">Program level UG, PG or Doctoral.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasDuration">
+    <rdfs:label xml:lang="en">B_hasDuration</rdfs:label>
+    <rdfs:comment xml:lang="en">Duration of the academic program.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTotalCredits">
+    <rdfs:label xml:lang="en">B_hasTotalCredits</rdfs:label>
+    <rdfs:comment xml:lang="en">Total credits required to graduate.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTotalSeats">
+    <rdfs:label xml:lang="en">B_hasTotalSeats</rdfs:label>
+    <rdfs:comment xml:lang="en">Total intake seats per year.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasJEECutoff">
+    <rdfs:label xml:lang="en">B_hasJEECutoff</rdfs:label>
+    <rdfs:comment xml:lang="en">JEE Advanced closing rank for UG admission.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_UGProgram"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasGATECutoff">
+    <rdfs:label xml:lang="en">B_hasGATECutoff</rdfs:label>
+    <rdfs:comment xml:lang="en">GATE score cutoff for PG admission.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PGProgram"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCourseCode">
+    <rdfs:label xml:lang="en">B_hasCourseCode</rdfs:label>
+    <rdfs:comment xml:lang="en">Official course code.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCourseCredits">
+    <rdfs:label xml:lang="en">B_hasCourseCredits</rdfs:label>
+    <rdfs:comment xml:lang="en">Number of credits for the course.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasSemester">
+    <rdfs:label xml:lang="en">B_hasSemester</rdfs:label>
+    <rdfs:comment xml:lang="en">Semester in which the course is offered.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCourseLevel">
+    <rdfs:label xml:lang="en">B_hasCourseLevel</rdfs:label>
+    <rdfs:comment xml:lang="en">Course level UG or PG.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasResearchFocus">
+    <rdfs:label xml:lang="en">B_hasResearchFocus</rdfs:label>
+    <rdfs:comment xml:lang="en">Primary research focus of the lab.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPublicationTitle">
+    <rdfs:label xml:lang="en">B_hasPublicationTitle</rdfs:label>
+    <rdfs:comment xml:lang="en">Title of the publication.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasVenue">
+    <rdfs:label xml:lang="en">B_hasVenue</rdfs:label>
+    <rdfs:comment xml:lang="en">Conference or journal venue.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPublicationYear">
+    <rdfs:label xml:lang="en">B_hasPublicationYear</rdfs:label>
+    <rdfs:comment xml:lang="en">Year the paper was published.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPlacementYear">
+    <rdfs:label xml:lang="en">B_hasPlacementYear</rdfs:label>
+    <rdfs:comment xml:lang="en">Year of the placement batch.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Placement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTotalOffers">
+    <rdfs:label xml:lang="en">B_hasTotalOffers</rdfs:label>
+    <rdfs:comment xml:lang="en">Total placement offers received.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Placement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasHighestCTC">
+    <rdfs:label xml:lang="en">B_hasHighestCTC</rdfs:label>
+    <rdfs:comment xml:lang="en">Highest CTC offered.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Placement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasAverageCTC">
+    <rdfs:label xml:lang="en">B_hasAverageCTC</rdfs:label>
+    <rdfs:comment xml:lang="en">Average CTC offered.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Placement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasMedianCTC">
+    <rdfs:label xml:lang="en">B_hasMedianCTC</rdfs:label>
+    <rdfs:comment xml:lang="en">Median CTC offered.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Placement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPlacementPercentage">
+    <rdfs:label xml:lang="en">B_hasPlacementPercentage</rdfs:label>
+    <rdfs:comment xml:lang="en">Percentage of students placed.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Placement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCompaniesVisited">
+    <rdfs:label xml:lang="en">B_hasCompaniesVisited</rdfs:label>
+    <rdfs:comment xml:lang="en">Number of companies that visited.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Placement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTopDomains">
+    <rdfs:label xml:lang="en">B_hasTopDomains</rdfs:label>
+    <rdfs:comment xml:lang="en">Top industry domains for placements.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Placement"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasAccreditationBody">
+    <rdfs:label xml:lang="en">B_hasAccreditationBody</rdfs:label>
+    <rdfs:comment xml:lang="en">Name of accrediting body.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasAccreditationGrade">
+    <rdfs:label xml:lang="en">B_hasAccreditationGrade</rdfs:label>
+    <rdfs:comment xml:lang="en">Grade or rank awarded.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasAccreditationYear">
+    <rdfs:label xml:lang="en">B_hasAccreditationYear</rdfs:label>
+    <rdfs:comment xml:lang="en">Year accreditation was granted.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasAccreditationScore">
+    <rdfs:label xml:lang="en">B_hasAccreditationScore</rdfs:label>
+    <rdfs:comment xml:lang="en">Numerical score during accreditation.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasFacilityType">
+    <rdfs:label xml:lang="en">B_hasFacilityType</rdfs:label>
+    <rdfs:comment xml:lang="en">Category of the campus facility.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCapacity">
+    <rdfs:label xml:lang="en">B_hasCapacity</rdfs:label>
+    <rdfs:comment xml:lang="en">Capacity of the facility.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasDescription">
+    <rdfs:label xml:lang="en">B_hasDescription</rdfs:label>
+    <rdfs:comment xml:lang="en">Detailed description of the entity.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPartnerType">
+    <rdfs:label xml:lang="en">B_hasPartnerType</rdfs:label>
+    <rdfs:comment xml:lang="en">Type of industry partnership.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+
+  <!-- ════════════════════════════════════════
+       OBJECT PROPERTIES  (prefix B_)
+  ════════════════════════════════════════ -->
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasDepartment">
+    <rdfs:label xml:lang="en">B_hasDepartment</rdfs:label>
+    <rdfs:comment xml:lang="en">University has a department.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <owl:inverseOf rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_belongsToUniversity"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_belongsToUniversity">
+    <rdfs:label xml:lang="en">B_belongsToUniversity</rdfs:label>
+    <rdfs:comment xml:lang="en">Department belongs to university.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <owl:inverseOf rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_hasDepartment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_offersProgram">
+    <rdfs:label xml:lang="en">B_offersProgram</rdfs:label>
+    <rdfs:comment xml:lang="en">Department offers a program.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+    <owl:inverseOf rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_offeredByDepartment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_offeredByDepartment">
+    <rdfs:label xml:lang="en">B_offeredByDepartment</rdfs:label>
+    <rdfs:comment xml:lang="en">Program is offered by department.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <owl:inverseOf rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_offersProgram"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasMember">
+    <rdfs:label xml:lang="en">B_hasMember</rdfs:label>
+    <rdfs:comment xml:lang="en">Department has a faculty member.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <owl:inverseOf rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_belongsToDepartment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_belongsToDepartment">
+    <rdfs:label xml:lang="en">B_belongsToDepartment</rdfs:label>
+    <rdfs:comment xml:lang="en">Faculty or course belongs to department.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <owl:inverseOf rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_hasMember"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasHeadOfDepartment">
+    <rdfs:label xml:lang="en">B_hasHeadOfDepartment</rdfs:label>
+    <rdfs:comment xml:lang="en">Department has an assigned HoD.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_worksAt">
+    <rdfs:label xml:lang="en">B_worksAt</rdfs:label>
+    <rdfs:comment xml:lang="en">Faculty works at university.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_teaches">
+    <rdfs:label xml:lang="en">B_teaches</rdfs:label>
+    <rdfs:comment xml:lang="en">Faculty member teaches a course.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_headsLab">
+    <rdfs:label xml:lang="en">B_headsLab</rdfs:label>
+    <rdfs:comment xml:lang="en">Faculty heads a research lab.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasLab">
+    <rdfs:label xml:lang="en">B_hasLab</rdfs:label>
+    <rdfs:comment xml:lang="en">Department has a research lab.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_authored">
+    <rdfs:label xml:lang="en">B_authored</rdfs:label>
+    <rdfs:comment xml:lang="en">Faculty authored a publication.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPlacementRecord">
+    <rdfs:label xml:lang="en">B_hasPlacementRecord</rdfs:label>
+    <rdfs:comment xml:lang="en">University has placement record.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Placement"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_recruitedFrom">
+    <rdfs:label xml:lang="en">B_recruitedFrom</rdfs:label>
+    <rdfs:comment xml:lang="en">Company recruited from the university.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_isAccreditedBy">
+    <rdfs:label xml:lang="en">B_isAccreditedBy</rdfs:label>
+    <rdfs:comment xml:lang="en">University holds an accreditation.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasFacility">
+    <rdfs:label xml:lang="en">B_hasFacility</rdfs:label>
+    <rdfs:comment xml:lang="en">University has a campus facility.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasIndustryPartner">
+    <rdfs:label xml:lang="en">B_hasIndustryPartner</rdfs:label>
+    <rdfs:comment xml:lang="en">University has an industry partner.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_enrolledIn">
+    <rdfs:label xml:lang="en">B_enrolledIn</rdfs:label>
+    <rdfs:comment xml:lang="en">Student enrolled in a program.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Student"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_courseOfferedIn">
+    <rdfs:label xml:lang="en">B_courseOfferedIn</rdfs:label>
+    <rdfs:comment xml:lang="en">Course is part of a program.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Program"/>
+    
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_fundedBy">
+    <rdfs:label xml:lang="en">B_fundedBy</rdfs:label>
+    <rdfs:comment xml:lang="en">Research project funded by partner.</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchProject"/>
+    <rdfs:range  rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner"/>
+    
+  </owl:ObjectProperty>
+
+  <!-- ════════════════════════════════════════
+       INDIVIDUALS — REAL DATA FROM iiitb.ac.in
+  ════════════════════════════════════════ -->
+
+  <!-- University -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#IIITB">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_University"/>
+    <B:B_hasName>International Institute of Information Technology Bangalore</B:B_hasName>
+    <B:B_hasShortName>IIITB</B:B_hasShortName>
+    <B:B_hasEstablishedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1999</B:B_hasEstablishedYear>
+    <B:B_hasUniversityType>Deemed University (Public-Private Partnership)</B:B_hasUniversityType>
+    <B:B_hasLocation>26/C, Electronics City, Hosur Road, Bengaluru, Karnataka 560100, India</B:B_hasLocation>
+    <B:B_hasWebsite rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiitb.ac.in</B:B_hasWebsite>
+    <B:B_hasEmail>info@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasPhone>+91-80-41401661</B:B_hasPhone>
+    <B:B_hasNAACGrade>A</B:B_hasNAACGrade>
+    <B:B_hasNIRFRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">26</B:B_hasNIRFRank>
+    <B:B_hasTotalStudents rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</B:B_hasTotalStudents>
+    <B:B_hasTotalFaculty rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</B:B_hasTotalFaculty>
+    <B:B_hasCampusArea>5 acres</B:B_hasCampusArea>
+    <B:B_hasVision>To be a globally recognized research university in information technology</B:B_hasVision>
+    <B:B_hasDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_hasDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+    <B:B_hasDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DS"/>
+    <B:B_hasDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CB"/>
+    <B:B_hasDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_SERC"/>
+    <B:B_hasDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_NETS"/>
+    <B:B_isAccreditedBy rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ACC_NAAC"/>
+    <B:B_isAccreditedBy rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ACC_NIRF"/>
+    <B:B_isAccreditedBy rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ACC_NBA"/>
+    <B:B_isAccreditedBy rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ACC_QS"/>
+    <B:B_hasFacility rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_LIB"/>
+    <B:B_hasFacility rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_HOSTEL"/>
+    <B:B_hasFacility rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_HPC"/>
+    <B:B_hasFacility rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_SPORTS"/>
+    <B:B_hasFacility rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_HEALTH"/>
+    <B:B_hasFacility rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_INCUBATOR"/>
+    <B:B_hasFacility rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_CANTEEN"/>
+    <B:B_hasIndustryPartner rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IP_Infosys"/>
+    <B:B_hasIndustryPartner rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IP_Motorola"/>
+    <B:B_hasIndustryPartner rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IP_NASSCOM"/>
+    <B:B_hasIndustryPartner rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IP_IBM"/>
+    <B:B_hasIndustryPartner rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IP_Target"/>
+    <B:B_hasIndustryPartner rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IP_Mathworks"/>
+    <B:B_hasPlacementRecord rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PLR_2023"/>
+  </owl:NamedIndividual>
+
+  <!-- Departments -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_CSA">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <B:B_hasName>Computer Science and Engineering</B:B_hasName>
+    <B:B_hasShortName>CSA</B:B_hasShortName>
+    <B:B_hasEmail>csa@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasResearchAreas>Algorithms, Machine Learning, Systems, Networks, Security</B:B_hasResearchAreas>
+    <B:B_belongsToUniversity rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ECE">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <B:B_hasName>Electronics and Communication Engineering</B:B_hasName>
+    <B:B_hasShortName>ECE</B:B_hasShortName>
+    <B:B_hasEmail>ece@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasResearchAreas>VLSI, Signal Processing, IoT, Embedded Systems</B:B_hasResearchAreas>
+    <B:B_belongsToUniversity rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_DS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <B:B_hasName>Data Science</B:B_hasName>
+    <B:B_hasShortName>DS</B:B_hasShortName>
+    <B:B_hasEmail>ds@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasResearchAreas>Big Data, Analytics, Statistical Learning, NLP</B:B_hasResearchAreas>
+    <B:B_belongsToUniversity rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_CB">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <B:B_hasName>Computational and Data Sciences</B:B_hasName>
+    <B:B_hasShortName>CDS</B:B_hasShortName>
+    <B:B_hasEmail>cds@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasResearchAreas>Scientific Computing, Bioinformatics, HPC</B:B_hasResearchAreas>
+    <B:B_belongsToUniversity rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_SERC">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <B:B_hasName>Software Engineering Research Center</B:B_hasName>
+    <B:B_hasShortName>SERC</B:B_hasShortName>
+    <B:B_hasEmail>serc@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasResearchAreas>Software Testing, Verification, DevSecOps</B:B_hasResearchAreas>
+    <B:B_belongsToUniversity rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_NETS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Department"/>
+    <B:B_hasName>Networking and Communications</B:B_hasName>
+    <B:B_hasShortName>NETS</B:B_hasShortName>
+    <B:B_hasEmail>nets@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasResearchAreas>5G, SDN, Wireless Networks, Cybersecurity</B:B_hasResearchAreas>
+    <B:B_belongsToUniversity rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+
+  <!-- Faculty Members -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Sadagopan">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>S. Sadagopan</B:B_hasName>
+    <B:B_hasDesignation>Professor and Director</B:B_hasDesignation>
+    <B:B_hasEmail>sadagopan@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>IT Management, Strategic IT</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Madras</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_GovindRajan">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>G. Srinivasaraghavan</B:B_hasName>
+    <B:B_hasDesignation>Professor</B:B_hasDesignation>
+    <B:B_hasEmail>gsrini@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Machine Learning, Computational Biology</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Bombay</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Meenakshi">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>M. Meenakshi</B:B_hasName>
+    <B:B_hasDesignation>Associate Professor</B:B_hasDesignation>
+    <B:B_hasEmail>meenakshi@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Formal Methods, Logic, Verification</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Madras</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Srinath">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Srinath Srinivasa</B:B_hasName>
+    <B:B_hasDesignation>Professor</B:B_hasDesignation>
+    <B:B_hasEmail>srinath@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Knowledge Systems, Semantic Web</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>University of Stuttgart</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Chandrashekar">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Chandrashekar Ramanathan</B:B_hasName>
+    <B:B_hasDesignation>Professor</B:B_hasDesignation>
+    <B:B_hasEmail>chandra@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Database Systems, Data Integration</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>University of Maryland</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Sachindra">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Sachindra Joshi</B:B_hasName>
+    <B:B_hasDesignation>Professor</B:B_hasDesignation>
+    <B:B_hasEmail>sachindra@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>NLP, Information Extraction, Text Mining</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Bombay</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Dinesh">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Dinesh Babu Jayagopi</B:B_hasName>
+    <B:B_hasDesignation>Associate Professor</B:B_hasDesignation>
+    <B:B_hasEmail>dinesh.babu@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Computer Vision, Multimodal Analysis</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>EPFL Switzerland</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Shrisha">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Shrisha Rao</B:B_hasName>
+    <B:B_hasDesignation>Professor</B:B_hasDesignation>
+    <B:B_hasEmail>shrao@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Distributed Computing, Game Theory</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>University of Iowa</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Vijay">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Vijay Gabale</B:B_hasName>
+    <B:B_hasDesignation>Associate Professor</B:B_hasDesignation>
+    <B:B_hasEmail>vijay@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Deep Learning, Mobile AI, IoT</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Bombay</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Venugopal">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>K.R. Venugopal</B:B_hasName>
+    <B:B_hasDesignation>Professor</B:B_hasDesignation>
+    <B:B_hasEmail>venugopal@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Neural Networks, Data Mining</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Madras</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Rajaraman">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>V. Rajaraman</B:B_hasName>
+    <B:B_hasDesignation>Honorary Professor</B:B_hasDesignation>
+    <B:B_hasEmail>rajaram@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Parallel Computing, Computer Architecture</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>University of Wisconsin</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Jain">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Rajesh Bhatia</B:B_hasName>
+    <B:B_hasDesignation>Associate Professor</B:B_hasDesignation>
+    <B:B_hasEmail>rbhatia@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Compiler Design, Programming Languages</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>Panjab University</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Phani">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Phani Motamarri</B:B_hasName>
+    <B:B_hasDesignation>Assistant Professor</B:B_hasDesignation>
+    <B:B_hasEmail>phani@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Scientific Computing, DFT, HPC</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>University of Michigan</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Neelima">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Neelima Gupta</B:B_hasName>
+    <B:B_hasDesignation>Visiting Professor</B:B_hasDesignation>
+    <B:B_hasEmail>neelima@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Algorithms, Computational Geometry</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Delhi</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Madhav">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Madhav Rao</B:B_hasName>
+    <B:B_hasDesignation>Associate Professor</B:B_hasDesignation>
+    <B:B_hasEmail>madhav.rao@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>VLSI Design, Neuromorphic Circuits</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>VTU Belgaum</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Subramanya">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>K.N. Subramanya</B:B_hasName>
+    <B:B_hasDesignation>Professor</B:B_hasDesignation>
+    <B:B_hasEmail>kns@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>RF and Microwave Engineering</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IISc Bangalore</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Sridharan">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>K. Sridharan</B:B_hasName>
+    <B:B_hasDesignation>Professor</B:B_hasDesignation>
+    <B:B_hasEmail>ksridhar@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>VLSI Arithmetic, Hardware Design</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Madras</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Amit">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Amit Chattopadhyay</B:B_hasName>
+    <B:B_hasDesignation>Associate Professor</B:B_hasDesignation>
+    <B:B_hasEmail>amit@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Visual Analytics, Scientific Visualization</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>University of Kaiserslautern</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DS"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Anupama">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Anupama Hegde</B:B_hasName>
+    <B:B_hasDesignation>Assistant Professor</B:B_hasDesignation>
+    <B:B_hasEmail>anupama@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Statistical Learning, Bayesian Methods</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IISc Bangalore</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DS"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Vishal">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Vishal Garg</B:B_hasName>
+    <B:B_hasDesignation>Associate Professor</B:B_hasDesignation>
+    <B:B_hasEmail>vishal@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Energy Systems, Green Computing</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Delhi</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CB"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Sridhar">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Sridhar Chimalakonda</B:B_hasName>
+    <B:B_hasDesignation>Associate Professor</B:B_hasDesignation>
+    <B:B_hasEmail>sridhar@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Software Engineering, Education Technology</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Tirupati</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_SERC"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Prahladavardhana">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>T.V. Prabhakar</B:B_hasName>
+    <B:B_hasDesignation>Associate Professor</B:B_hasDesignation>
+    <B:B_hasEmail>tvp@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Program Analysis, Software Testing</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Kanpur</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_SERC"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Debabrata">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Debabrata Das</B:B_hasName>
+    <B:B_hasDesignation>Professor</B:B_hasDesignation>
+    <B:B_hasEmail>ddas@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>5G Networks, Heterogeneous Networks</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>IIT Kharagpur</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_NETS"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Joy">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Joy Kuri</B:B_hasName>
+    <B:B_hasDesignation>Professor</B:B_hasDesignation>
+    <B:B_hasEmail>joy@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Stochastic Networks, Wireless Systems</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>INRIA France</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_NETS"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Bhavani">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty"/>
+    <B:B_hasName>Bhavani Thuraisingham</B:B_hasName>
+    <B:B_hasDesignation>Adjunct Professor</B:B_hasDesignation>
+    <B:B_hasEmail>bhavani@iiitb.ac.in</B:B_hasEmail>
+    <B:B_hasSpecialization>Cybersecurity, Data Analytics</B:B_hasSpecialization>
+    <B:B_hasPhdFrom>University of Wales</B:B_hasPhdFrom>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_NETS"/>
+    <B:B_worksAt rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+
+  <!-- Academic Programs -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_MTechCSA">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PGProgram"/>
+    <B:B_hasName>M.Tech Computer Science and Engineering</B:B_hasName>
+    <B:B_hasProgramLevel>PG</B:B_hasProgramLevel>
+    <B:B_hasDuration>2 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">120</B:B_hasTotalSeats>
+        <B:B_hasTotalCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</B:B_hasTotalCredits>
+        <B:B_hasGATECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</B:B_hasGATECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_MTechECE">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PGProgram"/>
+    <B:B_hasName>M.Tech Electronics and Communication Engineering</B:B_hasName>
+    <B:B_hasProgramLevel>PG</B:B_hasProgramLevel>
+    <B:B_hasDuration>2 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</B:B_hasTotalSeats>
+        <B:B_hasTotalCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</B:B_hasTotalCredits>
+        <B:B_hasGATECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</B:B_hasGATECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_MTechDS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PGProgram"/>
+    <B:B_hasName>M.Tech Data Science</B:B_hasName>
+    <B:B_hasProgramLevel>PG</B:B_hasProgramLevel>
+    <B:B_hasDuration>2 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</B:B_hasTotalSeats>
+        <B:B_hasTotalCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</B:B_hasTotalCredits>
+        <B:B_hasGATECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">720</B:B_hasGATECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_MTechIS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PGProgram"/>
+    <B:B_hasName>M.Tech Information Systems</B:B_hasName>
+    <B:B_hasProgramLevel>PG</B:B_hasProgramLevel>
+    <B:B_hasDuration>2 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</B:B_hasTotalSeats>
+        <B:B_hasTotalCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</B:B_hasTotalCredits>
+        <B:B_hasGATECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">700</B:B_hasGATECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_MTechNETS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PGProgram"/>
+    <B:B_hasName>M.Tech Networking and Communications</B:B_hasName>
+    <B:B_hasProgramLevel>PG</B:B_hasProgramLevel>
+    <B:B_hasDuration>2 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</B:B_hasTotalSeats>
+        <B:B_hasTotalCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</B:B_hasTotalCredits>
+        <B:B_hasGATECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">680</B:B_hasGATECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_NETS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_MTechVLSI">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PGProgram"/>
+    <B:B_hasName>M.Tech VLSI and Embedded Systems</B:B_hasName>
+    <B:B_hasProgramLevel>PG</B:B_hasProgramLevel>
+    <B:B_hasDuration>2 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">30</B:B_hasTotalSeats>
+        <B:B_hasTotalCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</B:B_hasTotalCredits>
+        <B:B_hasGATECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">680</B:B_hasGATECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_MSResearch">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PGProgram"/>
+    <B:B_hasName>M.S by Research Computer Science</B:B_hasName>
+    <B:B_hasProgramLevel>PG</B:B_hasProgramLevel>
+    <B:B_hasDuration>2 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</B:B_hasTotalSeats>
+        <B:B_hasTotalCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">48</B:B_hasTotalCredits>
+        <B:B_hasGATECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</B:B_hasGATECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_PhDCSA">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DoctoralProgram"/>
+    <B:B_hasName>Ph.D Computer Science and Engineering</B:B_hasName>
+    <B:B_hasProgramLevel>PhD</B:B_hasProgramLevel>
+    <B:B_hasDuration>4 to 6 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">25</B:B_hasTotalSeats>
+    
+        <B:B_hasGATECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</B:B_hasGATECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_PhDECE">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DoctoralProgram"/>
+    <B:B_hasName>Ph.D Electronics and Communication Engineering</B:B_hasName>
+    <B:B_hasProgramLevel>PhD</B:B_hasProgramLevel>
+    <B:B_hasDuration>4 to 6 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</B:B_hasTotalSeats>
+    
+        <B:B_hasGATECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</B:B_hasGATECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_PhDDS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DoctoralProgram"/>
+    <B:B_hasName>Ph.D Data Science</B:B_hasName>
+    <B:B_hasProgramLevel>PhD</B:B_hasProgramLevel>
+    <B:B_hasDuration>4 to 6 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</B:B_hasTotalSeats>
+    
+        <B:B_hasGATECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">760</B:B_hasGATECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_P_iMTech">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_UGProgram"/>
+    <B:B_hasName>Integrated M.Tech Computer Science</B:B_hasName>
+    <B:B_hasProgramLevel>UG</B:B_hasProgramLevel>
+    <B:B_hasDuration>5 years</B:B_hasDuration>
+    <B:B_hasTotalSeats rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">60</B:B_hasTotalSeats>
+        <B:B_hasTotalCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</B:B_hasTotalCredits>
+        <B:B_hasJEECutoff rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000</B:B_hasJEECutoff>
+    <B:B_offeredByDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+
+  <!-- Courses -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_DSA">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Design and Analysis of Algorithms</B:B_hasName>
+    <B:B_hasCourseCode>B_C_DSA</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_ML">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Machine Learning</B:B_hasName>
+    <B:B_hasCourseCode>B_C_ML</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_DBMS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Database Management Systems</B:B_hasName>
+    <B:B_hasCourseCode>B_C_DBMS</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_OS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Operating Systems</B:B_hasName>
+    <B:B_hasCourseCode>B_C_OS</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_CN">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Computer Networks</B:B_hasName>
+    <B:B_hasCourseCode>B_C_CN</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_NETS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_AI">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Artificial Intelligence</B:B_hasName>
+    <B:B_hasCourseCode>B_C_AI</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_DL">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Deep Learning</B:B_hasName>
+    <B:B_hasCourseCode>B_C_DL</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_CV">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Computer Vision</B:B_hasName>
+    <B:B_hasCourseCode>B_C_CV</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_NLP">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Natural Language Processing</B:B_hasName>
+    <B:B_hasCourseCode>B_C_NLP</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_BigData">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Big Data Systems</B:B_hasName>
+    <B:B_hasCourseCode>B_C_BigData</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_VLSI">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>VLSI Design and Testing</B:B_hasName>
+    <B:B_hasCourseCode>B_C_VLSI</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_DSP">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Digital Signal Processing</B:B_hasName>
+    <B:B_hasCourseCode>B_C_DSP</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_Embedded">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Embedded Systems Design</B:B_hasName>
+    <B:B_hasCourseCode>B_C_Embedded</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_SW_Test">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Software Testing and Verification</B:B_hasName>
+    <B:B_hasCourseCode>B_C_SW_Test</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_SERC"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_CloudComp">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Cloud Computing</B:B_hasName>
+    <B:B_hasCourseCode>B_C_CloudComp</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_InfoSec">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Information Security</B:B_hasName>
+    <B:B_hasCourseCode>B_C_InfoSec</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_NETS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_StatLearn">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Statistical Learning Theory</B:B_hasName>
+    <B:B_hasCourseCode>B_C_StatLearn</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_C_SciComp">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Course"/>
+    <B:B_hasName>Scientific Computing</B:B_hasName>
+    <B:B_hasCourseCode>B_C_SciComp</B:B_hasCourseCode>
+    <B:B_hasCourseCredits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</B:B_hasCourseCredits>
+    <B:B_hasSemester rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</B:B_hasSemester>
+    <B:B_hasCourseLevel>PG</B:B_hasCourseLevel>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CB"/>
+  </owl:NamedIndividual>
+
+  <!-- Research Laboratories -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_RL_MILE">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    <B:B_hasName>MILE Lab - Machine Intelligence and Language Engineering</B:B_hasName>
+    <B:B_hasResearchFocus>NLP, Information Extraction, Machine Translation</B:B_hasResearchFocus>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Sachindra">
+    <B:B_headsLab rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_RL_MILE"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_RL_CVML">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    <B:B_hasName>Computer Vision and ML Lab</B:B_hasName>
+    <B:B_hasResearchFocus>Computer Vision, Multimodal Systems, Affective Computing</B:B_hasResearchFocus>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Dinesh">
+    <B:B_headsLab rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_RL_CVML"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_RL_SERC">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    <B:B_hasName>Software Engineering Research Center Lab</B:B_hasName>
+    <B:B_hasResearchFocus>Software Analysis, Verification, Testing</B:B_hasResearchFocus>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_SERC"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Prahladavardhana">
+    <B:B_headsLab rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_RL_SERC"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_RL_NETS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    <B:B_hasName>Networking Research Lab</B:B_hasName>
+    <B:B_hasResearchFocus>5G, Heterogeneous Networks, SDN</B:B_hasResearchFocus>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_NETS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Debabrata">
+    <B:B_headsLab rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_RL_NETS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_RL_VLSI">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    <B:B_hasName>VLSI and Embedded Systems Lab</B:B_hasName>
+    <B:B_hasResearchFocus>VLSI Arithmetic, Low Power Design, Neuromorphic Circuits</B:B_hasResearchFocus>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ECE"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Sridharan">
+    <B:B_headsLab rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_RL_VLSI"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_RL_KR">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    <B:B_hasName>Knowledge Representation and Reasoning Lab</B:B_hasName>
+    <B:B_hasResearchFocus>Semantic Web, Knowledge Graphs, Ontology Engineering</B:B_hasResearchFocus>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Srinath">
+    <B:B_headsLab rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_RL_KR"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_RL_CDS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    <B:B_hasName>Computational Data Sciences Lab</B:B_hasName>
+    <B:B_hasResearchFocus>HPC, Scientific Simulation, DFT Calculations</B:B_hasResearchFocus>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Phani">
+    <B:B_headsLab rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_RL_CDS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_RL_VISUAL">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    <B:B_hasName>Visual Analytics Lab</B:B_hasName>
+    <B:B_hasResearchFocus>Scientific Visualization, Topological Data Analysis</B:B_hasResearchFocus>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_DS"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Amit">
+    <B:B_headsLab rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_RL_VISUAL"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_RL_GAMES">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab"/>
+    <B:B_hasName>Game Theory and Distributed Systems Lab</B:B_hasName>
+    <B:B_hasResearchFocus>Distributed Computing, Game Theory, Multi-Agent Systems</B:B_hasResearchFocus>
+    <B:B_belongsToDepartment rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_CSA"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Shrisha">
+    <B:B_headsLab rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_RL_GAMES"/>
+  </owl:NamedIndividual>
+
+  <!-- Research Publications -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_001">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <B:B_hasPublicationTitle>Multimodal Social Signal Processing for Group Behavior Analysis</B:B_hasPublicationTitle>
+    <B:B_hasVenue>IEEE Transactions on Affective Computing</B:B_hasVenue>
+    <B:B_hasPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</B:B_hasPublicationYear>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Dinesh">
+    <B:B_authored rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_001"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_002">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <B:B_hasPublicationTitle>Deep Learning Based Named Entity Recognition for Code-Mixed Text</B:B_hasPublicationTitle>
+    <B:B_hasVenue>ACL - Annual Conference on Computational Linguistics</B:B_hasVenue>
+    <B:B_hasPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</B:B_hasPublicationYear>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Sachindra">
+    <B:B_authored rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_002"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_003">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <B:B_hasPublicationTitle>Dynamic Spectrum Allocation in Heterogeneous 5G Networks</B:B_hasPublicationTitle>
+    <B:B_hasVenue>IEEE Transactions on Wireless Communications</B:B_hasVenue>
+    <B:B_hasPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</B:B_hasPublicationYear>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Debabrata">
+    <B:B_authored rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_003"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_004">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <B:B_hasPublicationTitle>Formal Verification of Concurrent Programs Using Model Checking</B:B_hasPublicationTitle>
+    <B:B_hasVenue>ACM Transactions on Software Engineering</B:B_hasVenue>
+    <B:B_hasPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</B:B_hasPublicationYear>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Meenakshi">
+    <B:B_authored rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_004"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_005">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <B:B_hasPublicationTitle>Knowledge Graph Completion Using Semantic Embeddings</B:B_hasPublicationTitle>
+    <B:B_hasVenue>Semantic Web Journal</B:B_hasVenue>
+    <B:B_hasPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</B:B_hasPublicationYear>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Srinath">
+    <B:B_authored rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_005"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_006">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <B:B_hasPublicationTitle>Low Power Neuromorphic Circuit Design for Edge AI</B:B_hasPublicationTitle>
+    <B:B_hasVenue>IEEE Transactions on VLSI Systems</B:B_hasVenue>
+    <B:B_hasPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</B:B_hasPublicationYear>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Madhav">
+    <B:B_authored rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_006"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_007">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <B:B_hasPublicationTitle>Topological Analysis of High-Dimensional Scientific Data</B:B_hasPublicationTitle>
+    <B:B_hasVenue>IEEE VIS - Visualization Conference</B:B_hasVenue>
+    <B:B_hasPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</B:B_hasPublicationYear>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Amit">
+    <B:B_authored rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_007"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_008">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Publication"/>
+    <B:B_hasPublicationTitle>Stochastic Modeling of Wireless Networks with Heterogeneous Nodes</B:B_hasPublicationTitle>
+    <B:B_hasVenue>IEEE Journal on Selected Areas in Communications</B:B_hasVenue>
+    <B:B_hasPublicationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2022</B:B_hasPublicationYear>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_F_Joy">
+    <B:B_authored rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_PUB_008"/>
+  </owl:NamedIndividual>
+
+  <!-- Placement Record -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PLR_2023">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Placement"/>
+    <B:B_hasPlacementYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</B:B_hasPlacementYear>
+    <B:B_hasTotalOffers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">650</B:B_hasTotalOffers>
+    <B:B_hasCompaniesVisited rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</B:B_hasCompaniesVisited>
+    <B:B_hasHighestCTC>45 LPA</B:B_hasHighestCTC>
+    <B:B_hasAverageCTC>17.2 LPA</B:B_hasAverageCTC>
+    <B:B_hasMedianCTC>15 LPA</B:B_hasMedianCTC>
+    <B:B_hasPlacementPercentage rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">98</B:B_hasPlacementPercentage>
+    <B:B_hasTopDomains>Software Development, Data Science, Product Management, VLSI Design, Research</B:B_hasTopDomains>
+  </owl:NamedIndividual>
+
+  <!-- Recruiting Companies -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Google">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Google</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Microsoft">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Microsoft</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Amazon">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Amazon</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Flipkart">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Flipkart</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Adobe">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Adobe</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Samsung">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Samsung</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Qualcomm">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Qualcomm</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Cisco">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Cisco</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_VMware">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>VMware</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Nvidia">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Nvidia</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_GoldmanSachs">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Goldman Sachs</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_DeutscheBank">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Deutsche Bank</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_JPMorgan">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>JPMorgan</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_PayPal">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>PayPal</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Uber">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Uber</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Swiggy">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Swiggy</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Razorpay">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Razorpay</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_Atlassian">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Atlassian</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_ThoughtWorks">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>ThoughtWorks</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_REC_WalmartLabs">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter"/>
+    <B:B_hasName>Walmart Labs</B:B_hasName>
+    <B:B_recruitedFrom rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#IIITB"/>
+  </owl:NamedIndividual>
+
+  <!-- Accreditations and Rankings -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ACC_NAAC">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation"/>
+    <B:B_hasAccreditationBody>NAAC</B:B_hasAccreditationBody>
+    <B:B_hasAccreditationGrade>A</B:B_hasAccreditationGrade>
+    <B:B_hasAccreditationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2017</B:B_hasAccreditationYear>
+    <B:B_hasAccreditationScore>3.19</B:B_hasAccreditationScore>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ACC_NIRF">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation"/>
+    <B:B_hasAccreditationBody>NIRF</B:B_hasAccreditationBody>
+    <B:B_hasAccreditationGrade>Rank 26</B:B_hasAccreditationGrade>
+    <B:B_hasAccreditationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2023</B:B_hasAccreditationYear>
+    <B:B_hasAccreditationScore>NA</B:B_hasAccreditationScore>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ACC_NBA">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation"/>
+    <B:B_hasAccreditationBody>NBA</B:B_hasAccreditationBody>
+    <B:B_hasAccreditationGrade>Accredited</B:B_hasAccreditationGrade>
+    <B:B_hasAccreditationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2021</B:B_hasAccreditationYear>
+    <B:B_hasAccreditationScore>NA</B:B_hasAccreditationScore>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ACC_QS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation"/>
+    <B:B_hasAccreditationBody>QS Asia</B:B_hasAccreditationBody>
+    <B:B_hasAccreditationGrade>Rank 201-250 Asia</B:B_hasAccreditationGrade>
+    <B:B_hasAccreditationYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2024</B:B_hasAccreditationYear>
+    <B:B_hasAccreditationScore>NA</B:B_hasAccreditationScore>
+  </owl:NamedIndividual>
+
+  <!-- Campus Facilities -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_LIB">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/>
+    <B:B_hasName>Digital Library</B:B_hasName>
+    <B:B_hasFacilityType>Academic</B:B_hasFacilityType>
+    <B:B_hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">300</B:B_hasCapacity>
+    <B:B_hasDescription>Fully digital library with ACM, IEEE, Elsevier, Springer and Nature journal access</B:B_hasDescription>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_HOSTEL">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/>
+    <B:B_hasName>Student Hostels</B:B_hasName>
+    <B:B_hasFacilityType>Residential</B:B_hasFacilityType>
+    <B:B_hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</B:B_hasCapacity>
+    <B:B_hasDescription>On-campus hostels for boys and girls with mess, Wi-Fi and recreation rooms</B:B_hasDescription>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_HPC">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/>
+    <B:B_hasName>High Performance Computing Lab</B:B_hasName>
+    <B:B_hasFacilityType>Academic</B:B_hasFacilityType>
+    <B:B_hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">80</B:B_hasCapacity>
+    <B:B_hasDescription>GPU cluster with NVIDIA A100 and V100 GPUs for deep learning and scientific computing</B:B_hasDescription>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_SPORTS">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/>
+    <B:B_hasName>Sports and Recreation Center</B:B_hasName>
+    <B:B_hasFacilityType>Sports</B:B_hasFacilityType>
+    <B:B_hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</B:B_hasCapacity>
+    <B:B_hasDescription>Badminton, Table Tennis, Cricket, Football and Gymnasium</B:B_hasDescription>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_HEALTH">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/>
+    <B:B_hasName>Health and Wellness Center</B:B_hasName>
+    <B:B_hasFacilityType>Medical</B:B_hasFacilityType>
+    <B:B_hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">40</B:B_hasCapacity>
+    <B:B_hasDescription>On-campus clinic with doctor and counseling services</B:B_hasDescription>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_INCUBATOR">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/>
+    <B:B_hasName>NASSCOM CoE IoT Lab</B:B_hasName>
+    <B:B_hasFacilityType>Innovation</B:B_hasFacilityType>
+    <B:B_hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</B:B_hasCapacity>
+    <B:B_hasDescription>IoT and startup incubation lab in partnership with NASSCOM Centre of Excellence</B:B_hasDescription>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_FAC_CANTEEN">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_Facility"/>
+    <B:B_hasName>Cafeteria</B:B_hasName>
+    <B:B_hasFacilityType>Food</B:B_hasFacilityType>
+    <B:B_hasCapacity rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</B:B_hasCapacity>
+    <B:B_hasDescription>Multiple food options including North Indian, South Indian and continental cuisine</B:B_hasDescription>
+  </owl:NamedIndividual>
+
+  <!-- Industry Partners -->
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_IP_Infosys">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner"/>
+    <B:B_hasName>Infosys</B:B_hasName>
+    <B:B_hasPartnerType>Research and Funding Partner</B:B_hasPartnerType>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_IP_Motorola">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner"/>
+    <B:B_hasName>Motorola</B:B_hasName>
+    <B:B_hasPartnerType>Founding Industry Partner</B:B_hasPartnerType>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_IP_NASSCOM">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner"/>
+    <B:B_hasName>NASSCOM</B:B_hasName>
+    <B:B_hasPartnerType>Industry Consortium Partner</B:B_hasPartnerType>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_IP_IBM">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner"/>
+    <B:B_hasName>IBM Research</B:B_hasName>
+    <B:B_hasPartnerType>Research Collaboration Partner</B:B_hasPartnerType>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_IP_Target">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner"/>
+    <B:B_hasName>Target Corporation</B:B_hasName>
+    <B:B_hasPartnerType>Research and Hiring Partner</B:B_hasPartnerType>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_IP_Mathworks">
+    <rdf:type rdf:resource="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner"/>
+    <B:B_hasName>MathWorks</B:B_hasName>
+    <B:B_hasPartnerType>Software and Research Partner</B:B_hasPartnerType>
+  </owl:NamedIndividual>
+
+</rdf:RDF>

@@ -1,0 +1,1996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:mowl="http://www.semanticweb.org/mowl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_SERC">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Software Engineering Research Centre</rdfs:label>
+    <mowl:h_centreName>Software Engineering Research Centre</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>SERC</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Software Engineering, Testing, Maintenance</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://serc.iiit.ac.in/</mowl:h_centreURL>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Kamalakar_Karlapalem">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Kamalakar Karlapalem</rdfs:label>
+    <mowl:h_facultyName>Kamalakar Karlapalem</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_researchAreas>Data Engineering</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS8_601_Computer_Vision">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS8.601 - Computer Vision</rdfs:label>
+    <mowl:h_courseCode>CS8.601</mowl:h_courseCode>
+    <mowl:h_courseName>Computer Vision</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Ponnurangam_Kumaraguru">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Ponnurangam Kumaraguru</rdfs:label>
+    <mowl:h_facultyName>Ponnurangam Kumaraguru</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>pk.guru@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Privacy, Security, Social Computing</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#IIIT_Hyderabad">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Institution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>International Institute of Information Technology, Hyderabad</rdfs:label>
+    <mowl:h_institutionName>International Institute of Information Technology, Hyderabad</mowl:h_institutionName>
+    <mowl:h_abbreviation>IIIT-H</mowl:h_abbreviation>
+    <mowl:h_establishedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">1998</mowl:h_establishedYear>
+    <mowl:h_institutionType>Deemed University</mowl:h_institutionType>
+    <mowl:h_location>Gachibowli, Hyderabad, Telangana, India</mowl:h_location>
+    <mowl:h_pincode>500032</mowl:h_pincode>
+    <mowl:h_website rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in</mowl:h_website>
+    <mowl:h_phone>+91-40-6653-1000</mowl:h_phone>
+    <mowl:h_affiliation>Deemed to be University (under Section 3 of UGC Act 1956)</mowl:h_affiliation>
+    <mowl:h_campusArea>66 acres</mowl:h_campusArea>
+    <mowl:h_motto>Seek the truth and the truth shall set you free</mowl:h_motto>
+    <mowl:h_ranking>Among top engineering institutes in India (NIRF)</mowl:h_ranking>
+    <mowl:h_hasDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+    <mowl:h_hasDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+    <mowl:h_hasDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Language_Technologies_Research_Centre"/>
+    <mowl:h_hasDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Cognitive_Science"/>
+    <mowl:h_hasDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Center_for_VLSI_and_Embedded_Systems_Technology"/>
+    <mowl:h_hasDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Mathematics"/>
+    <mowl:h_hasDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Exact_Humanities"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_P_J_Narayanan"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_C_V_Jawahar"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Vasudeva_Varma"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Vineet_Gandhi"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Girish_Varma"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Anoop_M_Namboodiri"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Manohar_Kaul"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Srijith_P_K"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Ponnurangam_Kumaraguru"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Abhijit_Sen"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Kannan_Srinathan"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Suresh_Purini"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Avinash_Sharma"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Ramesh_Loganathan"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Vikram_Pudi"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Venkatesh_Choppella"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Kamal_Karlapalem"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Sachin_Lodha"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Praveen_Paruchuri"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Syed_Iqbal"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Sachin_Chaudhari"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Aftab_M_Hussain"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Pavan_Kumar_Anasosalu"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Shreyas_Sen"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Kiran_Kumar_Kuchi"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Renu_John"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Santosh_Kumar_Vishvakarma"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Linga_Reddy_Cenkeramaddi"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Radhika_Mamidi"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Dipti_Misra_Sharma"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Manish_Shrivastava"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Kavita_Vemuri"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Bapi_Raju_Surampudi"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Indranil_Chakrabarty"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Saikrishna_Rajagopal"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Raj_Reddy"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Makarand_Tapaswi"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Viswanath_Gunturi"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Shourya_Roy"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Charu_Sharma"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Vishal_Patel"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Dinesh_Babu_Jayagopi"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_K_Sri_Rama_Murthy"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Mohammed_Abdul_Qadeer"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Nita_Parekh"/>
+    <mowl:h_hasFaculty rdf:resource="http://www.semanticweb.org/iiith#Faculty_Kamalakar_Karlapalem"/>
+    <mowl:h_directorOf rdf:resource="http://www.semanticweb.org/iiith#Faculty_P_J_Narayanan"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_B_Tech_in_Computer_Science_and_Engineering"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_B_Tech_in_Electronics_and_Communication_Engineering"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_B_Tech_MS_Dual_Degree_in_CSE"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_B_Tech_MS_Dual_Degree_in_ECE"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_B_Tech_Hons_in_CSE"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_B_Tech_Hons_in_ECE"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_M_Tech_in_Computer_Science_and_Engineering"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_M_Tech_in_Electronics_and_Communication_Engineering"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_M_Tech_in_Computer_Science_PGSSP_CEEP"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_MS_by_Research_in_Computer_Science"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_MS_by_Research_in_Electronics_and_Communication"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_MS_by_Research_in_Computational_Linguistics"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_MS_by_Research_in_Cognitive_Science"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_MS_by_Research_in_Exact_Humanities"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_PhD_in_Computer_Science_and_Engineering"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_PhD_in_Electronics_and_Communication_Engineering"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_PhD_in_Computational_Linguistics"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_PhD_in_Cognitive_Science"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_PhD_in_Mathematics"/>
+    <mowl:h_hasProgram rdf:resource="http://www.semanticweb.org/iiith#Program_PhD_in_Exact_Humanities"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_CVIT"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_IIIT_H"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_LTRC"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_CSTAR"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_KCIS"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_MLL"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_SERC"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_CDE"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_PreCog"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_RRC"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_SPCRC"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_CCNSB"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_SCRC"/>
+    <mowl:h_hasResearchCentre rdf:resource="http://www.semanticweb.org/iiith#Centre_CVEST"/>
+    <mowl:h_hasEvent rdf:resource="http://www.semanticweb.org/iiith#Event_Felicity"/>
+    <mowl:h_hasEvent rdf:resource="http://www.semanticweb.org/iiith#Event_E_Summit"/>
+    <mowl:h_hasEvent rdf:resource="http://www.semanticweb.org/iiith#Event_R_D_Showcase"/>
+    <mowl:h_hasEvent rdf:resource="http://www.semanticweb.org/iiith#Event_Freshman_Orientation"/>
+    <mowl:h_hasEvent rdf:resource="http://www.semanticweb.org/iiith#Event_Placement_Drive"/>
+    <mowl:h_hasEvent rdf:resource="http://www.semanticweb.org/iiith#Event_Tech_Talks_Series"/>
+    <mowl:h_hasFacility rdf:resource="http://www.semanticweb.org/iiith#Facility_Vindhya_Building"/>
+    <mowl:h_hasFacility rdf:resource="http://www.semanticweb.org/iiith#Facility_Himalaya_Building"/>
+    <mowl:h_hasFacility rdf:resource="http://www.semanticweb.org/iiith#Facility_T_Hub_nearby"/>
+    <mowl:h_hasFacility rdf:resource="http://www.semanticweb.org/iiith#Facility_Central_Library"/>
+    <mowl:h_hasFacility rdf:resource="http://www.semanticweb.org/iiith#Facility_Sports_Complex"/>
+    <mowl:h_hasFacility rdf:resource="http://www.semanticweb.org/iiith#Facility_Health_Centre"/>
+    <mowl:h_hasFacility rdf:resource="http://www.semanticweb.org/iiith#Facility_CIE_Centre_for_Innovation_and_Entrepreneurship"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS9_401_Computer_Graphics">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS9.401 - Computer Graphics</rdfs:label>
+    <mowl:h_courseCode>CS9.401</mowl:h_courseCode>
+    <mowl:h_courseName>Computer Graphics</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Computer Science and Engineering</rdfs:label>
+    <mowl:h_departmentName>Computer Science and Engineering</mowl:h_departmentName>
+    <mowl:h_departmentAbbreviation>CSE</mowl:h_departmentAbbreviation>
+    <mowl:h_departmentURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cse.iiit.ac.in/</mowl:h_departmentURL>
+    <mowl:h_departmentDescription>The CSE department at IIIT Hyderabad focuses on cutting-edge research and education in computer science.</mowl:h_departmentDescription>
+    <mowl:h_headedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_Kannan_Srinathan"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS0_101_Computer_Programming"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS1_301_Data_Structures"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS2_201_Design_and_Analysis_of_Algorithms"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS3_301_Operating_Systems"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS3_401_Computer_Networks"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS5_501_Computer_Architecture"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS2_101_Discrete_Mathematics"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS6_301_Database_Systems"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS6_401_Software_Engineering"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS1_101_Computational_Thinking"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS3_501_Compiler_Design"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS7_401_Theory_of_Computation"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS7_301_Machine_Learning"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS7_501_Deep_Learning"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS8_601_Computer_Vision"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS8_501_Natural_Language_Processing"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS8_401_Information_Retrieval_and_Extraction"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS8_701_Distributed_Systems"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS8_801_Cloud_Computing"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS9_101_Artificial_Intelligence"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS9_201_Reinforcement_Learning"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS9_301_Data_Mining"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS9_401_Computer_Graphics"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS9_501_Cryptography"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS9_601_Blockchain_Technologies"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS9_701_Statistical_Methods_in_AI"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS9_801_Robotics"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CS9_901_Bioinformatics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_website">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_website</rdfs:label>
+    <rdfs:comment>Official website URL</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Vineet_Gandhi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Vineet Gandhi</rdfs:label>
+    <mowl:h_facultyName>Vineet Gandhi</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_email>vineet.gandhi@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Computer Vision, Multi-modal Learning</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_CDE">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Centre for Data Engineering</rdfs:label>
+    <mowl:h_centreName>Centre for Data Engineering</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>CDE</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Data Mining, Big Data, Databases</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in/</mowl:h_centreURL>
+    <mowl:h_directedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_Vikram_Pudi"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_K_Sri_Rama_Murthy">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>K Sri Rama Murthy</rdfs:label>
+    <mowl:h_facultyName>K Sri Rama Murthy</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_researchAreas>Kernel Methods, Machine Learning</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_B_Tech_in_Computer_Science_and_Engineering">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>B.Tech in Computer Science and Engineering</rdfs:label>
+    <mowl:h_programName>B.Tech in Computer Science and Engineering</mowl:h_programName>
+    <mowl:h_programLevel>Undergraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>4 years</mowl:h_programDuration>
+    <mowl:h_programType>B.Tech</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_B_Tech_in_Electronics_and_Communication_Engineering">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>B.Tech in Electronics and Communication Engineering</rdfs:label>
+    <mowl:h_programName>B.Tech in Electronics and Communication Engineering</mowl:h_programName>
+    <mowl:h_programLevel>Undergraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>4 years</mowl:h_programDuration>
+    <mowl:h_programType>B.Tech</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS1_101_Computational_Thinking">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS1.101 - Computational Thinking</rdfs:label>
+    <mowl:h_courseCode>CS1.101</mowl:h_courseCode>
+    <mowl:h_courseName>Computational Thinking</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC7_501_5G_and_Beyond">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC7.501 - 5G and Beyond</rdfs:label>
+    <mowl:h_courseCode>EC7.501</mowl:h_courseCode>
+    <mowl:h_courseName>5G and Beyond</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Event_Felicity">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Event"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Felicity</rdfs:label>
+    <mowl:h_eventName>Felicity</mowl:h_eventName>
+    <mowl:h_eventType>Cultural Festival</mowl:h_eventType>
+    <mowl:h_description>Annual inter-college cultural festival of IIIT Hyderabad</mowl:h_description>
+    <mowl:h_frequency>Annual</mowl:h_frequency>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Dept_Exact_Humanities">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Exact Humanities</rdfs:label>
+    <mowl:h_departmentName>Exact Humanities</mowl:h_departmentName>
+    <mowl:h_departmentAbbreviation>EH</mowl:h_departmentAbbreviation>
+    <mowl:h_departmentURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in/</mowl:h_departmentURL>
+    <mowl:h_departmentDescription>A unique department taking a computational approach to humanities and social sciences.</mowl:h_departmentDescription>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_HS1_101_Introduction_to_Humanities"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Linga_Reddy_Cenkeramaddi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Linga Reddy Cenkeramaddi</rdfs:label>
+    <mowl:h_facultyName>Linga Reddy Cenkeramaddi</mowl:h_facultyName>
+    <mowl:h_designation>Visiting Faculty</mowl:h_designation>
+    <mowl:h_researchAreas>Embedded Systems, IoT</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Dipti_Misra_Sharma">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dipti Misra Sharma</rdfs:label>
+    <mowl:h_facultyName>Dipti Misra Sharma</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>dipti@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>NLP, Computational Linguistics</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Language_Technologies_Research_Centre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Nita_Parekh">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Nita Parekh</rdfs:label>
+    <mowl:h_facultyName>Nita Parekh</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>nita@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Bioinformatics, Computational Biology</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Venkatesh_Choppella">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Venkatesh Choppella</rdfs:label>
+    <mowl:h_facultyName>Venkatesh Choppella</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_email>venkatesh.choppella@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Programming Languages, Formal Methods</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Electronics and Communication Engineering</rdfs:label>
+    <mowl:h_departmentName>Electronics and Communication Engineering</mowl:h_departmentName>
+    <mowl:h_departmentAbbreviation>ECE</mowl:h_departmentAbbreviation>
+    <mowl:h_departmentURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ece.iiit.ac.in/</mowl:h_departmentURL>
+    <mowl:h_departmentDescription>ECE department focuses on communications, VLSI, signal processing and embedded systems.</mowl:h_departmentDescription>
+    <mowl:h_headedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_Sachin_Chaudhari"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC1_101_Basic_Electronics"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC2_201_Analog_Circuits"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC3_301_Digital_Signal_Processing"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC3_401_Communication_Systems"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC4_401_VLSI_Design"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC5_501_Embedded_Systems"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC6_101_Electromagnetic_Theory"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC6_201_Control_Systems"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC7_301_Wireless_Communications"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC7_401_IoT_Systems_Design"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_EC7_501_5G_and_Beyond"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC7_301_Wireless_Communications">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC7.301 - Wireless Communications</rdfs:label>
+    <mowl:h_courseCode>EC7.301</mowl:h_courseCode>
+    <mowl:h_courseName>Wireless Communications</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Manish_Shrivastava">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Manish Shrivastava</rdfs:label>
+    <mowl:h_facultyName>Manish Shrivastava</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_email>m.shrivastava@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>NLP, Machine Translation</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Language_Technologies_Research_Centre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Event_Tech_Talks_Series">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Event"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Tech Talks Series</rdfs:label>
+    <mowl:h_eventName>Tech Talks Series</mowl:h_eventName>
+    <mowl:h_eventType>Seminar Series</mowl:h_eventType>
+    <mowl:h_description>Regular invited talks by industry and academia experts</mowl:h_description>
+    <mowl:h_frequency>Monthly</mowl:h_frequency>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Ramesh_Loganathan">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Ramesh Loganathan</rdfs:label>
+    <mowl:h_facultyName>Ramesh Loganathan</mowl:h_facultyName>
+    <mowl:h_designation>Professor of Practice</mowl:h_designation>
+    <mowl:h_email>ramesh.loganathan@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Software Engineering, Industry Collaboration</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_KCIS">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Kohli Centre on Intelligent Systems</rdfs:label>
+    <mowl:h_centreName>Kohli Centre on Intelligent Systems</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>KCIS</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Artificial Intelligence, Robotics, Autonomous Systems</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://kcis.iiit.ac.in/</mowl:h_centreURL>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS5_501_Computer_Architecture">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS5.501 - Computer Architecture</rdfs:label>
+    <mowl:h_courseCode>CS5.501</mowl:h_courseCode>
+    <mowl:h_courseName>Computer Architecture</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS9_701_Statistical_Methods_in_AI">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS9.701 - Statistical Methods in AI</rdfs:label>
+    <mowl:h_courseCode>CS9.701</mowl:h_courseCode>
+    <mowl:h_courseName>Statistical Methods in AI</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_M_Tech_in_Computer_Science_PGSSP_CEEP">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>M.Tech in Computer Science (PGSSP/CEEP)</rdfs:label>
+    <mowl:h_programName>M.Tech in Computer Science (PGSSP/CEEP)</mowl:h_programName>
+    <mowl:h_programLevel>Postgraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>2 years</mowl:h_programDuration>
+    <mowl:h_programType>M.Tech</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Raj_Reddy">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Raj Reddy</rdfs:label>
+    <mowl:h_facultyName>Raj Reddy</mowl:h_facultyName>
+    <mowl:h_designation>Professor Emeritus / Advisor</mowl:h_designation>
+    <mowl:h_researchAreas>AI, Robotics</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Anoop_M_Namboodiri">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Anoop M Namboodiri</rdfs:label>
+    <mowl:h_facultyName>Anoop M Namboodiri</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>anoop@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Computer Vision, Biometrics</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC5_501_Embedded_Systems">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC5.501 - Embedded Systems</rdfs:label>
+    <mowl:h_courseCode>EC5.501</mowl:h_courseCode>
+    <mowl:h_courseName>Embedded Systems</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_PhD_in_Mathematics">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>PhD in Mathematics</rdfs:label>
+    <mowl:h_programName>PhD in Mathematics</mowl:h_programName>
+    <mowl:h_programLevel>Doctoral</mowl:h_programLevel>
+    <mowl:h_programDuration>4-6 years</mowl:h_programDuration>
+    <mowl:h_programType>PhD</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Mathematics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Syed_Iqbal">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Syed Iqbal</rdfs:label>
+    <mowl:h_facultyName>Syed Iqbal</mowl:h_facultyName>
+    <mowl:h_designation>Assistant Professor</mowl:h_designation>
+    <mowl:h_researchAreas>Networks, Systems</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS2_201_Design_and_Analysis_of_Algorithms">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS2.201 - Design and Analysis of Algorithms</rdfs:label>
+    <mowl:h_courseCode>CS2.201</mowl:h_courseCode>
+    <mowl:h_courseName>Design and Analysis of Algorithms</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS9_501_Cryptography">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS9.501 - Cryptography</rdfs:label>
+    <mowl:h_courseCode>CS9.501</mowl:h_courseCode>
+    <mowl:h_courseName>Cryptography</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_MS_by_Research_in_Computer_Science">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>MS by Research in Computer Science</rdfs:label>
+    <mowl:h_programName>MS by Research in Computer Science</mowl:h_programName>
+    <mowl:h_programLevel>Postgraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>2-3 years</mowl:h_programDuration>
+    <mowl:h_programType>MS by Research</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC1_101_Basic_Electronics">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC1.101 - Basic Electronics</rdfs:label>
+    <mowl:h_courseCode>EC1.101</mowl:h_courseCode>
+    <mowl:h_courseName>Basic Electronics</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_designation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_designation</rdfs:label>
+    <rdfs:comment>Academic designation / title</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_eventName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_eventName</rdfs:label>
+    <rdfs:comment>Name of the event</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS7_401_Theory_of_Computation">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS7.401 - Theory of Computation</rdfs:label>
+    <mowl:h_courseCode>CS7.401</mowl:h_courseCode>
+    <mowl:h_courseName>Theory of Computation</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC2_201_Analog_Circuits">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC2.201 - Analog Circuits</rdfs:label>
+    <mowl:h_courseCode>EC2.201</mowl:h_courseCode>
+    <mowl:h_courseName>Analog Circuits</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Manohar_Kaul">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Manohar Kaul</rdfs:label>
+    <mowl:h_facultyName>Manohar Kaul</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_email>manohar.kaul@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Machine Learning, Computational Topology</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Kavita_Vemuri">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Kavita Vemuri</rdfs:label>
+    <mowl:h_facultyName>Kavita Vemuri</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>kavita@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Cognitive Neuroscience</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Cognitive_Science"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_MS_by_Research_in_Exact_Humanities">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>MS by Research in Exact Humanities</rdfs:label>
+    <mowl:h_programName>MS by Research in Exact Humanities</mowl:h_programName>
+    <mowl:h_programLevel>Postgraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>2-3 years</mowl:h_programDuration>
+    <mowl:h_programType>MS by Research</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Exact_Humanities"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS8_801_Cloud_Computing">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS8.801 - Cloud Computing</rdfs:label>
+    <mowl:h_courseCode>CS8.801</mowl:h_courseCode>
+    <mowl:h_courseName>Cloud Computing</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_M_Tech_in_Computer_Science_and_Engineering">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>M.Tech in Computer Science and Engineering</rdfs:label>
+    <mowl:h_programName>M.Tech in Computer Science and Engineering</mowl:h_programName>
+    <mowl:h_programLevel>Postgraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>2 years</mowl:h_programDuration>
+    <mowl:h_programType>M.Tech</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CG1_101_Introduction_to_Cognitive_Science">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CG1.101 - Introduction to Cognitive Science</rdfs:label>
+    <mowl:h_courseCode>CG1.101</mowl:h_courseCode>
+    <mowl:h_courseName>Introduction to Cognitive Science</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Cognitive_Science"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_institutionType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_institutionType</rdfs:label>
+    <rdfs:comment>Type of institution (University, Deemed, etc.)</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_hasFacility">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_hasFacility</rdfs:label>
+    <rdfs:comment>Institution has a facility</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Institution"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Facility"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC6_201_Control_Systems">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC6.201 - Control Systems</rdfs:label>
+    <mowl:h_courseCode>EC6.201</mowl:h_courseCode>
+    <mowl:h_courseName>Control Systems</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Facility_T_Hub_nearby">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Facility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>T-Hub (nearby)</rdfs:label>
+    <mowl:h_eventName>T-Hub (nearby)</mowl:h_eventName>
+    <mowl:h_eventType>Incubator Collaboration</mowl:h_eventType>
+    <mowl:h_description>Largest incubator in India, IIITH is a partner institution</mowl:h_description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_researchAreas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_researchAreas</rdfs:label>
+    <rdfs:comment>Research areas / interests</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_eventType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_eventType</rdfs:label>
+    <rdfs:comment>Type of event/facility</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_MA2_101_Probability_and_Statistics">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>MA2.101 - Probability and Statistics</rdfs:label>
+    <mowl:h_courseCode>MA2.101</mowl:h_courseCode>
+    <mowl:h_courseName>Probability and Statistics</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Mathematics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Bapi_Raju_Surampudi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Bapi Raju Surampudi</rdfs:label>
+    <mowl:h_facultyName>Bapi Raju Surampudi</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>raju.bapi@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Computational Neuroscience, Machine Learning</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Cognitive_Science"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS7_501_Deep_Learning">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS7.501 - Deep Learning</rdfs:label>
+    <mowl:h_courseCode>CS7.501</mowl:h_courseCode>
+    <mowl:h_courseName>Deep Learning</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Aftab_M_Hussain">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Aftab M Hussain</rdfs:label>
+    <mowl:h_facultyName>Aftab M Hussain</mowl:h_facultyName>
+    <mowl:h_designation>Assistant Professor</mowl:h_designation>
+    <mowl:h_email>aftab.hussain@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Flexible Electronics, VLSI</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Radhika_Mamidi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Radhika Mamidi</rdfs:label>
+    <mowl:h_facultyName>Radhika Mamidi</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>radhika.mamidi@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Computational Linguistics, NLP</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Language_Technologies_Research_Centre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Suresh_Purini">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Suresh Purini</rdfs:label>
+    <mowl:h_facultyName>Suresh Purini</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_email>suresh.purini@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Compilers, Programming Languages</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC3_401_Communication_Systems">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC3.401 - Communication Systems</rdfs:label>
+    <mowl:h_courseCode>EC3.401</mowl:h_courseCode>
+    <mowl:h_courseName>Communication Systems</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS9_901_Bioinformatics">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS9.901 - Bioinformatics</rdfs:label>
+    <mowl:h_courseCode>CS9.901</mowl:h_courseCode>
+    <mowl:h_courseName>Bioinformatics</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_PhD_in_Electronics_and_Communication_Engineering">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>PhD in Electronics and Communication Engineering</rdfs:label>
+    <mowl:h_programName>PhD in Electronics and Communication Engineering</mowl:h_programName>
+    <mowl:h_programLevel>Doctoral</mowl:h_programLevel>
+    <mowl:h_programDuration>4-6 years</mowl:h_programDuration>
+    <mowl:h_programType>PhD</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_PreCog">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Precog - Privacy and Security Research</rdfs:label>
+    <mowl:h_centreName>Precog - Privacy and Security Research</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>PreCog</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Privacy, Security, Social Computing, Online Safety</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://precog.iiit.ac.in/</mowl:h_centreURL>
+    <mowl:h_directedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_Ponnurangam_Kumaraguru"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_CSTAR">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Centre for Security, Theory and Algorithms</rdfs:label>
+    <mowl:h_centreName>Centre for Security, Theory and Algorithms</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>CSTAR</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Cryptography, Security, Algorithms</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in/</mowl:h_centreURL>
+    <mowl:h_directedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_Kannan_Srinathan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_SCRC">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Smart City Research Centre</rdfs:label>
+    <mowl:h_centreName>Smart City Research Centre</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>SCRC</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Smart Cities, IoT, Urban Computing</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in/</mowl:h_centreURL>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Vasudeva_Varma">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Vasudeva Varma</rdfs:label>
+    <mowl:h_facultyName>Vasudeva Varma</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>vv@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Information Retrieval, NLP</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Facility_Vindhya_Building">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Facility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Vindhya Building</rdfs:label>
+    <mowl:h_eventName>Vindhya Building</mowl:h_eventName>
+    <mowl:h_eventType>Academic Building</mowl:h_eventType>
+    <mowl:h_description>Main academic block housing classrooms and labs</mowl:h_description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_M_Tech_in_Electronics_and_Communication_Engineering">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>M.Tech in Electronics and Communication Engineering</rdfs:label>
+    <mowl:h_programName>M.Tech in Electronics and Communication Engineering</mowl:h_programName>
+    <mowl:h_programLevel>Postgraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>2 years</mowl:h_programDuration>
+    <mowl:h_programType>M.Tech</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS0_101_Computer_Programming">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS0.101 - Computer Programming</rdfs:label>
+    <mowl:h_courseCode>CS0.101</mowl:h_courseCode>
+    <mowl:h_courseName>Computer Programming</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Dept_Cognitive_Science">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Cognitive Science</rdfs:label>
+    <mowl:h_departmentName>Cognitive Science</mowl:h_departmentName>
+    <mowl:h_departmentAbbreviation>CogSci</mowl:h_departmentAbbreviation>
+    <mowl:h_departmentURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cogsci.iiit.ac.in/</mowl:h_departmentURL>
+    <mowl:h_departmentDescription>The Cognitive Science department studies the mind and intelligence using computational approaches.</mowl:h_departmentDescription>
+    <mowl:h_headedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_Bapi_Raju_Surampudi"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CG1_101_Introduction_to_Cognitive_Science"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_CG2_201_Computational_Neuroscience"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_institutionName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_institutionName</rdfs:label>
+    <rdfs:comment>Name of the institution</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_departmentName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_departmentName</rdfs:label>
+    <rdfs:comment>Name of the department</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Sachin_Chaudhari">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Sachin Chaudhari</rdfs:label>
+    <mowl:h_facultyName>Sachin Chaudhari</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_email>sachin.chaudhari@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Wireless Communications, Signal Processing</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Srijith_P_K">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Srijith P K</rdfs:label>
+    <mowl:h_facultyName>Srijith P K</mowl:h_facultyName>
+    <mowl:h_designation>Assistant Professor</mowl:h_designation>
+    <mowl:h_email>srijith.pk@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Machine Learning, Deep Learning</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Dinesh_Babu_Jayagopi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Dinesh Babu Jayagopi</rdfs:label>
+    <mowl:h_facultyName>Dinesh Babu Jayagopi</mowl:h_facultyName>
+    <mowl:h_designation>Visiting Faculty</mowl:h_designation>
+    <mowl:h_researchAreas>Social Signal Processing</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_hasEvent">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_hasEvent</rdfs:label>
+    <rdfs:comment>Institution organizes an event</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Institution"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Event"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_researchFocus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_researchFocus</rdfs:label>
+    <rdfs:comment>Focus areas of the research centre</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_Program">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>h_Program</rdfs:label>
+    <rdfs:comment>An academic degree program offered by an institution</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_programLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_programLevel</rdfs:label>
+    <rdfs:comment>Level: Undergraduate, Postgraduate, Doctoral</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Santosh_Kumar_Vishvakarma">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Santosh Kumar Vishvakarma</rdfs:label>
+    <mowl:h_facultyName>Santosh Kumar Vishvakarma</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_researchAreas>VLSI Design</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_credits">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_credits</rdfs:label>
+    <rdfs:comment>Number of credits</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Avinash_Sharma">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Avinash Sharma</rdfs:label>
+    <mowl:h_facultyName>Avinash Sharma</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_email>avinash.sharma@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>3D Computer Vision, Graphics</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_B_Tech_MS_Dual_Degree_in_CSE">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>B.Tech + MS (Dual Degree) in CSE</rdfs:label>
+    <mowl:h_programName>B.Tech + MS (Dual Degree) in CSE</mowl:h_programName>
+    <mowl:h_programLevel>Undergraduate + Postgraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>5 years</mowl:h_programDuration>
+    <mowl:h_programType>Dual Degree</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_MS_by_Research_in_Cognitive_Science">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>MS by Research in Cognitive Science</rdfs:label>
+    <mowl:h_programName>MS by Research in Cognitive Science</mowl:h_programName>
+    <mowl:h_programLevel>Postgraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>2-3 years</mowl:h_programDuration>
+    <mowl:h_programType>MS by Research</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Cognitive_Science"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Dept_Mathematics">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Mathematics</rdfs:label>
+    <mowl:h_departmentName>Mathematics</mowl:h_departmentName>
+    <mowl:h_departmentAbbreviation>Maths</mowl:h_departmentAbbreviation>
+    <mowl:h_departmentURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in/</mowl:h_departmentURL>
+    <mowl:h_departmentDescription>The Mathematics group at IIITH covers pure and applied mathematics.</mowl:h_departmentDescription>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_MA1_101_Linear_Algebra"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_MA2_101_Probability_and_Statistics"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_MA3_101_Optimization_Methods"/>
+    <mowl:h_hasCourse rdf:resource="http://www.semanticweb.org/iiith#Course_MA4_101_Numerical_Methods"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_B_Tech_MS_Dual_Degree_in_ECE">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>B.Tech + MS (Dual Degree) in ECE</rdfs:label>
+    <mowl:h_programName>B.Tech + MS (Dual Degree) in ECE</mowl:h_programName>
+    <mowl:h_programLevel>Undergraduate + Postgraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>5 years</mowl:h_programDuration>
+    <mowl:h_programType>Dual Degree</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Girish_Varma">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Girish Varma</rdfs:label>
+    <mowl:h_facultyName>Girish Varma</mowl:h_facultyName>
+    <mowl:h_designation>Assistant Professor</mowl:h_designation>
+    <mowl:h_email>girish.varma@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Theoretical Computer Science, Machine Learning</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_PhD_in_Computational_Linguistics">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>PhD in Computational Linguistics</rdfs:label>
+    <mowl:h_programName>PhD in Computational Linguistics</mowl:h_programName>
+    <mowl:h_programLevel>Doctoral</mowl:h_programLevel>
+    <mowl:h_programDuration>4-6 years</mowl:h_programDuration>
+    <mowl:h_programType>PhD</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Language_Technologies_Research_Centre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS8_501_Natural_Language_Processing">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS8.501 - Natural Language Processing</rdfs:label>
+    <mowl:h_courseCode>CS8.501</mowl:h_courseCode>
+    <mowl:h_courseName>Natural Language Processing</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>IIIT Hyderabad Ontology</rdfs:label>
+    <rdfs:comment>Ontology for IIIT Hyderabad containing institutional data including departments, faculty, programs, courses, research centres, events and facilities.</rdfs:comment>
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.semanticweb.org/mowl"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_MS_by_Research_in_Electronics_and_Communication">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>MS by Research in Electronics and Communication</rdfs:label>
+    <mowl:h_programName>MS by Research in Electronics and Communication</mowl:h_programName>
+    <mowl:h_programLevel>Postgraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>2-3 years</mowl:h_programDuration>
+    <mowl:h_programType>MS by Research</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS2_101_Discrete_Mathematics">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS2.101 - Discrete Mathematics</rdfs:label>
+    <mowl:h_courseCode>CS2.101</mowl:h_courseCode>
+    <mowl:h_courseName>Discrete Mathematics</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Praveen_Paruchuri">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Praveen Paruchuri</rdfs:label>
+    <mowl:h_facultyName>Praveen Paruchuri</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_email>praveen.p@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Multi-agent Systems, Game Theory</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Mohammed_Abdul_Qadeer">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Mohammed Abdul Qadeer</rdfs:label>
+    <mowl:h_facultyName>Mohammed Abdul Qadeer</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_researchAreas>Networks, IoT</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_MA3_101_Optimization_Methods">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>MA3.101 - Optimization Methods</rdfs:label>
+    <mowl:h_courseCode>MA3.101</mowl:h_courseCode>
+    <mowl:h_courseName>Optimization Methods</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Mathematics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_CVEST">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Centre for VLSI and Embedded Systems</rdfs:label>
+    <mowl:h_centreName>Centre for VLSI and Embedded Systems</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>CVEST</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>VLSI Design, Embedded Systems, SoC Design</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in/</mowl:h_centreURL>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS1_301_Data_Structures">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS1.301 - Data Structures</rdfs:label>
+    <mowl:h_courseCode>CS1.301</mowl:h_courseCode>
+    <mowl:h_courseName>Data Structures</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_directedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_directedBy</rdfs:label>
+    <rdfs:comment>Research centre is directed by a faculty member</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_LTRC">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Language Technologies Research Centre</rdfs:label>
+    <mowl:h_centreName>Language Technologies Research Centre</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>LTRC</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>NLP, Computational Linguistics, Machine Translation</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ltrc.iiit.ac.in/</mowl:h_centreURL>
+    <mowl:h_directedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_Dipti_Misra_Sharma"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Renu_John">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Renu John</rdfs:label>
+    <mowl:h_facultyName>Renu John</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>renu.john@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Photonics, Optical Engineering</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_hasDepartment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_hasDepartment</rdfs:label>
+    <rdfs:comment>Institution has a department</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Institution"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Dept_Center_for_VLSI_and_Embedded_Systems_Technology">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Center for VLSI and Embedded Systems Technology</rdfs:label>
+    <mowl:h_departmentName>Center for VLSI and Embedded Systems Technology</mowl:h_departmentName>
+    <mowl:h_departmentAbbreviation>CVEST</mowl:h_departmentAbbreviation>
+    <mowl:h_departmentURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in/</mowl:h_departmentURL>
+    <mowl:h_departmentDescription>Focuses on VLSI design, testing, and embedded systems.</mowl:h_departmentDescription>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_departmentDescription">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_departmentDescription</rdfs:label>
+    <rdfs:comment>Description of the department</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_MLL">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Machine Learning Lab</rdfs:label>
+    <mowl:h_centreName>Machine Learning Lab</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>MLL</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Machine Learning, Deep Learning, Statistical Learning</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://mll.iiit.ac.in/</mowl:h_centreURL>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CG2_201_Computational_Neuroscience">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CG2.201 - Computational Neuroscience</rdfs:label>
+    <mowl:h_courseCode>CG2.201</mowl:h_courseCode>
+    <mowl:h_courseName>Computational Neuroscience</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Cognitive_Science"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Pavan_Kumar_Anasosalu">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Pavan Kumar Anasosalu</rdfs:label>
+    <mowl:h_facultyName>Pavan Kumar Anasosalu</mowl:h_facultyName>
+    <mowl:h_designation>Assistant Professor</mowl:h_designation>
+    <mowl:h_researchAreas>Signal Processing, Communications</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC4_401_VLSI_Design">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC4.401 - VLSI Design</rdfs:label>
+    <mowl:h_courseCode>EC4.401</mowl:h_courseCode>
+    <mowl:h_courseName>VLSI Design</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_frequency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_frequency</rdfs:label>
+    <rdfs:comment>Frequency of occurrence</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Makarand_Tapaswi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Makarand Tapaswi</rdfs:label>
+    <mowl:h_facultyName>Makarand Tapaswi</mowl:h_facultyName>
+    <mowl:h_designation>Assistant Professor</mowl:h_designation>
+    <mowl:h_email>makarand.tapaswi@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Vision and Language, Video Understanding</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS9_601_Blockchain_Technologies">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS9.601 - Blockchain Technologies</rdfs:label>
+    <mowl:h_courseCode>CS9.601</mowl:h_courseCode>
+    <mowl:h_courseName>Blockchain Technologies</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS6_301_Database_Systems">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS6.301 - Database Systems</rdfs:label>
+    <mowl:h_courseCode>CS6.301</mowl:h_courseCode>
+    <mowl:h_courseName>Database Systems</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_PhD_in_Cognitive_Science">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>PhD in Cognitive Science</rdfs:label>
+    <mowl:h_programName>PhD in Cognitive Science</mowl:h_programName>
+    <mowl:h_programLevel>Doctoral</mowl:h_programLevel>
+    <mowl:h_programDuration>4-6 years</mowl:h_programDuration>
+    <mowl:h_programType>PhD</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Cognitive_Science"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Shourya_Roy">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Shourya Roy</rdfs:label>
+    <mowl:h_facultyName>Shourya Roy</mowl:h_facultyName>
+    <mowl:h_designation>Professor of Practice</mowl:h_designation>
+    <mowl:h_researchAreas>NLP, AI for Enterprise</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_motto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_motto</rdfs:label>
+    <rdfs:comment>Motto of the institution</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_B_Tech_Hons_in_CSE">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>B.Tech (Hons) in CSE</rdfs:label>
+    <mowl:h_programName>B.Tech (Hons) in CSE</mowl:h_programName>
+    <mowl:h_programLevel>Undergraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>4 years</mowl:h_programDuration>
+    <mowl:h_programType>B.Tech (Hons)</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_B_Tech_Hons_in_ECE">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>B.Tech (Hons) in ECE</rdfs:label>
+    <mowl:h_programName>B.Tech (Hons) in ECE</mowl:h_programName>
+    <mowl:h_programLevel>Undergraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>4 years</mowl:h_programDuration>
+    <mowl:h_programType>B.Tech (Hons)</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Abhijit_Sen">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Abhijit Sen</rdfs:label>
+    <mowl:h_facultyName>Abhijit Sen</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_researchAreas>Operating Systems</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_RRC">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Robotics Research Centre</rdfs:label>
+    <mowl:h_centreName>Robotics Research Centre</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>RRC</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Robotics, Autonomous Navigation, Mobile Robots</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://robotics.iiit.ac.in/</mowl:h_centreURL>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_IIIT_H">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>International Institute of Information Technology</rdfs:label>
+    <mowl:h_centreName>International Institute of Information Technology</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>IIIT-H</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Overall Administration</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in/</mowl:h_centreURL>
+    <mowl:h_directedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_P_J_Narayanan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Event_R_D_Showcase">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Event"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>R&amp;D Showcase</rdfs:label>
+    <mowl:h_eventName>R&amp;D Showcase</mowl:h_eventName>
+    <mowl:h_eventType>Research Exhibition</mowl:h_eventType>
+    <mowl:h_description>Showcase of research projects and labs across IIIT-H</mowl:h_description>
+    <mowl:h_frequency>Annual</mowl:h_frequency>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_PhD_in_Computer_Science_and_Engineering">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>PhD in Computer Science and Engineering</rdfs:label>
+    <mowl:h_programName>PhD in Computer Science and Engineering</mowl:h_programName>
+    <mowl:h_programLevel>Doctoral</mowl:h_programLevel>
+    <mowl:h_programDuration>4-6 years</mowl:h_programDuration>
+    <mowl:h_programType>PhD</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_MA1_101_Linear_Algebra">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>MA1.101 - Linear Algebra</rdfs:label>
+    <mowl:h_courseCode>MA1.101</mowl:h_courseCode>
+    <mowl:h_courseName>Linear Algebra</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Mathematics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_CVIT">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Centre for Visual Information Technology</rdfs:label>
+    <mowl:h_centreName>Centre for Visual Information Technology</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>CVIT</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Computer Vision, Machine Learning, Image Processing</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://cvit.iiit.ac.in/</mowl:h_centreURL>
+    <mowl:h_directedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_C_V_Jawahar"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_facultyName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_facultyName</rdfs:label>
+    <rdfs:comment>Name of the faculty member</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_programDuration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_programDuration</rdfs:label>
+    <rdfs:comment>Duration of the program</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_departmentURL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_departmentURL</rdfs:label>
+    <rdfs:comment>Department website URL</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Event_Placement_Drive">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Event"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Placement Drive</rdfs:label>
+    <mowl:h_eventName>Placement Drive</mowl:h_eventName>
+    <mowl:h_eventType>Placements</mowl:h_eventType>
+    <mowl:h_description>Annual campus placement drive with top companies</mowl:h_description>
+    <mowl:h_frequency>Annual</mowl:h_frequency>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Vishal_Patel">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Vishal Patel</rdfs:label>
+    <mowl:h_facultyName>Vishal Patel</mowl:h_facultyName>
+    <mowl:h_designation>Adjunct Faculty</mowl:h_designation>
+    <mowl:h_researchAreas>Computer Vision, Deep Learning</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS9_101_Artificial_Intelligence">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS9.101 - Artificial Intelligence</rdfs:label>
+    <mowl:h_courseCode>CS9.101</mowl:h_courseCode>
+    <mowl:h_courseName>Artificial Intelligence</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Sachin_Lodha">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Sachin Lodha</rdfs:label>
+    <mowl:h_facultyName>Sachin Lodha</mowl:h_facultyName>
+    <mowl:h_designation>Professor of Practice</mowl:h_designation>
+    <mowl:h_researchAreas>Applied Cryptography</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Dept_Language_Technologies_Research_Centre">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Language Technologies Research Centre</rdfs:label>
+    <mowl:h_departmentName>Language Technologies Research Centre</mowl:h_departmentName>
+    <mowl:h_departmentAbbreviation>LTRC</mowl:h_departmentAbbreviation>
+    <mowl:h_departmentURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://ltrc.iiit.ac.in/</mowl:h_departmentURL>
+    <mowl:h_departmentDescription>LTRC focuses on natural language processing, computational linguistics and language technologies.</mowl:h_departmentDescription>
+    <mowl:h_headedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_Dipti_Misra_Sharma"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS9_801_Robotics">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS9.801 - Robotics</rdfs:label>
+    <mowl:h_courseCode>CS9.801</mowl:h_courseCode>
+    <mowl:h_courseName>Robotics</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Facility_Health_Centre">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Facility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Health Centre</rdfs:label>
+    <mowl:h_eventName>Health Centre</mowl:h_eventName>
+    <mowl:h_eventType>Health Facility</mowl:h_eventType>
+    <mowl:h_description>On-campus health centre for students and staff</mowl:h_description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Shreyas_Sen">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Shreyas Sen</rdfs:label>
+    <mowl:h_facultyName>Shreyas Sen</mowl:h_facultyName>
+    <mowl:h_designation>Visiting Faculty</mowl:h_designation>
+    <mowl:h_researchAreas>IoT, Circuits</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_hasProgram">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_hasProgram</rdfs:label>
+    <rdfs:comment>Institution offers a program</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Institution"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_courseCode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_courseCode</rdfs:label>
+    <rdfs:comment>Course code</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_description">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_description</rdfs:label>
+    <rdfs:comment>Description</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_Department">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>h_Department</rdfs:label>
+    <rdfs:comment>An academic department within an institution</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Vikram_Pudi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Vikram Pudi</rdfs:label>
+    <mowl:h_facultyName>Vikram Pudi</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>vikram@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Data Mining, Databases</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_PhD_in_Exact_Humanities">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>PhD in Exact Humanities</rdfs:label>
+    <mowl:h_programName>PhD in Exact Humanities</mowl:h_programName>
+    <mowl:h_programLevel>Doctoral</mowl:h_programLevel>
+    <mowl:h_programDuration>4-6 years</mowl:h_programDuration>
+    <mowl:h_programType>PhD</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Exact_Humanities"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_email">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_email</rdfs:label>
+    <rdfs:comment>Email address</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_SPCRC">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Signal Processing and Communications Research Centre</rdfs:label>
+    <mowl:h_centreName>Signal Processing and Communications Research Centre</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>SPCRC</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Signal Processing, Communications, 5G Networks</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in/</mowl:h_centreURL>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS9_301_Data_Mining">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS9.301 - Data Mining</rdfs:label>
+    <mowl:h_courseCode>CS9.301</mowl:h_courseCode>
+    <mowl:h_courseName>Data Mining</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS8_401_Information_Retrieval_and_Extraction">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS8.401 - Information Retrieval and Extraction</rdfs:label>
+    <mowl:h_courseCode>CS8.401</mowl:h_courseCode>
+    <mowl:h_courseName>Information Retrieval and Extraction</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS3_501_Compiler_Design">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS3.501 - Compiler Design</rdfs:label>
+    <mowl:h_courseCode>CS3.501</mowl:h_courseCode>
+    <mowl:h_courseName>Compiler Design</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_pincode">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_pincode</rdfs:label>
+    <rdfs:comment>Postal pin code</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_centreAbbreviation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_centreAbbreviation</rdfs:label>
+    <rdfs:comment>Abbreviation of the research centre</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_hasResearchCentre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_hasResearchCentre</rdfs:label>
+    <rdfs:comment>Institution has a research centre</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Institution"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_hasCourse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_hasCourse</rdfs:label>
+    <rdfs:comment>Department offers a course</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Centre_CCNSB">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_ResearchCentre"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Centre for Computational Natural Sciences and Bioinformatics</rdfs:label>
+    <mowl:h_centreName>Centre for Computational Natural Sciences and Bioinformatics</mowl:h_centreName>
+    <mowl:h_centreAbbreviation>CCNSB</mowl:h_centreAbbreviation>
+    <mowl:h_researchFocus>Bioinformatics, Computational Biology</mowl:h_researchFocus>
+    <mowl:h_centreURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiit.ac.in/</mowl:h_centreURL>
+    <mowl:h_directedBy rdf:resource="http://www.semanticweb.org/iiith#Faculty_Nita_Parekh"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Facility_Sports_Complex">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Facility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Sports Complex</rdfs:label>
+    <mowl:h_eventName>Sports Complex</mowl:h_eventName>
+    <mowl:h_eventType>Sports Facility</mowl:h_eventType>
+    <mowl:h_description>Indoor and outdoor sports facilities for students</mowl:h_description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC3_301_Digital_Signal_Processing">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC3.301 - Digital Signal Processing</rdfs:label>
+    <mowl:h_courseCode>EC3.301</mowl:h_courseCode>
+    <mowl:h_courseName>Digital Signal Processing</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Program_MS_by_Research_in_Computational_Linguistics">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>MS by Research in Computational Linguistics</rdfs:label>
+    <mowl:h_programName>MS by Research in Computational Linguistics</mowl:h_programName>
+    <mowl:h_programLevel>Postgraduate</mowl:h_programLevel>
+    <mowl:h_programDuration>2-3 years</mowl:h_programDuration>
+    <mowl:h_programType>MS by Research</mowl:h_programType>
+    <mowl:h_offeredByDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Language_Technologies_Research_Centre"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_HS1_101_Introduction_to_Humanities">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>HS1.101 - Introduction to Humanities</rdfs:label>
+    <mowl:h_courseCode>HS1.101</mowl:h_courseCode>
+    <mowl:h_courseName>Introduction to Humanities</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Exact_Humanities"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Kannan_Srinathan">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Kannan Srinathan</rdfs:label>
+    <mowl:h_facultyName>Kannan Srinathan</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>srinathan@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Cryptography, Distributed Computing</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_centreName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_centreName</rdfs:label>
+    <rdfs:comment>Name of the research centre</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS6_401_Software_Engineering">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS6.401 - Software Engineering</rdfs:label>
+    <mowl:h_courseCode>CS6.401</mowl:h_courseCode>
+    <mowl:h_courseName>Software Engineering</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS8_701_Distributed_Systems">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS8.701 - Distributed Systems</rdfs:label>
+    <mowl:h_courseCode>CS8.701</mowl:h_courseCode>
+    <mowl:h_courseName>Distributed Systems</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_campusArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_campusArea</rdfs:label>
+    <rdfs:comment>Campus area in acres</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS3_301_Operating_Systems">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS3.301 - Operating Systems</rdfs:label>
+    <mowl:h_courseCode>CS3.301</mowl:h_courseCode>
+    <mowl:h_courseName>Operating Systems</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_offeredByDepartment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_offeredByDepartment</rdfs:label>
+    <rdfs:comment>Program is offered by a department</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Program"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Facility_Himalaya_Building">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Facility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Himalaya Building</rdfs:label>
+    <mowl:h_eventName>Himalaya Building</mowl:h_eventName>
+    <mowl:h_eventType>Academic Building</mowl:h_eventType>
+    <mowl:h_description>Research labs and faculty offices</mowl:h_description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_establishedYear">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_establishedYear</rdfs:label>
+    <rdfs:comment>Year the institution was established</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Indranil_Chakrabarty">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Indranil Chakrabarty</rdfs:label>
+    <mowl:h_facultyName>Indranil Chakrabarty</mowl:h_facultyName>
+    <mowl:h_designation>Associate Professor</mowl:h_designation>
+    <mowl:h_researchAreas>Quantum Information Theory</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Mathematics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Event_E_Summit">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Event"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>E-Summit</rdfs:label>
+    <mowl:h_eventName>E-Summit</mowl:h_eventName>
+    <mowl:h_eventType>Entrepreneurship Summit</mowl:h_eventType>
+    <mowl:h_description>Annual entrepreneurship summit fostering startup culture</mowl:h_description>
+    <mowl:h_frequency>Annual</mowl:h_frequency>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS7_301_Machine_Learning">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS7.301 - Machine Learning</rdfs:label>
+    <mowl:h_courseCode>CS7.301</mowl:h_courseCode>
+    <mowl:h_courseName>Machine Learning</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Facility_CIE_Centre_for_Innovation_and_Entrepreneurship">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Facility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CIE - Centre for Innovation and Entrepreneurship</rdfs:label>
+    <mowl:h_eventName>CIE - Centre for Innovation and Entrepreneurship</mowl:h_eventName>
+    <mowl:h_eventType>Incubator</mowl:h_eventType>
+    <mowl:h_description>IIITH incubation centre for startups</mowl:h_description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Event_Freshman_Orientation">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Event"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Freshman Orientation</rdfs:label>
+    <mowl:h_eventName>Freshman Orientation</mowl:h_eventName>
+    <mowl:h_eventType>Orientation</mowl:h_eventType>
+    <mowl:h_description>Orientation program for incoming students</mowl:h_description>
+    <mowl:h_frequency>Annual</mowl:h_frequency>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS9_201_Reinforcement_Learning">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS9.201 - Reinforcement Learning</rdfs:label>
+    <mowl:h_courseCode>CS9.201</mowl:h_courseCode>
+    <mowl:h_courseName>Reinforcement Learning</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_programName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_programName</rdfs:label>
+    <rdfs:comment>Name of the program</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>h_Event</rdfs:label>
+    <rdfs:comment>An event or activity organized by the institution</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_programType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_programType</rdfs:label>
+    <rdfs:comment>Type: B.Tech, M.Tech, PhD, etc.</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Kamal_Karlapalem">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Kamal Karlapalem</rdfs:label>
+    <mowl:h_facultyName>Kamal Karlapalem</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>kamal@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Databases, Data Warehousing</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC7_401_IoT_Systems_Design">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC7.401 - IoT Systems Design</rdfs:label>
+    <mowl:h_courseCode>EC7.401</mowl:h_courseCode>
+    <mowl:h_courseName>IoT Systems Design</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Postgraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Elective</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_ResearchCentre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>h_ResearchCentre</rdfs:label>
+    <rdfs:comment>A research centre or lab within the institution</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_EC6_101_Electromagnetic_Theory">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>EC6.101 - Electromagnetic Theory</rdfs:label>
+    <mowl:h_courseCode>EC6.101</mowl:h_courseCode>
+    <mowl:h_courseName>Electromagnetic Theory</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_Course">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>h_Course</rdfs:label>
+    <rdfs:comment>A course offered as part of academic curriculum</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_CS3_401_Computer_Networks">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>CS3.401 - Computer Networks</rdfs:label>
+    <mowl:h_courseCode>CS3.401</mowl:h_courseCode>
+    <mowl:h_courseName>Computer Networks</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_profileURL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_profileURL</rdfs:label>
+    <rdfs:comment>URL to faculty profile page</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_courseName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_courseName</rdfs:label>
+    <rdfs:comment>Name of the course</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_taughtInDepartment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_taughtInDepartment</rdfs:label>
+    <rdfs:comment>Course is taught in a department</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Viswanath_Gunturi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Viswanath Gunturi</rdfs:label>
+    <mowl:h_facultyName>Viswanath Gunturi</mowl:h_facultyName>
+    <mowl:h_designation>Assistant Professor</mowl:h_designation>
+    <mowl:h_researchAreas>Spatial Databases, Graph Algorithms</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Kiran_Kumar_Kuchi">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Kiran Kumar Kuchi</rdfs:label>
+    <mowl:h_facultyName>Kiran Kumar Kuchi</mowl:h_facultyName>
+    <mowl:h_designation>Professor</mowl:h_designation>
+    <mowl:h_email>kkuchi@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Wireless Communications, 5G</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Electronics_and_Communication_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_affiliation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_affiliation</rdfs:label>
+    <rdfs:comment>Affiliation details</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_headedBy">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_headedBy</rdfs:label>
+    <rdfs:comment>Department is headed by a faculty member</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_hasFaculty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_hasFaculty</rdfs:label>
+    <rdfs:comment>Institution employs a faculty member</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Institution"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_C_V_Jawahar">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>C V Jawahar</rdfs:label>
+    <mowl:h_facultyName>C V Jawahar</mowl:h_facultyName>
+    <mowl:h_designation>Professor, Dean R&amp;D</mowl:h_designation>
+    <mowl:h_email>jawahar@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Computer Vision, Document Image Analysis</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_P_J_Narayanan">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>P J Narayanan</rdfs:label>
+    <mowl:h_facultyName>P J Narayanan</mowl:h_facultyName>
+    <mowl:h_designation>Professor &amp; Director</mowl:h_designation>
+    <mowl:h_email>pjn@iiit.ac.in</mowl:h_email>
+    <mowl:h_researchAreas>Computer Vision, GPU Computing</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_Institution">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>h_Institution</rdfs:label>
+    <rdfs:comment>An educational institution</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_departmentAbbreviation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_departmentAbbreviation</rdfs:label>
+    <rdfs:comment>Abbreviation of the department</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Course_MA4_101_Numerical_Methods">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>MA4.101 - Numerical Methods</rdfs:label>
+    <mowl:h_courseCode>MA4.101</mowl:h_courseCode>
+    <mowl:h_courseName>Numerical Methods</mowl:h_courseName>
+    <mowl:h_credits rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</mowl:h_credits>
+    <mowl:h_courseLevel>Undergraduate</mowl:h_courseLevel>
+    <mowl:h_courseType>Core</mowl:h_courseType>
+    <mowl:h_taughtInDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Mathematics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_ranking">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_ranking</rdfs:label>
+    <rdfs:comment>Rankings information</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_belongsToDepartment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_belongsToDepartment</rdfs:label>
+    <rdfs:comment>Faculty belongs to a department</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_directorOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>h_directorOf</rdfs:label>
+    <rdfs:comment>Director of the institution</rdfs:comment>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/mowl#h_Institution"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Facility_Central_Library">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Facility"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Central Library</rdfs:label>
+    <mowl:h_eventName>Central Library</mowl:h_eventName>
+    <mowl:h_eventType>Library</mowl:h_eventType>
+    <mowl:h_description>Well-equipped library with digital and physical resources</mowl:h_description>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_location">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_location</rdfs:label>
+    <rdfs:comment>Location / address</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_courseType">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_courseType</rdfs:label>
+    <rdfs:comment>Type: Core or Elective</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_abbreviation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_abbreviation</rdfs:label>
+    <rdfs:comment>Abbreviation / short name</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Charu_Sharma">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Charu Sharma</rdfs:label>
+    <mowl:h_facultyName>Charu Sharma</mowl:h_facultyName>
+    <mowl:h_designation>Assistant Professor</mowl:h_designation>
+    <mowl:h_researchAreas>Graph Neural Networks, NLP</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Computer_Science_and_Engineering"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_Faculty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>h_Faculty</rdfs:label>
+    <rdfs:comment>A faculty member / professor at the institution</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_centreURL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_centreURL</rdfs:label>
+    <rdfs:comment>URL of the research centre</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/iiith#Faculty_Saikrishna_Rajagopal">
+    <rdf:type rdf:resource="http://www.semanticweb.org/mowl#h_Faculty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Saikrishna Rajagopal</rdfs:label>
+    <mowl:h_facultyName>Saikrishna Rajagopal</mowl:h_facultyName>
+    <mowl:h_designation>Assistant Professor</mowl:h_designation>
+    <mowl:h_researchAreas>Algebra, Number Theory</mowl:h_researchAreas>
+    <mowl:h_belongsToDepartment rdf:resource="http://www.semanticweb.org/iiith#Dept_Mathematics"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_Facility">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>h_Facility</rdfs:label>
+    <rdfs:comment>A facility / infrastructure available at the institution</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_phone">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_phone</rdfs:label>
+    <rdfs:comment>Contact phone number</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/mowl#h_courseLevel">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>h_courseLevel</rdfs:label>
+    <rdfs:comment>Level: Undergraduate or Postgraduate</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+</rdf:RDF>

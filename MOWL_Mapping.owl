@@ -1,0 +1,1232 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:mowl="http://www.semanticweb.org/mowl#"
+         xmlns:iiith="http://www.semanticweb.org/mowl#"
+         xmlns:iiitb="http://www.iiitb.ac.in/ontology/IIITB#"
+         xmlns:iiitd="http://www.iiitd.ac.in/ontology/IIITD#"
+         xml:base="http://www.semanticweb.org/mowl/mapping">
+
+  <!-- ════════════════════════════════════════════════════════════════════════
+       MAPPING ONTOLOGY DECLARATION
+  ════════════════════════════════════════════════════════════════════════ -->
+
+  <owl:Ontology rdf:about="http://www.semanticweb.org/mowl/mapping">
+    <rdfs:label xml:lang="en">MOWL Integration Mapping Ontology</rdfs:label>
+    <rdfs:comment xml:lang="en">This ontology defines the mappings from IIIT Hyderabad (h_ prefix), IIIT Bangalore (B_ prefix), and IIIT Delhi (D_ prefix) source ontologies to the Master OWL (MOWL) schema. Each source class, data property, and object property is mapped to its MOWL equivalent using owl:equivalentClass, owl:equivalentProperty, and rdfs:subClassOf relationships.</rdfs:comment>
+    <owl:versionInfo>1.0</owl:versionInfo>
+    <owl:imports rdf:resource="http://www.semanticweb.org/mowl"/>
+    <owl:imports rdf:resource="http://www.semanticweb.org/mowl#"/>
+    <owl:imports rdf:resource="http://www.iiitb.ac.in/ontology/IIITB"/>
+    <owl:imports rdf:resource="http://www.iiitd.ac.in/ontology/IIITD"/>
+    <owl:imports rdf:resource="http://www.iiith.ac.in/ontology/IIITH"/>
+  </owl:Ontology>
+
+  <!-- ╔══════════════════════════════════════════════════════════════════════╗
+       ║                                                                      ║
+       ║            SECTION 1: CLASS MAPPINGS                                  ║
+       ║                                                                      ║
+       ╚══════════════════════════════════════════════════════════════════════╝ -->
+
+  <!-- ────────────────────────────────────────────────────────────────────────
+       1.1  IIIT HYDERABAD (h_ prefix) → MOWL Class Mappings
+       Source namespace: http://www.semanticweb.org/mowl#
+       ──────────────────────────────────────────────────────────────────────── -->
+
+  <!-- h_Institution → Institution -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Institution">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Institution"/>
+  </owl:Class>
+
+  <!-- h_Department → Department -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Department">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Department"/>
+  </owl:Class>
+
+  <!-- h_Faculty → Faculty -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Faculty">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Faculty"/>
+  </owl:Class>
+
+  <!-- h_Course → Course -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Course">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Course"/>
+  </owl:Class>
+
+  <!-- h_Program → Program -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Program">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Program"/>
+  </owl:Class>
+
+  <!-- h_ResearchCentre → ResearchCentre -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_ResearchCentre">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#ResearchCentre"/>
+  </owl:Class>
+
+  <!-- h_Event → Event -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Event">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Event"/>
+  </owl:Class>
+
+  <!-- h_Facility → Facility -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Facility">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Facility"/>
+  </owl:Class>
+
+  <!-- h_Placement → Placement -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Placement">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Placement"/>
+  </owl:Class>
+
+  <!-- h_Recruiter → Recruiter -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Recruiter">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Recruiter"/>
+  </owl:Class>
+
+  <!-- h_Award → Award -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Award">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Award"/>
+  </owl:Class>
+
+  <!-- h_Accreditation → Accreditation -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Accreditation">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Accreditation"/>
+  </owl:Class>
+
+  <!-- h_Publication → Publication -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_Publication">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Publication"/>
+  </owl:Class>
+
+  <!-- h_ResearchLab → ResearchLab -->
+  <owl:Class rdf:about="http://www.semanticweb.org/mowl#h_ResearchLab">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#ResearchLab"/>
+  </owl:Class>
+
+  <!-- ────────────────────────────────────────────────────────────────────────
+       1.2  IIIT BANGALORE (B_ prefix) → MOWL Class Mappings
+       Source namespace: http://www.iiitb.ac.in/ontology/IIITB#
+       ──────────────────────────────────────────────────────────────────────── -->
+
+  <!-- B_University → Institution -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_University">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Institution"/>
+  </owl:Class>
+
+  <!-- B_Department → Department -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Department">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Department"/>
+  </owl:Class>
+
+  <!-- B_Faculty → Faculty -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Faculty">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Faculty"/>
+  </owl:Class>
+
+  <!-- B_Student → Student -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Student">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Student"/>
+  </owl:Class>
+
+  <!-- B_Program → Program -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Program">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Program"/>
+  </owl:Class>
+
+  <!-- B_UGProgram → UndergraduateProgram -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_UGProgram">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#UndergraduateProgram"/>
+  </owl:Class>
+
+  <!-- B_PGProgram → PostgraduateProgram -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_PGProgram">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#PostgraduateProgram"/>
+  </owl:Class>
+
+  <!-- B_DoctoralProgram → DoctoralProgram -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_DoctoralProgram">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#DoctoralProgram"/>
+  </owl:Class>
+
+  <!-- B_Course → Course -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Course">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Course"/>
+  </owl:Class>
+
+  <!-- B_ResearchLab → ResearchLab -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchLab">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#ResearchLab"/>
+  </owl:Class>
+
+  <!-- B_Publication → Publication -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Publication">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Publication"/>
+  </owl:Class>
+
+  <!-- B_ResearchProject → ResearchProject -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_ResearchProject">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#ResearchProject"/>
+  </owl:Class>
+
+  <!-- B_Placement → Placement -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Placement">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Placement"/>
+  </owl:Class>
+
+  <!-- B_Recruiter → Recruiter -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Recruiter">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Recruiter"/>
+  </owl:Class>
+
+  <!-- B_Accreditation → Accreditation -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Accreditation">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Accreditation"/>
+  </owl:Class>
+
+  <!-- B_Facility → Facility -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Facility">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Facility"/>
+  </owl:Class>
+
+  <!-- B_IndustryPartner → IndustryPartner -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_IndustryPartner">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#IndustryPartner"/>
+  </owl:Class>
+
+  <!-- B_Award → Award -->
+  <owl:Class rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_Award">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Award"/>
+  </owl:Class>
+
+  <!-- ────────────────────────────────────────────────────────────────────────
+       1.3  IIIT DELHI (D_ prefix) → MOWL Class Mappings
+       Source namespace: http://www.iiitd.ac.in/ontology/IIITD#
+       ──────────────────────────────────────────────────────────────────────── -->
+
+  <!-- D_University → Institution -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_University">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Institution"/>
+  </owl:Class>
+
+  <!-- D_Department → Department -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Department">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Department"/>
+  </owl:Class>
+
+  <!-- D_Faculty → Faculty -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Faculty"/>
+  </owl:Class>
+
+  <!-- D_Student → Student -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Student">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Student"/>
+  </owl:Class>
+
+  <!-- D_Program → Program -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Program">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Program"/>
+  </owl:Class>
+
+  <!-- D_UGProgram → UndergraduateProgram -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_UGProgram">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#UndergraduateProgram"/>
+  </owl:Class>
+
+  <!-- D_PGProgram → PostgraduateProgram -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_PGProgram">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#PostgraduateProgram"/>
+  </owl:Class>
+
+  <!-- D_DoctoralProgram → DoctoralProgram -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_DoctoralProgram">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#DoctoralProgram"/>
+  </owl:Class>
+
+  <!-- D_Course → Course -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Course">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Course"/>
+  </owl:Class>
+
+  <!-- D_ResearchLab → ResearchLab -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#ResearchLab"/>
+  </owl:Class>
+
+  <!-- D_Publication → Publication -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Publication">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Publication"/>
+  </owl:Class>
+
+  <!-- D_Placement → Placement -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Placement">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Placement"/>
+  </owl:Class>
+
+  <!-- D_Recruiter → Recruiter -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Recruiter">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Recruiter"/>
+  </owl:Class>
+
+  <!-- D_Accreditation → Accreditation -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Accreditation">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Accreditation"/>
+  </owl:Class>
+
+  <!-- D_Facility → Facility -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Facility">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Facility"/>
+  </owl:Class>
+
+  <!-- D_Award → Award -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Award">
+    <owl:equivalentClass rdf:resource="http://www.semanticweb.org/mowl#Award"/>
+  </owl:Class>
+
+  <!-- ╔══════════════════════════════════════════════════════════════════════╗
+       ║                                                                      ║
+       ║            SECTION 2: DATA PROPERTY MAPPINGS                          ║
+       ║                                                                      ║
+       ╚══════════════════════════════════════════════════════════════════════╝ -->
+
+  <!-- ────────────────────────────────────────────────────────────────────────
+       2.1  IIIT HYDERABAD (h_ prefix) → MOWL Data Property Mappings
+       ──────────────────────────────────────────────────────────────────────── -->
+
+  <!-- Institution Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_institutionName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#institutionName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_abbreviation">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#abbreviation"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_establishedYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#establishedYear"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_institutionType">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#institutionType"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_location">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#location"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_pincode">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#pincode"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_website">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#website"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_phone">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#phone"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_affiliation">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#affiliation"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_campusArea">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#campusArea"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_motto">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#motto"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_ranking">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#ranking"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_email">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#email"/>
+  </owl:DatatypeProperty>
+
+  <!-- Faculty Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_facultyName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#personName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_designation">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#designation"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_researchAreas">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#researchAreas"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_profileURL">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#profileURL"/>
+  </owl:DatatypeProperty>
+
+  <!-- Department Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_departmentName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#departmentName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_departmentAbbreviation">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#departmentAbbreviation"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_departmentURL">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#departmentURL"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_departmentDescription">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#departmentDescription"/>
+  </owl:DatatypeProperty>
+
+  <!-- Course Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_courseCode">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#courseCode"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_courseName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#courseName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_credits">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#credits"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_courseLevel">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#courseLevel"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_courseType">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#courseType"/>
+  </owl:DatatypeProperty>
+
+  <!-- Research Centre Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_centreName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#centreName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_centreAbbreviation">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#centreAbbreviation"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_researchFocus">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#researchFocus"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_centreURL">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#centreURL"/>
+  </owl:DatatypeProperty>
+
+  <!-- Event Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_eventName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#eventName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_eventType">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#eventType"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_description">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#description"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_frequency">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#frequency"/>
+  </owl:DatatypeProperty>
+
+  <!-- Program Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_programName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#programName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_programLevel">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#programLevel"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_programDuration">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#duration"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_programType">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#programType"/>
+  </owl:DatatypeProperty>
+
+  <!-- Placement Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_hasPlacementYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#placementYear"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_hasTotalOffers">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalOffers"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_hasStudentsPlaced">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#studentsPlaced"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_hasHighestCTC">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#highestPackage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_hasAverageCTC">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#averagePackage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_hasMedianCTC">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#medianPackage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_hasPlacementPercentage">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#placementPercentage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_hasCompaniesVisited">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#companiesVisited"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_hasTopDomains">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#topDomains"/>
+  </owl:DatatypeProperty>
+
+  <!-- Recruiter Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_recruiterName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#recruiterName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_recruiterType">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#recruiterType"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_industry">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#industry"/>
+  </owl:DatatypeProperty>
+
+  <!-- Award Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_awardName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#awardName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_awardYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#awardYear"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_awardingBody">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#awardingBody"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_awardCategory">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#awardCategory"/>
+  </owl:DatatypeProperty>
+
+  <!-- Accreditation Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_accreditationBody">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationBody"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_accreditationGrade">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationGrade"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_accreditationScore">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationScore"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_accreditationYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationYear"/>
+  </owl:DatatypeProperty>
+
+  <!-- Publication Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_publicationTitle">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#publicationTitle"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_publicationYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#publicationYear"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_venue">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#venue"/>
+  </owl:DatatypeProperty>
+
+  <!-- Research Lab Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mowl#h_labName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#labName"/>
+  </owl:DatatypeProperty>
+
+  <!-- ────────────────────────────────────────────────────────────────────────
+       2.2  IIIT BANGALORE (B_ prefix) → MOWL Data Property Mappings
+       ──────────────────────────────────────────────────────────────────────── -->
+
+  <!-- Institution Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#institutionName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasShortName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#abbreviation"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasEstablishedYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#establishedYear"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasUniversityType">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#institutionType"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasLocation">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#location"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasWebsite">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#website"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasEmail">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#email"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPhone">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#phone"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTotalStudents">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalStudents"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTotalFaculty">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalFaculty"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCampusArea">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#campusArea"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasNIRFRank">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#ranking"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasNAACGrade">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationGrade"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasVision">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#vision"/>
+  </owl:DatatypeProperty>
+
+  <!-- Faculty Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasDesignation">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#designation"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasResearchAreas">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#researchAreas"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasSpecialization">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#specialization"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPhdFrom">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#phdFrom"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasGoogleScholarID">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#googleScholarID"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasExperienceYears">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#experienceYears"/>
+  </owl:DatatypeProperty>
+
+  <!-- Program Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasProgramLevel">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#programLevel"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasDuration">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#duration"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTotalCredits">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalCredits"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTotalSeats">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalSeats"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasJEECutoff">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#jeeCutoff"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasGATECutoff">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#gateCutoff"/>
+  </owl:DatatypeProperty>
+
+  <!-- Course Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCourseCode">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#courseCode"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCourseCredits">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#credits"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasSemester">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#semester"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCourseLevel">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#courseLevel"/>
+  </owl:DatatypeProperty>
+
+  <!-- Research Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasResearchFocus">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#researchFocus"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPublicationTitle">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#publicationTitle"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasVenue">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#venue"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPublicationYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#publicationYear"/>
+  </owl:DatatypeProperty>
+
+  <!-- Placement Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPlacementYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#placementYear"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTotalOffers">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalOffers"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasHighestCTC">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#highestPackage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasAverageCTC">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#averagePackage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasMedianCTC">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#medianPackage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPlacementPercentage">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#placementPercentage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCompaniesVisited">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#companiesVisited"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasTopDomains">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#topDomains"/>
+  </owl:DatatypeProperty>
+
+  <!-- Accreditation Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasAccreditationBody">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationBody"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasAccreditationGrade">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationGrade"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasAccreditationYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationYear"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasAccreditationScore">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationScore"/>
+  </owl:DatatypeProperty>
+
+  <!-- Facility Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasFacilityType">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#facilityType"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasCapacity">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#capacity"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasDescription">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#description"/>
+  </owl:DatatypeProperty>
+
+  <!-- Industry Partner Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPartnerType">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#partnerType"/>
+  </owl:DatatypeProperty>
+
+  <!-- ────────────────────────────────────────────────────────────────────────
+       2.3  IIIT DELHI (D_ prefix) → MOWL Data Property Mappings
+       ──────────────────────────────────────────────────────────────────────── -->
+
+  <!-- Institution Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#institutionName"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasShortName">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#abbreviation"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasEstablishedYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#establishedYear"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasUniversityType">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#institutionType"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasLocation">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#location"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasWebsite">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#website"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasEmail">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#email"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPhone">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#phone"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTotalStudents">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalStudents"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTotalFaculty">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalFaculty"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCampusArea">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#campusArea"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasNIRFRank">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#ranking"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasNAACGrade">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationGrade"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasVision">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#vision"/>
+  </owl:DatatypeProperty>
+
+  <!-- Faculty Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasDesignation">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#designation"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasResearchAreas">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#researchAreas"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasSpecialization">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#specialization"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPhdFrom">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#phdFrom"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasGoogleScholarID">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#googleScholarID"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasExperienceYears">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#experienceYears"/>
+  </owl:DatatypeProperty>
+
+  <!-- Program Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasProgramLevel">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#programLevel"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasDuration">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#duration"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTotalCredits">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalCredits"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTotalSeats">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalSeats"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasJEECutoff">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#jeeCutoff"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasGATECutoff">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#gateCutoff"/>
+  </owl:DatatypeProperty>
+
+  <!-- Course Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCourseCode">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#courseCode"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCourseCredits">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#credits"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasSemester">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#semester"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCourseLevel">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#courseLevel"/>
+  </owl:DatatypeProperty>
+
+  <!-- Research Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasResearchFocus">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#researchFocus"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPublicationTitle">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#publicationTitle"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasVenue">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#venue"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPublicationYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#publicationYear"/>
+  </owl:DatatypeProperty>
+
+  <!-- Placement Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPlacementYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#placementYear"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTotalOffers">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#totalOffers"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasHighestCTC">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#highestPackage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasAverageCTC">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#averagePackage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasMedianCTC">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#medianPackage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPlacementPercentage">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#placementPercentage"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCompaniesVisited">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#companiesVisited"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTopDomains">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#topDomains"/>
+  </owl:DatatypeProperty>
+
+  <!-- Accreditation Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasAccreditationBody">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationBody"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasAccreditationGrade">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationGrade"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasAccreditationYear">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationYear"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasAccreditationScore">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditationScore"/>
+  </owl:DatatypeProperty>
+
+  <!-- Facility Data Properties -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasFacilityType">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#facilityType"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCapacity">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#capacity"/>
+  </owl:DatatypeProperty>
+
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasDescription">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#description"/>
+  </owl:DatatypeProperty>
+
+  <!-- ╔══════════════════════════════════════════════════════════════════════╗
+       ║                                                                      ║
+       ║            SECTION 3: OBJECT PROPERTY MAPPINGS                        ║
+       ║                                                                      ║
+       ╚══════════════════════════════════════════════════════════════════════╝ -->
+
+  <!-- ────────────────────────────────────────────────────────────────────────
+       3.1  IIIT HYDERABAD (h_ prefix) → MOWL Object Property Mappings
+       ──────────────────────────────────────────────────────────────────────── -->
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_hasDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_hasFaculty">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasFaculty"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_hasProgram">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#offersProgram"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_hasResearchCentre">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasCentre"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_hasEvent">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#organizesEvent"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_hasFacility">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasFacility"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_hasCourse">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasCourse"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_belongsToDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#belongsToDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_headedBy">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#headOfDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_directorOf">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#directorOf"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_directedBy">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#directedBy"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_taughtInDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#taughtInDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_offeredByDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#offeredBy"/>
+  </owl:ObjectProperty>
+
+  <!-- Placement Object Properties -->
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_hasPlacementRecord">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasPlacementRecord"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_recruitedFrom">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#recruitedFrom"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_receivedAward">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#receivedAward"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_accreditedBy">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditedBy"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_authored">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#authored"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mowl#h_hasLab">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasLab"/>
+  </owl:ObjectProperty>
+
+  <!-- ────────────────────────────────────────────────────────────────────────
+       3.2  IIIT BANGALORE (B_ prefix) → MOWL Object Property Mappings
+       ──────────────────────────────────────────────────────────────────────── -->
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_belongsToUniversity">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#belongsToInstitution"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_offersProgram">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#offersProgram"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_offeredByDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#offeredBy"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasMember">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasMember"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_belongsToDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#belongsToDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasHeadOfDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#headOfDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_worksAt">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#worksAt"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_teaches">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#teaches"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_headsLab">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#headsLab"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasLab">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasLab"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_authored">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#authored"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasPlacementRecord">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasPlacementRecord"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_recruitedFrom">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#recruitedFrom"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_isAccreditedBy">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditedBy"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasFacility">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasFacility"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_hasIndustryPartner">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasIndustryPartner"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_enrolledIn">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#enrolledIn"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_courseOfferedIn">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#taughtInDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitb.ac.in/ontology/IIITB#B_fundedBy">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#fundedBy"/>
+  </owl:ObjectProperty>
+
+  <!-- ────────────────────────────────────────────────────────────────────────
+       3.3  IIIT DELHI (D_ prefix) → MOWL Object Property Mappings
+       ──────────────────────────────────────────────────────────────────────── -->
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_belongsToUniversity">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#belongsToInstitution"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_offersProgram">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#offersProgram"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_offeredByDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#offeredBy"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasMember">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasMember"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_belongsToDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#belongsToDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasHeadOfDepartment">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#headOfDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_worksAt">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#worksAt"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_teaches">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#teaches"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_headsLab">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#headsLab"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasLab">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasLab"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_authored">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#authored"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPlacementRecord">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasPlacementRecord"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_recruitedFrom">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#recruitedFrom"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_isAccreditedBy">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#accreditedBy"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasFacility">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#hasFacility"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_enrolledIn">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#enrolledIn"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_courseOfferedIn">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#taughtInDepartment"/>
+  </owl:ObjectProperty>
+
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_fundedBy">
+    <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/mowl#fundedBy"/>
+  </owl:ObjectProperty>
+
+</rdf:RDF>

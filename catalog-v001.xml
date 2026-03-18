@@ -7,17 +7,17 @@
     <uri id="User Entered Import Resolution" name="http://www.iiith.ac.in/ontology/IIITH" uri="iiith.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.iiitb.ac.in/ontology/IIITB#" uri="iiitb_master.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="http://example.org/iiitb" uri="backup/iiitb_institution.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="duplicate:http://example.org/mowl" uri="backup/mowl_v2.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="duplicate:http://example.org/mowl" uri="backup/mowl.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="http://www.iiitb.ac.in/ontology/IIITB#" uri="iiitb_master.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="http://www.iiitd.ac.in/ontology/IIITD#" uri="iiitd_master%20(1).owl"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="duplicate:http://www.semanticweb.org/dell/ontologies/2026/2/untitled-ontology-19/" uri="backup/nw_iiitd_prefixed.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="duplicate:http://www.semanticweb.org/dell/ontologies/2026/2/untitled-ontology-19/" uri="backup/nw_iiitd.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="http://www.semanticweb.org/iiitb/ontologies/2026/1/untitled-ontology-9/" uri="backup/New_MOWL.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="http://www.semanticweb.org/mowl" uri="MOWL_Schema_New.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="http://www.semanticweb.org/mowl#" uri="MOWL_Schema.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="duplicate:http://www.semanticweb.org/mowl/mapping" uri="MOWL_Mapping.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1773821700750" name="duplicate:http://www.semanticweb.org/mowl/mapping" uri="MOWL_Mapping%20(1).owl"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="http://example.org/iiitb" uri="backup/iiitb_institution.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="duplicate:http://example.org/mowl" uri="backup/mowl_v2.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="duplicate:http://example.org/mowl" uri="backup/mowl.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="http://www.iiitb.ac.in/ontology/IIITB#" uri="iiitb_master.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="duplicate:http://www.iiitd.ac.in/ontology/IIITD#" uri="iiitd_master.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="duplicate:http://www.iiitd.ac.in/ontology/IIITD#" uri="iiitd_master%20(1).owl"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="duplicate:http://www.semanticweb.org/dell/ontologies/2026/2/untitled-ontology-19/" uri="backup/nw_iiitd_prefixed.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="duplicate:http://www.semanticweb.org/dell/ontologies/2026/2/untitled-ontology-19/" uri="backup/nw_iiitd.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="http://www.semanticweb.org/iiitb/ontologies/2026/1/untitled-ontology-9/" uri="backup/New_MOWL.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="http://www.semanticweb.org/mowl" uri="MOWL_Schema_New.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="http://www.semanticweb.org/mowl#" uri="MOWL_Schema.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1773830930661" name="http://www.semanticweb.org/mowl/mapping" uri="MOWL_Mapping.owl"/>
     </group>
 </catalog>

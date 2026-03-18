@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+  xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:owl ="http://www.w3.org/2002/07/owl#"
+  xmlns:xsd ="http://www.w3.org/2001/XMLSchema#"
+  xmlns:dc  ="http://purl.org/dc/elements/1.1/"
+  xmlns:D   ="http://www.iiitd.ac.in/ontology/IIITD#"
+  xml:base  ="http://www.iiitd.ac.in/ontology/IIITD#">
+
+  <owl:Ontology rdf:about="http://www.iiitd.ac.in/ontology/IIITD#">
+    <dc:title>IIITD University Ontology — Live Scraped Data</dc:title>
+    <dc:description>OWL ontology generated from live scraping of iiitd.ac.in. All entities prefixed D_ for Master OWL mapping.</dc:description>
+    <dc:creator>scraper_iiitd.py</dc:creator>
+    <owl:versionInfo>3.0.0-scraped</owl:versionInfo>
+  </owl:Ontology>
+
+  <!-- CLASSES -->
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_University"><rdfs:label xml:lang="en">D_University</rdfs:label><rdfs:comment xml:lang="en">A university or academic institution.</rdfs:comment></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Department"><rdfs:label xml:lang="en">D_Department</rdfs:label><rdfs:comment xml:lang="en">An academic department within the university.</rdfs:comment><rdfs:subClassOf rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"><rdfs:label xml:lang="en">D_FacultyMember</rdfs:label><rdfs:comment xml:lang="en">A faculty member of the university.</rdfs:comment><rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Program"><rdfs:label xml:lang="en">D_Program</rdfs:label><rdfs:comment xml:lang="en">An academic program.</rdfs:comment></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_UGProgram"><rdfs:label xml:lang="en">D_UGProgram</rdfs:label><rdfs:comment xml:lang="en">Undergraduate program.</rdfs:comment><rdfs:subClassOf rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Program"/></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_PGProgram"><rdfs:label xml:lang="en">D_PGProgram</rdfs:label><rdfs:comment xml:lang="en">Postgraduate program.</rdfs:comment><rdfs:subClassOf rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Program"/></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_DoctoralProgram"><rdfs:label xml:lang="en">D_DoctoralProgram</rdfs:label><rdfs:comment xml:lang="en">Ph.D program.</rdfs:comment><rdfs:subClassOf rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Program"/></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Course"><rdfs:label xml:lang="en">D_Course</rdfs:label><rdfs:comment xml:lang="en">An individual course.</rdfs:comment></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"><rdfs:label xml:lang="en">D_ResearchLab</rdfs:label><rdfs:comment xml:lang="en">A research lab or group.</rdfs:comment></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Publication"><rdfs:label xml:lang="en">D_Publication</rdfs:label><rdfs:comment xml:lang="en">A research publication.</rdfs:comment></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"><rdfs:label xml:lang="en">D_Placement</rdfs:label><rdfs:comment xml:lang="en">Annual placement record.</rdfs:comment></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Recruiter"><rdfs:label xml:lang="en">D_Recruiter</rdfs:label><rdfs:comment xml:lang="en">A recruiting company.</rdfs:comment></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Accreditation"><rdfs:label xml:lang="en">D_Accreditation</rdfs:label><rdfs:comment xml:lang="en">An accreditation or ranking.</rdfs:comment></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Facility"><rdfs:label xml:lang="en">D_Facility</rdfs:label><rdfs:comment xml:lang="en">A campus facility.</rdfs:comment></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Student"><rdfs:label xml:lang="en">D_Student</rdfs:label><rdfs:comment xml:lang="en">A student at the university.</rdfs:comment><rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Person"/></owl:Class>
+  <owl:Class rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_Award"><rdfs:label xml:lang="en">D_Award</rdfs:label><rdfs:comment xml:lang="en">An award or recognition.</rdfs:comment></owl:Class>
+
+  <!-- DATA PROPERTIES -->
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasName"><rdfs:label xml:lang="en">D_hasName</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasShortName"><rdfs:label xml:lang="en">D_hasShortName</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasEstablishedYear"><rdfs:label xml:lang="en">D_hasEstablishedYear</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasUniversityType"><rdfs:label xml:lang="en">D_hasUniversityType</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasLocation"><rdfs:label xml:lang="en">D_hasLocation</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasWebsite"><rdfs:label xml:lang="en">D_hasWebsite</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasEmail"><rdfs:label xml:lang="en">D_hasEmail</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPhone"><rdfs:label xml:lang="en">D_hasPhone</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasNIRFRank"><rdfs:label xml:lang="en">D_hasNIRFRank</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasNAACGrade"><rdfs:label xml:lang="en">D_hasNAACGrade</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTotalStudents"><rdfs:label xml:lang="en">D_hasTotalStudents</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTotalFaculty"><rdfs:label xml:lang="en">D_hasTotalFaculty</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCampusArea"><rdfs:label xml:lang="en">D_hasCampusArea</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasDesignation"><rdfs:label xml:lang="en">D_hasDesignation</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasSpecialization"><rdfs:label xml:lang="en">D_hasSpecialization</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPhdFrom"><rdfs:label xml:lang="en">D_hasPhdFrom</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasProfileURL"><rdfs:label xml:lang="en">D_hasProfileURL</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasProgramLevel"><rdfs:label xml:lang="en">D_hasProgramLevel</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Program"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasDuration"><rdfs:label xml:lang="en">D_hasDuration</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Program"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTotalSeats"><rdfs:label xml:lang="en">D_hasTotalSeats</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Program"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTotalCredits"><rdfs:label xml:lang="en">D_hasTotalCredits</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Program"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasJEECutoff"><rdfs:label xml:lang="en">D_hasJEECutoff</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_UGProgram"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasGATECutoff"><rdfs:label xml:lang="en">D_hasGATECutoff</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_PGProgram"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCourseCode"><rdfs:label xml:lang="en">D_hasCourseCode</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Course"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCourseCredits"><rdfs:label xml:lang="en">D_hasCourseCredits</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Course"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasSemester"><rdfs:label xml:lang="en">D_hasSemester</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Course"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasResearchFocus"><rdfs:label xml:lang="en">D_hasResearchFocus</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasResearchAreas"><rdfs:label xml:lang="en">D_hasResearchAreas</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPublicationTitle"><rdfs:label xml:lang="en">D_hasPublicationTitle</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Publication"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasVenue"><rdfs:label xml:lang="en">D_hasVenue</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Publication"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPublicationYear"><rdfs:label xml:lang="en">D_hasPublicationYear</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Publication"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPlacementYear"><rdfs:label xml:lang="en">D_hasPlacementYear</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTotalOffers"><rdfs:label xml:lang="en">D_hasTotalOffers</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasHighestCTC"><rdfs:label xml:lang="en">D_hasHighestCTC</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasAverageCTC"><rdfs:label xml:lang="en">D_hasAverageCTC</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasMedianCTC"><rdfs:label xml:lang="en">D_hasMedianCTC</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPlacementPercentage"><rdfs:label xml:lang="en">D_hasPlacementPercentage</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCompaniesVisited"><rdfs:label xml:lang="en">D_hasCompaniesVisited</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasTopDomains"><rdfs:label xml:lang="en">D_hasTopDomains</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasAccreditationBody"><rdfs:label xml:lang="en">D_hasAccreditationBody</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Accreditation"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasAccreditationGrade"><rdfs:label xml:lang="en">D_hasAccreditationGrade</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Accreditation"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasAccreditationYear"><rdfs:label xml:lang="en">D_hasAccreditationYear</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Accreditation"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gYear"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasFacilityType"><rdfs:label xml:lang="en">D_hasFacilityType</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Facility"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasCapacity"><rdfs:label xml:lang="en">D_hasCapacity</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Facility"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/></owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasDescription"><rdfs:label xml:lang="en">D_hasDescription</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Facility"/><rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/></owl:DatatypeProperty>
+
+  <!-- OBJECT PROPERTIES -->
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasDepartment"><rdfs:label xml:lang="en">D_hasDepartment</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/><owl:inverseOf rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_belongsToUniversity"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_belongsToUniversity"><rdfs:label xml:lang="en">D_belongsToUniversity</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><owl:inverseOf rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_hasDepartment"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_offersProgram"><rdfs:label xml:lang="en">D_offersProgram</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Program"/><owl:inverseOf rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_offeredByDepartment"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_offeredByDepartment"><rdfs:label xml:lang="en">D_offeredByDepartment</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Program"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/><owl:inverseOf rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_offersProgram"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasMember"><rdfs:label xml:lang="en">D_hasMember</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><owl:inverseOf rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_belongsToDepartment"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_belongsToDepartment"><rdfs:label xml:lang="en">D_belongsToDepartment</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/><owl:inverseOf rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_hasMember"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_worksAt"><rdfs:label xml:lang="en">D_worksAt</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_teaches"><rdfs:label xml:lang="en">D_teaches</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Course"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_headsLab"><rdfs:label xml:lang="en">D_headsLab</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasLab"><rdfs:label xml:lang="en">D_hasLab</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_authored"><rdfs:label xml:lang="en">D_authored</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Publication"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasPlacementRecord"><rdfs:label xml:lang="en">D_hasPlacementRecord</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_recruitedFrom"><rdfs:label xml:lang="en">D_recruitedFrom</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Recruiter"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_isAccreditedBy"><rdfs:label xml:lang="en">D_isAccreditedBy</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Accreditation"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasFacility"><rdfs:label xml:lang="en">D_hasFacility</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Facility"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_enrolledIn"><rdfs:label xml:lang="en">D_enrolledIn</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Student"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Program"/></owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.iiitd.ac.in/ontology/IIITD#D_hasHeadOfDepartment"><rdfs:label xml:lang="en">D_hasHeadOfDepartment</rdfs:label><rdfs:domain rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/><rdfs:range rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Faculty"/></owl:ObjectProperty>
+
+  <!-- INDIVIDUALS -->
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#IIITD">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_University"/>
+    <D:D_hasName>Indraprastha Institute of Information Technology Delhi</D:D_hasName>
+    <D:D_hasShortName>IIITD</D:D_hasShortName>
+    <D:D_hasEstablishedYear rdf:datatype="http://www.w3.org/2001/XMLSchema#gYear">2008</D:D_hasEstablishedYear>
+    <D:D_hasUniversityType>Deemed University</D:D_hasUniversityType>
+    <D:D_hasLocation>Okhla Phase III, New Delhi, Delhi 110020</D:D_hasLocation>
+    <D:D_hasWebsite rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.iiitd.ac.in</D:D_hasWebsite>
+    <D:D_hasEmail>info@iiitd.ac.in</D:D_hasEmail>
+    <D:D_hasPhone>+91-11-26907400</D:D_hasPhone>
+    <D:D_hasNIRFRank rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2025</D:D_hasNIRFRank>
+    <D:D_hasTotalStudents rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4600</D:D_hasTotalStudents>
+    <D:D_hasPlacementRecord rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#PLR_scraped"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Dept_1">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/>
+    <D:D_hasName>ECE Labs</D:D_hasName>
+    <D:D_hasShortName>ECE Labs</D:D_hasShortName>
+    <D:D_belongsToUniversity rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#IIITD"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Dept_2">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/>
+    <D:D_hasName>Computational Biology</D:D_hasName>
+    <D:D_belongsToUniversity rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#IIITD"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Dept_3">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/>
+    <D:D_hasName>Computer Science and Engineering</D:D_hasName>
+    <D:D_belongsToUniversity rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#IIITD"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Dept_4">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/>
+    <D:D_hasName>Electronics &amp; Communication Engineering</D:D_hasName>
+    <D:D_belongsToUniversity rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#IIITD"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Dept_5">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/>
+    <D:D_hasName>Human Centered Design</D:D_hasName>
+    <D:D_belongsToUniversity rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#IIITD"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Dept_6">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/>
+    <D:D_hasName>Mathematics</D:D_hasName>
+    <D:D_belongsToUniversity rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#IIITD"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Dept_7">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Department"/>
+    <D:D_hasName>Social Sciences and Humanities</D:D_hasName>
+    <D:D_belongsToUniversity rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#IIITD"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_1">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_UGProgram"/>
+    <D:D_hasName>Admission B.Tech. M.Tech. Ph.D. PG Diploma PG Diploma in CS &amp; AI with Great Learning PG Diploma DSHCS International Fees Fee Waiver and Fellowship</D:D_hasName>
+    <D:D_hasProgramLevel>UG</D:D_hasProgramLevel>
+    <D:D_hasDuration>4 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_2">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_UGProgram"/>
+    <D:D_hasName>B.Tech.</D:D_hasName>
+    <D:D_hasProgramLevel>UG</D:D_hasProgramLevel>
+    <D:D_hasDuration>4 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_3">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_PGProgram"/>
+    <D:D_hasName>M.Tech.</D:D_hasName>
+    <D:D_hasProgramLevel>PG</D:D_hasProgramLevel>
+    <D:D_hasDuration>2 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_4">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_UGProgram"/>
+    <D:D_hasName>B.Tech. Students Graduated</D:D_hasName>
+    <D:D_hasProgramLevel>UG</D:D_hasProgramLevel>
+    <D:D_hasDuration>4 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_5">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_PGProgram"/>
+    <D:D_hasName>M.Tech. Students Graduated</D:D_hasName>
+    <D:D_hasProgramLevel>PG</D:D_hasProgramLevel>
+    <D:D_hasDuration>2 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_6">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_DoctoralProgram"/>
+    <D:D_hasName>Ph.D. Students Graduated</D:D_hasName>
+    <D:D_hasProgramLevel>PhD</D:D_hasProgramLevel>
+    <D:D_hasDuration>4-6 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_7">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_UGProgram"/>
+    <D:D_hasName>B.Tech. Programs Program Details Honors Program BTP Dual Degree B.Tech. Program with UAlbany</D:D_hasName>
+    <D:D_hasProgramLevel>UG</D:D_hasProgramLevel>
+    <D:D_hasDuration>4 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_8">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_UGProgram"/>
+    <D:D_hasName>Dual Degree B.Tech. Program with UAlbany</D:D_hasName>
+    <D:D_hasProgramLevel>UG</D:D_hasProgramLevel>
+    <D:D_hasDuration>4 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_9">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_PGProgram"/>
+    <D:D_hasName>M.Tech. Programs</D:D_hasName>
+    <D:D_hasProgramLevel>PG</D:D_hasProgramLevel>
+    <D:D_hasDuration>2 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_10">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_DoctoralProgram"/>
+    <D:D_hasName>Ph.D. Programs</D:D_hasName>
+    <D:D_hasProgramLevel>PhD</D:D_hasProgramLevel>
+    <D:D_hasDuration>4-6 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_11">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_DoctoralProgram"/>
+    <D:D_hasName>Jobs @IIITD Tenure Track Faculty Management RA &amp; Trainee Project Position JRF/SRF/Ph.D. Scholar Teaching / PostDoc Fellow</D:D_hasName>
+    <D:D_hasProgramLevel>PhD</D:D_hasProgramLevel>
+    <D:D_hasDuration>4-6 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Prog_12">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_DoctoralProgram"/>
+    <D:D_hasName>JRF/SRF/Ph.D. Scholar</D:D_hasName>
+    <D:D_hasProgramLevel>PhD</D:D_hasProgramLevel>
+    <D:D_hasDuration>4-6 years</D:D_hasDuration>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Lab_1">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/>
+    <D:D_hasName>Research</D:D_hasName>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Lab_2">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/>
+    <D:D_hasName>Research Administration</D:D_hasName>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Lab_3">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/>
+    <D:D_hasName>Research Areas</D:D_hasName>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Lab_4">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/>
+    <D:D_hasName>Research Centres, Groups, Labs</D:D_hasName>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Lab_5">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/>
+    <D:D_hasName>Research News</D:D_hasName>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Lab_6">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/>
+    <D:D_hasName>Research Events</D:D_hasName>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Lab_7">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/>
+    <D:D_hasName>Research Projects</D:D_hasName>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#Lab_8">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_ResearchLab"/>
+    <D:D_hasName>Research Newsletters</D:D_hasName>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#PLR_scraped">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Placement"/>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="http://www.iiitd.ac.in/ontology/IIITD#REC_Home">
+    <rdf:type rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#D_Recruiter"/>
+    <D:D_hasName>Home</D:D_hasName>
+    <D:D_recruitedFrom rdf:resource="http://www.iiitd.ac.in/ontology/IIITD#IIITD"/>
+  </owl:NamedIndividual>
+
+</rdf:RDF>

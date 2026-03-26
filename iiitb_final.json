@@ -1,0 +1,303 @@
+{
+  "metadata": {
+    "institution": "IIIT Bangalore",
+    "scraped_date": "2026-03-26 18:49:36"
+  },
+  "institution_info": {
+    "name": "International Institute of Information Technology Bangalore",
+    "description": "International Institute of Information Technology Bangalore"
+  },
+  "programs": [
+    {
+      "name": "B.Tech."
+    },
+    {
+      "name": "Integrated M.Tech."
+    },
+    {
+      "name": "M.Tech."
+    },
+    {
+      "name": "B.Tech. & Integrated M.Tech."
+    },
+    {
+      "name": "Integrated PhD Scholars"
+    },
+    {
+      "name": "Visvesvaraya PhD Scheme"
+    }
+  ],
+  "faculty": [
+    {
+      "name": "Ahana Pradhan"
+    },
+    {
+      "name": "Ajay Bakre"
+    },
+    {
+      "name": "Amit Prakash"
+    },
+    {
+      "name": "Amit Chattopadhyay"
+    },
+    {
+      "name": "Amrita Mishra"
+    },
+    {
+      "name": "Ashish Choudhury"
+    },
+    {
+      "name": "Aswin Kannan"
+    },
+    {
+      "name": "Badrinath Ramamurthy"
+    },
+    {
+      "name": "Balaji Parthasarathy"
+    },
+    {
+      "name": "Balakrishnan Ashok"
+    },
+    {
+      "name": "Chandrashekar Ramanathan"
+    },
+    {
+      "name": "Chinar Mehta"
+    },
+    {
+      "name": "Debabrata Das"
+    },
+    {
+      "name": "Dinesh Babu Jayagopi"
+    },
+    {
+      "name": "G Srinivasaraghavan"
+    },
+    {
+      "name": "Jaya Sreevalsan Nair"
+    },
+    {
+      "name": "Jyotsna Bapat"
+    },
+    {
+      "name": "Kurian Polachan"
+    },
+    {
+      "name": "Madhav Rao"
+    },
+    {
+      "name": "Manisha Kulkarni"
+    },
+    {
+      "name": "Meenakshi D'Souza"
+    },
+    {
+      "name": "Naganand Yadati"
+    },
+    {
+      "name": "Narayanan P. P."
+    },
+    {
+      "name": "Pradeesha Ashok"
+    },
+    {
+      "name": "Pranesh Santikellur"
+    },
+    {
+      "name": "Prem Singh"
+    },
+    {
+      "name": "Priyanka Das"
+    },
+    {
+      "name": "Raghuram Bharadwaj"
+    },
+    {
+      "name": "Sachit Rao"
+    },
+    {
+      "name": "Sakshi Arora"
+    },
+    {
+      "name": "Sanghasri Mukhopadhyay"
+    },
+    {
+      "name": "Sanju Ahuja"
+    },
+    {
+      "name": "Saumya Shankar"
+    },
+    {
+      "name": "Shiva Kumar Malapaka"
+    },
+    {
+      "name": "Shrisha Rao"
+    },
+    {
+      "name": "Shubha Krishnamurthy"
+    },
+    {
+      "name": "Srinath Srinivasa"
+    },
+    {
+      "name": "Srinivas Vivek"
+    },
+    {
+      "name": "Subir Kumar Roy"
+    },
+    {
+      "name": "Sujit Kumar Chakrabarti"
+    },
+    {
+      "name": "Sushree Sangeeta Behera"
+    },
+    {
+      "name": "T K Srikanth"
+    },
+    {
+      "name": "Thangaraju B"
+    },
+    {
+      "name": "Tulika Saha"
+    },
+    {
+      "name": "Uttam Kumar"
+    },
+    {
+      "name": "V Ramasubramanian"
+    },
+    {
+      "name": "V N Muralidhara"
+    },
+    {
+      "name": "V Sridhar"
+    },
+    {
+      "name": "Vaishnavi Gujjula"
+    },
+    {
+      "name": "Vinod Veera Reddy"
+    },
+    {
+      "name": "Vinu E Venugopal"
+    },
+    {
+      "name": "Viswanath Gopalakrishnan"
+    },
+    {
+      "name": "Institute’s address:"
+    },
+    {
+      "name": "Office Hours:"
+    },
+    {
+      "name": "Telephone:"
+    },
+    {
+      "name": "Quick Links"
+    },
+    {
+      "name": "Newsletter Sign Up"
+    }
+  ],
+  "research": [
+    {
+      "name": "Surgical and Assistive Robotics Lab"
+    },
+    {
+      "name": "Scalable Data Science and AI Lab"
+    },
+    {
+      "name": "Graphics-Visualization-Computing-Lab"
+    },
+    {
+      "name": "Web Science Lab"
+    },
+    {
+      "name": "Multimodal Perception Lab"
+    },
+    {
+      "name": "Software Engineering and Analysis Lab"
+    },
+    {
+      "name": "High Density Electronic Systems Lab"
+    },
+    {
+      "name": "Networking and Communication Lab"
+    },
+    {
+      "name": "Remote Sensing, GIS and Spatial Computing Lab"
+    },
+    {
+      "name": "Indian Knowledge System (IKS) Lab"
+    },
+    {
+      "name": "Smart City Lab"
+    },
+    {
+      "name": "Radar Sensing Lab"
+    },
+    {
+      "name": "Advanced Wireless Communications Lab"
+    },
+    {
+      "name": "Speech Lab"
+    },
+    {
+      "name": "Connected Devices and Wearables Lab"
+    },
+    {
+      "name": "IIIT-B Innovation Center"
+    }
+  ],
+  "facilities": [
+    {
+      "name": "Surgical and Assistive Robotics Lab"
+    },
+    {
+      "name": "Scalable Data Science and AI Lab"
+    },
+    {
+      "name": "Graphics-Visualization-Computing-Lab"
+    },
+    {
+      "name": "Web Science Lab"
+    },
+    {
+      "name": "Multimodal Perception Lab"
+    },
+    {
+      "name": "Software Engineering and Analysis Lab"
+    },
+    {
+      "name": "High Density Electronic Systems Lab"
+    },
+    {
+      "name": "Networking and Communication Lab"
+    },
+    {
+      "name": "Remote Sensing, GIS and Spatial Computing Lab"
+    },
+    {
+      "name": "Indian Knowledge System (IKS) Lab"
+    },
+    {
+      "name": "Smart City Lab"
+    },
+    {
+      "name": "Radar Sensing Lab"
+    },
+    {
+      "name": "Advanced Wireless Communications Lab"
+    },
+    {
+      "name": "Speech Lab"
+    },
+    {
+      "name": "Connected Devices and Wearables Lab"
+    },
+    {
+      "name": "Library Collection"
+    }
+  ]
+}

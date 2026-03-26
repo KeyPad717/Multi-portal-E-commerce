@@ -1,0 +1,883 @@
+[
+  {
+    "url": "https://www.iiitb.ac.in/staff",
+    "category": "staff_list",
+    "title": "Staff",
+    "links": [
+      {
+        "text": "NIRF",
+        "href": "nirf"
+      },
+      {
+        "text": "IQAC",
+        "href": "iqac"
+      },
+      {
+        "text": "Department of Computer Science & Engineering",
+        "href": "https://cse.iiitb.ac.in/"
+      },
+      {
+        "text": "Department of Digital Humanities and Societal Systems",
+        "href": "https://dhss.iiitb.ac.in/"
+      },
+      {
+        "text": "Department of Data Science and Artificial Intelligence",
+        "href": "https://dsai.iiitb.ac.in/"
+      },
+      {
+        "text": "Department of Electronics and Communication Engineering",
+        "href": "https://ece.iiitb.ac.in/"
+      },
+      {
+        "text": "Centre for Applied Sciences",
+        "href": "centre-for-applied-sciences"
+      },
+      {
+        "text": "B.Tech.",
+        "href": "btech"
+      },
+      {
+        "text": "Integrated M.Tech.",
+        "href": "integrated-mtech"
+      },
+      {
+        "text": "M.Tech.",
+        "href": "mtech"
+      },
+      {
+        "text": "Master of Science by Research",
+        "href": "academics/research-programmes/master-of-science-by-research"
+      },
+      {
+        "text": "Ph.D.",
+        "href": "academics/research-programmes/phd"
+      },
+      {
+        "text": "PG Diploma in Digital Product Design and Management",
+        "href": "academics/masters-programmes/pg-diploma-in-digital-product-design-and-management"
+      },
+      {
+        "text": "M.Sc. (Digital Society)",
+        "href": "academics/masters-programmes/msc-digital-society"
+      },
+      {
+        "text": "Fellowships",
+        "href": "fellowships"
+      },
+      {
+        "text": "B.Tech. & Integrated M.Tech.",
+        "href": "courses/btech-integrated-mtech"
+      },
+      {
+        "text": "M.Tech.",
+        "href": "master-of-technology-cse-ece"
+      },
+      {
+        "text": "Ph.D. & Master of Science by Research",
+        "href": "courses/master-of-science-by-researchdoctor-of-philosophy"
+      },
+      {
+        "text": "Post Graduate Diploma",
+        "href": "courses/post-graduate-diploma-2"
+      },
+      {
+        "text": "Computer Science",
+        "href": "computer-science"
+      },
+      {
+        "text": "Data Sciences",
+        "href": "data-sciences"
+      },
+      {
+        "text": "Software Engineering",
+        "href": "software-engineering"
+      },
+      {
+        "text": "Mathematics and Basic Sciences",
+        "href": "mathematics-and-basic-sciences"
+      },
+      {
+        "text": "Networking, Communication and Signal Processing",
+        "href": "networking-communication-and-signal-processing"
+      },
+      {
+        "text": "VLSI Systems",
+        "href": "vlsi-systems"
+      },
+      {
+        "text": "Digital Society",
+        "href": "digital-society"
+      },
+      {
+        "text": "Exchange Program",
+        "href": "exchange-program"
+      },
+      {
+        "text": "Verification Process",
+        "href": "verification-process"
+      },
+      {
+        "text": "Curriculum",
+        "href": "curriculum"
+      },
+      {
+        "text": "Programme Outcomes",
+        "href": "programme-outcomes"
+      },
+      {
+        "text": "Academic Calendar",
+        "href": "academic-calendar-3"
+      },
+      {
+        "text": "Online Education",
+        "href": "online-education"
+      },
+      {
+        "text": "Long Term Programmes (11-14 months)",
+        "href": "academics/continuing-professional-education/long-term-programmes-1114-months-2"
+      },
+      {
+        "text": "Short Term Programme (5-8 months)",
+        "href": "academics/continuing-professional-education/short-term-programme-5-8-months"
+      },
+      {
+        "text": "E-Health Research Centre (EHRC)",
+        "href": "ehealth-research-centre-ehrc"
+      },
+      {
+        "text": "Machine Intelligence & Robotics CoE (MINRO)",
+        "href": "machine-intelligence-robotics-coe-minro"
+      },
+      {
+        "text": "Centre for IT & Public Policy (CITAPP)",
+        "href": "centre-for-it-public-policy-citapp"
+      },
+      {
+        "text": "Cognitive Computing CoE (CCC)",
+        "href": "http://cognitive.iiitb.ac.in/"
+      },
+      {
+        "text": "Centre for Accessibility in the Global South (CAGS)",
+        "href": "http://www.cags.iiitb.ac.in/"
+      },
+      {
+        "text": "COMET Tech Innovation Hub (NM-ICPS)",
+        "href": "https://comet.iiitb.ac.in/"
+      },
+      {
+        "text": "IIITB Innovation Centre",
+        "href": "https://ic.iiitb.ac.in/"
+      },
+      {
+        "text": "Modular Open-Source Identity Platform (MOSIP)",
+        "href": "https://mosip.io/"
+      },
+      {
+        "text": "Centre for Open Societal Systems (COSS)",
+        "href": "https://coss.org.in/"
+      },
+      {
+        "text": "Centre for Digital Public Infrastructure | CDPI",
+        "href": "https://cdpi.dev/"
+      },
+      {
+        "text": "Surgical and Assistive Robotics Lab",
+        "href": "https://www.iiitb.ac.in/sarl/sarl.html"
+      },
+      {
+        "text": "Scalable Data Science and AI Lab",
+        "href": "https://www.iiitb.ac.in/labs/scads-lab/scads-lab"
+      },
+      {
+        "text": "Graphics-Visualization-Computing-Lab",
+        "href": "https://www.iiitb.ac.in/gvcl/"
+      },
+      {
+        "text": "Web Science Lab",
+        "href": "http://wsl.iiitb.ac.in/"
+      },
+      {
+        "text": "Multimodal Perception Lab",
+        "href": "http://mpl.iiitb.ac.in/"
+      },
+      {
+        "text": "Software Engineering and Analysis Lab",
+        "href": "https://sealiiitb.github.io/"
+      },
+      {
+        "text": "High Density Electronic Systems Lab",
+        "href": "https://www.iiitb.ac.in/hides/hides.html"
+      },
+      {
+        "text": "Networking and Communication Lab",
+        "href": "https://www.iiitb.ac.in/ncl/"
+      },
+      {
+        "text": "Remote Sensing, GIS and Spatial Computing Lab",
+        "href": "https://sclab.iiitb.ac.in/"
+      },
+      {
+        "text": "Indian Knowledge System (IKS) Lab",
+        "href": "indian-knowledge-system-iks-lab"
+      },
+      {
+        "text": "Smart City Lab",
+        "href": "smart-city-lab"
+      },
+      {
+        "text": "Ascend Studio",
+        "href": "https://www.iiitb.ac.in/labs/ascend-studio/ascend-studio"
+      },
+      {
+        "text": "Radar Sensing Lab",
+        "href": "https://www.iiitb.ac.in/labs/radar-sensing-lab/radar-sensing-lab"
+      },
+      {
+        "text": "CSSMP",
+        "href": "https://www.iiitb.ac.in/cssmp/"
+      },
+      {
+        "text": "Advanced Wireless Communications Lab",
+        "href": "https://www.iiitb.ac.in/labs/advanced-wireless-communications-lab/about-us-2"
+      },
+      {
+        "text": "Speech Lab",
+        "href": "https://www.iiitb.ac.in/labs/speech-lab/speech-lab"
+      },
+      {
+        "text": "Connected Devices and Wearables Lab",
+        "href": "https://sites.google.com/view/cdwl/home"
+      },
+      {
+        "text": "Samvaad",
+        "href": "samvaad"
+      },
+      {
+        "text": "RISE",
+        "href": "https://rise.iiitb.ac.in/"
+      },
+      {
+        "text": "Avalokana",
+        "href": "https://avalokana.karnataka.gov.in/DataLake/DataLake"
+      },
+      {
+        "text": "Summer Internship",
+        "href": "summer-internship"
+      },
+      {
+        "text": "Publications",
+        "href": "publications"
+      },
+      {
+        "text": "Policy",
+        "href": "policy"
+      },
+      {
+        "text": "Placement Statistics",
+        "href": "placement-statistics"
+      },
+      {
+        "text": "Recruiting Companies",
+        "href": "recruiting-companies"
+      },
+      {
+        "text": "To Recruit Degree Programmes",
+        "href": "to-recruit-degree-programmes"
+      },
+      {
+        "text": "To Recruit on Campus PGD Programmes",
+        "href": "to-recruit-on-campus-pgd-programmes"
+      },
+      {
+        "text": "Placement Team",
+        "href": "placement-team"
+      },
+      {
+        "text": "Committees & Clubs",
+        "href": "committees-clubs"
+      },
+      {
+        "text": "Students Events and Festivals",
+        "href": "events-and-festivals"
+      },
+      {
+        "text": "Cafeteria",
+        "href": "cafeteria"
+      },
+      {
+        "text": "Library Collection",
+        "href": "library-collection"
+      },
+      {
+        "text": "Faculty Articles",
+        "href": "faculty-articles"
+      },
+      {
+        "text": "IIIT-B in the Press",
+        "href": "iiitb-in-the-press"
+      },
+      {
+        "text": "Naviiina",
+        "href": "https://naviiina.iiitb.ac.in/"
+      },
+      {
+        "text": "Annual Reports",
+        "href": "annual-reports"
+      },
+      {
+        "text": "Press Releases",
+        "href": "media-press-releases"
+      },
+      {
+        "text": "Media Kit",
+        "href": "media-kit"
+      },
+      {
+        "text": "Faculty",
+        "href": "faculty"
+      },
+      {
+        "text": "Staff",
+        "href": "staff"
+      },
+      {
+        "text": "IIIT-B Innovation Center",
+        "href": "iiitb-innovation-center"
+      },
+      {
+        "text": "IIIT-B COMET Foundation",
+        "href": "iiitb-comet-foundation"
+      },
+      {
+        "text": "IIIT-B  MOSIP",
+        "href": "iiitb-mosip"
+      },
+      {
+        "text": "IIIT-B EHRC",
+        "href": "iiitb-ehrc"
+      },
+      {
+        "text": "IIIT-B MINRO",
+        "href": "iiitb-minro"
+      },
+      {
+        "text": "MS by Research Scholars",
+        "href": "ms-by-research-scholars"
+      },
+      {
+        "text": "Ph.D. Scholars",
+        "href": "research-scholars"
+      },
+      {
+        "text": "Integrated PhD Scholars",
+        "href": "integrated-phd-scholars"
+      },
+      {
+        "text": "Visvesvaraya PhD Scheme",
+        "href": "visvesvaraya-phd-scheme"
+      },
+      {
+        "text": "Scheme 1",
+        "href": "scheme-1"
+      },
+      {
+        "text": "Scheme 2",
+        "href": "scheme-2"
+      },
+      {
+        "text": "Alumni",
+        "href": "alumni"
+      },
+      {
+        "text": "Code of Conduct",
+        "href": "code-of-conduct"
+      },
+      {
+        "text": "Explore IIIT-B",
+        "href": "explore-iiitb"
+      },
+      {
+        "text": "Governing Body",
+        "href": "governing-body"
+      },
+      {
+        "text": "Administration",
+        "href": "administration"
+      }
+    ],
+    "_scraped_at": "2026-03-26T19:08:30"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/akshatha-p-b",
+    "slug": "akshatha-p-b",
+    "category": "staff_profile",
+    "name": "Akshatha P B",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:56"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/annapoorna-g-h",
+    "slug": "annapoorna-g-h",
+    "category": "staff_profile",
+    "name": "Annapoorna  G H",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:57"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/athira-rajendran",
+    "slug": "athira-rajendran",
+    "category": "staff_profile",
+    "name": "Athira  Rajendran",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:57"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/anita-kumari-yadav",
+    "slug": "anita-kumari-yadav",
+    "category": "staff_profile",
+    "name": "Anita Kumari  Yadav",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:57"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/biswa-bhusan-dhal",
+    "slug": "biswa-bhusan-dhal",
+    "category": "staff_profile",
+    "name": "Biswa Bhusan  Dhal",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:57"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/drneha-arora",
+    "slug": "drneha-arora",
+    "category": "staff_profile",
+    "name": "Dr.Neha Arora",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:58"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/basid-a",
+    "slug": "basid-a",
+    "category": "staff_profile",
+    "name": "Basid A",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:58"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/cdr-jv-prasadretd",
+    "slug": "cdr-jv-prasadretd",
+    "category": "staff_profile",
+    "name": "Cdr JV Prasad(retd)",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:58"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/girish-govind-k",
+    "slug": "girish-govind-k",
+    "category": "staff_profile",
+    "name": "Girish Govind K",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:58"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/jayachandra-c-m",
+    "slug": "jayachandra-c-m",
+    "category": "staff_profile",
+    "name": "Jayachandra  C M",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:59"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/linit-vachali",
+    "slug": "linit-vachali",
+    "category": "staff_profile",
+    "name": "Linit Vachali",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:59"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/k-harish-kumar",
+    "slug": "k-harish-kumar",
+    "category": "staff_profile",
+    "name": "K. Harish Kumar",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:59"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/maniram",
+    "slug": "maniram",
+    "category": "staff_profile",
+    "name": "Maniram",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:59"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/manjunatha-n",
+    "slug": "manjunatha-n",
+    "category": "staff_profile",
+    "name": "Manjunatha N",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:10:59"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/mythri",
+    "slug": "mythri",
+    "category": "staff_profile",
+    "name": "Mythri P",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/mr-shiva-prakash",
+    "slug": "mr-shiva-prakash",
+    "category": "staff_profile",
+    "name": "Mr. Shiva Prakash",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/nirmala-b",
+    "slug": "nirmala-b",
+    "category": "staff_profile",
+    "name": "Nirmala B",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/nandini-m",
+    "slug": "nandini-m",
+    "category": "staff_profile",
+    "name": "Nandini M",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/pranav-patil",
+    "slug": "pranav-patil",
+    "category": "staff_profile",
+    "name": "Pavan Patil",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/prajwal-dsouza",
+    "slug": "prajwal-dsouza",
+    "category": "staff_profile",
+    "name": "Prajwal  Dsouza",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/prasanta-kumar-nayak",
+    "slug": "prasanta-kumar-nayak",
+    "category": "staff_profile",
+    "name": "Prasanta Kumar Nayak",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:01"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/pushpa-mv",
+    "slug": "pushpa-mv",
+    "category": "staff_profile",
+    "name": "Pushpa MV",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:01"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/ragavendhar-m",
+    "slug": "ragavendhar-m",
+    "category": "staff_profile",
+    "name": "Ragavendhar  M",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:01"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/praseena-m-s",
+    "slug": "praseena-m-s",
+    "category": "staff_profile",
+    "name": "Praseena M S",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:01"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/raksha-n",
+    "slug": "raksha-n",
+    "category": "staff_profile",
+    "name": "Raksha  N",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:02"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/rasmita-sahu",
+    "slug": "rasmita-sahu",
+    "category": "staff_profile",
+    "name": "Rasmita Sahu",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:02"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/roshni-dsouza",
+    "slug": "roshni-dsouza",
+    "category": "staff_profile",
+    "name": "Roshni DSouza",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:02"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/shilpa-naldurgkar",
+    "slug": "shilpa-naldurgkar",
+    "category": "staff_profile",
+    "name": "Shilpa  Naldurgkar",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:02"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/sindhu-prashanth",
+    "slug": "sindhu-prashanth",
+    "category": "staff_profile",
+    "name": "Sindhu  Prashanth",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:02"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/siva-chetri",
+    "slug": "siva-chetri",
+    "category": "staff_profile",
+    "name": "Siva Chetri",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:02"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/somashekaraiah-k",
+    "slug": "somashekaraiah-k",
+    "category": "staff_profile",
+    "name": "Somashekaraiah K",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:03"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/somashekhar-t-s",
+    "slug": "somashekhar-t-s",
+    "category": "staff_profile",
+    "name": "Somashekhar T S",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:03"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/suresh-kumar",
+    "slug": "suresh-kumar",
+    "category": "staff_profile",
+    "name": "Suresh Kumar",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:03"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/subramani",
+    "slug": "subramani",
+    "category": "staff_profile",
+    "name": "Subramani K",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:03"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/swathi-sharma-kalagaru",
+    "slug": "swathi-sharma-kalagaru",
+    "category": "staff_profile",
+    "name": "Swathi M. Sharma",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:03"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/t-nandakumari",
+    "slug": "t-nandakumari",
+    "category": "staff_profile",
+    "name": "T Nandakumari",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:04"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/vandana-bhavanishankar",
+    "slug": "vandana-bhavanishankar",
+    "category": "staff_profile",
+    "name": "Vandana Bhavanishankar",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:04"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/vighneshwar-hegde",
+    "slug": "vighneshwar-hegde",
+    "category": "staff_profile",
+    "name": "Vighneshwar Hegde",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:04"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/vedavalli",
+    "slug": "vedavalli",
+    "category": "staff_profile",
+    "name": "Vedavalli",
+    "designation": "",
+    "email": "dsa-office@iiitb.ac.in",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:04"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/vikas-k-p",
+    "slug": "vikas-k-p",
+    "category": "staff_profile",
+    "name": "Vikas  K P",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:05"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/vishnu-gowda-m-n",
+    "slug": "vishnu-gowda-m-n",
+    "category": "staff_profile",
+    "name": "Vishnu Gowda M N",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:05"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/vishnu-raj",
+    "slug": "vishnu-raj",
+    "category": "staff_profile",
+    "name": "Vishnu Raj",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:05"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/staff/vivek-yadav",
+    "slug": "vivek-yadav",
+    "category": "staff_profile",
+    "name": "Vivek Yadav",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:11:05"
+  }
+]

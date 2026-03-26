@@ -1,0 +1,1818 @@
+[
+  {
+    "url": "https://www.iiitb.ac.in/faculty/jyotsna-bapat",
+    "slug": "jyotsna-bapat",
+    "category": "faculty_profile",
+    "name": "Jyotsna Bapat",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:07:23"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:07:24"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/debabrata-das",
+    "slug": "debabrata-das",
+    "category": "faculty_profile",
+    "name": "Debabrata Das",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:07:24"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty",
+    "category": "faculty_list",
+    "title": "Faculty",
+    "links": [
+      {
+        "text": "NIRF",
+        "href": "nirf"
+      },
+      {
+        "text": "IQAC",
+        "href": "iqac"
+      },
+      {
+        "text": "Department of Computer Science & Engineering",
+        "href": "https://cse.iiitb.ac.in/"
+      },
+      {
+        "text": "Department of Digital Humanities and Societal Systems",
+        "href": "https://dhss.iiitb.ac.in/"
+      },
+      {
+        "text": "Department of Data Science and Artificial Intelligence",
+        "href": "https://dsai.iiitb.ac.in/"
+      },
+      {
+        "text": "Department of Electronics and Communication Engineering",
+        "href": "https://ece.iiitb.ac.in/"
+      },
+      {
+        "text": "Centre for Applied Sciences",
+        "href": "centre-for-applied-sciences"
+      },
+      {
+        "text": "B.Tech.",
+        "href": "btech"
+      },
+      {
+        "text": "Integrated M.Tech.",
+        "href": "integrated-mtech"
+      },
+      {
+        "text": "M.Tech.",
+        "href": "mtech"
+      },
+      {
+        "text": "Master of Science by Research",
+        "href": "academics/research-programmes/master-of-science-by-research"
+      },
+      {
+        "text": "Ph.D.",
+        "href": "academics/research-programmes/phd"
+      },
+      {
+        "text": "PG Diploma in Digital Product Design and Management",
+        "href": "academics/masters-programmes/pg-diploma-in-digital-product-design-and-management"
+      },
+      {
+        "text": "M.Sc. (Digital Society)",
+        "href": "academics/masters-programmes/msc-digital-society"
+      },
+      {
+        "text": "Fellowships",
+        "href": "fellowships"
+      },
+      {
+        "text": "B.Tech. & Integrated M.Tech.",
+        "href": "courses/btech-integrated-mtech"
+      },
+      {
+        "text": "M.Tech.",
+        "href": "master-of-technology-cse-ece"
+      },
+      {
+        "text": "Ph.D. & Master of Science by Research",
+        "href": "courses/master-of-science-by-researchdoctor-of-philosophy"
+      },
+      {
+        "text": "Post Graduate Diploma",
+        "href": "courses/post-graduate-diploma-2"
+      },
+      {
+        "text": "Computer Science",
+        "href": "computer-science"
+      },
+      {
+        "text": "Data Sciences",
+        "href": "data-sciences"
+      },
+      {
+        "text": "Software Engineering",
+        "href": "software-engineering"
+      },
+      {
+        "text": "Mathematics and Basic Sciences",
+        "href": "mathematics-and-basic-sciences"
+      },
+      {
+        "text": "Networking, Communication and Signal Processing",
+        "href": "networking-communication-and-signal-processing"
+      },
+      {
+        "text": "VLSI Systems",
+        "href": "vlsi-systems"
+      },
+      {
+        "text": "Digital Society",
+        "href": "digital-society"
+      },
+      {
+        "text": "Exchange Program",
+        "href": "exchange-program"
+      },
+      {
+        "text": "Verification Process",
+        "href": "verification-process"
+      },
+      {
+        "text": "Curriculum",
+        "href": "curriculum"
+      },
+      {
+        "text": "Programme Outcomes",
+        "href": "programme-outcomes"
+      },
+      {
+        "text": "Academic Calendar",
+        "href": "academic-calendar-3"
+      },
+      {
+        "text": "Online Education",
+        "href": "online-education"
+      },
+      {
+        "text": "Long Term Programmes (11-14 months)",
+        "href": "academics/continuing-professional-education/long-term-programmes-1114-months-2"
+      },
+      {
+        "text": "Short Term Programme (5-8 months)",
+        "href": "academics/continuing-professional-education/short-term-programme-5-8-months"
+      },
+      {
+        "text": "E-Health Research Centre (EHRC)",
+        "href": "ehealth-research-centre-ehrc"
+      },
+      {
+        "text": "Machine Intelligence & Robotics CoE (MINRO)",
+        "href": "machine-intelligence-robotics-coe-minro"
+      },
+      {
+        "text": "Centre for IT & Public Policy (CITAPP)",
+        "href": "centre-for-it-public-policy-citapp"
+      },
+      {
+        "text": "Cognitive Computing CoE (CCC)",
+        "href": "http://cognitive.iiitb.ac.in/"
+      },
+      {
+        "text": "Centre for Accessibility in the Global South (CAGS)",
+        "href": "http://www.cags.iiitb.ac.in/"
+      },
+      {
+        "text": "COMET Tech Innovation Hub (NM-ICPS)",
+        "href": "https://comet.iiitb.ac.in/"
+      },
+      {
+        "text": "IIITB Innovation Centre",
+        "href": "https://ic.iiitb.ac.in/"
+      },
+      {
+        "text": "Modular Open-Source Identity Platform (MOSIP)",
+        "href": "https://mosip.io/"
+      },
+      {
+        "text": "Centre for Open Societal Systems (COSS)",
+        "href": "https://coss.org.in/"
+      },
+      {
+        "text": "Centre for Digital Public Infrastructure | CDPI",
+        "href": "https://cdpi.dev/"
+      },
+      {
+        "text": "Surgical and Assistive Robotics Lab",
+        "href": "https://www.iiitb.ac.in/sarl/sarl.html"
+      },
+      {
+        "text": "Scalable Data Science and AI Lab",
+        "href": "https://www.iiitb.ac.in/labs/scads-lab/scads-lab"
+      },
+      {
+        "text": "Graphics-Visualization-Computing-Lab",
+        "href": "https://www.iiitb.ac.in/gvcl/"
+      },
+      {
+        "text": "Web Science Lab",
+        "href": "http://wsl.iiitb.ac.in/"
+      },
+      {
+        "text": "Multimodal Perception Lab",
+        "href": "http://mpl.iiitb.ac.in/"
+      },
+      {
+        "text": "Software Engineering and Analysis Lab",
+        "href": "https://sealiiitb.github.io/"
+      },
+      {
+        "text": "High Density Electronic Systems Lab",
+        "href": "https://www.iiitb.ac.in/hides/hides.html"
+      },
+      {
+        "text": "Networking and Communication Lab",
+        "href": "https://www.iiitb.ac.in/ncl/"
+      },
+      {
+        "text": "Remote Sensing, GIS and Spatial Computing Lab",
+        "href": "https://sclab.iiitb.ac.in/"
+      },
+      {
+        "text": "Indian Knowledge System (IKS) Lab",
+        "href": "indian-knowledge-system-iks-lab"
+      },
+      {
+        "text": "Smart City Lab",
+        "href": "smart-city-lab"
+      },
+      {
+        "text": "Ascend Studio",
+        "href": "https://www.iiitb.ac.in/labs/ascend-studio/ascend-studio"
+      },
+      {
+        "text": "Radar Sensing Lab",
+        "href": "https://www.iiitb.ac.in/labs/radar-sensing-lab/radar-sensing-lab"
+      },
+      {
+        "text": "CSSMP",
+        "href": "https://www.iiitb.ac.in/cssmp/"
+      },
+      {
+        "text": "Advanced Wireless Communications Lab",
+        "href": "https://www.iiitb.ac.in/labs/advanced-wireless-communications-lab/about-us-2"
+      },
+      {
+        "text": "Speech Lab",
+        "href": "https://www.iiitb.ac.in/labs/speech-lab/speech-lab"
+      },
+      {
+        "text": "Connected Devices and Wearables Lab",
+        "href": "https://sites.google.com/view/cdwl/home"
+      },
+      {
+        "text": "Samvaad",
+        "href": "samvaad"
+      },
+      {
+        "text": "RISE",
+        "href": "https://rise.iiitb.ac.in/"
+      },
+      {
+        "text": "Avalokana",
+        "href": "https://avalokana.karnataka.gov.in/DataLake/DataLake"
+      },
+      {
+        "text": "Summer Internship",
+        "href": "summer-internship"
+      },
+      {
+        "text": "Publications",
+        "href": "publications"
+      },
+      {
+        "text": "Policy",
+        "href": "policy"
+      },
+      {
+        "text": "Placement Statistics",
+        "href": "placement-statistics"
+      },
+      {
+        "text": "Recruiting Companies",
+        "href": "recruiting-companies"
+      },
+      {
+        "text": "To Recruit Degree Programmes",
+        "href": "to-recruit-degree-programmes"
+      },
+      {
+        "text": "To Recruit on Campus PGD Programmes",
+        "href": "to-recruit-on-campus-pgd-programmes"
+      },
+      {
+        "text": "Placement Team",
+        "href": "placement-team"
+      },
+      {
+        "text": "Committees & Clubs",
+        "href": "committees-clubs"
+      },
+      {
+        "text": "Students Events and Festivals",
+        "href": "events-and-festivals"
+      },
+      {
+        "text": "Cafeteria",
+        "href": "cafeteria"
+      },
+      {
+        "text": "Library Collection",
+        "href": "library-collection"
+      },
+      {
+        "text": "Faculty Articles",
+        "href": "faculty-articles"
+      },
+      {
+        "text": "IIIT-B in the Press",
+        "href": "iiitb-in-the-press"
+      },
+      {
+        "text": "Naviiina",
+        "href": "https://naviiina.iiitb.ac.in/"
+      },
+      {
+        "text": "Annual Reports",
+        "href": "annual-reports"
+      },
+      {
+        "text": "Press Releases",
+        "href": "media-press-releases"
+      },
+      {
+        "text": "Media Kit",
+        "href": "media-kit"
+      },
+      {
+        "text": "Faculty",
+        "href": "faculty"
+      },
+      {
+        "text": "Staff",
+        "href": "staff"
+      },
+      {
+        "text": "IIIT-B Innovation Center",
+        "href": "iiitb-innovation-center"
+      },
+      {
+        "text": "IIIT-B COMET Foundation",
+        "href": "iiitb-comet-foundation"
+      },
+      {
+        "text": "IIIT-B  MOSIP",
+        "href": "iiitb-mosip"
+      },
+      {
+        "text": "IIIT-B EHRC",
+        "href": "iiitb-ehrc"
+      },
+      {
+        "text": "IIIT-B MINRO",
+        "href": "iiitb-minro"
+      },
+      {
+        "text": "MS by Research Scholars",
+        "href": "ms-by-research-scholars"
+      },
+      {
+        "text": "Ph.D. Scholars",
+        "href": "research-scholars"
+      },
+      {
+        "text": "Integrated PhD Scholars",
+        "href": "integrated-phd-scholars"
+      },
+      {
+        "text": "Visvesvaraya PhD Scheme",
+        "href": "visvesvaraya-phd-scheme"
+      },
+      {
+        "text": "Scheme 1",
+        "href": "scheme-1"
+      },
+      {
+        "text": "Scheme 2",
+        "href": "scheme-2"
+      },
+      {
+        "text": "Alumni",
+        "href": "alumni"
+      },
+      {
+        "text": "Code of Conduct",
+        "href": "code-of-conduct"
+      },
+      {
+        "text": "Explore IIIT-B",
+        "href": "explore-iiitb"
+      },
+      {
+        "text": "Governing Body",
+        "href": "governing-body"
+      },
+      {
+        "text": "Administration",
+        "href": "administration"
+      }
+    ],
+    "_scraped_at": "2026-03-26T19:08:24"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/ajay-bakre",
+    "slug": "ajay-bakre",
+    "category": "faculty_profile",
+    "name": "Ajay Bakre",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:38"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:39"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/ashish-choudhury",
+    "slug": "ashish-choudhury",
+    "category": "faculty_profile",
+    "name": "Ashish Choudhury",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:39"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/amit-chattopadhyay",
+    "slug": "amit-chattopadhyay",
+    "category": "faculty_profile",
+    "name": "Amit Chattopadhyay",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:39"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/amit-prakash",
+    "slug": "amit-prakash",
+    "category": "faculty_profile",
+    "name": "Amit Prakash",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:39"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/amrita-mishra",
+    "slug": "amrita-mishra",
+    "category": "faculty_profile",
+    "name": "Amrita Mishra",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:40"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/aswin-kannan",
+    "slug": "aswin-kannan",
+    "category": "faculty_profile",
+    "name": "Aswin Kannan",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:40"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:40"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/balakrishnan-ashok",
+    "slug": "balakrishnan-ashok",
+    "category": "faculty_profile",
+    "name": "Balakrishnan Ashok",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:41"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:41"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:41"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:41"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/balaji-parthasarathy",
+    "slug": "balaji-parthasarathy",
+    "category": "faculty_profile",
+    "name": "Balaji Parthasarathy",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:42"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:42"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:42"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:42"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:43"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/chandrashekar-ramanathan",
+    "slug": "chandrashekar-ramanathan",
+    "category": "faculty_profile",
+    "name": "Chandrashekar Ramanathan",
+    "designation": "TSAPI: Enhancing Existing OLTP Databases with Temporal Query Capabilities for Analytics .",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:43"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/chinar-mehta",
+    "slug": "chinar-mehta",
+    "category": "faculty_profile",
+    "name": "Chinar  Mehta",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:43"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:43"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:44"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:44"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:44"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:45"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:45"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/dinesh-babu-jayagopi",
+    "slug": "dinesh-babu-jayagopi",
+    "category": "faculty_profile",
+    "name": "Dinesh Babu Jayagopi",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:45"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:45"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:46"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:46"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/dr-badrinath-ramamurthy",
+    "slug": "dr-badrinath-ramamurthy",
+    "category": "faculty_profile",
+    "name": "Badrinath Ramamurthy",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:46"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/dr-ahana-pradhan",
+    "slug": "dr-ahana-pradhan",
+    "category": "faculty_profile",
+    "name": "Ahana Pradhan",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:46"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:47"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/dr-vinu-e-venugopal",
+    "slug": "dr-vinu-e-venugopal",
+    "category": "faculty_profile",
+    "name": "Vinu E Venugopal",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:47"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:47"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:48"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:48"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:48"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/g-srinivasaraghavan",
+    "slug": "g-srinivasaraghavan",
+    "category": "faculty_profile",
+    "name": "G Srinivasaraghavan",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:48"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:49"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:49"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:49"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:50"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:50"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:50"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:51"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:51"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:51"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:51"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:52"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:52"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:53"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:53"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:53"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:53"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/jaya-sreevalsan-nair",
+    "slug": "jaya-sreevalsan-nair",
+    "category": "faculty_profile",
+    "name": "Jaya  Sreevalsan Nair",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:54"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:54"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/kurian-polachan",
+    "slug": "kurian-polachan",
+    "category": "faculty_profile",
+    "name": "Kurian Polachan",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:54"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:55"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/madhav-rao",
+    "slug": "madhav-rao",
+    "category": "faculty_profile",
+    "name": "Madhav Rao",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:55"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:55"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/manisha-kulkarni",
+    "slug": "manisha-kulkarni",
+    "category": "faculty_profile",
+    "name": "Manisha Kulkarni",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:56"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:56"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:56"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/meenakshi-dsouza",
+    "slug": "meenakshi-dsouza",
+    "category": "faculty_profile",
+    "name": "Meenakshi D'Souza",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:57"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:57"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:57"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:57"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:58"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:58"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/naganand",
+    "slug": "naganand",
+    "category": "faculty_profile",
+    "name": "Naganand  Yadati",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:58"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/narayanan-p-p",
+    "slug": "narayanan-p-p",
+    "category": "faculty_profile",
+    "name": "Narayanan P. P.",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:59"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:08:59"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/pranesh-santikellur",
+    "slug": "pranesh-santikellur",
+    "category": "faculty_profile",
+    "name": "Pranesh Santikellur",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:00"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:01"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:01"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:01"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/pradeesha-ashok1",
+    "slug": "pradeesha-ashok1",
+    "category": "faculty_profile",
+    "name": "Pradeesha Ashok",
+    "designation": "Parameterized Complexity of Coupon Coloring of Graphs.",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:01"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:02"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/raghuram-bharadwaj",
+    "slug": "raghuram-bharadwaj",
+    "category": "faculty_profile",
+    "name": "Raghuram Bharadwaj",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:02"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:02"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:03"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/sachit-rao",
+    "slug": "sachit-rao",
+    "category": "faculty_profile",
+    "name": "Sachit Rao",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:03"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:03"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:04"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:04"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/sakshi-arora",
+    "slug": "sakshi-arora",
+    "category": "faculty_profile",
+    "name": "Sakshi Arora",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:04"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/priyanka-das",
+    "slug": "priyanka-das",
+    "category": "faculty_profile",
+    "name": "Priyanka Das",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:04"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/sanju-ahuja",
+    "slug": "sanju-ahuja",
+    "category": "faculty_profile",
+    "name": "Sanju Ahuja",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:05"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:05"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/saumya-shankar",
+    "slug": "saumya-shankar",
+    "category": "faculty_profile",
+    "name": "Saumya Shankar",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:05"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/sanghasri-mukhopadhyay",
+    "slug": "sanghasri-mukhopadhyay",
+    "category": "faculty_profile",
+    "name": "Sanghasri Mukhopadhyay",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:05"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/shubha-krishnamurthy",
+    "slug": "shubha-krishnamurthy",
+    "category": "faculty_profile",
+    "name": "Shubha Krishnamurthy",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:06"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/shiva-kumar-malapaka",
+    "slug": "shiva-kumar-malapaka",
+    "category": "faculty_profile",
+    "name": "Shiva Kumar Malapaka",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:06"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:06"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:07"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/prem-singh",
+    "slug": "prem-singh",
+    "category": "faculty_profile",
+    "name": "Prem Singh",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:07"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:07"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:08"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/srinath-srinivasa",
+    "slug": "srinath-srinivasa",
+    "category": "faculty_profile",
+    "name": "Srinath Srinivasa",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:08"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/srinivasvivek",
+    "slug": "srinivasvivek",
+    "category": "faculty_profile",
+    "name": "Srinivas Vivek",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:08"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/subir-kumar-roy",
+    "slug": "subir-kumar-roy",
+    "category": "faculty_profile",
+    "name": "Subir Kumar Roy",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:08"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/sujit-kumar-chakrabarti",
+    "slug": "sujit-kumar-chakrabarti",
+    "category": "faculty_profile",
+    "name": "Sujit Kumar Chakrabarti",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:09"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/shrisha-rao",
+    "slug": "shrisha-rao",
+    "category": "faculty_profile",
+    "name": "Shrisha Rao",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:09"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/sushree-sangeeta-behera",
+    "slug": "sushree-sangeeta-behera",
+    "category": "faculty_profile",
+    "name": "Sushree Sangeeta Behera",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:09"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:09"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:09"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/t-k-srikanth",
+    "slug": "t-k-srikanth",
+    "category": "faculty_profile",
+    "name": "T K Srikanth",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:10"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/uttam-kumar",
+    "slug": "uttam-kumar",
+    "category": "faculty_profile",
+    "name": "Uttam Kumar",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:10"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:10"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:11"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/tulika-saha",
+    "slug": "tulika-saha",
+    "category": "faculty_profile",
+    "name": "Tulika Saha",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:11"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/v-n-muralidhara",
+    "slug": "v-n-muralidhara",
+    "category": "faculty_profile",
+    "name": "V N Muralidhara",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:11"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/vaishnavi-gujjula",
+    "slug": "vaishnavi-gujjula",
+    "category": "faculty_profile",
+    "name": "Vaishnavi Gujjula",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:12"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/v-ramasubramanian",
+    "slug": "v-ramasubramanian",
+    "category": "faculty_profile",
+    "name": "V Ramasubramanian",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:12"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/v-sridhar",
+    "slug": "v-sridhar",
+    "category": "faculty_profile",
+    "name": "V Sridhar",
+    "designation": "",
+    "email": "vsridhar@iiitb.ac.in",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:12"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/thangaraju-b",
+    "slug": "thangaraju-b",
+    "category": "faculty_profile",
+    "name": "Thangaraju B",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:12"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:13"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:13"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/viswanath-gopalakrishnan",
+    "slug": "viswanath-gopalakrishnan",
+    "category": "faculty_profile",
+    "name": "Viswanath  Gopalakrishnan",
+    "designation": "Random walks on graphs to model saliency in images.",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:13"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/page-not-found",
+    "slug": "page-not-found",
+    "category": "faculty_profile",
+    "name": "Page Not Found",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:13"
+  },
+  {
+    "url": "https://www.iiitb.ac.in/faculty/vinod-veera-reddy",
+    "slug": "vinod-veera-reddy",
+    "category": "faculty_profile",
+    "name": "Vinod Veera Reddy",
+    "designation": "",
+    "email": "",
+    "bio": "",
+    "areas": [],
+    "_scraped_at": "2026-03-26T19:09:14"
+  }
+]

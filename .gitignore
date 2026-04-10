@@ -1,1 +1,11 @@
-/jena
+venv/
+env/
+.env
+__pycache__/
+*.py[cod]
+*$py.class
+key.txt
+output/
+checkpoint.json
+.DS_Store
+Thumbs.db

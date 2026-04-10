@@ -1,2 +1,4 @@
 /jena
 venv/
+__pycache__/
+*.pyc

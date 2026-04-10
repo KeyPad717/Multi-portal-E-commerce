@@ -56,6 +56,7 @@ def has_bad_extension(url: str) -> bool:
     path = urlparse(url).path.lower()
     return any(path.endswith(ext) for ext in SKIP_EXTENSIONS)
 
+# defining a unique key for each URL
 def canonical_slug(url: str) -> str:
     
     p = urlparse(url)
@@ -79,7 +80,7 @@ def canonical_slug(url: str) -> str:
     # Subdomains / external: full path is the key
     return f"{p.netloc}::{path}"
 
-
+# keeping shortest URL per key
 def deduplicate(urls: list[str]) -> list[str]:
     """Keep the SHORTEST URL per canonical key (avoids /academics/... mirrors)."""
     best: dict[str, str] = {}
@@ -94,7 +95,7 @@ def deduplicate(urls: list[str]) -> list[str]:
 # Each category maps to: (regex_pattern, priority)
 # Patterns are tested in priority order; first match wins.
 URL_CATEGORIES = [
-    # ── Person profiles ──
+    # Person profiles
     ("faculty_profile",         r"iiitb\.ac\.in/faculty/[^/]+$"),
     ("staff_profile",           r"iiitb\.ac\.in/staff/[^/]+$"),
     ("research_scholar",        r"iiitb\.ac\.in/research-scholars/[^/]+$"),
@@ -102,24 +103,24 @@ URL_CATEGORIES = [
     ("iphd_scholar",            r"iiitb\.ac\.in/integrated-phd-scholars/[^/]+$"),
     ("scheme_scholar",          r"iiitb\.ac\.in/scheme-[12]/[^/]+$"),
 
-    # ── Listing pages ──
+    # Listing pages
     ("faculty_list",            r"iiitb\.ac\.in/faculty$"),
     ("staff_list",              r"iiitb\.ac\.in/staff$"),
     ("scholar_list",            r"iiitb\.ac\.in/(research-scholars|ms-by-research-scholars|integrated-phd-scholars|scheme-[12])$"),
 
-    # ── Academic programmes ──
+    # Academic programmes
     ("program",                 r"iiitb\.ac\.in/(btech|integrated-mtech|mtech|phd|fellowships|"
                                 r"courses/|programme-outcomes|curriculum|academic-calendar|"
                                 r"exchange-program|online-education|continuing-professional-education"
                                 r"|visvesvaraya-phd-scheme|student-merit-scholarship)"),
 
-    # ── News / Media ──
+    # News / Media
     ("news",                    r"iiitb\.ac\.in/(iiitb-in-the-press|media-press-releases|"
                                 r"faculty-articles|annual-reports|samvaad|tele-manas)"),
     ("dhss_news",               r"dhss\.iiitb\.ac\.in/"),
     ("cags_event",              r"cags\.iiitb\.ac\.in/"),
 
-    # ── Research labs / centres (subdomains) ──
+    # Research labs / centres (subdomains)
     ("lab_cse",                 r"cse\.iiitb\.ac\.in"),
     ("lab_ece",                 r"ece\.iiitb\.ac\.in"),
     ("lab_dsai",                r"dsai\.iiitb\.ac\.in"),
@@ -145,10 +146,10 @@ URL_CATEGORIES = [
                                 r"|networking-communication|vlsi-systems|digital-society"
                                 r"|mathematics-and-basic-sciences)"),
 
-    # ── External partners ──
+    # External partners
     ("external",                r"(mosip\.io|coss\.org|cdpi\.dev|sites\.google|karnataka\.gov)"),
 
-    # ── Governance / general ──
+    # Governance / general
     ("governance",              r"iiitb\.ac\.in/(governing-body|administration|industry-advisory"
                                 r"|aicte-mandatory|nirf|iqac|right-to-information|code-of-conduct"
                                 r"|diversity-inclusion|internal-committee|institute-industry)"),
@@ -161,7 +162,7 @@ URL_CATEGORIES = [
 
 _COMPILED = [(cat, re.compile(pat, re.IGNORECASE)) for cat, pat in URL_CATEGORIES]
 
-
+# assigning urls some category
 def classify_url(url: str) -> str:
     for cat, rx in _COMPILED:
         if rx.search(url):
@@ -207,7 +208,7 @@ def first_text(soup: BeautifulSoup, *selectors) -> str:
     return ""
 
 
-# ── Person profile (faculty / staff / scholar) ──────────
+# Person profile (faculty / staff / scholar)
 def extract_person(url: str, soup: BeautifulSoup, category: str) -> dict:
     slug = urlparse(url).path.strip("/").split("/")[-1]
 
@@ -260,7 +261,7 @@ def extract_person(url: str, soup: BeautifulSoup, category: str) -> dict:
     }
 
 
-# ── Listing page (e.g. /faculty, /staff) ────────────────
+# Listing page (e.g. /faculty, /staff)
 def extract_listing(url: str, soup: BeautifulSoup, category: str) -> dict:
     title = first_text(soup, "h1", "title", ".page-title") or url
     items: list[dict] = []
@@ -279,7 +280,7 @@ def extract_listing(url: str, soup: BeautifulSoup, category: str) -> dict:
     }
 
 
-# ── Academic programme ───────────────────────────────────
+# Academic programme
 def extract_program(url: str, soup: BeautifulSoup, category: str) -> dict:
     title = first_text(soup, "h1", ".page-title", "title")
     body_paras = [t(p) for p in soup.select("article p, .entry-content p, .page-content p")
@@ -301,7 +302,7 @@ def extract_program(url: str, soup: BeautifulSoup, category: str) -> dict:
     }
 
 
-# ── News / Press item ────────────────────────────────────
+# News / Press item
 def extract_news(url: str, soup: BeautifulSoup, category: str) -> dict:
     title = (
         first_text(soup, "h1.entry-title", "h1.post-title", "h1", ".page-title")
@@ -326,7 +327,7 @@ def extract_news(url: str, soup: BeautifulSoup, category: str) -> dict:
     }
 
 
-# ── Lab / Center page ────────────────────────────────────
+# Lab / Center page
 def extract_lab(url: str, soup: BeautifulSoup, category: str) -> dict:
     title = (
         first_text(soup, "h1", ".lab-title", ".site-title", ".page-title", "title")
@@ -368,7 +369,7 @@ def extract_lab(url: str, soup: BeautifulSoup, category: str) -> dict:
     }
 
 
-# ── General / fallback ───────────────────────────────────
+# General / fallback
 def extract_general(url: str, soup: BeautifulSoup, category: str) -> dict:
     title = (
         first_text(soup, "h1", ".page-title", "title")
@@ -390,7 +391,7 @@ def extract_general(url: str, soup: BeautifulSoup, category: str) -> dict:
     }
 
 
-# ── Router: pick extractor based on category ────────────
+# Router: pick extractor based on category
 PERSON_CATEGORIES = {
     "faculty_profile", "staff_profile", "research_scholar",
     "ms_scholar", "iphd_scholar", "scheme_scholar",
@@ -408,6 +409,7 @@ LAB_CATEGORIES = {
     "lab_gvcl", "lab_hides", "lab_generic",
 }
 
+# identifying which extractor to call per category
 def extract(url: str, soup: BeautifulSoup, category: str) -> dict:
     if category in PERSON_CATEGORIES:
         return extract_person(url, soup, category)
@@ -512,7 +514,7 @@ def run():
             except Exception as e:
                 log.error(f"[{done:>4}/{len(deduped)}] ERROR  {url}  —  {e}")
 
-    # ── Save per-bucket JSON files ──
+    # Save per-bucket JSON files
     master = {}
     for bucket, records in buckets.items():
         path = os.path.join(OUTPUT_DIR, f"{bucket}.json")
@@ -521,7 +523,7 @@ def run():
         log.info(f"Saved {len(records):>4} records → {path}")
         master[bucket] = records
 
-    # ── Master JSON ──
+    # Master JSON
     master_path = os.path.join(OUTPUT_DIR, "master.json")
     master["_meta"] = {
         "scraped_at": datetime.now().isoformat(timespec="seconds"),
@@ -532,9 +534,9 @@ def run():
     }
     with open(master_path, "w", encoding="utf-8") as f:
         json.dump(master, f, indent=OUTPUT_INDENT, ensure_ascii=False)
-    log.info(f"\n✅ Master JSON saved → {master_path}")
+    log.info(f"\nMaster JSON saved → {master_path}")
 
-    # ── Summary ──
+    # Summary
     log.info("\n" + "═" * 60)
     log.info("SCRAPE COMPLETE")
     log.info("═" * 60)

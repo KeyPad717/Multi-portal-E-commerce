@@ -1,21 +1,3 @@
-"""
-json_to_owl.py
-==============
-Converts all scraped IIITB JSON data from /output folder into OWL/RDF format
-using the rdflib library (Strategy B).
-
-Output:
-  output/iiitb_tbox.ttl   — Pure Schema/TBox (classes + properties)
-  output/iiitb.owl        — Full ontology as RDF/XML  (import into Protege)
-  output/iiitb.ttl        — Full ontology as Turtle    (human-readable)
-
-Usage:
-  python json_to_owl.py
-
-Requires:
-  pip install rdflib
-"""
-
 import json
 import os
 import re
@@ -27,12 +9,10 @@ try:
     from rdflib import Graph, Namespace, URIRef, Literal, RDF, RDFS, OWL, BNode
     from rdflib.namespace import XSD, FOAF, SKOS, DC
 except ImportError:
-    print("❌  rdflib not found. Install it with:  pip install rdflib")
+    print("rdflib not found. Install it with:  pip install rdflib")
     sys.exit(1)
 
-# ─────────────────────────────────────────────────────────────────────────────
 # NAMESPACES
-# ─────────────────────────────────────────────────────────────────────────────
 BASE    = "http://semanticweb.iiitb.ac.in/"
 EDU     = Namespace(BASE + "edu#")       # ontology schema
 IIITB   = Namespace(BASE + "iiitb/")    # institution-specific individuals
@@ -40,10 +20,7 @@ SCHEMA  = Namespace("https://schema.org/")
 
 OUTPUT_DIR = Path(__file__).parent / "output"
 
-# ─────────────────────────────────────────────────────────────────────────────
 # HELPERS
-# ─────────────────────────────────────────────────────────────────────────────
-
 def safe_slug(text: str) -> str:
     """Convert arbitrary text to a URI-safe slug."""
     text = text.strip()
@@ -84,14 +61,12 @@ def add_uri_prop(g, subject, predicate, url_str):
     if url_str and str(url_str).strip():
         g.add((subject, predicate, Literal(url_str.strip(), datatype=XSD.anyURI)))
 
-# ─────────────────────────────────────────────────────────────────────────────
 # TBOX — Ontology Schema (classes & properties)
-# ─────────────────────────────────────────────────────────────────────────────
 
 def build_tbox(g: Graph):
     """Define OWL classes, object properties and data properties."""
 
-    print("  📐  Building TBox (schema) …")
+    print("Building TBox (schema)")
 
     # Ontology metadata
     onto = IIITB["ontology"]
@@ -100,8 +75,8 @@ def build_tbox(g: Graph):
     g.add((onto, DC.creator, Literal("IIITB DM Project — json_to_owl.py")))
     g.add((onto, DC.date, Literal(datetime.now().isoformat(), datatype=XSD.dateTime)))
 
-    # ── OWL Classes ──────────────────────────────────────────────────────────
-    classes = {
+    # OWL Classes
+    classes = { 
         "Institution"       : ("Educational institution (university, college, etc.)", SCHEMA.EducationalOrganization),
         "Department"        : ("Academic department within an institution", SCHEMA.Organization),
         "Faculty"           : ("Academic faculty member / professor", FOAF.Person),
@@ -138,7 +113,7 @@ def build_tbox(g: Graph):
     g.add((EDU.GovernanceMember,RDFS.subClassOf, FOAF.Person))
     g.add((EDU.Department,      RDFS.subClassOf, EDU.Institution))
 
-    # ── Object Properties ────────────────────────────────────────────────────
+    # Object Properties
     obj_props = [
         ("belongsTo",       "Faculty/Staff/Lab belongs to Institution",     None,               EDU.Institution),
         ("offers",          "Institution offers AcademicProgram",            EDU.Institution,    EDU.AcademicProgram),
@@ -163,7 +138,7 @@ def build_tbox(g: Graph):
         if range_:
             g.add((prop, RDFS.range, range_))
 
-    # ── Data Properties ──────────────────────────────────────────────────────
+    # Data Properties
     data_props = [
         ("name",            "Full name of the entity",                      XSD.string),
         ("email",           "Email address",                                 XSD.string),
@@ -191,13 +166,11 @@ def build_tbox(g: Graph):
     print(f"     TBox triples so far: {len(g)}")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # ABOX — Individual Instances
-# ─────────────────────────────────────────────────────────────────────────────
 
 def add_institution(g: Graph) -> URIRef:
     """Create the top-level IIITB institution individual."""
-    print("  🏫  Adding Institution …")
+    print("Adding Institution")
     inst = IIITB["IIIT_Bangalore"]
     g.add((inst, RDF.type, EDU.Institution))
     g.add((inst, RDF.type, OWL.NamedIndividual))
@@ -225,7 +198,7 @@ def add_institution(g: Graph) -> URIRef:
 
 def process_faculty(g: Graph, inst: URIRef):
     """Process faculty.json → edu:Faculty and edu:ResearchArea individuals."""
-    print("  👩‍🏫  Processing Faculty …")
+    print("Processing Faculty")
     data = load_json("faculty.json")
     seen_names, seen_slugs = set(), set()
     count = 0
@@ -233,7 +206,7 @@ def process_faculty(g: Graph, inst: URIRef):
     for item in data:
         cat = item.get("category", "")
 
-        # ── Faculty profile ───────────────────────────────────────────────────
+        # Faculty profile
         if cat == "faculty_profile":
             name = item.get("name", "").strip()
             slug = item.get("slug", "").strip()
@@ -269,7 +242,7 @@ def process_faculty(g: Graph, inst: URIRef):
                     g.add((fac, EDU.hasResearchArea, area_uri))
             count += 1
 
-        # ── Faculty list page — extract departments from links ─────────────
+        # Faculty list page — extract departments from links
         elif cat == "faculty_list":
             for link in item.get("links", []):
                 href = link.get("href", "")
@@ -288,7 +261,7 @@ def process_faculty(g: Graph, inst: URIRef):
 
 def process_governance(g: Graph, inst: URIRef):
     """Process governance.json → edu:GovernanceMember, administration bios."""
-    print("  🏛   Processing Governance …")
+    print("Processing Governance")
     data = load_json("governance.json")
     count = 0
 
@@ -334,7 +307,7 @@ def process_governance(g: Graph, inst: URIRef):
 
 def process_programs(g: Graph, inst: URIRef):
     """Process programs.json → AcademicProgram individuals."""
-    print("  📚  Processing Programs …")
+    print("Processing Programs")
     data = load_json("programs.json")
 
     level_map = [
@@ -399,7 +372,7 @@ def process_programs(g: Graph, inst: URIRef):
 
 def process_labs(g: Graph, inst: URIRef):
     """Process labs_centers.json → edu:Lab individuals."""
-    print("  🔬  Processing Labs & Centers …")
+    print("Processing Labs & Centers")
     data = load_json("labs_centers.json")
 
     seen_titles = set()
@@ -443,12 +416,12 @@ def process_labs(g: Graph, inst: URIRef):
 
         count += 1
 
-    print(f"     Labs/Centers added: {count}")
+    print(f"Labs/Centers added: {count}")
 
 
 def process_research_scholars(g: Graph, inst: URIRef):
     """Process research_scholars.json → scholar list pages as ResearchProgram links."""
-    print("  🎓  Processing Research Scholars …")
+    print("Processing Research Scholars")
     data = load_json("research_scholars.json")
     count = 0
 
@@ -490,7 +463,7 @@ def process_research_scholars(g: Graph, inst: URIRef):
 
 def process_staff(g: Graph, inst: URIRef):
     """Process staff.json → edu:Staff individuals."""
-    print("  👤  Processing Staff …")
+    print("Processing Staff")
     data = load_json("staff.json")
     seen = set()
     count = 0
@@ -523,7 +496,7 @@ def process_staff(g: Graph, inst: URIRef):
 
 def process_placement(g: Graph, inst: URIRef):
     """Process placement.json → edu:PlacementRecord individuals."""
-    print("  💼  Processing Placement …")
+    print("Processing Placement")
     data = load_json("placement.json")
     count = 0
 
@@ -558,7 +531,7 @@ def process_placement(g: Graph, inst: URIRef):
 
 def process_news(g: Graph, inst: URIRef):
     """Process news.json → edu:NewsItem individuals."""
-    print("  📰  Processing News & Events …")
+    print("Processing News & Events")
     data = load_json("news.json")
     seen_urls = set()
     count = 0
@@ -597,7 +570,7 @@ def process_news(g: Graph, inst: URIRef):
 
 def process_student_life(g: Graph, inst: URIRef):
     """Process student_life.json → edu:StudentActivity individuals."""
-    print("  🎭  Processing Student Life …")
+    print("Processing Student Life")
     data = load_json("student_life.json")
     count = 0
 
@@ -632,7 +605,7 @@ def process_student_life(g: Graph, inst: URIRef):
 
 def process_external(g: Graph, inst: URIRef):
     """Process external.json → edu:ExternalOrg individuals."""
-    print("  🌐  Processing External Organisations …")
+    print("Processing External Organisations")
     data = load_json("external.json")
     count = 0
 
@@ -659,16 +632,14 @@ def process_external(g: Graph, inst: URIRef):
     print(f"     External orgs added: {count}")
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # MAIN
-# ─────────────────────────────────────────────────────────────────────────────
 
 def main():
     print("\n" + "="*65)
     print("  IIITB JSON → OWL Converter  (Strategy B — rdflib)")
     print("="*65 + "\n")
 
-    # ── Build the graph ──────────────────────────────────────────────────────
+    # Build the graph
     g = Graph()
     g.bind("edu",    EDU)
     g.bind("iiitb",  IIITB)
@@ -698,10 +669,10 @@ def main():
     process_external(g, inst)
 
     total = len(g)
-    print(f"\n  ✅  Total RDF triples generated: {total}")
+    print(f"\n Total RDF triples generated: {total}")
 
-    # ── Serialize ────────────────────────────────────────────────────────────
-    print("\n  💾  Serialising outputs …")
+    # Serialize
+    print("\n Serialising outputs")
 
     owl_path = OUTPUT_DIR / "iiitb.owl"
     ttl_path = OUTPUT_DIR / "iiitb.ttl"
@@ -738,7 +709,7 @@ def main():
     print("  → Load output/iiitb.ttl into Jena Fuseki for SPARQL queries.")
     print("="*65 + "\n")
 
-    # ── Summary stats ────────────────────────────────────────────────────────
+    # Summary stats
     from collections import Counter
     type_counts = Counter()
     for s, p, o in g:

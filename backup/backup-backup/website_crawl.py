@@ -108,17 +108,17 @@ visited = set()
 queue = list(BASE_URLS)
 
 
-# ---------- HELPERS ----------
+# remove extra "/" for consistency
 def normalize(url):
     parsed = urlparse(url)
     return parsed.scheme + "://" + parsed.netloc + parsed.path.rstrip("/")
 
-
+# restricting only internal access(domain wise)
 def is_internal(url):
     domains = [urlparse(u).netloc for u in BASE_URLS]
     return urlparse(url).netloc in domains
 
-
+# check for website validity
 def is_valid(resp):
     if resp.status_code != 200:
         return False
@@ -134,7 +134,7 @@ def is_inside_allowed(url):
     return any(url.startswith(base) for base in BASE_URLS)
 
 
-# ---------- BFS CRAWL ----------
+# crawling through bfs
 while queue:
     current_url = normalize(queue.pop(0))
 
@@ -143,7 +143,6 @@ while queue:
 
     visited.add(current_url)
 
-    # ✅ LOGGING PRESERVED
     print(f"Visiting: {current_url}", flush=True)
 
     try:
@@ -186,14 +185,11 @@ while queue:
             queue.append(full_url)
 
 
-# ---------- FINAL OUTPUT ----------
-print("\n\n=========== ALL UNIQUE VISITED URLS ===========\n")
-
 for url in sorted(visited):
     print(url)
 
 
-# ---------- ONLY ADDITION ----------
+# ONLY ADDITION
 with open("unique_urls.txt", "w", encoding="utf-8") as f:
     for url in sorted(visited):
         f.write(url + "\n")

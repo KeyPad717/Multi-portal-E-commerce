@@ -1,0 +1,233 @@
+[
+  {
+    "entities": [
+      {
+        "id": "chandrashekar-ramanathan",
+        "type": "Person",
+        "label": "Chandrashekar Ramanathan",
+        "properties": {
+          "title": "Professor",
+          "roles": [
+            "Professor",
+            "Researcher",
+            "Administrator"
+          ]
+        }
+      },
+      {
+        "id": "iiit-b",
+        "type": "Organization",
+        "label": "International Institute of Information Technology Bangalore",
+        "properties": {
+          "type": "University",
+          "labs": [
+            "Machine Intelligence and Robotics Center (MINRO)",
+            "Center for Technology Research and Innovation – Digital Governance (CTRI-DG)"
+          ]
+        }
+      },
+      {
+        "id": "data-science",
+        "type": "ResearchArea",
+        "label": "Data Science",
+        "properties": {}
+      },
+      {
+        "id": "software-engineering",
+        "type": "ResearchArea",
+        "label": "Software Engineering",
+        "properties": {}
+      },
+      {
+        "id": "large-scale-application-development",
+        "type": "ResearchArea",
+        "label": "Large Scale Application Development",
+        "properties": {}
+      },
+      {
+        "id": "model-based-software-engineering",
+        "type": "ResearchArea",
+        "label": "Model-Based Software Engineering",
+        "properties": {}
+      },
+      {
+        "id": "technology-for-education",
+        "type": "ResearchArea",
+        "label": "Technology for Education",
+        "properties": {}
+      },
+      {
+        "id": "object-oriented-databases",
+        "type": "ResearchArea",
+        "label": "Object-Oriented Databases",
+        "properties": {}
+      },
+      {
+        "id": "data-modeling",
+        "type": "Concept",
+        "label": "Data Modeling",
+        "properties": {}
+      },
+      {
+        "id": "data-analytics",
+        "type": "Concept",
+        "label": "Data Analytics",
+        "properties": {}
+      },
+      {
+        "id": "database-design",
+        "type": "Concept",
+        "label": "Database Design",
+        "properties": {}
+      },
+      {
+        "id": "software-architecture",
+        "type": "Concept",
+        "label": "Software Architecture",
+        "properties": {}
+      }
+    ],
+    "relationships": [
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "worksAt",
+        "object_id": "iiit-b",
+        "object_type": "Organization"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "hasResearchArea",
+        "object_id": "data-science",
+        "object_type": "ResearchArea"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "hasResearchArea",
+        "object_id": "software-engineering",
+        "object_type": "ResearchArea"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "hasResearchArea",
+        "object_id": "large-scale-application-development",
+        "object_type": "ResearchArea"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "hasResearchArea",
+        "object_id": "model-based-software-engineering",
+        "object_type": "ResearchArea"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "hasResearchArea",
+        "object_id": "technology-for-education",
+        "object_type": "ResearchArea"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "hasResearchArea",
+        "object_id": "object-oriented-databases",
+        "object_type": "ResearchArea"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "hasResearchArea",
+        "object_id": "data-modeling",
+        "object_type": "Concept"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "hasResearchArea",
+        "object_id": "data-analytics",
+        "object_type": "Concept"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "hasResearchArea",
+        "object_id": "database-design",
+        "object_type": "Concept"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "hasResearchArea",
+        "object_id": "software-architecture",
+        "object_type": "Concept"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "authorOf",
+        "object_id": "TSAPI: Enhancing Existing OLTP Databases with Temporal Query Capabilities for Analytics .",
+        "object_type": "Publication"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "supervises",
+        "object_id": "four PhD students",
+        "object_type": "Literal"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "heads",
+        "object_id": "Machine Intelligence and Robotics Center (MINRO)",
+        "object_type": "Organization"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "heads",
+        "object_id": "Center for Technology Research and Innovation – Digital Governance (CTRI-DG)",
+        "object_type": "Organization"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "servesOn",
+        "object_id": "Technical Advisory Panels",
+        "object_type": "Literal"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "servesOn",
+        "object_id": "Board of Studies",
+        "object_type": "Literal"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "memberOf",
+        "object_id": "Board for IT Education Standards (BITES)",
+        "object_type": "Organization"
+      },
+      {
+        "subject_id": "chandrashekar-ramanathan",
+        "predicate": "recognizedBy",
+        "object_id": "Analytics India magazine",
+        "object_type": "Organization"
+      }
+    ],
+    "owl_annotations": {
+      "domain_hints": {
+        "worksAt": "Faculty",
+        "heads": "Research Center",
+        "servesOn": "Advisory Board",
+        "memberOf": "Professional Organization",
+        "recognizedBy": "Media Outlet"
+      },
+      "range_hints": {
+        "worksAt": "University",
+        "heads": "Organization",
+        "servesOn": "Committee",
+        "memberOf": "Board",
+        "recognizedBy": "Publication"
+      },
+      "inverse_of": {
+        "at": "worksAt"
+      },
+      "functional_properties": [
+        "worksAt",
+        "heads"
+      ],
+      "symmetric_properties": [
+        "servesOn"
+      ]
+    }
+  }
+]

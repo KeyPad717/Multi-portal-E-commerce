@@ -9,7 +9,7 @@ from rdflib import Graph
 
 
 def save_owl(g: Graph,
-             base_path: str = "output/faculty_das") -> str:
+             base_path: str = "output/faculty_RC") -> str:
     """
     Save the graph in two formats:
     - RDF/XML (.owl) — for Protégé

@@ -57,8 +57,10 @@ def check_token_budget(cp: dict, tokens_to_use: int, limit: int) -> bool:
     """
     Check if the pipeline has enough token budget remaining.
     Returns True if OK to proceed, False if limit would be exceeded.
-    Saves checkpoint with pause state if exceeded.
     """
+    if limit <= 0:
+        return True
+
     projected = cp["tokens_used"] + tokens_to_use
     if projected >= limit:
         cp["paused"] = True

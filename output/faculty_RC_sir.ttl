@@ -1,0 +1,430 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix onto: <http://iiitb.ac.in/ontology/faculty#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+onto: a owl:Ontology ;
+    dc:description "OWL ontology for IIITB faculty profile — Debabrata Das. Auto-generated via semantic pipeline."@en ;
+    dc:title "IIITB Faculty Knowledge Ontology"@en ;
+    owl:versionInfo "1.0" .
+
+onto:at owl:inverseOf onto:worksAt .
+
+onto:awardOrganization a owl:DatatypeProperty ;
+    rdfs:label "awardOrganization"@en ;
+    rdfs:comment "Organization that gave the award"@en ;
+    rdfs:domain onto:Award ;
+    rdfs:range xsd:string .
+
+onto:awardTitle a owl:DatatypeProperty ;
+    rdfs:label "awardTitle"@en ;
+    rdfs:comment "Name/title of the award"@en ;
+    rdfs:domain onto:Award ;
+    rdfs:range xsd:string .
+
+onto:awardYear a owl:DatatypeProperty ;
+    rdfs:label "awardYear"@en ;
+    rdfs:comment "Year award was received"@en ;
+    rdfs:domain onto:Award ;
+    rdfs:range xsd:gYear .
+
+onto:belongsTo a owl:ObjectProperty ;
+    rdfs:label "belongsTo"@en ;
+    rdfs:comment "Links a faculty to their department/group"@en ;
+    rdfs:domain onto:Faculty ;
+    rdfs:range onto:Organization .
+
+onto:chandrashekar-ramanathan a onto:Person,
+        owl:NamedIndividual ;
+    rdfs:label "Chandrashekar Ramanathan"@en ;
+    onto:authorOf "TSAPI: Enhancing Existing OLTP Databases with Temporal Query Capabilities for Analytics ."^^xsd:string ;
+    onto:hasResearchArea "data-analytics"^^xsd:string,
+        "data-modeling"^^xsd:string,
+        "data-science"^^xsd:string,
+        "database-design"^^xsd:string,
+        "large-scale-application-development"^^xsd:string,
+        "model-based-software-engineering"^^xsd:string,
+        "object-oriented-databases"^^xsd:string,
+        "software-architecture"^^xsd:string,
+        "software-engineering"^^xsd:string,
+        "technology-for-education"^^xsd:string ;
+    onto:heads "Center for Technology Research and Innovation – Digital Governance (CTRI-DG)"^^xsd:string,
+        "Machine Intelligence and Robotics Center (MINRO)"^^xsd:string ;
+    onto:memberOf "Board for IT Education Standards (BITES)"^^xsd:string ;
+    onto:prop_roles "['Professor', 'Researcher', 'Administrator']" ;
+    onto:prop_title "Professor" ;
+    onto:recognizedBy "Analytics India magazine"^^xsd:string ;
+    onto:servesOn "Board of Studies"^^xsd:string,
+        "Technical Advisory Panels"^^xsd:string ;
+    onto:supervises "four PhD students"^^xsd:string ;
+    onto:worksAt "iiit-b"^^xsd:string .
+
+onto:cites a owl:ObjectProperty ;
+    rdfs:label "cites"@en ;
+    rdfs:comment "Links a publication to one it cites"@en ;
+    rdfs:domain onto:Publication ;
+    rdfs:range onto:Publication .
+
+onto:collaboratesWith a owl:ObjectProperty ;
+    rdfs:label "collaboratesWith"@en ;
+    rdfs:comment "Links two collaborating faculty members"@en ;
+    rdfs:domain onto:Faculty ;
+    rdfs:range onto:Faculty .
+
+onto:courseCode a owl:DatatypeProperty ;
+    rdfs:label "courseCode"@en ;
+    rdfs:comment "Course code"@en ;
+    rdfs:domain onto:Course ;
+    rdfs:range xsd:string .
+
+onto:courseTitle a owl:DatatypeProperty ;
+    rdfs:label "courseTitle"@en ;
+    rdfs:comment "Full title of the course"@en ;
+    rdfs:domain onto:Course ;
+    rdfs:range xsd:string .
+
+onto:data-analytics a onto:Concept,
+        owl:NamedIndividual ;
+    rdfs:label "Data Analytics"@en .
+
+onto:data-modeling a onto:Concept,
+        owl:NamedIndividual ;
+    rdfs:label "Data Modeling"@en .
+
+onto:data-science a onto:ResearchArea,
+        owl:NamedIndividual ;
+    rdfs:label "Data Science"@en .
+
+onto:database-design a onto:Concept,
+        owl:NamedIndividual ;
+    rdfs:label "Database Design"@en .
+
+onto:degreeLevel a owl:DatatypeProperty ;
+    rdfs:label "degreeLevel"@en ;
+    rdfs:comment "Level of degree (PhD, MTech, BTech, etc.)"@en ;
+    rdfs:domain onto:Degree ;
+    rdfs:range xsd:string .
+
+onto:degreeYear a owl:DatatypeProperty ;
+    rdfs:label "degreeYear"@en ;
+    rdfs:comment "Year degree was awarded"@en ;
+    rdfs:domain onto:Degree ;
+    rdfs:range xsd:gYear .
+
+onto:description a owl:DatatypeProperty ;
+    rdfs:label "description"@en ;
+    rdfs:comment "General description"@en ;
+    rdfs:range xsd:string .
+
+onto:emailAddress a owl:DatatypeProperty ;
+    rdfs:label "emailAddress"@en ;
+    rdfs:comment "Email address"@en ;
+    rdfs:domain onto:Person ;
+    rdfs:range xsd:string .
+
+onto:fullName a owl:DatatypeProperty ;
+    rdfs:label "fullName"@en ;
+    rdfs:comment "Full name of the person"@en ;
+    rdfs:domain onto:Person ;
+    rdfs:range xsd:string .
+
+onto:fundedBy a owl:ObjectProperty ;
+    rdfs:label "fundedBy"@en ;
+    rdfs:comment "Links a project to its funding organization"@en ;
+    rdfs:domain onto:Project ;
+    rdfs:range onto:Organization .
+
+onto:hasEducation a owl:ObjectProperty ;
+    rdfs:label "hasEducation"@en ;
+    rdfs:comment "Links a person to an academic degree they hold"@en ;
+    rdfs:domain onto:Person ;
+    rdfs:range onto:Degree .
+
+onto:heads a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "heads" ;
+    rdfs:range onto:Organization .
+
+onto:iiit-b a onto:Organization,
+        owl:NamedIndividual ;
+    rdfs:label "International Institute of Information Technology Bangalore"@en ;
+    onto:prop_labs "['Machine Intelligence and Robotics Center (MINRO)', 'Center for Technology Research and Innovation – Digital Governance (CTRI-DG)']" ;
+    onto:prop_type "University" .
+
+onto:institution a owl:DatatypeProperty ;
+    rdfs:label "institution"@en ;
+    rdfs:comment "Institution where degree was obtained"@en ;
+    rdfs:domain onto:Degree ;
+    rdfs:range xsd:string .
+
+onto:isAffiliatedWith a owl:ObjectProperty ;
+    rdfs:label "isAffiliatedWith"@en ;
+    rdfs:comment "Links a person to an affiliated organization"@en ;
+    rdfs:domain onto:Person ;
+    rdfs:range onto:Organization .
+
+onto:jobTitle a owl:DatatypeProperty ;
+    rdfs:label "jobTitle"@en ;
+    rdfs:comment "Job title/designation"@en ;
+    rdfs:domain onto:Faculty ;
+    rdfs:range xsd:string .
+
+onto:large-scale-application-development a onto:ResearchArea,
+        owl:NamedIndividual ;
+    rdfs:label "Large Scale Application Development"@en .
+
+onto:memberOf a owl:ObjectProperty ;
+    rdfs:label "memberOf"@en ;
+    rdfs:comment "Links a person to an organization they are member of"@en ;
+    rdfs:domain onto:Person ;
+    rdfs:range onto:Organization .
+
+onto:model-based-software-engineering a onto:ResearchArea,
+        owl:NamedIndividual ;
+    rdfs:label "Model-Based Software Engineering"@en .
+
+onto:object-oriented-databases a onto:ResearchArea,
+        owl:NamedIndividual ;
+    rdfs:label "Object-Oriented Databases"@en .
+
+onto:phoneNumber a owl:DatatypeProperty ;
+    rdfs:label "phoneNumber"@en ;
+    rdfs:comment "Phone number"@en ;
+    rdfs:domain onto:Person ;
+    rdfs:range xsd:string .
+
+onto:projectFunding a owl:DatatypeProperty ;
+    rdfs:label "projectFunding"@en ;
+    rdfs:comment "Funding amount or grant details"@en ;
+    rdfs:domain onto:Project ;
+    rdfs:range xsd:string .
+
+onto:projectTitle a owl:DatatypeProperty ;
+    rdfs:label "projectTitle"@en ;
+    rdfs:comment "Title of the project"@en ;
+    rdfs:domain onto:Project ;
+    rdfs:range xsd:string .
+
+onto:prop_labs a owl:DatatypeProperty ;
+    rdfs:label "labs" .
+
+onto:prop_roles a owl:DatatypeProperty ;
+    rdfs:label "roles" .
+
+onto:prop_title a owl:DatatypeProperty ;
+    rdfs:label "title" .
+
+onto:prop_type a owl:DatatypeProperty ;
+    rdfs:label "type" .
+
+onto:publicationTitle a owl:DatatypeProperty ;
+    rdfs:label "publicationTitle"@en ;
+    rdfs:comment "Title of the publication"@en ;
+    rdfs:domain onto:Publication ;
+    rdfs:range xsd:string .
+
+onto:publicationVenue a owl:DatatypeProperty ;
+    rdfs:label "publicationVenue"@en ;
+    rdfs:comment "Journal or conference name"@en ;
+    rdfs:domain onto:Publication ;
+    rdfs:range xsd:string .
+
+onto:publicationYear a owl:DatatypeProperty ;
+    rdfs:label "publicationYear"@en ;
+    rdfs:comment "Year of publication"@en ;
+    rdfs:domain onto:Publication ;
+    rdfs:range xsd:gYear .
+
+onto:publishedIn a owl:ObjectProperty ;
+    rdfs:label "publishedIn"@en ;
+    rdfs:comment "Links a publication to the venue/journal it was published in"@en ;
+    rdfs:domain onto:Publication ;
+    rdfs:range onto:Organization .
+
+onto:recognizedBy a owl:DatatypeProperty ;
+    rdfs:label "recognizedBy" ;
+    rdfs:range onto:Publication .
+
+onto:relatedTo a owl:ObjectProperty ;
+    rdfs:label "relatedTo"@en ;
+    rdfs:comment "Links related research areas"@en ;
+    rdfs:domain onto:ResearchArea ;
+    rdfs:range onto:ResearchArea .
+
+onto:researchKeyword a owl:DatatypeProperty ;
+    rdfs:label "researchKeyword"@en ;
+    rdfs:comment "Keyword describing the research area"@en ;
+    rdfs:domain onto:ResearchArea ;
+    rdfs:range xsd:string .
+
+onto:servesOn a owl:DatatypeProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "servesOn" .
+
+onto:software-architecture a onto:Concept,
+        owl:NamedIndividual ;
+    rdfs:label "Software Architecture"@en .
+
+onto:software-engineering a onto:ResearchArea,
+        owl:NamedIndividual ;
+    rdfs:label "Software Engineering"@en .
+
+onto:studentName a owl:DatatypeProperty ;
+    rdfs:label "studentName"@en ;
+    rdfs:comment "Name of the student"@en ;
+    rdfs:domain onto:Student ;
+    rdfs:range xsd:string .
+
+onto:studentType a owl:DatatypeProperty ;
+    rdfs:label "studentType"@en ;
+    rdfs:comment "Type: PhD, MTech, BTech, etc."@en ;
+    rdfs:domain onto:Student ;
+    rdfs:range xsd:string .
+
+onto:supervises a owl:DatatypeProperty ;
+    rdfs:label "supervises" .
+
+onto:technology-for-education a onto:ResearchArea,
+        owl:NamedIndividual ;
+    rdfs:label "Technology for Education"@en .
+
+onto:authorOf a owl:ObjectProperty ;
+    rdfs:label "authorOf"@en ;
+    rdfs:comment "Links a faculty to a publication they authored"@en ;
+    rdfs:domain onto:Faculty ;
+    rdfs:range onto:Publication ;
+    owl:inverseOf onto:authoredBy .
+
+onto:authoredBy a owl:ObjectProperty ;
+    rdfs:label "authoredBy"@en ;
+    rdfs:comment "Inverse of authorOf"@en ;
+    rdfs:domain onto:Publication ;
+    rdfs:range onto:Faculty ;
+    owl:inverseOf onto:authorOf .
+
+onto:awardedTo a owl:ObjectProperty ;
+    rdfs:label "awardedTo"@en ;
+    rdfs:comment "Inverse of receivedAward"@en ;
+    rdfs:domain onto:Award ;
+    rdfs:range onto:Person ;
+    owl:inverseOf onto:receivedAward .
+
+onto:employs a owl:ObjectProperty ;
+    rdfs:label "employs"@en ;
+    rdfs:comment "Inverse of worksAt"@en ;
+    rdfs:domain onto:Organization ;
+    rdfs:range onto:Faculty ;
+    owl:inverseOf onto:worksAt .
+
+onto:hasParticipant a owl:ObjectProperty ;
+    rdfs:label "hasParticipant"@en ;
+    rdfs:comment "Inverse of worksOnProject"@en ;
+    rdfs:domain onto:Project ;
+    rdfs:range onto:Faculty ;
+    owl:inverseOf onto:worksOnProject .
+
+onto:hasResearchArea a owl:ObjectProperty ;
+    rdfs:label "hasResearchArea"@en ;
+    rdfs:comment "Links a faculty member to their research areas"@en ;
+    rdfs:domain onto:Faculty ;
+    rdfs:range onto:ResearchArea ;
+    owl:inverseOf onto:isResearchAreaOf .
+
+onto:isResearchAreaOf a owl:ObjectProperty ;
+    rdfs:label "isResearchAreaOf"@en ;
+    rdfs:comment "Inverse of hasResearchArea"@en ;
+    rdfs:domain onto:ResearchArea ;
+    rdfs:range onto:Faculty ;
+    owl:inverseOf onto:hasResearchArea .
+
+onto:receivedAward a owl:ObjectProperty ;
+    rdfs:label "receivedAward"@en ;
+    rdfs:comment "Links a person to an award they received"@en ;
+    rdfs:domain onto:Person ;
+    rdfs:range onto:Award ;
+    owl:inverseOf onto:awardedTo .
+
+onto:supervisedBy a owl:ObjectProperty ;
+    rdfs:label "supervisedBy"@en ;
+    rdfs:comment "Inverse of supervisesStudent"@en ;
+    rdfs:domain onto:Student ;
+    rdfs:range onto:Faculty ;
+    owl:inverseOf onto:supervisesStudent .
+
+onto:supervisesStudent a owl:ObjectProperty ;
+    rdfs:label "supervisesStudent"@en ;
+    rdfs:comment "Links a faculty to a PhD/research student they supervise"@en ;
+    rdfs:domain onto:Faculty ;
+    rdfs:range onto:Student ;
+    owl:inverseOf onto:supervisedBy .
+
+onto:taughtBy a owl:ObjectProperty ;
+    rdfs:label "taughtBy"@en ;
+    rdfs:comment "Inverse of teaches"@en ;
+    rdfs:domain onto:Course ;
+    rdfs:range onto:Faculty ;
+    owl:inverseOf onto:teaches .
+
+onto:teaches a owl:ObjectProperty ;
+    rdfs:label "teaches"@en ;
+    rdfs:comment "Links a faculty to a course they teach"@en ;
+    rdfs:domain onto:Faculty ;
+    rdfs:range onto:Course ;
+    owl:inverseOf onto:taughtBy .
+
+onto:worksOnProject a owl:ObjectProperty ;
+    rdfs:label "worksOnProject"@en ;
+    rdfs:comment "Links a faculty to a project they work on"@en ;
+    rdfs:domain onto:Faculty ;
+    rdfs:range onto:Project ;
+    owl:inverseOf onto:hasParticipant .
+
+onto:worksAt a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "worksAt"@en ;
+    rdfs:comment "Links a faculty to their institution"@en ;
+    rdfs:domain onto:Faculty ;
+    rdfs:range onto:Organization ;
+    owl:inverseOf onto:employs .
+
+onto:Course a owl:Class ;
+    rdfs:label "Course"@en ;
+    rdfs:subClassOf owl:Thing .
+
+onto:Degree a owl:Class ;
+    rdfs:label "Degree"@en ;
+    rdfs:subClassOf owl:Thing .
+
+onto:Student a owl:Class ;
+    rdfs:label "Student"@en ;
+    rdfs:subClassOf onto:Person .
+
+onto:Award a owl:Class ;
+    rdfs:label "Award"@en ;
+    rdfs:subClassOf owl:Thing .
+
+onto:Project a owl:Class ;
+    rdfs:label "Project"@en ;
+    rdfs:subClassOf owl:Thing .
+
+onto:Organization a owl:Class ;
+    rdfs:label "Organization"@en ;
+    rdfs:subClassOf owl:Thing .
+
+onto:Publication a owl:Class ;
+    rdfs:label "Publication"@en ;
+    rdfs:subClassOf owl:Thing .
+
+onto:Person a owl:Class ;
+    rdfs:label "Person"@en ;
+    rdfs:subClassOf owl:Thing .
+
+onto:ResearchArea a owl:Class ;
+    rdfs:label "ResearchArea"@en ;
+    rdfs:subClassOf owl:Thing .
+
+onto:Faculty a owl:Class ;
+    rdfs:label "Faculty"@en ;
+    rdfs:subClassOf onto:Person .
+

@@ -5,7 +5,7 @@ import re
 from openai import OpenAI
 from chunker import count_tokens
 
-# ── Configure OpenRouter ──────────────────────────────────
+# ── Configure OpenRouter ────────────────────────────────
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=os.getenv("OPENROUTER_API_KEY"),
@@ -16,70 +16,58 @@ MODEL = "meta-llama/llama-3-8b-instruct"
 # MODEL = "nousresearch/nous-hermes-2-mistral-7b-dpo"
 
 
-# ── STRICT PROMPT (VERY IMPORTANT) ──────────────────────
-SYSTEM_PROMPT = """You are an expert in knowledge graph construction and ontology engineering.
+SYSTEM_PROMPT = """You are an expert in Knowledge Graph Engineering and Ontology Discovery.
 
-Extract ALL possible structured knowledge from the given faculty profile.
+Your task is to extract ALL possible structured knowledge from the provided faculty/institutional data. 
+
+CORE PRINCIPLE: "Freehand Extraction"
+- I do NOT have a fixed schema. You must "think" and "discover" the relationships yourself.
+- Convert findings into RDF-style Triples: [Subject] -> [Predicate] -> [Object].
+- Example: "Professor -> worksAt -> IIIT Bangalore"
+
+EXTRACTION GUIDELINES:
+1. ENTITIES: Identify all key objects (People, Universities, Labs, Research Areas, Papers, Awards, Projects, Degrees, Courses).
+2. TYPES: For each entity, define a logical 'type' (Class). Be descriptive but consistent.
+3. RELATIONSHIPS: Discover how entities relate. Use camelCase for predicates (e.g., 'hasPublishedPaper', 'supervisesStudent').
+4. PROPERTIES: If an entity has a simple attribute (like an email or a year), put it in 'properties'.
 
 STRICT RULES:
-- Return ONLY valid JSON
-- No explanation, no markdown, no extra text
-- Be exhaustive — do NOT return minimal output
-
-Extract:
-
-1. PERSON
-- Name
-- Role (Professor, Researcher, etc.)
-
-2. ORGANIZATION
-- University, labs, institutes
-
-3. RESEARCH AREAS
-- All topics mentioned
-
-4. PUBLICATIONS (if present)
-
-5. CONCEPTS / SKILLS
-
-RELATIONSHIPS (very important):
-- worksAt
-- hasResearchArea
-- authorOf
-- relatedTo
-
-Convert sentences into triples:
-Example:
-"works in data mining" → Person → hasResearchArea → Data Mining
+- Return ONLY valid JSON.
+- No explanation, no markdown text.
+- Be EXHAUSTIVE. Do not truncate data.
 
 OUTPUT FORMAT:
-
 {
   "entities": [
     {
-      "id": "unique_id",
-      "type": "Person|Organization|ResearchArea|Publication|Concept",
-      "label": "name",
-      "properties": {}
+      "id": "Srinath_S",          # human-readable unique ID (snake_case)
+      "type": "Professor",       # The Class this entity belongs to
+      "label": "Srinath Srinivasa",
+      "properties": {            # Literal attributes (Datatype Properties)
+         "email": "ss@iiitb.ac.in",
+         "officeRoom": "A-102"
+      }
     }
   ],
   "relationships": [
     {
-      "subject_id": "",
-      "predicate": "",
-      "object_id": "",
-      "object_type": "entity|literal"
+      "subject_id": "Srinath_S",
+      "predicate": "leadsLab",
+      "object_id": "DSL_Lab",
+      "object_type": "entity"    # Use "entity" if object is in 'entities', else "literal"
     }
   ],
   "owl_annotations": {
-    "domain_hints": {},
-    "range_hints": {},
-    "inverse_of": {},
-    "functional_properties": [],
-    "symmetric_properties": []
+    "class_hierarchy": { "Professor": "Faculty", "Faculty": "Person" },
+    "domain_hints": { "leadsLab": "Professor" },
+    "range_hints": { "leadsLab": "ResearchLab" },
+    "inverse_of": { "leadsLab": "ledBy" },
+    "functional_properties": ["hasOfficeRoom"],
+    "symmetric_properties": ["collaboratesWith"]
   }
 }
 """
+
 
 
 # ── Extract JSON safely ─────────────────────────────────
@@ -100,7 +88,9 @@ def call_llm(prompt, retries=3):
             response = client.chat.completions.create(
                 model=MODEL,
                 messages=[{"role": "user", "content": prompt}],
+                max_tokens=4096,
             )
+
             return response.choices[0].message.content.strip()
 
         except Exception as e:
@@ -134,8 +124,12 @@ def enrich_chunk(chunk, cp, token_limit):
     raw = call_llm(prompt)
 
     if raw is None:
-        print("    [enricher] ⚠ Critical API failure or rate limit hit. Pausing pipeline to prevent data loss.")
-        return None
+        return {
+            "entities": [],
+            "relationships": [],
+            "owl_annotations": {},
+            "error": "LLM failed"
+        }
 
     # Clean markdown
     if raw.startswith("```"):

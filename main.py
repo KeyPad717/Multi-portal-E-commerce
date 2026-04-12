@@ -141,14 +141,15 @@ def run():
     # STAGE 3: LLM ENRICHMENT
     # ──────────────────────────────────────────────────────
     if "enriched" not in completed_stages:
-        print("\n► STAGE 3: LLM semantic enrichment (Llama 3 8B Prefered)...")
+        print("\n► STAGE 3: LLM semantic enrichment (OpenRouter Llama3)"
+              "(Gemini Flash)...")
         enriched = enrich_all_chunks(
             chunks, cp, TOKEN_LIMIT)
 
         if enriched is None:
             print("\n  Pipeline paused mid-enrichment.")
             print("  Re-run `python main.py` when "
-                  "OpenRouter quota resets.\n")
+                  "Gemini quota resets.\n")
             sys.exit(0)
 
         mark_stage(cp, "enriched", "enriched", enriched)
@@ -183,7 +184,7 @@ def run():
     # STAGE 5: WRITE OWL FILE
     # ──────────────────────────────────────────────────────
     print("\n► STAGE 5: Writing OWL file...")
-    owl_path = save_owl(g, "output/faculty_RC")
+    owl_path = save_owl(g, "output/faculty_das")
     mark_stage(cp, "owl", "owl_path", owl_path)
 
     # ── Final summary ─────────────────────────────────────
@@ -191,21 +192,19 @@ def run():
     print(f"  ✅  PIPELINE COMPLETE")
     print(f"{'='*58}")
     print(f"  OWL file   : {owl_path}")
-    print(f"  Turtle     : output/faculty_RC.ttl")
+    print(f"  Turtle     : output/faculty_das.ttl")
     print(f"  Tokens used: {cp['tokens_used']:,} "
           f"/ {TOKEN_LIMIT:,}")
     print(f"\n  Open in Protégé:")
     print(f"    File → Open... → "
           f"{os.path.abspath(owl_path)}")
     print(f"\n  Verify in Protégé:")
-    print(f"    Classes tab        → Person, Faculty, "
-          f"Publication, etc.")
-    print(f"    Object Properties  → hasResearchArea, "
-          f"authorOf, etc.")
-    print(f"    Data Properties    → fullName, "
-          f"emailAddress, etc.")
-    print(f"    Individuals tab    → all extracted entities")
+    print(f"    Classes tab        → Review discovered classes")
+    print(f"    Object Properties  → Review discovered object properties")
+    print(f"    Data Properties    → Review discovered data properties")
+    print(f"    Individuals tab    → All extracted entities")
     print(f"{'='*58}\n")
+
 
 
 if __name__ == "__main__":

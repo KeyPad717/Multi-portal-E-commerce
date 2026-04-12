@@ -9,8 +9,6 @@ onto: a owl:Ontology ;
     dc:title "IIITB Faculty Knowledge Ontology"@en ;
     owl:versionInfo "1.0" .
 
-onto:at owl:inverseOf onto:worksAt .
-
 onto:awardOrganization a owl:DatatypeProperty ;
     rdfs:label "awardOrganization"@en ;
     rdfs:comment "Organization that gave the award"@en ;
@@ -35,31 +33,6 @@ onto:belongsTo a owl:ObjectProperty ;
     rdfs:domain onto:Faculty ;
     rdfs:range onto:Organization .
 
-onto:chandrashekar-ramanathan a onto:Person,
-        owl:NamedIndividual ;
-    rdfs:label "Chandrashekar Ramanathan"@en ;
-    onto:authorOf "TSAPI: Enhancing Existing OLTP Databases with Temporal Query Capabilities for Analytics ."^^xsd:string ;
-    onto:hasResearchArea "data-analytics"^^xsd:string,
-        "data-modeling"^^xsd:string,
-        "data-science"^^xsd:string,
-        "database-design"^^xsd:string,
-        "large-scale-application-development"^^xsd:string,
-        "model-based-software-engineering"^^xsd:string,
-        "object-oriented-databases"^^xsd:string,
-        "software-architecture"^^xsd:string,
-        "software-engineering"^^xsd:string,
-        "technology-for-education"^^xsd:string ;
-    onto:heads "Center for Technology Research and Innovation – Digital Governance (CTRI-DG)"^^xsd:string,
-        "Machine Intelligence and Robotics Center (MINRO)"^^xsd:string ;
-    onto:memberOf "Board for IT Education Standards (BITES)"^^xsd:string ;
-    onto:prop_roles "['Professor', 'Researcher', 'Administrator']" ;
-    onto:prop_title "Professor" ;
-    onto:recognizedBy "Analytics India magazine"^^xsd:string ;
-    onto:servesOn "Board of Studies"^^xsd:string,
-        "Technical Advisory Panels"^^xsd:string ;
-    onto:supervises "four PhD students"^^xsd:string ;
-    onto:worksAt "iiit-b"^^xsd:string .
-
 onto:cites a owl:ObjectProperty ;
     rdfs:label "cites"@en ;
     rdfs:comment "Links a publication to one it cites"@en ;
@@ -72,6 +45,26 @@ onto:collaboratesWith a owl:ObjectProperty ;
     rdfs:domain onto:Faculty ;
     rdfs:range onto:Faculty .
 
+onto:concept1 a onto:Concept,
+        owl:NamedIndividual ;
+    rdfs:label "Data Modeling"@en .
+
+onto:concept2 a onto:Concept,
+        owl:NamedIndividual ;
+    rdfs:label "Data Analytics"@en .
+
+onto:concept3 a onto:Concept,
+        owl:NamedIndividual ;
+    rdfs:label "Database Design"@en .
+
+onto:concept4 a onto:Concept,
+        owl:NamedIndividual ;
+    rdfs:label "Software Architecture"@en .
+
+onto:concept5 a onto:Concept,
+        owl:NamedIndividual ;
+    rdfs:label "Object-Oriented Databases"@en .
+
 onto:courseCode a owl:DatatypeProperty ;
     rdfs:label "courseCode"@en ;
     rdfs:comment "Course code"@en ;
@@ -83,22 +76,6 @@ onto:courseTitle a owl:DatatypeProperty ;
     rdfs:comment "Full title of the course"@en ;
     rdfs:domain onto:Course ;
     rdfs:range xsd:string .
-
-onto:data-analytics a onto:Concept,
-        owl:NamedIndividual ;
-    rdfs:label "Data Analytics"@en .
-
-onto:data-modeling a onto:Concept,
-        owl:NamedIndividual ;
-    rdfs:label "Data Modeling"@en .
-
-onto:data-science a onto:ResearchArea,
-        owl:NamedIndividual ;
-    rdfs:label "Data Science"@en .
-
-onto:database-design a onto:Concept,
-        owl:NamedIndividual ;
-    rdfs:label "Database Design"@en .
 
 onto:degreeLevel a owl:DatatypeProperty ;
     rdfs:label "degreeLevel"@en ;
@@ -141,17 +118,6 @@ onto:hasEducation a owl:ObjectProperty ;
     rdfs:domain onto:Person ;
     rdfs:range onto:Degree .
 
-onto:heads a owl:DatatypeProperty,
-        owl:FunctionalProperty ;
-    rdfs:label "heads" ;
-    rdfs:range onto:Organization .
-
-onto:iiit-b a onto:Organization,
-        owl:NamedIndividual ;
-    rdfs:label "International Institute of Information Technology Bangalore"@en ;
-    onto:prop_labs "['Machine Intelligence and Robotics Center (MINRO)', 'Center for Technology Research and Innovation – Digital Governance (CTRI-DG)']" ;
-    onto:prop_type "University" .
-
 onto:institution a owl:DatatypeProperty ;
     rdfs:label "institution"@en ;
     rdfs:comment "Institution where degree was obtained"@en ;
@@ -170,23 +136,46 @@ onto:jobTitle a owl:DatatypeProperty ;
     rdfs:domain onto:Faculty ;
     rdfs:range xsd:string .
 
-onto:large-scale-application-development a onto:ResearchArea,
-        owl:NamedIndividual ;
-    rdfs:label "Large Scale Application Development"@en .
-
 onto:memberOf a owl:ObjectProperty ;
     rdfs:label "memberOf"@en ;
     rdfs:comment "Links a person to an organization they are member of"@en ;
     rdfs:domain onto:Person ;
     rdfs:range onto:Organization .
 
-onto:model-based-software-engineering a onto:ResearchArea,
+onto:organization1 a onto:Organization,
         owl:NamedIndividual ;
-    rdfs:label "Model-Based Software Engineering"@en .
+    rdfs:label "IIIT-B"@en ;
+    onto:prop_type "University" .
 
-onto:object-oriented-databases a onto:ResearchArea,
+onto:organization2 a onto:Organization,
         owl:NamedIndividual ;
-    rdfs:label "Object-Oriented Databases"@en .
+    rdfs:label "Mississippi State University"@en ;
+    onto:prop_type "University" .
+
+onto:person1 a onto:Person,
+        owl:NamedIndividual ;
+    rdfs:label "Chandrashekar Ramanathan"@en ;
+    onto:authorOf "publication1"^^xsd:string ;
+    onto:hasResearchArea "research_area1"^^xsd:string,
+        "research_area2"^^xsd:string,
+        "research_area3"^^xsd:string,
+        "research_area4"^^xsd:string,
+        "research_area5"^^xsd:string ;
+    onto:prop_bio "Faculty member at IIIT-B since 2007" ;
+    onto:prop_expertise "['Data Science', 'Software Engineering', 'Large Scale Application Development']" ;
+    onto:prop_phd_degree "Ph.D. (Mississippi State University)" ;
+    onto:prop_phd_research_focused "Object-Oriented Databases" ;
+    onto:prop_research_focus "['Data Science', 'Model-based Software Engineering', 'Technology for Education']" ;
+    onto:prop_role "['Professor', 'Researcher', 'Administrator']" ;
+    onto:prop_teaching_interests "['Data Modeling', 'Data Analytics', 'Database Design', 'Software Architecture']" ;
+    onto:prop_title "TSAPI: Enhancing Existing OLTP Databases with Temporal Query Capabilities for Analytics" ;
+    onto:prop_university "IIIT-B" ;
+    onto:relatedTo "concept1"^^xsd:string,
+        "concept2"^^xsd:string,
+        "concept3"^^xsd:string,
+        "concept4"^^xsd:string,
+        "concept5"^^xsd:string ;
+    onto:worksAt "organization1"^^xsd:string .
 
 onto:phoneNumber a owl:DatatypeProperty ;
     rdfs:label "phoneNumber"@en ;
@@ -206,17 +195,39 @@ onto:projectTitle a owl:DatatypeProperty ;
     rdfs:domain onto:Project ;
     rdfs:range xsd:string .
 
-onto:prop_labs a owl:DatatypeProperty ;
-    rdfs:label "labs" .
+onto:prop_bio a owl:DatatypeProperty ;
+    rdfs:label "bio" .
 
-onto:prop_roles a owl:DatatypeProperty ;
-    rdfs:label "roles" .
+onto:prop_expertise a owl:DatatypeProperty ;
+    rdfs:label "expertise" .
+
+onto:prop_phd_degree a owl:DatatypeProperty ;
+    rdfs:label "phd_degree" .
+
+onto:prop_phd_research_focused a owl:DatatypeProperty ;
+    rdfs:label "phd_research_focused" .
+
+onto:prop_research_focus a owl:DatatypeProperty ;
+    rdfs:label "research_focus" .
+
+onto:prop_role a owl:DatatypeProperty ;
+    rdfs:label "role" .
+
+onto:prop_teaching_interests a owl:DatatypeProperty ;
+    rdfs:label "teaching_interests" .
 
 onto:prop_title a owl:DatatypeProperty ;
     rdfs:label "title" .
 
 onto:prop_type a owl:DatatypeProperty ;
     rdfs:label "type" .
+
+onto:prop_university a owl:DatatypeProperty ;
+    rdfs:label "university" .
+
+onto:publication1 a onto:Publication,
+        owl:NamedIndividual ;
+    rdfs:label "TSAPI: Enhancing Existing OLTP Databases with Temporal Query Capabilities for Analytics"@en .
 
 onto:publicationTitle a owl:DatatypeProperty ;
     rdfs:label "publicationTitle"@en ;
@@ -242,10 +253,6 @@ onto:publishedIn a owl:ObjectProperty ;
     rdfs:domain onto:Publication ;
     rdfs:range onto:Organization .
 
-onto:recognizedBy a owl:DatatypeProperty ;
-    rdfs:label "recognizedBy" ;
-    rdfs:range onto:Publication .
-
 onto:relatedTo a owl:ObjectProperty ;
     rdfs:label "relatedTo"@en ;
     rdfs:comment "Links related research areas"@en ;
@@ -258,17 +265,25 @@ onto:researchKeyword a owl:DatatypeProperty ;
     rdfs:domain onto:ResearchArea ;
     rdfs:range xsd:string .
 
-onto:servesOn a owl:DatatypeProperty,
-        owl:SymmetricProperty ;
-    rdfs:label "servesOn" .
-
-onto:software-architecture a onto:Concept,
+onto:research_area1 a onto:ResearchArea,
         owl:NamedIndividual ;
-    rdfs:label "Software Architecture"@en .
+    rdfs:label "Data Science"@en .
 
-onto:software-engineering a onto:ResearchArea,
+onto:research_area2 a onto:ResearchArea,
         owl:NamedIndividual ;
     rdfs:label "Software Engineering"@en .
+
+onto:research_area3 a onto:ResearchArea,
+        owl:NamedIndividual ;
+    rdfs:label "Large Scale Application Development"@en .
+
+onto:research_area4 a onto:ResearchArea,
+        owl:NamedIndividual ;
+    rdfs:label "Model-based Software Engineering"@en .
+
+onto:research_area5 a onto:ResearchArea,
+        owl:NamedIndividual ;
+    rdfs:label "Technology for Education"@en .
 
 onto:studentName a owl:DatatypeProperty ;
     rdfs:label "studentName"@en ;
@@ -281,13 +296,6 @@ onto:studentType a owl:DatatypeProperty ;
     rdfs:comment "Type: PhD, MTech, BTech, etc."@en ;
     rdfs:domain onto:Student ;
     rdfs:range xsd:string .
-
-onto:supervises a owl:DatatypeProperty ;
-    rdfs:label "supervises" .
-
-onto:technology-for-education a onto:ResearchArea,
-        owl:NamedIndividual ;
-    rdfs:label "Technology for Education"@en .
 
 onto:authorOf a owl:ObjectProperty ;
     rdfs:label "authorOf"@en ;
@@ -373,20 +381,19 @@ onto:teaches a owl:ObjectProperty ;
     rdfs:range onto:Course ;
     owl:inverseOf onto:taughtBy .
 
+onto:worksAt a owl:ObjectProperty ;
+    rdfs:label "worksAt"@en ;
+    rdfs:comment "Links a faculty to their institution"@en ;
+    rdfs:domain onto:Faculty ;
+    rdfs:range onto:Organization ;
+    owl:inverseOf onto:employs .
+
 onto:worksOnProject a owl:ObjectProperty ;
     rdfs:label "worksOnProject"@en ;
     rdfs:comment "Links a faculty to a project they work on"@en ;
     rdfs:domain onto:Faculty ;
     rdfs:range onto:Project ;
     owl:inverseOf onto:hasParticipant .
-
-onto:worksAt a owl:FunctionalProperty,
-        owl:ObjectProperty ;
-    rdfs:label "worksAt"@en ;
-    rdfs:comment "Links a faculty to their institution"@en ;
-    rdfs:domain onto:Faculty ;
-    rdfs:range onto:Organization ;
-    owl:inverseOf onto:employs .
 
 onto:Course a owl:Class ;
     rdfs:label "Course"@en ;
@@ -416,12 +423,12 @@ onto:Publication a owl:Class ;
     rdfs:label "Publication"@en ;
     rdfs:subClassOf owl:Thing .
 
-onto:Person a owl:Class ;
-    rdfs:label "Person"@en ;
-    rdfs:subClassOf owl:Thing .
-
 onto:ResearchArea a owl:Class ;
     rdfs:label "ResearchArea"@en ;
+    rdfs:subClassOf owl:Thing .
+
+onto:Person a owl:Class ;
+    rdfs:label "Person"@en ;
     rdfs:subClassOf owl:Thing .
 
 onto:Faculty a owl:Class ;

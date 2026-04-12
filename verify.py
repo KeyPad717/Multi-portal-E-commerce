@@ -22,11 +22,11 @@ try:
     load_dotenv()
     key = os.getenv("OPENROUTER_API_KEY", "")
     url = os.getenv("TARGET_URL", "")
-    if not key:
-        print("  ❌  OPENROUTER_API_KEY not set in .env")
-        print("      Get key: https://openrouter.ai/keys")
+    if not key or "your_google" in key:
+        print("  ❌  GEMINI_API_KEY not set in .env")
+        print("      Get key: https://aistudio.google.com/app/apikey")
         sys.exit(1)
-    print(f"  ✓  OPENROUTER_API_KEY: {key[:8]}...")
+    print(f"  ✓  GEMINI_API_KEY: {key[:8]}...")
     print(f"  ✓  TARGET_URL: {url}")
     print(f"  ✓  TOKEN_LIMIT: {os.getenv('TOKEN_LIMIT', '12000')}")
 except Exception as e:
@@ -41,7 +41,7 @@ packages = [
     ("lxml",                  "lxml"),
     ("rdflib",                "rdflib"),
     ("tiktoken",              "tiktoken"),
-    ("openai",              "openai"),
+    ("google.generativeai",   "google-generativeai"),
     ("dotenv",                "python-dotenv"),
 ]
 all_ok = True
@@ -99,7 +99,7 @@ except Exception as e:
     print(f"  ❌  Chunker error: {e}")
     sys.exit(1)
 
-# ── 6. Test OpenRouter API connection (lightweight) ────────
+# ── 6. Test Gemini API connection (lightweight) ───────────
 print(f"\n[6] Testing LLM API connection ...")
 try:
     from openai import OpenAI

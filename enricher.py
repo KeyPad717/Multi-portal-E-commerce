@@ -5,7 +5,7 @@ import re
 from openai import OpenAI
 from chunker import count_tokens
 
-# ── Configure OpenRouter ────────────────────────────────
+# ── Configure OpenRouter ──────────────────────────────────
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=os.getenv("OPENROUTER_API_KEY"),
@@ -134,12 +134,8 @@ def enrich_chunk(chunk, cp, token_limit):
     raw = call_llm(prompt)
 
     if raw is None:
-        return {
-            "entities": [],
-            "relationships": [],
-            "owl_annotations": {},
-            "error": "LLM failed"
-        }
+        print("    [enricher] ⚠ Critical API failure or rate limit hit. Pausing pipeline to prevent data loss.")
+        return None
 
     # Clean markdown
     if raw.startswith("```"):

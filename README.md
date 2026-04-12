@@ -12,7 +12,7 @@ DM_API/
 ├── main.py            # Orchestrator (run this)
 ├── scraper.py         # Fetch + parse faculty page
 ├── chunker.py         # Token-aware data splitter
-├── enricher.py        # Gemini LLM enrichment
+├── enricher.py        # OpenRouter LLM enrichment
 ├── triple_builder.py  # RDF triple + OWL graph builder
 ├── owl_writer.py      # Serialize to .owl and .ttl
 ├── checkpoint.py      # Save/resume pipeline state
@@ -24,8 +24,8 @@ DM_API/
     ├── scraped_data.json     # Raw extracted data
     ├── chunks.json           # Token-split chunks
     ├── enriched_data.json    # LLM-enriched entities + rels
-    ├── faculty_das.owl       # ← Open this in Protégé
-    └── faculty_das.ttl       # Human-readable Turtle
+    ├── faculty_RC.owl       # ← Open this in Protégé
+    └── faculty_RC.ttl       # Human-readable Turtle
 ```
 
 ---
@@ -49,12 +49,12 @@ If you get permission errors, try:
 pip install --user -r requirements.txt
 ```
 
-### Step 3 — Get a FREE Gemini API key
+### Step 3 — Get a FREE OpenRouter API key
 
-1. Open browser → go to: https://aistudio.google.com/app/apikey
-2. Sign in with Google account
-3. Click **"Create API key"**
-4. Copy the key (starts with `AIza...`)
+1. Open browser → go to: https://openrouter.ai/keys
+2. Sign in or create an account
+3. Click **"Create Key"**
+4. Copy the key
 
 ### Step 4 — Set your API key in .env
 
@@ -63,9 +63,9 @@ Open `.env` file in any text editor:
 nano .env
 ```
 
-Replace `your_google_ai_studio_key_here` with your actual key:
+Replace `your_openrouter_api_key` with your actual key:
 ```
-GEMINI_API_KEY=AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+OPENROUTER_API_KEY=sk-or-v1-XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 TARGET_URL=https://www.iiitb.ac.in/faculty/debabrata-das
 TOKEN_LIMIT=12000
 CHUNK_SIZE=2000
@@ -79,7 +79,7 @@ Save: `Ctrl+O` → Enter → `Ctrl+X`
 python verify.py
 ```
 
-This checks: API key, all packages, URL reachability, scraper, chunker, Gemini connection.
+This checks: API key, all packages, URL reachability, scraper, chunker, OpenRouter connection.
 You should see: `✅ ALL CHECKS PASSED`
 
 ### Step 6 — Run the full pipeline
@@ -95,12 +95,12 @@ You will see output like:
 ══════════════════════════════════════════════════════════
 ► STAGE 1: Scraping webpage...
 ► STAGE 2: Tokenising and chunking...
-► STAGE 3: LLM semantic enrichment (Gemini Flash)...
+► STAGE 3: LLM semantic enrichment (OpenRouter Gemini 1.5 Flash)...
 ► STAGE 4: Building RDF triples...
 ► STAGE 5: Writing OWL file...
 ══════════════════════════════════════════════════════════
   ✅  PIPELINE COMPLETE
-  OWL file : output/faculty_das.owl
+  OWL file : output/faculty_RC.owl
 ══════════════════════════════════════════════════════════
 ```
 
@@ -108,7 +108,7 @@ You will see output like:
 
 1. Open Protégé
 2. **File → Open...**
-3. Navigate to: `~/Desktop/dm/DM_API/output/faculty_das.owl`
+3. Navigate to: `~/Desktop/dm/DM_API/output/faculty_RC.owl`
 4. Click **Open**
 5. In Protégé, explore:
    - **Classes tab** → Person, Faculty, Publication, ResearchArea, etc.
@@ -120,7 +120,7 @@ You will see output like:
 
 ## If Token Limit is Hit (Pipeline Pauses)
 
-The pipeline automatically pauses if Gemini's free tier limit is near.
+The pipeline automatically pauses if OpenRouter's free tier limit is near.
 All progress is saved in `output/checkpoint.json`.
 
 ```
@@ -193,10 +193,8 @@ python main.py
 
 **`ModuleNotFoundError`** → Run `pip install -r requirements.txt`
 
-**`GEMINI_API_KEY not set`** → Edit `.env`, add your key
-
-**`429 Resource exhausted`** → Free tier limit hit. Wait 1 minute (per-minute limit) or 24h (daily limit). Pipeline auto-resumes.
+**`429 Resource exhausted`** → Free tier limit hit. Wait 1 minute (per-minute limit) or check OpenRouter credits. Pipeline auto-resumes.
 
 **`Connection error`** → Check internet connection. IIITB site may be down temporarily.
 
-**Protégé shows empty ontology** → Make sure you open `faculty_das.owl` not the `.ttl` file.
+**Protégé shows empty ontology** → Make sure you open `faculty_RC.owl` not the `.ttl` file.

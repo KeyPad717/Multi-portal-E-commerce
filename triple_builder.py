@@ -36,6 +36,25 @@ def _xsd_range(type_str: str) -> URIRef:
     return XSD[t] if t else XSD.string
 
 
+def _clean_rdfxml(xml_text: str) -> str:
+    """
+    Fixes duplicate rdf:ID in a single XML snippet by converting 
+    subsequent occurrences to rdf:about="#ID".
+    """
+    ids_seen = set()
+    
+    def replacer(match):
+        full_attr = match.group(0)
+        id_val = match.group(1)
+        if id_val in ids_seen:
+            # Convert to about
+            return f'rdf:about="#{id_val}"'
+        ids_seen.add(id_val)
+        return full_attr
+
+    return re.sub(r'rdf:ID="([^"]+)"', replacer, xml_text)
+
+
 def build_graph(enriched_list: list) -> Graph:
     """
     Build a fully autonomous OWL graph by merging RDF/XML snippets
@@ -59,6 +78,12 @@ def build_graph(enriched_list: list) -> Graph:
     for i, item in enumerate(enriched_list):
         if isinstance(item, str):
             try:
+                # 1. Technical Fixes for Common LLM Syntax Errors
+                
+                # Fix duplicate rdf:ID in single snippet (converting to rdf:about)
+                if "<rdf:RDF" in item:
+                    item = _clean_rdfxml(item)
+                
                 # Parse the snippet into a temporary graph
                 temp_g = Graph()
                 
@@ -71,18 +96,21 @@ def build_graph(enriched_list: list) -> Graph:
                         temp_g.parse(data=item, format="xml")
                     except Exception as xml_err:
                         print(f"    [triples] ⚠ Chunk {i+1} parse failed:")
-                        print(f"      - Turtle error: {str(turtle_err).strip()}")
                         print(f"      - XML error:    {str(xml_err).strip()}")
                         fail_count += 1
                         continue
                 
-                # Sanity check: iterate through triples and fix "pseudo-URIs" 
-                # that are actually literals (LLM hallucination)
+                # 2. Semantic Sanitization (Fixing Hallucinated URIs)
                 for s, p, o in temp_g:
+                    # Skip triples that relate to the namespaces themselves
+                    if "xmlns" in str(s) or "xmlns" in str(p):
+                        continue
+                        
                     if isinstance(o, URIRef):
                         o_str = str(o)
-                        # If URI contains spaces or doesn't look like a URI, convert to Literal
-                        if " " in o_str or (len(o_str) > 150 and "://" not in o_str):
+                        # If URI contains spaces or is exceptionally long without a protocol, 
+                        # it's likely a mis-categorized Literal or long emergent label
+                        if " " in o_str or (len(o_str) > 250 and "://" not in o_str):
                             master_graph.add((s, p, Literal(o_str)))
                         else:
                             master_graph.add((s, p, o))

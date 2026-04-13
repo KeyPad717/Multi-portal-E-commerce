@@ -6,10 +6,123 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#BoardOfStudies">
-    <rdfs:label>Board of Studies</rdfs:label>
+  <rdf:Description rdf:about="#heads">
+    <rdfs:domain rdf:resource="#FacultyMember"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#Center"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DepartmentOfFinance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="#GovernmentDepartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ChandrashekarRamanathan">
+    <onto:hasFieldOfStudy rdf:resource="#DataModeling"/>
+    <onto:hasFieldOfStudy rdf:resource="#DatabaseDesign"/>
+    <onto:hasFieldOfStudy rdf:resource="#DataAnalytics"/>
+    <onto:hasFieldOfStudy rdf:resource="#SoftwareArchitecture"/>
+    <onto:affiliatedWith rdf:resource="#IIITB"/>
+    <onto:servesOn rdf:resource="#DepartmentOfFinance"/>
+    <onto:servesOn rdf:resource="#DepartmentOfEducation"/>
+    <onto:servesOn rdf:resource="#CenterForSmartGovernance"/>
+    <onto:hasResearchArea rdf:resource="#SoftwareEngineering"/>
+    <onto:hasResearchArea rdf:resource="#LargeScaleApplicationDevelopment"/>
+    <onto:hasResearchArea rdf:resource="#DataScience"/>
+    <onto:hasPublication rdf:resource="#ResearchPaper1"/>
+    <onto:hasPublication rdf:resource="#ResearchPaper2"/>
+    <onto:heads rdf:resource="#CTRI-DG"/>
+    <onto:heads rdf:resource="#MINRO"/>
+    <rdf:type rdf:resource="#Professor"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="#Dean"/>
+    <rdf:type rdf:resource="#FacultyMember"/>
+    <onto:participatedIn rdf:resource="#BITES"/>
+    <onto:receivedAward rdf:resource="#Top10DataScienceAcademiciansOfIndia2019"/>
+    <onto:receivedAward rdf:resource="#Top10DataScienceAcademiciansOfIndia2018"/>
+    <onto:hasBiography>Professor Chandrashekar Ramanathan is a faculty member at IIIT-B...</onto:hasBiography>
+    <onto:hasEmail rdf:resource="mailto:rc@iiitb.ac.in"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasBiography">
+    <rdfs:range rdf:resource="xsd:string"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="#FacultyMember"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Center">
+    <rdfs:subClassOf rdf:resource="#Organization"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Board served by Dr. Chandrashekar Ramanathan</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="#affiliatedWith">
+    <rdfs:domain rdf:resource="#FacultyMember"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#EducationInstitution"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Administrator">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Professor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Top10DataScienceAcademiciansOfIndia2018">
+    <rdf:type rdf:resource="#Award"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Award">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#Recognition"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasEmail">
+    <rdfs:domain rdf:resource="#FacultyMember"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:range rdf:resource="xsd:string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Academician">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#FacultyMember"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CenterForSmartGovernance">
+    <rdf:type rdf:resource="#GovernmentDepartment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#hasPublication">
+    <rdfs:range rdf:resource="#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#FacultyMember"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DatabaseDesign">
+    <rdf:type rdf:resource="#FieldOfStudy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#BITES">
+    <rdf:type rdf:resource="#Board"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#participatedIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="#Event"/>
+    <rdfs:domain rdf:resource="#FacultyMember"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FacultyMember">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DataModeling">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="#FieldOfStudy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#receivedAward">
+    <rdfs:range rdf:resource="#Award"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="#FacultyMember"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#servesOn">
+    <rdfs:range rdf:resource="#GovernmentDepartment"/>
+    <rdfs:domain rdf:resource="#FacultyMember"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#CTRI-DG">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="#Center"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
@@ -17,142 +130,96 @@
     <dc:description xml:lang="en">Emergent OWL ontology generated by autonomous pipeline.</dc:description>
     <owl:versionInfo>3.0-emergent</owl:versionInfo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DataModeling">
-    <rdfs:comment>Teaching interest</rdfs:comment>
-    <rdfs:label>Data Modeling</rdfs:label>
+  <rdf:Description rdf:about="#Dean">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#FacultyMember"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IIITB">
+    <rdf:type rdf:resource="#EducationInstitution"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Publication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="#ResearchOutput"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SoftwareEngineering">
+    <rdf:type rdf:resource="#ResearchArea"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SoftwareArchitecture">
+    <rdf:type rdf:resource="#FieldOfStudy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ResearchPaper1">
+    <rdf:type rdf:resource="#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Recognition">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#AnalyticsIndiaMagazine">
-    <rdfs:comment>Publication that recognized Dr. Chandrashekar Ramanathan</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Analytics India magazine</rdfs:label>
+  <rdf:Description rdf:about="#DataAnalytics">
+    <rdf:type rdf:resource="#FieldOfStudy"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ResearchPapers">
-    <rdfs:label>Research Papers</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Publications authored by Dr. Chandrashekar Ramanathan</rdfs:comment>
+  <rdf:Description rdf:about="#Top10DataScienceAcademiciansOfIndia2019">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="#Award"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ChandrashekarRamanathan">
-    <onto:TeachingInterests rdf:resource="http://iiitb.ac.in/ontology/autonomous#DatabaseDesign"/>
-    <onto:TeachingInterests rdf:resource="http://iiitb.ac.in/ontology/autonomous#DataAnalytics"/>
-    <onto:TeachingInterests rdf:resource="http://iiitb.ac.in/ontology/autonomous#DataModeling"/>
-    <onto:TeachingInterests rdf:resource="http://iiitb.ac.in/ontology/autonomous#SoftwareArchitecture"/>
-    <rdfs:comment>Professor and researcher at IIIT-B</rdfs:comment>
-    <onto:ResearchFocus rdf:resource="http://iiitb.ac.in/ontology/autonomous#ModelBasedSoftwareEngineering"/>
-    <onto:ResearchFocus rdf:resource="http://iiitb.ac.in/ontology/autonomous#DataScience"/>
-    <onto:ResearchFocus rdf:resource="http://iiitb.ac.in/ontology/autonomous#TechnologyForEducation"/>
-    <onto:Serves rdf:resource="http://iiitb.ac.in/ontology/autonomous#BoardOfStudies"/>
-    <onto:Serves rdf:resource="http://iiitb.ac.in/ontology/autonomous#TechnicalAdvisoryPanels"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Person"/>
-    <rdfs:label>Chandrashekar Ramanathan</rdfs:label>
-    <onto:RecognizedBy rdf:resource="http://iiitb.ac.in/ontology/autonomous#AnalyticsIndiaMagazine"/>
-    <onto:RecognizedBy rdf:resource="http://iiitb.ac.in/ontology/autonomous#Top10DataScienceAcademiciansOfIndia"/>
-    <onto:Served rdf:resource="http://iiitb.ac.in/ontology/autonomous#BoardForITEducationStandards"/>
-    <onto:Headed rdf:resource="http://iiitb.ac.in/ontology/autonomous#CenterForTechnologyResearchAndInnovationDigitalGovernance"/>
-    <onto:Headed rdf:resource="http://iiitb.ac.in/ontology/autonomous#MachineIntelligenceAndRoboticsCenter"/>
-    <onto:Education rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhD"/>
-    <onto:ThesisSupervision rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhDStudents"/>
-    <onto:Authorship rdf:resource="http://iiitb.ac.in/ontology/autonomous#ResearchPapers"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#PhDStudents">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>PhD Students</rdfs:label>
-    <rdfs:comment>Students supervised by Dr. Chandrashekar Ramanathan</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ProfessorAndDeanAcademics">
-    <rdfs:comment>Section of a faculty member's profile</rdfs:comment>
-    <onto:content rdf:resource="http://iiitb.ac.in/ontology/autonomous#rc_at_iiitb_ac_dot_in_Education_Phd_MississippiStateUniversity_ProfessorChandrashekarRamanathan_is_a_faculty_member_at_IIIT-B_since_2007_serving_as_professor_researcher_and_administrator_He_has_been_working_in_the_field_of_Computing_for_over_25_years_in_various_capacities_across_industry_and_academia_He_has_been_associated_with_IIITB_for_over_15_years_where_he_has_been_teaching_and_carrying_out_research_in_diverse_areas_His_expertise_lies_in_the_fields_of_data_science_software_engineering_and_large_scale_application_development_He_holds_a_Phd_degree_from_Mississippi_State_University_with_his_research_focused_on_object_oriented_databases_His_teaching_interests_are_in_the_areas_of_data_modeling_data_analytics_database_design_and_software_architecture_His_current_research_focus_is_Data_Science_Model_based_Software_Engineering_and_Technology_for_Education_He_has_authored_several_research_papers_and_supervised_thesis_work_of_four_Phd_students_who_have_now_graduated_from_IIIT-B_under_his_guidance_He_is_currently_heading_Machine_Intelligence_and_Robotics_Center_and_Center_for_Technology_Research_and_Innovation_Digital_Governance_both_of_which_are_funded_by_Government_of_Karnataka_He_is_passionate_about_the_use_of_technology_for_improving_the_quality_of_education_He_serves_on_the_Technical_Advisory_Panels_of_many_departments_of_the_Government_of_Karnataka_including_the_Department_of_Education_Finance_and_Center_for_Smart_Governance_He_also_serves_as_a_subject_matter_expert_on_the_Board_of_Studies_of_several_HEI_Higher_Educational_Institutions_Dr_Chandrashekar_was_a_Board_member_in_the_Board_for_IT_Education_Standards_between_2013_and_2023_He_was_recognized_in_the_list_of_Top_10_Data_Science_academicians_of_India_by_the_Analytics_India_magazine_for_the_year_2018_and_again_in_2019"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Professor &amp; Dean (Academics)</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DatabaseDesign">
-    <rdfs:label>Database Design</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Teaching interest</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DataScience">
-    <rdfs:label>Data Science</rdfs:label>
-    <rdfs:comment>Field of research</rdfs:comment>
+  <rdf:Description rdf:about="#GovernmentDepartment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#CenterForTechnologyResearchAndInnovationDigitalGovernance">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Center for Technology Research and Innovation – Digital Governance</rdfs:label>
-    <rdfs:comment>Research center funded by Government of Karnataka</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#TeachingInterests">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label>Teaching Interests</rdfs:label>
-    <rdfs:comment>Areas of teaching expertise</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#PhD">
-    <rdfs:label>Ph.D.</rdfs:label>
-    <rdfs:comment>Doctor of Philosophy degree</rdfs:comment>
+  <rdf:Description rdf:about="#ResearchArea">
+    <rdfs:subClassOf rdf:resource="#FieldOfStudy"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DataAnalytics">
+  <rdf:Description rdf:about="#FieldOfStudy">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Data Analytics</rdfs:label>
-    <rdfs:comment>Teaching interest</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ResearchFocus">
-    <rdfs:comment>Areas of research interest</rdfs:comment>
-    <rdfs:label>Research Focus</rdfs:label>
+  <rdf:Description rdf:about="#hasResearchArea">
+    <rdfs:domain rdf:resource="#FacultyMember"/>
+    <rdfs:range rdf:resource="#ResearchArea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ModelBasedSoftwareEngineering">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Field of research</rdfs:comment>
-    <rdfs:label>Model-Based Software Engineering</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ThesisSupervision">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:label>Thesis Supervision</rdfs:label>
-    <rdfs:comment>Supervision of PhD thesis work</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Education">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:comment>Academic qualifications</rdfs:comment>
-    <rdfs:label>Education</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#MississippiStateUniversity">
-    <rdfs:comment>University where Dr. Chandrashekar Ramanathan earned his Ph.D.</rdfs:comment>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Mississippi State University</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Top10DataScienceAcademiciansOfIndia">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:label>Top 10 Data Science academicians of India</rdfs:label>
-    <rdfs:comment>Recognition received by Dr. Chandrashekar Ramanathan</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#TechnologyForEducation">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Field of research</rdfs:comment>
-    <rdfs:label>Technology for Education</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#TechnicalAdvisoryPanels">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Panels served by Dr. Chandrashekar Ramanathan</rdfs:comment>
-    <rdfs:label>Technical Advisory Panels</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#SoftwareArchitecture">
-    <rdfs:comment>Teaching interest</rdfs:comment>
-    <rdfs:label>Software Architecture</rdfs:label>
+  <rdf:Description rdf:about="#EducationInstitution">
+    <rdfs:subClassOf rdf:resource="#Organization"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#BoardForITEducationStandards">
-    <rdfs:label>Board for IT Education Standards</rdfs:label>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Board served by Dr. Chandrashekar Ramanathan</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Authorship">
-    <rdfs:comment>Publication authorship</rdfs:comment>
-    <rdfs:label>Authorship</rdfs:label>
+  <rdf:Description rdf:about="#hasFieldOfStudy">
+    <rdfs:domain rdf:resource="#FacultyMember"/>
+    <rdfs:range rdf:resource="#FieldOfStudy"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#MachineIntelligenceAndRoboticsCenter">
+  <rdf:Description rdf:about="#DataScience">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MINRO">
+    <rdf:type rdf:resource="#Center"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LargeScaleApplicationDevelopment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ResearchPaper2">
+    <rdf:type rdf:resource="#Publication"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Board">
+    <rdfs:subClassOf rdf:resource="#Organization"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:comment>Research center headed by Dr. Chandrashekar Ramanathan</rdfs:comment>
-    <rdfs:label>Machine Intelligence and Robotics Center</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Researcher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ResearchOutput">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DepartmentOfEducation">
+    <rdf:type rdf:resource="#GovernmentDepartment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
 </rdf:RDF>

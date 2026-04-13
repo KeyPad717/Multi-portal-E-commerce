@@ -11,108 +11,91 @@ client = OpenAI(
     api_key=os.getenv("OPENROUTER_API_KEY"),
 )
 
-MODEL = "meta-llama/llama-3-8b-instruct"
-# You can also try:
-# MODEL = "nousresearch/nous-hermes-2-mistral-7b-dpo"
+# UPGRADED to 70B for high-fidelity semantic induction
+MODEL = "meta-llama/llama-3-70b-instruct"
 
 
 SYSTEM_PROMPT = """You are an autonomous ontology engineer.
 
-Your task is to construct a complete OWL ontology from the provided extracted data.
+Your task is to construct a complete OWL ontology from extracted data.
 
-You must NOT rely on any predefined schema. All classes, individuals, and relationships must be invented purely from your own reasoning based on the input data.
+The ontology must be fully emergent.
+No predefined schema, template, or ontology structure may be assumed.
 
-Phase 1 — Emergent Ontology Construction (No external schema)
+All classes, individuals, and relationships must be invented purely from semantic understanding of the data.
 
-1. Analyze the input data.
-2. Invent classes dynamically.
-3. Invent object properties dynamically.
-4. Invent datatype properties dynamically.
-5. Create individuals when appropriate.
-6. Prefer modeling meaningful concepts as entities rather than literals.
-7. Create relationships purely from semantic understanding of the data.
-8. Infer class hierarchies when meaningful.
-9. Infer domain and range when appropriate.
-10. Create inverse relationships when they naturally exist and add value.
-11. Add rdfs:comment annotations describing semantics.
-12. Use OWL constructs where appropriate (subClassOf, inverseOf, etc.)
+Core Principles:
+1. Everything must emerge from the input data.
+2. Do not assume any predefined ontology structure or common class hierarchies (no 'Person', 'Faculty', etc.).
+3. Prefer semantic meaning over structural regularity. 
+4. Prefer entities over literals when meaningful.
+5. Infer relationships even when implicit from context or structure.
+6. Create abstractions when conceptually useful (roles, groups, functional categories).
+7. Allow conceptual classes even if few instances exist.
+8. Focus on semantic correctness rather than syntactic clustering.
 
-Phase 2 — Optional Schema.org Verification
+Ontology Construction Guidelines:
+- Entity Modeling: Identify meaningful entities; convert literals to entities when they represent reusable concepts.
+- Class Induction: Create classes when entities share semantic roles. Infer subclass relationships when appropriate.
+- Relationship Induction: Create ObjectProperties between entities and DatatypeProperties for literals. Create inverse relationships when natural. Infer domain and range.
+- Hierarchy Construction: Infer containment, membership, and specialization relationships.
+- Semantic Enrichment: Use OWL constructs (subClassOf, inverseOf, Restriction). Add rdfs:comment annotations describing semantics.
 
-After constructing the ontology:
-1. Review the relationships and classes you created.
-2. Check whether any of them align with schema.org concepts.
-3. If alignment exists, you may declare equivalence or add supplemental semantics.
-4. Do NOT replace your ontology structure — only enrich or align.
+Schema.org Alignment (Optional):
+After constructing the ontology, you may align with schema.org via owl:equivalentClass/Property or reuse URIs, but do NOT replace the emergent structure.
 
-Constraints
-- Do NOT hallucinate hundreds of properties. Focus on quality over quantity.
-- Do NOT use blank node syntax `[ ... ]`. Every entity must be a named individual with its own ID (e.g. `onto:EntityName`).
-- Do NOT copy known ontology structures.
-- Everything must be derived from the provided data.
+Output Requirements:
+Return ONLY a valid OWL ontology in RDF/XML format.
+Include standard namespaces:
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:onto="http://iiitb.ac.in/ontology/autonomous#"
 
-Output Requirements
-Produce a valid OWL ontology in Turtle (N3) format.
+CRITICAL XML RULES:
+1. Every individual or class MUST be defined in a single block.
+2. Do NOT use the same rdf:ID twice.
+3. Use rdf:resource and NOT resource. Use rdf:about and NOT about.
+4. Correct structure for individuals:
+   <owl:NamedIndividual rdf:ID="EntityID">
+     <rdf:type rdf:resource="#ClassName"/>
+     <onto:property rdf:resource="#OtherEntity"/>
+     <onto:dataProperty rdf:datatype="xsd:string">Value</onto:dataProperty>
+   </owl:NamedIndividual>
+5. ESCAPE all special characters in text (e.g., use &amp; for &).
 
-IMPORTANT: Your response MUST be EXACTLY a valid Turtle document.
-- Start with prefix declarations:
-    @prefix onto: <http://iiitb.ac.in/ontology/autonomous#> .
-    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-    @prefix owl: <http://www.w3.org/2002/07/owl#> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-- Use standard Turtle syntax: [Subject] [Predicate] [Object] .
-- EVERY TRIPLE must end with a dot `.` followed by a newline.
-- NEVER use shared objects with semicolons or commas; write each triple fully for maximum stability.
-- Example: onto:Professor rdf:type owl:Class .
-- Example: onto:Professor rdfs:comment "A faculty member." .
-- Do NOT include any conversational preamble or markdown backticks.
+Do not include explanations, reasoning steps, or phase outputs.
+Only the final RDF/XML.
 """
 
 
 
-# ── Extract Turtle safely ───────────────────────────────
-def extract_turtle(text):
+# ── Extract RDF/XML safely ───────────────────────────────
+def sanitize_xml_block(xml_text):
+    # Escape ampersands that aren't already part of an entity
+    xml_text = re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)", "&amp;", xml_text)
+    return xml_text
+
+def extract_rdfxml(text):
     try:
-        # Step 1: Clean markdown backticks
-        if "```" in text:
-            parts = text.split("```")
-            for part in parts:
-                if "@prefix" in part or "onto:" in part:
-                     text = part
-                     if text.strip().startswith("turtle") or text.strip().startswith("n3"):
-                         text = "\n".join(text.split("\n")[1:])
-                     break
-
-        lines = text.strip().split("\n")
-        cleaned_lines = []
-        for line in lines:
-            line = line.strip()
-            if not line or line.startswith("#"):
-                continue
-            
-            # Handle prefix lines
-            if line.startswith("@prefix"):
-                if not line.endswith("."):
-                    line += " ."
-                cleaned_lines.append(line)
-                continue
-
-            # Handle triples (very basic repair)
-            # If line doesn't end with a dot/comma/semicolon, add a dot
-            if not line.endswith(".") and not line.endswith(";") and not line.endswith(","):
-                line += " ."
-            
-            cleaned_lines.append(line)
+        # Search for the LAST <rdf:RDF> block
+        matches = list(re.finditer(r"<rdf:RDF.*?</rdf:RDF>", text, re.DOTALL | re.IGNORECASE))
+        if matches:
+            block = matches[-1].group()
+            return sanitize_xml_block(block)
         
-        final_text = "\n".join(cleaned_lines)
-        
-        # Step 3: Find the actual start
-        start = final_text.find("@prefix")
-        if start != -1:
-            return final_text[start:].strip()
-        
-        return final_text.strip()
+        # Fallback to <owl:Ontology if that's all there is
+        matches = list(re.finditer(r"<owl:Ontology.*?</owl:Ontology>", text, re.DOTALL | re.IGNORECASE))
+        if matches:
+            snippet = matches[-1].group()
+            if 'xmlns:rdf=' not in snippet:
+                header = '<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" ' \
+                         'xmlns:owl="http://www.w3.org/2002/07/owl#" ' \
+                         'xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" ' \
+                         'xmlns:xsd="http://www.w3.org/2001/XMLSchema#">\n'
+                snippet = header + snippet + '\n</rdf:RDF>'
+            return sanitize_xml_block(snippet)
     except:
         pass
     return None
@@ -156,7 +139,7 @@ def enrich_chunk(chunk, cp, token_limit):
     if not check_token_budget(cp, tokens * 2, token_limit):
         return None
 
-    print(f"    [enricher] Sending ~{tokens} tokens to OpenRouter...")
+    print(f"    [enricher] Sending ~{tokens} tokens to Autonomous Engineer (70B)...")
 
     raw = call_llm(prompt)
 
@@ -166,18 +149,18 @@ def enrich_chunk(chunk, cp, token_limit):
             "raw_output": ""
         }
 
-    # Extract Turtle safely
-    result = extract_turtle(raw)
+    # Extract RDF/XML 
+    result = extract_rdfxml(raw)
 
     if result:
-        print(f"    [enricher] ✓ Turtle extracted ({len(result)} chars)")
+        print(f"    [enricher] ✓ Semantic RDF/XML extracted ({len(result)} chars)")
         return result
     else:
-        print("    [enricher] ⚠ Turtle extraction failed")
-        print(f"    [debug] Raw start: {raw[:100]}...")
+        print("    [enricher] ⚠ RDF/XML extraction failed")
+        print(f"    [debug] Raw output start: {raw[:100]}...")
 
         return {
-            "error": "Turtle extraction failed",
+            "error": "Extraction failed",
             "raw_output": raw
         }
 

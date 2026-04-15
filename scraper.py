@@ -124,10 +124,13 @@ def _get_name(soup) -> str:
 
 
 def _get_title(soup) -> str:
+    # First: try precise CSS selectors.
+    # NOTE: ".title" is intentionally excluded — on IIITB faculty pages
+    # it matches publication title elements, not the person's designation.
     selectors = [
         ".designation", ".faculty-title",
         ".profile-designation", "[itemprop='jobTitle']",
-        ".position", "h2", ".title"
+        ".position"
     ]
     for sel in selectors:
         el = soup.select_one(sel)
@@ -135,6 +138,22 @@ def _get_title(soup) -> str:
             t = el.get_text(" ", strip=True)
             if t and len(t) < 150:
                 return t
+
+    # Second: scan headings for faculty designation patterns only.
+    # This avoids accidentally picking up publication titles that
+    # also appear in <h2> tags on faculty profile pages.
+    _ROLE_PATTERN = re.compile(
+        r'\b(Professor|Associate Professor|Assistant Professor|'
+        r'Dean|Director|Head of|Lecturer|Adjunct|Visiting|'
+        r'Emeritus|Principal|Scientist|Research Fellow|'
+        r'Faculty|Instructor|Chair)\b',
+        re.IGNORECASE
+    )
+    for tag in soup.find_all(["h2", "h3", "h4"]):
+        t = tag.get_text(" ", strip=True)
+        if t and len(t) < 120 and _ROLE_PATTERN.search(t):
+            return t
+
     return ""
 
 

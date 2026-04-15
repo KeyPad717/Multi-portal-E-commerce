@@ -184,7 +184,7 @@ def run():
     # STAGE 5: WRITE OWL FILE
     # ──────────────────────────────────────────────────────
     print("\n► STAGE 5: Writing OWL file...")
-    owl_path = save_owl(g, "output/faculty_das")
+    owl_path = save_owl(g, "output/faculty_RC_sir")
     mark_stage(cp, "owl", "owl_path", owl_path)
 
     # ── Final summary ─────────────────────────────────────
@@ -192,7 +192,7 @@ def run():
     print(f"  ✅  PIPELINE COMPLETE")
     print(f"{'='*58}")
     print(f"  OWL file   : {owl_path}")
-    print(f"  Turtle     : output/faculty_das.ttl")
+    print(f"  Turtle     : output/faculty_RC_sir.ttl")
     print(f"  Tokens used: {cp['tokens_used']:,} "
           f"/ {TOKEN_LIMIT:,}")
     print(f"\n  Open in Protégé:")

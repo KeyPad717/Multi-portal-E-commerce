@@ -15,7 +15,7 @@ NS = {
 for prefix, uri in NS.items():
     ET.register_namespace(prefix, uri)
 
-FILE_PATH = "output/faculty_das.owl"
+FILE_PATH = "output/faculty_RC_sir.owl"
 tree = ET.parse(FILE_PATH)
 root = tree.getroot()
 
@@ -100,7 +100,7 @@ for about, desc in entities.items():
 # Relative URIs in assertions like "#DataModeling" are fine AS LONG AS xml:base is set.
 
 # Output manually with xml:base
-output_file = "output/refined_faculty_das.owl"
+output_file = "output/refined_faculty_RC_sir.owl"
 
 def prettify(elem):
     from xml.dom import minidom

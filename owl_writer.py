@@ -7,9 +7,48 @@ The .ttl (Turtle) file is human-readable for debugging.
 import os
 from rdflib import Graph
 
+# Ontology base URI — must match triple_builder.BASE_URI
+OWL_BASE = "http://iiitb.ac.in/ontology/autonomous#"
+
+
+def _patch_rdf_header(owl_path: str) -> None:
+    """
+    rdflib's RDF/XML serializer omits xml:base and xmlns:xsd from the
+    <rdf:RDF> header.  Without xml:base, Protégé resolves every relative
+    #-fragment URI against the file:// path instead of the ontology
+    namespace, so property declarations (e.g. #teaches resolved to
+    file://…#teaches) and property usages (onto:teaches) appear as
+    *different* entities — making the Property Assertions panel empty.
+
+    This function patches the serialized file to add:
+      xml:base="<OWL_BASE>"
+      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    """
+    with open(owl_path, "r", encoding="utf-8") as f:
+        content = f.read()
+
+    # Only patch if xml:base is absent (idempotent)
+    if "xml:base" not in content:
+        content = content.replace(
+            "<rdf:RDF\n",
+            f'<rdf:RDF\n   xml:base="{OWL_BASE}"\n'
+        )
+
+    # Ensure xmlns:xsd is present (rdflib may drop it when no typed
+    # literals survive serialization, but range declarations reference it)
+    if "xmlns:xsd" not in content:
+        content = content.replace(
+            'xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"',
+            'xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"\n'
+            '   xmlns:xsd="http://www.w3.org/2001/XMLSchema#"'
+        )
+
+    with open(owl_path, "w", encoding="utf-8") as f:
+        f.write(content)
+
 
 def save_owl(g: Graph,
-             base_path: str = "output/faculty_das") -> str:
+             base_path: str = "output/faculty_RC_sir") -> str:
     """
     Save the graph in two formats:
     - RDF/XML (.owl) — for Protégé
@@ -25,6 +64,7 @@ def save_owl(g: Graph,
 
     # ── RDF/XML (Protégé native format) ──────────────────
     g.serialize(destination=owl_path, format="xml")
+    _patch_rdf_header(owl_path)          # inject xml:base + xmlns:xsd
     owl_size = os.path.getsize(owl_path) / 1024
 
     # ── Turtle (human-readable) ───────────────────────────

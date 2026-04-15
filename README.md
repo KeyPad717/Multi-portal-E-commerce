@@ -24,8 +24,8 @@ DM_API/
     ├── scraped_data.json     # Raw extracted data
     ├── chunks.json           # Token-split chunks
     ├── enriched_data.json    # LLM-enriched entities + rels
-    ├── faculty_das.owl       # ← Open this in Protégé
-    └── faculty_das.ttl       # Human-readable Turtle
+    ├── faculty_RC_sir.owl       # ← Open this in Protégé
+    └── faculty_RC_sir.ttl       # Human-readable Turtle
 ```
 
 ---
@@ -100,7 +100,7 @@ You will see output like:
 ► STAGE 5: Writing OWL file...
 ══════════════════════════════════════════════════════════
   ✅  PIPELINE COMPLETE
-  OWL file : output/faculty_das.owl
+  OWL file : output/faculty_RC_sir.owl
 ══════════════════════════════════════════════════════════
 ```
 
@@ -108,7 +108,7 @@ You will see output like:
 
 1. Open Protégé
 2. **File → Open...**
-3. Navigate to: `~/Desktop/dm/DM_API/output/faculty_das.owl`
+3. Navigate to: `~/Desktop/dm/DM_API/output/faculty_RC_sir.owl`
 4. Click **Open**
 5. In Protégé, explore:
    - **Classes tab** → Person, Faculty, Publication, ResearchArea, etc.
@@ -199,4 +199,4 @@ python main.py
 
 **`Connection error`** → Check internet connection. IIITB site may be down temporarily.
 
-**Protégé shows empty ontology** → Make sure you open `faculty_das.owl` not the `.ttl` file.
+**Protégé shows empty ontology** → Make sure you open `faculty_RC_sir.owl` not the `.ttl` file.

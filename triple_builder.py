@@ -87,29 +87,51 @@ def build_graph(enriched_list: list) -> Graph:
                 # Parse the snippet into a temporary graph
                 temp_g = Graph()
                 
+                # Parse with publicID = ontology base so that relative #-fragment
+                # URIs (e.g. rdf:ID="teaches") resolve to onto:teaches instead of
+                # staying as bare #teaches fragments. This ensures property
+                # declarations and property usages share the same URI, which is
+                # required for Protégé to display property assertions correctly.
+                parse_kwargs = {"publicID": BASE_URI}
+
                 # Try Turtle first (more robust for LLMs)
                 try:
-                    temp_g.parse(data=item, format="turtle")
+                    temp_g.parse(data=item, format="turtle", **parse_kwargs)
                 except Exception as turtle_err:
                     # Fallback to XML
                     try:
-                        temp_g.parse(data=item, format="xml")
+                        temp_g.parse(data=item, format="xml", **parse_kwargs)
                     except Exception as xml_err:
                         print(f"    [triples] ⚠ Chunk {i+1} parse failed:")
                         print(f"      - XML error:    {str(xml_err).strip()}")
                         fail_count += 1
                         continue
                 
-                # 2. Semantic Sanitization (Fixing Hallucinated URIs)
+                # 2. Semantic Sanitization
                 for s, p, o in temp_g:
-                    # Skip triples that relate to the namespaces themselves
+                    # Skip triples whose subject/predicate are namespace declarations
                     if "xmlns" in str(s) or "xmlns" in str(p):
                         continue
-                        
+
+                    # Skip triples with garbage subjects: XML comments, tag strings,
+                    # and whitespace-embedded strings that the XML parser creates as
+                    # side-effects of malformed LLM output (e.g. '!-- Classes --',
+                    # 'rdf:RDF xmlns:...', 'owl:Class rdf:ID=.../').  
+                    # After publicID resolution these show up as valid-looking http://
+                    # URIs but contain spaces, newlines, bangs, or angle-brackets.
+                    if isinstance(s, URIRef):
+                        s_str = str(s)
+                        if not s_str.startswith(("http://", "https://", "#")):
+                            continue
+                        # Reject URIs that contain XML artefact characters
+                        if any(bad in s_str for bad in
+                               [" ", "\n", "\t", "!--", "</", "rdf:RDF"]):
+                            continue
+
                     if isinstance(o, URIRef):
                         o_str = str(o)
-                        # If URI contains spaces or is exceptionally long without a protocol, 
-                        # it's likely a mis-categorized Literal or long emergent label
+                        # If URI contains spaces or is exceptionally long without a
+                        # protocol, it's likely a mis-categorised Literal
                         if " " in o_str or (len(o_str) > 250 and "://" not in o_str):
                             master_graph.add((s, p, Literal(o_str)))
                         else:

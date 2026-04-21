@@ -106,8 +106,7 @@ def scrape(url: str) -> dict:
     return cleaned
 
 
-# ── Private helpers ────────────────────────────────────────
-
+#helpers
 def _get_name(soup) -> str:
     selectors = [
         "h1.faculty-name", "h1.profile-name", "h1",
@@ -124,9 +123,7 @@ def _get_name(soup) -> str:
 
 
 def _get_title(soup) -> str:
-    # First: try precise CSS selectors.
-    # NOTE: ".title" is intentionally excluded — on IIITB faculty pages
-    # it matches publication title elements, not the person's designation.
+    # try precise CSS selectors
     selectors = [
         ".designation", ".faculty-title",
         ".profile-designation", "[itemprop='jobTitle']",
@@ -139,9 +136,7 @@ def _get_title(soup) -> str:
             if t and len(t) < 150:
                 return t
 
-    # Second: scan headings for faculty designation patterns only.
-    # This avoids accidentally picking up publication titles that
-    # also appear in <h2> tags on faculty profile pages.
+    # scan headings for faculty designation patterns only   
     _ROLE_PATTERN = re.compile(
         r'\b(Professor|Associate Professor|Assistant Professor|'
         r'Dean|Director|Head of|Lecturer|Adjunct|Visiting|'

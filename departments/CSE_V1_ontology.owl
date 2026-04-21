@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iiitb="https://cse.iiitb.ac.in/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#GovernmentBody">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>GovernmentBody</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Student">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Student</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#offeredOnPlatform">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>offeredOnPlatform</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Course"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in/ontology#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#ResearchArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ResearchArea</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>ECE IIITB Knowledge Graph</rdfs:label>
+    <rdfs:comment>Auto-generated from http://ece.iiitb.ac.in/ using Groq LLM triple extraction</rdfs:comment>
+    <iiitb:generatedBy>ece_iiitb_pipeline.py</iiitb:generatedBy>
+    <iiitb:tripleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">32</iiitb:tripleCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Meenakshi">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:label>Meenakshi</rdfs:label>
+    <iiitb:headsDepartment rdf:resource="https://cse.iiitb.ac.in/ontology#Department_of_Computer_Science"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Events &amp; News</iiitb:extractedFromSection>
+    <iiitb:teachesCourse rdf:resource="https://cse.iiitb.ac.in/ontology#Automata_Theory_and_Computability"/>
+    <iiitb:teachesCourse rdf:resource="https://cse.iiitb.ac.in/ontology#Algorithms"/>
+    <iiitb:teachesCourse rdf:resource="https://cse.iiitb.ac.in/ontology#Software_Testing"/>
+    <iiitb:teachesCourse rdf:resource="https://cse.iiitb.ac.in/ontology#Graph_Theory"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Faculty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Faculty</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Linux_System_Administration">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>Linux System Administration</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#hasConfidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>hasConfidence</rdfs:label>
+    <rdfs:comment>Confidence score (0–1) assigned by the LLM</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#theory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>theory</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#providesEducationAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>providesEducationAt</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Faculty_of_Department_of_Computer_Science_and_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:label>Faculty of Department of Computer Science and Engineering</rdfs:label>
+    <iiitb:excelsIn rdf:resource="https://cse.iiitb.ac.in/ontology#research_in_Computer_Science"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>About the Department</iiitb:extractedFromSection>
+    <iiitb:hasSpecialisation rdf:resource="https://cse.iiitb.ac.in/ontology#Theory_and_applied_Computer_Science"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#systems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>systems</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Test_Case_Design">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Course"/>
+    <rdfs:label>Test Case Design</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Department_of_Computer_Science_and_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Department"/>
+    <rdfs:label>Department of Computer Science and Engineering</rdfs:label>
+    <iiitb:isPartOf rdf:resource="https://cse.iiitb.ac.in/ontology#IIIT-Bangalore"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>About the Department</iiitb:extractedFromSection>
+    <iiitb:hasResearchArea rdf:resource="https://cse.iiitb.ac.in/ontology#Computer_Science"/>
+    <iiitb:providesEducationAt>undergraduate level</iiitb:providesEducationAt>
+    <iiitb:providesEducationAt>postgraduate level</iiitb:providesEducationAt>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#hasFocus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasFocus</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Institute"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#IIIT_Bangalore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Institute"/>
+    <rdfs:label>IIIT Bangalore</rdfs:label>
+    <iiitb:hasResearchArea rdf:resource="https://cse.iiitb.ac.in/ontology#Computer_Science"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</iiitb:hasConfidence>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.7</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>About Us</iiitb:extractedFromSection>
+    <iiitb:extractedFromSection>Opportunities</iiitb:extractedFromSection>
+    <iiitb:hasFocus rdf:resource="https://cse.iiitb.ac.in/ontology#Technology"/>
+    <iiitb:emphasizes rdf:resource="https://cse.iiitb.ac.in/ontology#Excellence_in_Education"/>
+    <iiitb:emphasizes rdf:resource="https://cse.iiitb.ac.in/ontology#Excellence_in_Research"/>
+    <iiitb:offersOpportunities rdf:resource="https://cse.iiitb.ac.in/ontology#career_opportunities"/>
+    <iiitb:offersOpportunities rdf:resource="https://cse.iiitb.ac.in/ontology#research_opportunities"/>
+    <iiitb:offersOpportunities rdf:resource="https://cse.iiitb.ac.in/ontology#learning_opportunities"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#NPTEL">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Organization"/>
+    <rdfs:label>NPTEL</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Dr_B_Thangaraju">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:label>Dr. B. Thangaraju</rdfs:label>
+    <iiitb:hasSpecialisation rdf:resource="https://cse.iiitb.ac.in/ontology#Operating_Systems_Internals"/>
+    <iiitb:hasSpecialisation rdf:resource="https://cse.iiitb.ac.in/ontology#Linux_System_and_Kernel_Programming"/>
+    <iiitb:hasSpecialisation rdf:resource="https://cse.iiitb.ac.in/ontology#Embedded_and_Real-Time_Linux"/>
+    <iiitb:hasSpecialisation rdf:resource="https://cse.iiitb.ac.in/ontology#Linux_System_Administration"/>
+    <iiitb:hasSpecialisation rdf:resource="https://cse.iiitb.ac.in/ontology#DevOps"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Events &amp; News</iiitb:extractedFromSection>
+    <iiitb:teachesCourse rdf:resource="https://cse.iiitb.ac.in/ontology#Test_Case_Design"/>
+    <iiitb:teachesCourse rdf:resource="https://cse.iiitb.ac.in/ontology#Modern_Cryptography"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Excellence_in_Research">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>Excellence in Research</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Theory_and_applied_Computer_Science">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>Theory and applied Computer Science</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Department">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Department</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Operating_Systems_Internals">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>Operating Systems Internals</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#IIIT-Bangalore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Institute"/>
+    <rdfs:label>IIIT-Bangalore</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Modern_Cryptography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Course"/>
+    <rdfs:label>Modern Cryptography</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Excellence_in_Education">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>Excellence in Education</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Department_of_Computer_Science_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Department"/>
+    <rdfs:label>Department of Computer Science &amp; Engineering</rdfs:label>
+    <iiitb:hasResearchArea rdf:resource="https://cse.iiitb.ac.in/ontology#Computer_Science"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Department of Computer Science &amp; Engineering</iiitb:extractedFromSection>
+    <iiitb:hasSpecialisation rdf:resource="https://cse.iiitb.ac.in/ontology#theory"/>
+    <iiitb:hasSpecialisation rdf:resource="https://cse.iiitb.ac.in/ontology#systems"/>
+    <iiitb:hasSpecialisation rdf:resource="https://cse.iiitb.ac.in/ontology#inter-disciplinary_areas"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#isPartOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>isPartOf</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Department"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in/ontology#Institute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#learning_opportunities">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>learning opportunities</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#emphasizes">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>emphasizes</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Institute"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in/ontology#Other"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Automata_Theory_and_Computability">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Course"/>
+    <rdfs:label>Automata Theory and Computability</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Course">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Course</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Department_of_Computer_Science">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Department"/>
+    <rdfs:label>Department of Computer Science</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Organization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Faculty_Member">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:label>Faculty Member</rdfs:label>
+    <iiitb:hasAddress>26/C, Opposite of Infosys gate 1 Electronics City Phase 1, Hosur Road Bengaluru – 560100</iiitb:hasAddress>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Address</iiitb:extractedFromSection>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Lab</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Graph_Theory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Course"/>
+    <rdfs:label>Graph Theory</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#hasAddress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasAddress</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Algorithms">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Course"/>
+    <rdfs:label>Algorithms</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#offersOpportunities">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>offersOpportunities</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Institute"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in/ontology#Other"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#excelsIn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>excelsIn</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#hasResearchArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasResearchArea</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Department"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#hasSpecialisation">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>hasSpecialisation</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Department"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#inter-disciplinary_areas">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>inter-disciplinary areas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Embedded_and_Real-Time_Linux">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>Embedded and Real-Time Linux</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#extractedFromSection">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>extractedFromSection</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#research_opportunities">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>research opportunities</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Meenakshi_s_Software_Testing_course">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Course"/>
+    <rdfs:label>Meenakshi's Software Testing course</rdfs:label>
+    <iiitb:offeredOnPlatform rdf:resource="https://cse.iiitb.ac.in/ontology#NPTEL"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Events &amp; News</iiitb:extractedFromSection>
+    <iiitb:hasEnrollmentCount>57000</iiitb:hasEnrollmentCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Center">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Center</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Programme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Programme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Institute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Institute</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Technology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>Technology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#career_opportunities">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>career opportunities</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#teachesCourse">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>teachesCourse</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in/ontology#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#hasEnrollmentCount">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasEnrollmentCount</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Course"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#headsDepartment">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>headsDepartment</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in/ontology#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#research_in_Computer_Science">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>research in Computer Science</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#DevOps">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>DevOps</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Linux_System_and_Kernel_Programming">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>Linux System and Kernel Programming</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Other">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Other</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Software_Testing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#Course"/>
+    <rdfs:label>Software Testing</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Publication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Publication</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Computer_Science">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>Computer Science</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in/ontology#Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Event</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+</rdf:RDF>

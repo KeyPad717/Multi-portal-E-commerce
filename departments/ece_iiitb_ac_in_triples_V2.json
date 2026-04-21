@@ -1,0 +1,218 @@
+[
+  {
+    "subject": "ECE Department",
+    "predicate": "isLocatedAt",
+    "object": "IIIT-Bangalore",
+    "subject_type": "AcademicDepartment",
+    "object_type": "Institution",
+    "confidence": 0.9,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "ECE Department",
+    "predicate": "hasMission",
+    "object": "CollaborativeLearningEnvironment",
+    "subject_type": "AcademicDepartment",
+    "object_type": "EducationalPhilosophy",
+    "confidence": 0.85,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "ECE Department",
+    "predicate": "fosters",
+    "object": "Creativity",
+    "subject_type": "AcademicDepartment",
+    "object_type": "DesirableTrait",
+    "confidence": 0.85,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "ECE Department",
+    "predicate": "fosters",
+    "object": "CriticalThinking",
+    "subject_type": "AcademicDepartment",
+    "object_type": "DesirableTrait",
+    "confidence": 0.85,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "ECE Department",
+    "predicate": "fosters",
+    "object": "TechnicalExpertise",
+    "subject_type": "AcademicDepartment",
+    "object_type": "DesirableTrait",
+    "confidence": 0.85,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "ECE Department",
+    "predicate": "delivers",
+    "object": "ComprehensiveEducation",
+    "subject_type": "AcademicDepartment",
+    "object_type": "EducationalService",
+    "confidence": 0.9,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "ECE Department",
+    "predicate": "conducts",
+    "object": "TopQualityResearch",
+    "subject_type": "AcademicDepartment",
+    "object_type": "ResearchActivity",
+    "confidence": 0.9,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "ECE Department",
+    "predicate": "nurturesPartnershipsWith",
+    "object": "Industry",
+    "subject_type": "AcademicDepartment",
+    "object_type": "Sector",
+    "confidence": 0.85,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "ECE Department",
+    "predicate": "nurturesPartnershipsWith",
+    "object": "Academia",
+    "subject_type": "AcademicDepartment",
+    "object_type": "Sector",
+    "confidence": 0.85,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "ECE Department",
+    "predicate": "addresses",
+    "object": "SocietalChallenges",
+    "subject_type": "AcademicDepartment",
+    "object_type": "SocialIssue",
+    "confidence": 0.85,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "ECE Department",
+    "predicate": "advances",
+    "object": "ElectronicsAndCommunicationTechnology",
+    "subject_type": "AcademicDepartment",
+    "object_type": "FieldOfStudy",
+    "confidence": 0.9,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Prof. Kurian",
+    "predicate": "presentsResearchOn",
+    "object": "Physical Unclonable Function",
+    "subject_type": "FacultyMember",
+    "object_type": "ResearchTopic",
+    "confidence": 0.9,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Prof. Kurian",
+    "predicate": "investigatesSecurityOf",
+    "object": "IoT Hardware Nodes",
+    "subject_type": "FacultyMember",
+    "object_type": "ResearchArea",
+    "confidence": 0.85,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Prof. Amrita",
+    "predicate": "presentsResearchOn",
+    "object": "mmWave Communication Systems",
+    "subject_type": "FacultyMember",
+    "object_type": "ResearchTopic",
+    "confidence": 0.9,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Prof. Amrita",
+    "predicate": "advancesBeamTrainingIn",
+    "object": "mmWave Communication Systems",
+    "subject_type": "FacultyMember",
+    "object_type": "ResearchArea",
+    "confidence": 0.85,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Memristor",
+    "predicate": "isTypeOf",
+    "object": "Memory Element",
+    "subject_type": "ElectronicComponent",
+    "object_type": "DeviceCategory",
+    "confidence": 0.95,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Memcapacitor",
+    "predicate": "isTypeOf",
+    "object": "Memory Element",
+    "subject_type": "ElectronicComponent",
+    "object_type": "DeviceCategory",
+    "confidence": 0.95,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Meminductor",
+    "predicate": "isTypeOf",
+    "object": "Memory Element",
+    "subject_type": "ElectronicComponent",
+    "object_type": "DeviceCategory",
+    "confidence": 0.95,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Memory Elements",
+    "predicate": "areUsedIn",
+    "object": "Memcomputing",
+    "subject_type": "DeviceCategory",
+    "object_type": "ResearchField",
+    "confidence": 0.8,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "IIITB",
+    "predicate": "hasAddress",
+    "object": "26/C, Opposite of Infosys gate 1, Electronics City Phase 1, Hosur Road Bengaluru – 560100",
+    "subject_type": "Institute",
+    "object_type": "Literal",
+    "confidence": 0.9,
+    "source_section": "Address"
+  },
+  {
+    "subject": "IIITB",
+    "predicate": "locatedIn",
+    "object": "Bengaluru",
+    "subject_type": "Institute",
+    "object_type": "City",
+    "confidence": 0.9,
+    "source_section": "Address"
+  },
+  {
+    "subject": "IIITB",
+    "predicate": "hasPincode",
+    "object": "560100",
+    "subject_type": "Institute",
+    "object_type": "Literal",
+    "confidence": 0.9,
+    "source_section": "Address"
+  },
+  {
+    "subject": "IIITB",
+    "predicate": "situatedOn",
+    "object": "Hosur Road",
+    "subject_type": "Institute",
+    "object_type": "Road",
+    "confidence": 0.9,
+    "source_section": "Address"
+  },
+  {
+    "subject": "IIITB",
+    "predicate": "partOf",
+    "object": "Electronics City Phase 1",
+    "subject_type": "Institute",
+    "object_type": "IndustrialArea",
+    "confidence": 0.9,
+    "source_section": "Address"
+  }
+]

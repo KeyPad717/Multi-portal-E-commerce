@@ -1,0 +1,17 @@
+{
+  "about_the_department": {
+    "title": "About the Department",
+    "clean_text": "The Department of Electronics and Communication Engineering (ECE) at IIIT-Bangalore is a hub of innovation, education, and research focused on shaping the future of electronics and communication technology. Our mission is to create a collaborative learning environment that fosters creativity, critical thinking, and technical expertise, enabling students to thrive in the fast-evolving field of electronics and communication engineering. We are dedicated to delivering comprehensive education, conducting top-quality research, and nurturing partnerships with industry and academia to address societal challenges and advance the frontiers of electronics and communication technology.",
+    "char_count": 683
+  },
+  "department_news": {
+    "title": "Department News",
+    "clean_text": "Abstract: Prof. Kurian, Physical Unclonable Function for Securing resource Constrained Hardware Nodes in IoT. Abstract: Prof. Amrita, Advances in beam training for mmWave communication systems Abstract: Memristor, memcapacitor, and meminductor are the three types of memory elements (memelements or memcomputing).",
+    "char_count": 313
+  },
+  "address": {
+    "title": "Address",
+    "clean_text": "26/C, Opposite of Infosys gate 1, Electronics City Phase 1, Hosur Road Bengaluru – 560100",
+    "char_count": 89
+  }
+}

@@ -147,7 +147,7 @@ def build_graph(enriched_list: list) -> Graph:
             print(f"    [triples] ⚠ Chunk {i+1} skipped (LLM error: {item.get('error', 'unknown')})")
             fail_count += 1
 
-    # ── Ensure Ontology Header ──────────────────────────
+    # Ensure Ontology Header 
     onto_uri = URIRef(BASE_URI)
     if (onto_uri, RDF.type, OWL.Ontology) not in master_graph:
         master_graph.add((onto_uri, RDF.type, OWL.Ontology))

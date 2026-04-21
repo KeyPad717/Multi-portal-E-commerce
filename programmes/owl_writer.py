@@ -12,18 +12,6 @@ OWL_BASE = "http://iiitb.ac.in/ontology/autonomous#"
 
 
 def _patch_rdf_header(owl_path: str) -> None:
-    """
-    rdflib's RDF/XML serializer omits xml:base and xmlns:xsd from the
-    <rdf:RDF> header.  Without xml:base, Protégé resolves every relative
-    #-fragment URI against the file:// path instead of the ontology
-    namespace, so property declarations (e.g. #teaches resolved to
-    file://…#teaches) and property usages (onto:teaches) appear as
-    *different* entities — making the Property Assertions panel empty.
-
-    This function patches the serialized file to add:
-      xml:base="<OWL_BASE>"
-      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-    """
     with open(owl_path, "r", encoding="utf-8") as f:
         content = f.read()
 
@@ -62,12 +50,12 @@ def save_owl(g: Graph,
     owl_path    = base_path + ".owl"
     turtle_path = base_path + ".ttl"
 
-    # ── RDF/XML (Protégé native format) ──────────────────
+    # RDF/XML (Protégé native format)
     g.serialize(destination=owl_path, format="xml")
     _patch_rdf_header(owl_path)          # inject xml:base + xmlns:xsd
     owl_size = os.path.getsize(owl_path) / 1024
 
-    # ── Turtle (human-readable) ───────────────────────────
+    # Turtle (human-readable)   
     g.serialize(destination=turtle_path, format="turtle")
     ttl_size = os.path.getsize(turtle_path) / 1024
 

@@ -1,14 +1,4 @@
-"""
-main.py — Pipeline orchestrator.
-Runs: Scrape → Chunk → LLM Enrich → RDF Triples → OWL
-Supports full pause/resume via checkpoint.json.
-
-Usage:
-    python main.py           # run or resume
-    python main.py --reset   # wipe checkpoint, start fresh
-    python main.py --status  # show current checkpoint state
-"""
-
+    #pipeline orchestrator
 import os
 import sys
 import json
@@ -21,11 +11,11 @@ load_dotenv(dotenv_path=env_path)
 def _check_env():
     key = os.getenv("OPENROUTER_API_KEY", "")
     if not key:
-        print("\n❌  ERROR: OPENROUTER_API_KEY not set in .env file")
+        print("\nERROR: OPENROUTER_API_KEY not set in .env file")
         sys.exit(1)
     urls = os.getenv("TARGET_URLS", "")
     if not urls:
-        print("\n❌  ERROR: TARGET_URLS not set in .env file (comma separated)\n")
+        print("\nERROR: TARGET_URLS not set in .env file (comma separated)\n")
         sys.exit(1)
 
 def run():
@@ -62,7 +52,7 @@ def run():
         print(f"  PROCESSING PROGRAMME [{i+1}/{len(URLS)}]: {url_slug}")
         print(f"{'='*58}")
         
-        # 1. Scrape
+        # Scraping
         scraped_file = f"output/scraped_{url_slug}.json"
         if os.path.exists(scraped_file):
             print(f"► STAGE 1: Scrape (cached) ✓")
@@ -74,7 +64,7 @@ def run():
             with open(scraped_file, "w", encoding="utf-8") as f:
                 json.dump(raw_data, f, indent=2, ensure_ascii=False)
             
-        # 2. Chunk
+        # Chunking
         chunks_file = f"output/chunks_{url_slug}.json"
         if os.path.exists(chunks_file):
             print(f"► STAGE 2: Chunk (cached) ✓")
@@ -86,7 +76,7 @@ def run():
             with open(chunks_file, "w", encoding="utf-8") as f:
                 json.dump(chunks, f, indent=2, ensure_ascii=False)
 
-        # 3. Enrich
+        # Enriching
         enriched_file = f"output/enriched_{url_slug}.json"
         if os.path.exists(enriched_file):
             print(f"► STAGE 3: Enrichment (cached) ✓")
@@ -106,7 +96,7 @@ def run():
                 
         all_enriched.extend(enriched)
         
-        # 4. separate Triples & OWL
+        # separating Triples & OWL
         owl_file = f"output/{url_slug}.owl"
         if not os.path.exists(owl_file):
             print(f"\n► STAGE 4 & 5: Building and writing INDIVIDUAL OWL -> {url_slug}.owl ...")
@@ -115,14 +105,13 @@ def run():
         else:
             print(f"► STAGE 4 & 5: Individual OWL exists -> {owl_file}")
 
-    # COMBINED
     print(f"\n\n{'='*58}")
     print(f"  COMBINED PROGRAMMES ONTOLOGY")
     print(f"{'='*58}")
     print("► Building COMBINED RDF triples...")
     g_comb = build_graph(all_enriched)
     comb_owl_path = save_owl(g_comb, "output/programmes_combined")
-    print(f"  ✅ Created combined ontology -> {comb_owl_path}")
+    print(f"  Created combined ontology -> {comb_owl_path}")
 
     print(f"\n  Final tokens used: {cp.get('tokens_used', 0)}")
     print(f"{'='*58}\n")

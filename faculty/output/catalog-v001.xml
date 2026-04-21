@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://iiitb.ac.in/ontology/programmes#" uri="file:/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/programmes/output/programmes_combined.owl"/>
+    <uri id="Imports Wizard Entry" name="http://iiitb.ac.in/ontology/autonomous#" uri="file:/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/programmes/output/programmes_combined.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1776756985886" name="http://iiitb.ac.in/ontology/faculty#" uri="faculty_RC_sir.owl"/>
+    </group>
+</catalog>

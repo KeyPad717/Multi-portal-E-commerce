@@ -1,329 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xml:base="http://iiitb.ac.in/ontology/autonomous#"
+   xml:base="http://iiitb.ac.in/ontology/programmes#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:onto="http://iiitb.ac.in/ontology/autonomous#"
+   xmlns:onto="http://iiitb.ac.in/ontology/programmes#"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#MTechDegree">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#MTechDegree">
     <rdfs:comment>Master of Technology degree</rdfs:comment>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Degree"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Degree"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#PostgraduateProgram">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#PostgraduateProgram">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment>A postgraduate academic program</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgram"/>
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgram"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasDegree">
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasDegree">
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment>Relates an academic programme to a degree</rdfs:comment>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Degree"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/programmes#Degree"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasName">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasName">
     <rdfs:comment>Relates an academic program to its name</rdfs:comment>
     <rdfs:comment>Relates a degree to its name</rdfs:comment>
     <rdfs:comment>Represents the name of an academic programme</rdfs:comment>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgram"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#Degree"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgram"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#Degree"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
     <rdfs:range rdf:resource="xsd:string"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#M_Tech_CSE">
-    <onto:hasGoal rdf:resource="http://iiitb.ac.in/ontology/autonomous#DevelopProfessionals"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Research"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Courses"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#ProjectWork"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Seminars"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Internships"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#M_Tech_CSE">
+    <onto:hasGoal rdf:resource="http://iiitb.ac.in/ontology/programmes#DevelopProfessionals"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Research"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Courses"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#ProjectWork"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Seminars"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Internships"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#PostgraduateProgram"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#PostgraduateProgram"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Degree">
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgram"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#Degree">
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgram"/>
     <rdfs:comment>Represents a type of academic degree</rdfs:comment>
     <rdfs:comment>Represents a degree</rdfs:comment>
     <rdfs:comment>Represents a degree awarded to students upon completion of a programme</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Internships">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#Internships">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Section"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Section"/>
     <rdfs:comment>Internships</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#AcademicProgramme">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment>Represents an academic programme offered by an institution</rdfs:comment>
     <rdfs:comment>Represents a programme of study</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasInstitution">
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Institution"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasInstitution">
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/programmes#Institution"/>
     <rdfs:comment>Relates an academic programme to an institution</rdfs:comment>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DevelopProfessionals">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#DevelopProfessionals">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#EducationGoal"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#EducationGoal"/>
     <rdfs:comment>Develop professionals of high quality</rdfs:comment>
     <rdfs:comment>Develop professionals of high quality to cater to the needs of industry and academia</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <dc:title xml:lang="en">Autonomous Institutional Knowledge Graph</dc:title>
     <dc:description xml:lang="en">Emergent OWL ontology generated by autonomous pipeline.</dc:description>
     <owl:versionInfo>3.0-emergent</owl:versionInfo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#IMTechECE">
-    <onto:hasFacultyMember rdf:resource="http://iiitb.ac.in/ontology/autonomous#ECEFacultyMember"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#IMTechECE">
+    <onto:hasFacultyMember rdf:resource="http://iiitb.ac.in/ontology/programmes#ECEFacultyMember"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
-    <onto:hasDegree rdf:resource="http://iiitb.ac.in/ontology/autonomous#BTechDegree"/>
-    <onto:hasDegree rdf:resource="http://iiitb.ac.in/ontology/autonomous#MTechDegree"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
+    <onto:hasDegree rdf:resource="http://iiitb.ac.in/ontology/programmes#BTechDegree"/>
+    <onto:hasDegree rdf:resource="http://iiitb.ac.in/ontology/programmes#MTechDegree"/>
     <onto:hasBio>IIIT-B introduced a 5-year Integrated M.Tech. (I.M.Tech.) programme from 2012 onwards. The Integrated M.Tech. programme is a 5-year integrated programme intended for students who have completed or are completing Plus Two (or equivalent). At the end of five years of the programme, successful students get dual degrees of B.Tech and M.Tech. The students will be taught and supervised by the faculty members with PhD from highly reputed universities of the world and involved in R&amp;D in niche areas of ECE.</onto:hasBio>
-    <onto:offeredBy rdf:resource="http://iiitb.ac.in/ontology/autonomous#IIITB"/>
+    <onto:offeredBy rdf:resource="http://iiitb.ac.in/ontology/programmes#IIITB"/>
     <onto:hasTitle>Integrated M.Tech. (Electronics and Communication Engineering)</onto:hasTitle>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ElectronicsAndCommunicationEngineering">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#ElectronicsAndCommunicationEngineering">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#FieldOfStudy"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdfs:comment>Represents the field of Electronics and Communication Engineering</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Institution">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#Institution">
     <rdfs:comment>Represents an educational institution</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#PostgraduateProgramme">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#PostgraduateProgramme">
     <rdfs:comment>Represents a postgraduate programme of study</rdfs:comment>
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#AcademicProgram">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#AcademicProgram">
     <rdfs:comment>Represents an academic program offered by an institution</rdfs:comment>
     <rdfs:comment>Represents an academic program</rdfs:comment>
     <rdfs:comment>The concept of an academic program</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#EducationGoal">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#EducationGoal">
     <rdfs:comment>A goal related to education</rdfs:comment>
     <rdfs:comment>Represents a goal related to education</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#Goal"/>
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/programmes#Goal"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ComputerScienceAndEngineering">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#ComputerScienceAndEngineering">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#FieldOfStudy"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#M_Tech_AIDS">
-    <onto:hasGoal rdf:resource="http://iiitb.ac.in/ontology/autonomous#DevelopProfessionals"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Internships"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Courses"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Research"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#ProjectWork"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Seminars"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#PostgraduateProgramme"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#M_Tech_AIDS">
+    <onto:hasGoal rdf:resource="http://iiitb.ac.in/ontology/programmes#DevelopProfessionals"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Internships"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Courses"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Research"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#ProjectWork"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Seminars"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#PostgraduateProgramme"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#IMTechProgramme">
-    <onto:hasInstitution rdf:resource="http://iiitb.ac.in/ontology/autonomous#IIITB"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#IMTechProgramme">
+    <onto:hasInstitution rdf:resource="http://iiitb.ac.in/ontology/programmes#IIITB"/>
     <onto:hasBio>IIIT-B introduced a 5-year Integrated M.Tech. (I.M.Tech.) programme in 2012. The Integrated M.Tech. programme is a 5-year integrated programme intended for students who have completed or are completing Plus Two of schooling (or equivalent). At the end of five years of the programme, successful students get dual degrees of B.Tech. and M.Tech.&amp;nbsp;&amp;nbsp;The students will be taught and supervised by the faculty members with PhD from highly reputed universities of the world and involved in R&amp;amp;D in niche areas of CSE.</onto:hasBio>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <onto:hasFacultyMember rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember1"/>
-    <onto:hasDegree rdf:resource="http://iiitb.ac.in/ontology/autonomous#BTechDegree"/>
-    <onto:hasDegree rdf:resource="http://iiitb.ac.in/ontology/autonomous#MTechDegree"/>
+    <onto:hasFacultyMember rdf:resource="http://iiitb.ac.in/ontology/programmes#FacultyMember1"/>
+    <onto:hasDegree rdf:resource="http://iiitb.ac.in/ontology/programmes#BTechDegree"/>
+    <onto:hasDegree rdf:resource="http://iiitb.ac.in/ontology/programmes#MTechDegree"/>
     <onto:hasName>Integrated M.Tech (Computer Science and Engineering)</onto:hasName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#B_Tech_CSE">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#B_Tech_CSE">
     <onto:hasName rdf:datatype="xsd:string">B.Tech. (Computer Science and Engineering)</onto:hasName>
-    <onto:hasFieldOfStudy rdf:resource="http://iiitb.ac.in/ontology/autonomous#ComputerScienceAndEngineering"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Degree"/>
+    <onto:hasFieldOfStudy rdf:resource="http://iiitb.ac.in/ontology/programmes#ComputerScienceAndEngineering"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Degree"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasBio">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasBio">
     <rdfs:comment>Represents a brief description of an academic programme</rdfs:comment>
     <rdfs:comment>Represents the bio of an academic programme</rdfs:comment>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
     <rdfs:range rdf:resource="xsd:string"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ProjectWork">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Section"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#ProjectWork">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Section"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdfs:comment>Project work</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasStudent">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasStudent">
     <rdfs:comment>Relates an academic programme to a student</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Student"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/programmes#Student"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#University">
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#Institution"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#University">
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/programmes#Institution"/>
     <rdfs:comment>Represents a university</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasGoal">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasGoal">
     <rdfs:comment>Relates an academic program to its goal</rdfs:comment>
     <rdfs:comment>Relates an academic programme to its goals</rdfs:comment>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Goal"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/programmes#Goal"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgram"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgram"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasTitle">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasTitle">
     <rdfs:comment>Represents the title of an academic programme</rdfs:comment>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="xsd:string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#offeredBy">
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#offeredBy">
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment>Relates an academic programme to an institution</rdfs:comment>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Institution"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/programmes#Institution"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ECEFacultyMember">
-    <onto:involvedIn rdf:resource="http://iiitb.ac.in/ontology/autonomous#ECEResearchArea"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#ECEFacultyMember">
+    <onto:involvedIn rdf:resource="http://iiitb.ac.in/ontology/programmes#ECEResearchArea"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#FacultyMember"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#FieldOfStudy">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment>Represents a field of study or discipline</rdfs:comment>
     <rdfs:comment>Represents a field of study</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#M_Tech_ECE">
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Seminars"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#ResearchLeadingToThesis"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Internships"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#Courses"/>
-    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/autonomous#ProjectWork"/>
-    <onto:hasGoal rdf:resource="http://iiitb.ac.in/ontology/autonomous#DevelopProfessionals"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#PostgraduateProgramme"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#M_Tech_ECE">
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Seminars"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#ResearchLeadingToThesis"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Internships"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#Courses"/>
+    <onto:hasSection rdf:resource="http://iiitb.ac.in/ontology/programmes#ProjectWork"/>
+    <onto:hasGoal rdf:resource="http://iiitb.ac.in/ontology/programmes#DevelopProfessionals"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#PostgraduateProgramme"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasFacultyMember">
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasFacultyMember">
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/programmes#FacultyMember"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment>Relates an academic programme to a faculty member</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ResearchLeadingToThesis">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#ResearchLeadingToThesis">
     <rdfs:comment>Research leading to a thesis</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Section"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Section"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Research">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Section"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#Research">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Section"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdfs:comment>Research leading to a thesis</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasResearchArea">
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#ResearchArea"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasResearchArea">
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/programmes#ResearchArea"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#FacultyMember"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
     <rdfs:comment>Relates a faculty member to a research area</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Courses">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Section"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#Courses">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Section"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdfs:comment>Courses of study</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Seminars">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#Seminars">
     <rdfs:comment>Seminars</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Section"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Section"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasSection">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasSection">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Section"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/programmes#Section"/>
     <rdfs:comment>Relates an academic program to its section</rdfs:comment>
     <rdfs:comment>Relates an academic programme to its sections</rdfs:comment>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgram"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgramme"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgram"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Goal">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#Goal">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment>A goal or objective</rdfs:comment>
     <rdfs:comment>Represents a goal or objective</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#BTechDegree">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Degree"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#BTechDegree">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Degree"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdfs:comment>Bachelor of Technology degree</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ECEResearchArea">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#ECEResearchArea">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#ResearchArea"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#ResearchArea"/>
     <rdfs:comment>Niche area of Electronics and Communication Engineering</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasFieldOfStudy">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#hasFieldOfStudy">
     <rdfs:comment>Relates an academic program to its field of study</rdfs:comment>
     <rdfs:comment>Relates a degree to its field of study</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#AcademicProgram"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#Degree"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/programmes#FieldOfStudy"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgram"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#Degree"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Student">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#Student">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment>Represents a student enrolled in an academic programme</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ResearchArea">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#ResearchArea">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment>Represents a niche area of research</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#FacultyMember">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#FacultyMember">
     <rdfs:comment>Represents a faculty member involved in teaching and research</rdfs:comment>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#FacultyMember1">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#FacultyMember1">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#FacultyMember"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <onto:hasResearchArea rdf:resource="http://iiitb.ac.in/ontology/autonomous#CSEResearchArea"/>
+    <onto:hasResearchArea rdf:resource="http://iiitb.ac.in/ontology/programmes#CSEResearchArea"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Section">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#Section">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment>A section or component of an academic program</rdfs:comment>
     <rdfs:comment>Represents a section or component of a programme</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#B_Tech_AIDS">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#B_Tech_AIDS">
     <onto:hasName rdf:datatype="xsd:string">B.Tech. (Artificial Intelligence &amp; Data Science)</onto:hasName>
-    <onto:hasFieldOfStudy rdf:resource="http://iiitb.ac.in/ontology/autonomous#ArtificialIntelligenceAndDataScience"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Degree"/>
+    <onto:hasFieldOfStudy rdf:resource="http://iiitb.ac.in/ontology/programmes#ArtificialIntelligenceAndDataScience"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Degree"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#CSEResearchArea">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#ResearchArea"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#CSEResearchArea">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#ResearchArea"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdfs:comment>Computer Science and Engineering research area</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#involvedIn">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#involvedIn">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#FacultyMember"/>
     <rdfs:comment>Relates a faculty member to a research area</rdfs:comment>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#ResearchArea"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/programmes#ResearchArea"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#IIITB">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Institution"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#IIITB">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Institution"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#University"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#University"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#B_Tech_ECE">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Degree"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#B_Tech_ECE">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#Degree"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <onto:hasFieldOfStudy rdf:resource="http://iiitb.ac.in/ontology/autonomous#ElectronicsAndCommunicationEngineering"/>
+    <onto:hasFieldOfStudy rdf:resource="http://iiitb.ac.in/ontology/programmes#ElectronicsAndCommunicationEngineering"/>
     <onto:hasName rdf:datatype="xsd:string">B.Tech. (Electronics and Communication Engineering)</onto:hasName>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ArtificialIntelligenceAndDataScience">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#ArtificialIntelligenceAndDataScience">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/programmes#FieldOfStudy"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
     <rdfs:comment>Represents the field of Artificial Intelligence and Data Science</rdfs:comment>
   </rdf:Description>

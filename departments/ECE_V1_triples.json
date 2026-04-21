@@ -1,0 +1,164 @@
+[
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "isLocatedAt",
+    "object": "IIIT-Bangalore",
+    "subject_type": "Department",
+    "object_type": "Institute",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "hasMission",
+    "object": "create collaborative learning environment",
+    "subject_type": "Department",
+    "object_type": "Literal",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "fosters",
+    "object": "creativity",
+    "subject_type": "Department",
+    "object_type": "Other",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "fosters",
+    "object": "critical thinking",
+    "subject_type": "Department",
+    "object_type": "Other",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "fosters",
+    "object": "technical expertise",
+    "subject_type": "Department",
+    "object_type": "Other",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "delivers",
+    "object": "comprehensive education",
+    "subject_type": "Department",
+    "object_type": "Literal",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "conducts",
+    "object": "top-quality research",
+    "subject_type": "Department",
+    "object_type": "Literal",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "nurturesPartnershipsWith",
+    "object": "industry",
+    "subject_type": "Department",
+    "object_type": "Organization",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "nurturesPartnershipsWith",
+    "object": "academia",
+    "subject_type": "Department",
+    "object_type": "Organization",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "addresses",
+    "object": "societal challenges",
+    "subject_type": "Department",
+    "object_type": "Literal",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Department of Electronics and Communication Engineering",
+    "predicate": "advances",
+    "object": "electronics and communication technology",
+    "subject_type": "Department",
+    "object_type": "ResearchArea",
+    "confidence": 1.0,
+    "source_section": "About the Department"
+  },
+  {
+    "subject": "Prof. Kurian",
+    "predicate": "researchesTopic",
+    "object": "Physical Unclonable Function",
+    "subject_type": "Faculty",
+    "object_type": "ResearchArea",
+    "confidence": 0.9,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Prof. Kurian",
+    "predicate": "securesHardware",
+    "object": "IoT",
+    "subject_type": "Faculty",
+    "object_type": "Other",
+    "confidence": 0.8,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Prof. Amrita",
+    "predicate": "advancesField",
+    "object": "mmWave communication systems",
+    "subject_type": "Faculty",
+    "object_type": "ResearchArea",
+    "confidence": 0.9,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Memristor",
+    "predicate": "isTypeOf",
+    "object": "memory element",
+    "subject_type": "Other",
+    "object_type": "Other",
+    "confidence": 0.9,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Memcapacitor",
+    "predicate": "isTypeOf",
+    "object": "memory element",
+    "subject_type": "Other",
+    "object_type": "Other",
+    "confidence": 0.9,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Meminductor",
+    "predicate": "isTypeOf",
+    "object": "memory element",
+    "subject_type": "Other",
+    "object_type": "Other",
+    "confidence": 0.9,
+    "source_section": "Department News"
+  },
+  {
+    "subject": "Faculty Member",
+    "predicate": "hasAddress",
+    "object": "26/C, Opposite of Infosys gate 1, Electronics City Phase 1, Hosur Road Bengaluru – 560100",
+    "subject_type": "Faculty",
+    "object_type": "Literal",
+    "confidence": 1.0,
+    "source_section": "Address"
+  }
+]

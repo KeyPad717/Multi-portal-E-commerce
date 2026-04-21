@@ -1,0 +1,32 @@
+{
+  "department_of_computer_science_engineering": {
+    "title": "Department of Computer Science & Engineering",
+    "clean_text": "To excel and lead in Computer Science Education and Research spanning theory, systems and inter-disciplinary areas.",
+    "char_count": 115
+  },
+  "about_us": {
+    "title": "About Us",
+    "clean_text": "Shaping the future of computer science and technology through excellence in education and research.",
+    "char_count": 99
+  },
+  "opportunities": {
+    "title": "Opportunities",
+    "clean_text": "Explore career, research, and learning opportunities within our dynamic community.",
+    "char_count": 82
+  },
+  "about_the_department": {
+    "title": "About the Department",
+    "clean_text": "The Department of Computer Science and Engineering is the largest department of the I nstitute taking ahead the legacy of IIIT- Bangalore being a pionee r in Information Technology education and research . The faculty of the Department excel in research in Computer Science spanning Theory and applied Computer Science and provide quality education at undergraduate and postgraduate levels .",
+    "char_count": 391
+  },
+  "events_news": {
+    "title": "Events & News",
+    "clean_text": "Dr. B. Thangaraju is a professor at the International Institute of Information Technology, Bangalore (IIIT-B), with over 28 years of experience in Operating Systems Internals, Linux System and Kernel Programming, Embedded and Real-Time Linux, Linux System Administration, and DevOps... In this work, we study almost-surely terminating asynchronous Byzantine agreement (ABA) for n parties tolerating a computationally-unbounded adversary. While the existing works in this domain have primarily considered a threshold adversarial model where the adversary can... This course will cover various techniques for test case design, as used for testing of software artifacts including requirements, design and code. We will discuss algorithms and techniques for test case design based on graphs, logic, syntax of programming languages and on inputs. Special techniques for testing object-oriented features and web applications will also be discussed... The course provides the basic paradigm and principles of modern cryptography. The focus of this course will be on definitions and constructions of various cryptographic objects. We will try to understand what security properties are desirable in such objects, how to formally define... Meenakshi is a Professor and the Head of the Department of Computer Science at IIIT-Bangalore where she teaches a variety of courses including Automata Theory and Computability, Algorithms, Software Testing and Graph Theory. Meenakshi's Software Testing course is offered on the NPTEL platform since 2017 and more than 57000 learners have enrolled for this course over these years...",
+    "char_count": 1614
+  },
+  "address": {
+    "title": "Address",
+    "clean_text": "26/C, Opposite of Infosys gate 1 Electronics City Phase 1, Hosur Road Bengaluru – 560100",
+    "char_count": 88
+  }
+}

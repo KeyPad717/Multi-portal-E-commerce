@@ -1,7 +1,0 @@
-requests==2.31.0
-beautifulsoup4==4.12.3
-lxml==5.1.0
-rdflib==7.0.0
-tiktoken==0.6.0
-openai>=1.0.0
-python-dotenv==1.0.1

@@ -1,0 +1,336 @@
+{
+  "processed_sections": [
+    "about_us",
+    "address",
+    "about_the_department",
+    "department_of_computer_science_engineering",
+    "opportunities",
+    "events_news"
+  ],
+  "triples": [
+    {
+      "subject": "Department of Computer Science & Engineering",
+      "predicate": "hasMissionStatement",
+      "object": "To excel and lead in Computer Science Education and Research",
+      "subject_type": "AcademicDepartment",
+      "object_type": "Literal",
+      "confidence": 0.9,
+      "source_section": "Department of Computer Science & Engineering"
+    },
+    {
+      "subject": "Department of Computer Science & Engineering",
+      "predicate": "focusesOnArea",
+      "object": "Computer Science Education",
+      "subject_type": "AcademicDepartment",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Department of Computer Science & Engineering"
+    },
+    {
+      "subject": "Department of Computer Science & Engineering",
+      "predicate": "conductsResearchIn",
+      "object": "Theory",
+      "subject_type": "AcademicDepartment",
+      "object_type": "ResearchField",
+      "confidence": 0.9,
+      "source_section": "Department of Computer Science & Engineering"
+    },
+    {
+      "subject": "Department of Computer Science & Engineering",
+      "predicate": "investigatesField",
+      "object": "Systems",
+      "subject_type": "AcademicDepartment",
+      "object_type": "ResearchField",
+      "confidence": 0.9,
+      "source_section": "Department of Computer Science & Engineering"
+    },
+    {
+      "subject": "Department of Computer Science & Engineering",
+      "predicate": "exploresInterdisciplinaryArea",
+      "object": "Inter-disciplinary areas",
+      "subject_type": "AcademicDepartment",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Department of Computer Science & Engineering"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "hasMission",
+      "object": "shaping the future of computer science and technology",
+      "subject_type": "Institute",
+      "object_type": "Literal",
+      "confidence": 0.8,
+      "source_section": "About Us"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "pursuesExcellenceIn",
+      "object": "education",
+      "subject_type": "Institute",
+      "object_type": "ResearchArea",
+      "confidence": 0.8,
+      "source_section": "About Us"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "pursuesExcellenceIn",
+      "object": "research",
+      "subject_type": "Institute",
+      "object_type": "ResearchArea",
+      "confidence": 0.8,
+      "source_section": "About Us"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "offersOpportunitiesIn",
+      "object": "CareerDevelopment",
+      "subject_type": "InternationalInstitute",
+      "object_type": "CareerOpportunity",
+      "confidence": 0.8,
+      "source_section": "Opportunities"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "providesOpportunitiesFor",
+      "object": "Research",
+      "subject_type": "InternationalInstitute",
+      "object_type": "ResearchOpportunity",
+      "confidence": 0.8,
+      "source_section": "Opportunities"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "fostersLearningOpportunitiesIn",
+      "object": "DynamicCommunity",
+      "subject_type": "InternationalInstitute",
+      "object_type": "LearningEnvironment",
+      "confidence": 0.8,
+      "source_section": "Opportunities"
+    },
+    {
+      "subject": "Department of Computer Science and Engineering",
+      "predicate": "isPartOf",
+      "object": "IIIT-Bangalore",
+      "subject_type": "AcademicDepartment",
+      "object_type": "EducationalInstitution",
+      "confidence": 0.9,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Department of Computer Science and Engineering",
+      "predicate": "excelsIn",
+      "object": "Computer Science Research",
+      "subject_type": "AcademicDepartment",
+      "object_type": "ResearchArea",
+      "confidence": 0.85,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Department of Computer Science and Engineering",
+      "predicate": "providesEducationAt",
+      "object": "Undergraduate Level",
+      "subject_type": "AcademicDepartment",
+      "object_type": "Literal",
+      "confidence": 0.9,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Department of Computer Science and Engineering",
+      "predicate": "providesEducationAt",
+      "object": "Postgraduate Level",
+      "subject_type": "AcademicDepartment",
+      "object_type": "Literal",
+      "confidence": 0.9,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Department of Computer Science and Engineering",
+      "predicate": "hasFacultyExpertiseIn",
+      "object": "Theory And Applied Computer Science",
+      "subject_type": "AcademicDepartment",
+      "object_type": "ResearchArea",
+      "confidence": 0.85,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "IIIT-Bangalore",
+      "predicate": "isPioneerIn",
+      "object": "Information Technology Education",
+      "subject_type": "EducationalInstitution",
+      "object_type": "ResearchArea",
+      "confidence": 0.85,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "teachesAt",
+      "object": "IIIT-B",
+      "subject_type": "Professor",
+      "object_type": "Institution",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "hasExperienceIn",
+      "object": "Operating Systems Internals",
+      "subject_type": "Professor",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "hasExperienceIn",
+      "object": "Linux System and Kernel Programming",
+      "subject_type": "Professor",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "hasExperienceIn",
+      "object": "Embedded and Real-Time Linux",
+      "subject_type": "Professor",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "hasExperienceIn",
+      "object": "DevOps",
+      "subject_type": "Professor",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "IIIT-B",
+      "predicate": "offersCourse",
+      "object": "Software Testing",
+      "subject_type": "Institution",
+      "object_type": "Course",
+      "confidence": 0.8,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "IIIT-B",
+      "predicate": "offersCourse",
+      "object": "Cryptography",
+      "subject_type": "Institution",
+      "object_type": "Course",
+      "confidence": 0.8,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi",
+      "predicate": "isHeadOf",
+      "object": "Department of Computer Science",
+      "subject_type": "Professor",
+      "object_type": "Department",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi",
+      "predicate": "teachesCourse",
+      "object": "Automata Theory and Computability",
+      "subject_type": "Professor",
+      "object_type": "Course",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi",
+      "predicate": "teachesCourse",
+      "object": "Algorithms",
+      "subject_type": "Professor",
+      "object_type": "Course",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi",
+      "predicate": "teachesCourse",
+      "object": "Graph Theory",
+      "subject_type": "Professor",
+      "object_type": "Course",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi",
+      "predicate": "offersCourseOn",
+      "object": "NPTEL",
+      "subject_type": "Professor",
+      "object_type": "Platform",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi's Software Testing course",
+      "predicate": "hasEnrollmentCount",
+      "object": "57000",
+      "subject_type": "Course",
+      "object_type": "Literal",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi's Software Testing course",
+      "predicate": "isOfferedSince",
+      "object": "2017",
+      "subject_type": "Course",
+      "object_type": "Literal",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "hasAddress",
+      "object": "26/C, Opposite of Infosys gate 1 Electronics City Phase 1, Hosur Road Bengaluru – 560100",
+      "subject_type": "Institute",
+      "object_type": "Literal",
+      "confidence": 0.9,
+      "source_section": "Address"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "locatedIn",
+      "object": "Bengaluru",
+      "subject_type": "Institute",
+      "object_type": "City",
+      "confidence": 0.9,
+      "source_section": "Address"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "locatedOn",
+      "object": "Hosur Road",
+      "subject_type": "Institute",
+      "object_type": "Road",
+      "confidence": 0.9,
+      "source_section": "Address"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "partOf",
+      "object": "Electronics City Phase 1",
+      "subject_type": "Institute",
+      "object_type": "IndustrialArea",
+      "confidence": 0.9,
+      "source_section": "Address"
+    },
+    {
+      "subject": "IIITB",
+      "predicate": "near",
+      "object": "Infosys",
+      "subject_type": "Institute",
+      "object_type": "Company",
+      "confidence": 0.8,
+      "source_section": "Address"
+    }
+  ]
+}

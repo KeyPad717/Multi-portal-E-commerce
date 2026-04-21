@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:iiitb="https://ece.iiitb.ac.in/ontology#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#industry">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Organization"/>
+    <rdfs:label>industry</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Lab">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Lab</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Institute">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Institute</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#conducts">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>conducts</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Meminductor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>Meminductor</rdfs:label>
+    <iiitb:isTypeOf rdf:resource="https://ece.iiitb.ac.in/ontology#memory_element"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Department News</iiitb:extractedFromSection>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Faculty">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Faculty</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Organization">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Organization</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Department_of_Electronics_and_Communication_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Department"/>
+    <rdfs:label>Department of Electronics and Communication Engineering</rdfs:label>
+    <iiitb:isLocatedAt rdf:resource="https://ece.iiitb.ac.in/ontology#IIIT-Bangalore"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>About the Department</iiitb:extractedFromSection>
+    <iiitb:hasMission>create collaborative learning environment</iiitb:hasMission>
+    <iiitb:fosters rdf:resource="https://ece.iiitb.ac.in/ontology#creativity"/>
+    <iiitb:fosters rdf:resource="https://ece.iiitb.ac.in/ontology#critical_thinking"/>
+    <iiitb:fosters rdf:resource="https://ece.iiitb.ac.in/ontology#technical_expertise"/>
+    <iiitb:delivers>comprehensive education</iiitb:delivers>
+    <iiitb:conducts>top-quality research</iiitb:conducts>
+    <iiitb:nurturesPartnershipsWith rdf:resource="https://ece.iiitb.ac.in/ontology#industry"/>
+    <iiitb:nurturesPartnershipsWith rdf:resource="https://ece.iiitb.ac.in/ontology#academia"/>
+    <iiitb:addresses>societal challenges</iiitb:addresses>
+    <iiitb:advances rdf:resource="https://ece.iiitb.ac.in/ontology#electronics_and_communication_technology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#researchesTopic">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>researchesTopic</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in/ontology#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Course">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Course</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Department">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Department</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#academia">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Organization"/>
+    <rdfs:label>academia</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#fosters">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>fosters</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Department"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Faculty_Member">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:label>Faculty Member</rdfs:label>
+    <iiitb:hasAddress>26/C, Opposite of Infosys gate 1, Electronics City Phase 1, Hosur Road Bengaluru – 560100</iiitb:hasAddress>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Address</iiitb:extractedFromSection>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#technical_expertise">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>technical expertise</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#advancesField">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>advancesField</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in/ontology#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#isTypeOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>isTypeOf</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#delivers">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>delivers</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#hasMission">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasMission</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#addresses">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>addresses</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Memristor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>Memristor</rdfs:label>
+    <iiitb:isTypeOf rdf:resource="https://ece.iiitb.ac.in/ontology#memory_element"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Department News</iiitb:extractedFromSection>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Event">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Event</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Physical_Unclonable_Function">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>Physical Unclonable Function</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#securesHardware">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>securesHardware</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#hasConfidence">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>hasConfidence</rdfs:label>
+    <rdfs:comment>Confidence score (0–1) assigned by the LLM</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#IoT">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>IoT</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Prof_Amrita">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:label>Prof. Amrita</rdfs:label>
+    <iiitb:advancesField rdf:resource="https://ece.iiitb.ac.in/ontology#mmWave_communication_systems"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Department News</iiitb:extractedFromSection>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#extractedFromSection">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label>extractedFromSection</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Prof_Kurian">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Faculty"/>
+    <rdfs:label>Prof. Kurian</rdfs:label>
+    <iiitb:researchesTopic rdf:resource="https://ece.iiitb.ac.in/ontology#Physical_Unclonable_Function"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Department News</iiitb:extractedFromSection>
+    <iiitb:securesHardware rdf:resource="https://ece.iiitb.ac.in/ontology#IoT"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#isLocatedAt">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>isLocatedAt</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Department"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in/ontology#Institute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Center">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Center</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#ResearchArea">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>ResearchArea</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#mmWave_communication_systems">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>mmWave communication systems</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Memcapacitor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>Memcapacitor</rdfs:label>
+    <iiitb:isTypeOf rdf:resource="https://ece.iiitb.ac.in/ontology#memory_element"/>
+    <iiitb:hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</iiitb:hasConfidence>
+    <iiitb:extractedFromSection>Department News</iiitb:extractedFromSection>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Other">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Other</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#critical_thinking">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>critical thinking</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#GovernmentBody">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>GovernmentBody</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#electronics_and_communication_technology">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#ResearchArea"/>
+    <rdfs:label>electronics and communication technology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#memory_element">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>memory element</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#creativity">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Other"/>
+    <rdfs:label>creativity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#IIIT-Bangalore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in/ontology#Institute"/>
+    <rdfs:label>IIIT-Bangalore</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>ECE IIITB Knowledge Graph</rdfs:label>
+    <rdfs:comment>Auto-generated from http://ece.iiitb.ac.in/ using Groq LLM triple extraction</rdfs:comment>
+    <iiitb:generatedBy>ece_iiitb_pipeline.py</iiitb:generatedBy>
+    <iiitb:tripleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</iiitb:tripleCount>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#advances">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>advances</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Department"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in/ontology#ResearchArea"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Publication">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Publication</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#nurturesPartnershipsWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label>nurturesPartnershipsWith</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Department"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in/ontology#Organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#hasAddress">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:label>hasAddress</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in/ontology#Faculty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Programme">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Programme</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in/ontology#Student">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Student</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </rdf:Description>
+</rdf:RDF>

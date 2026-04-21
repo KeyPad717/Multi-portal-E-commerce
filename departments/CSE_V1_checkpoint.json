@@ -1,0 +1,300 @@
+{
+  "processed_sections": [
+    "events_news",
+    "address",
+    "about_the_department",
+    "department_of_computer_science_engineering",
+    "about_us",
+    "opportunities"
+  ],
+  "triples": [
+    {
+      "subject": "Department of Computer Science & Engineering",
+      "predicate": "hasResearchArea",
+      "object": "Computer Science",
+      "subject_type": "Department",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Department of Computer Science & Engineering"
+    },
+    {
+      "subject": "Department of Computer Science & Engineering",
+      "predicate": "hasSpecialisation",
+      "object": "theory",
+      "subject_type": "Department",
+      "object_type": "ResearchArea",
+      "confidence": 0.8,
+      "source_section": "Department of Computer Science & Engineering"
+    },
+    {
+      "subject": "Department of Computer Science & Engineering",
+      "predicate": "hasSpecialisation",
+      "object": "systems",
+      "subject_type": "Department",
+      "object_type": "ResearchArea",
+      "confidence": 0.8,
+      "source_section": "Department of Computer Science & Engineering"
+    },
+    {
+      "subject": "Department of Computer Science & Engineering",
+      "predicate": "hasSpecialisation",
+      "object": "inter-disciplinary areas",
+      "subject_type": "Department",
+      "object_type": "ResearchArea",
+      "confidence": 0.8,
+      "source_section": "Department of Computer Science & Engineering"
+    },
+    {
+      "subject": "IIIT Bangalore",
+      "predicate": "hasResearchArea",
+      "object": "Computer Science",
+      "subject_type": "Institute",
+      "object_type": "ResearchArea",
+      "confidence": 0.8,
+      "source_section": "About Us"
+    },
+    {
+      "subject": "IIIT Bangalore",
+      "predicate": "hasFocus",
+      "object": "Technology",
+      "subject_type": "Institute",
+      "object_type": "ResearchArea",
+      "confidence": 0.8,
+      "source_section": "About Us"
+    },
+    {
+      "subject": "IIIT Bangalore",
+      "predicate": "emphasizes",
+      "object": "Excellence in Education",
+      "subject_type": "Institute",
+      "object_type": "Other",
+      "confidence": 0.7,
+      "source_section": "About Us"
+    },
+    {
+      "subject": "IIIT Bangalore",
+      "predicate": "emphasizes",
+      "object": "Excellence in Research",
+      "subject_type": "Institute",
+      "object_type": "Other",
+      "confidence": 0.7,
+      "source_section": "About Us"
+    },
+    {
+      "subject": "IIIT Bangalore",
+      "predicate": "offersOpportunities",
+      "object": "career opportunities",
+      "subject_type": "Institute",
+      "object_type": "Other",
+      "confidence": 0.8,
+      "source_section": "Opportunities"
+    },
+    {
+      "subject": "IIIT Bangalore",
+      "predicate": "offersOpportunities",
+      "object": "research opportunities",
+      "subject_type": "Institute",
+      "object_type": "Other",
+      "confidence": 0.8,
+      "source_section": "Opportunities"
+    },
+    {
+      "subject": "IIIT Bangalore",
+      "predicate": "offersOpportunities",
+      "object": "learning opportunities",
+      "subject_type": "Institute",
+      "object_type": "Other",
+      "confidence": 0.8,
+      "source_section": "Opportunities"
+    },
+    {
+      "subject": "Department of Computer Science and Engineering",
+      "predicate": "isPartOf",
+      "object": "IIIT-Bangalore",
+      "subject_type": "Department",
+      "object_type": "Institute",
+      "confidence": 0.9,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Department of Computer Science and Engineering",
+      "predicate": "hasResearchArea",
+      "object": "Computer Science",
+      "subject_type": "Department",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Department of Computer Science and Engineering",
+      "predicate": "providesEducationAt",
+      "object": "undergraduate level",
+      "subject_type": "Department",
+      "object_type": "Literal",
+      "confidence": 0.8,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Department of Computer Science and Engineering",
+      "predicate": "providesEducationAt",
+      "object": "postgraduate level",
+      "subject_type": "Department",
+      "object_type": "Literal",
+      "confidence": 0.8,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Faculty of Department of Computer Science and Engineering",
+      "predicate": "excelsIn",
+      "object": "research in Computer Science",
+      "subject_type": "Faculty",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Faculty of Department of Computer Science and Engineering",
+      "predicate": "hasSpecialisation",
+      "object": "Theory and applied Computer Science",
+      "subject_type": "Faculty",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "About the Department"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "hasSpecialisation",
+      "object": "Operating Systems Internals",
+      "subject_type": "Faculty",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "hasSpecialisation",
+      "object": "Linux System and Kernel Programming",
+      "subject_type": "Faculty",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "hasSpecialisation",
+      "object": "Embedded and Real-Time Linux",
+      "subject_type": "Faculty",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "hasSpecialisation",
+      "object": "Linux System Administration",
+      "subject_type": "Faculty",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "hasSpecialisation",
+      "object": "DevOps",
+      "subject_type": "Faculty",
+      "object_type": "ResearchArea",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "teachesCourse",
+      "object": "Test Case Design",
+      "subject_type": "Faculty",
+      "object_type": "Course",
+      "confidence": 0.8,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Dr. B. Thangaraju",
+      "predicate": "teachesCourse",
+      "object": "Modern Cryptography",
+      "subject_type": "Faculty",
+      "object_type": "Course",
+      "confidence": 0.8,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi",
+      "predicate": "headsDepartment",
+      "object": "Department of Computer Science",
+      "subject_type": "Faculty",
+      "object_type": "Department",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi",
+      "predicate": "teachesCourse",
+      "object": "Automata Theory and Computability",
+      "subject_type": "Faculty",
+      "object_type": "Course",
+      "confidence": 0.8,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi",
+      "predicate": "teachesCourse",
+      "object": "Algorithms",
+      "subject_type": "Faculty",
+      "object_type": "Course",
+      "confidence": 0.8,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi",
+      "predicate": "teachesCourse",
+      "object": "Software Testing",
+      "subject_type": "Faculty",
+      "object_type": "Course",
+      "confidence": 0.8,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi",
+      "predicate": "teachesCourse",
+      "object": "Graph Theory",
+      "subject_type": "Faculty",
+      "object_type": "Course",
+      "confidence": 0.8,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi's Software Testing course",
+      "predicate": "offeredOnPlatform",
+      "object": "NPTEL",
+      "subject_type": "Course",
+      "object_type": "Organization",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Meenakshi's Software Testing course",
+      "predicate": "hasEnrollmentCount",
+      "object": "57000",
+      "subject_type": "Course",
+      "object_type": "Literal",
+      "confidence": 0.9,
+      "source_section": "Events & News"
+    },
+    {
+      "subject": "Faculty Member",
+      "predicate": "hasAddress",
+      "object": "26/C, Opposite of Infosys gate 1 Electronics City Phase 1, Hosur Road Bengaluru – 560100",
+      "subject_type": "Faculty",
+      "object_type": "Literal",
+      "confidence": 1.0,
+      "source_section": "Address"
+    }
+  ]
+}

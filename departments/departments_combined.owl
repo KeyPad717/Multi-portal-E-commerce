@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:cse="https://cse.iiitb.ac.in#"
+  xmlns:owl="http://www.w3.org/2002/07/owl#"
+  xmlns:ece="https://ece.iiitb.ac.in#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#offersCourseOn">
+    <rdfs:label>offersCourseOn</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Platform"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Professor"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#hasExperienceIn">
+    <rdfs:label>hasExperienceIn</rdfs:label>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Researcharea"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Professor"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://ece.iiitb.ac.in#hasAddress">
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Institute"/>
+    <rdfs:label>hasAddress</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#fostersLearningOpportunitiesIn">
+    <rdfs:label>fostersLearningOpportunitiesIn</rdfs:label>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Learningenvironment"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Internationalinstitute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#advancesBeamTrainingIn">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Researcharea"/>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Facultymember"/>
+    <rdfs:label>advancesBeamTrainingIn</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://cse.iiitb.ac.in#hasAddress">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Institute"/>
+    <rdfs:label>hasAddress</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#isHeadOf">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Professor"/>
+    <rdfs:label>isHeadOf</rdfs:label>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Department"/>
+  </owl:ObjectProperty>
+  <ece:Academicdepartment rdf:about="https://ece.iiitb.ac.in#ECE_Department">
+    <ece:E_fosters>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#CriticalThinking">
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Desirabletrait"/>
+        <rdfs:label>CriticalThinking</rdfs:label>
+      </owl:NamedIndividual>
+    </ece:E_fosters>
+    <ece:E_fosters>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#TechnicalExpertise">
+        <rdfs:label>TechnicalExpertise</rdfs:label>
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Desirabletrait"/>
+      </owl:NamedIndividual>
+    </ece:E_fosters>
+    <ece:E_fosters>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#Creativity">
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Desirabletrait"/>
+        <rdfs:label>Creativity</rdfs:label>
+      </owl:NamedIndividual>
+    </ece:E_fosters>
+    <ece:E_advances>
+      <ece:Fieldofstudy rdf:about="https://ece.iiitb.ac.in#ElectronicsAndCommunicationTechnology">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>ElectronicsAndCommunicationTechnology</rdfs:label>
+      </ece:Fieldofstudy>
+    </ece:E_advances>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ece:E_nurturesPartnershipsWith>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#Academia">
+        <rdfs:label>Academia</rdfs:label>
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Sector"/>
+      </owl:NamedIndividual>
+    </ece:E_nurturesPartnershipsWith>
+    <ece:E_nurturesPartnershipsWith>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#Industry">
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Sector"/>
+        <rdfs:label>Industry</rdfs:label>
+      </owl:NamedIndividual>
+    </ece:E_nurturesPartnershipsWith>
+    <ece:E_conducts>
+      <ece:Researchactivity rdf:about="https://ece.iiitb.ac.in#TopQualityResearch">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>TopQualityResearch</rdfs:label>
+      </ece:Researchactivity>
+    </ece:E_conducts>
+    <rdfs:label>ECE Department</rdfs:label>
+    <ece:E_isLocatedAt>
+      <ece:Institution rdf:about="https://ece.iiitb.ac.in#IIIT-Bangalore">
+        <rdfs:label>IIIT-Bangalore</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ece:Institution>
+    </ece:E_isLocatedAt>
+    <ece:E_addresses>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#SocietalChallenges">
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Socialissue"/>
+        <rdfs:label>SocietalChallenges</rdfs:label>
+      </owl:NamedIndividual>
+    </ece:E_addresses>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</ece:E_hasConfidence>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.85</ece:E_hasConfidence>
+    <ece:E_extractedFromSection>About the Department</ece:E_extractedFromSection>
+    <ece:E_hasMission>
+      <ece:Educationalphilosophy rdf:about="https://ece.iiitb.ac.in#CollaborativeLearningEnvironment">
+        <rdfs:label>CollaborativeLearningEnvironment</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ece:Educationalphilosophy>
+    </ece:E_hasMission>
+    <ece:E_delivers>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#ComprehensiveEducation">
+        <rdfs:label>ComprehensiveEducation</rdfs:label>
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Educationalservice"/>
+      </owl:NamedIndividual>
+    </ece:E_delivers>
+  </ece:Academicdepartment>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#addresses">
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:label>addresses</rdfs:label>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Socialissue"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#Department_of_Computer_Science_and_Engineering">
+    <cse:C_isPartOf>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#IIIT-Bangalore">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Educationalinstitution"/>
+        <cse:C_isPioneerIn rdf:resource="https://cse.iiitb.ac.in#Information_Technology_Education"/>
+        <cse:C_extractedFromSection>About the Department</cse:C_extractedFromSection>
+        <cse:C_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.85</cse:C_hasConfidence>
+        <rdfs:label>IIIT-Bangalore</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_isPartOf>
+    <cse:C_excelsIn>
+      <cse:Researcharea rdf:about="https://cse.iiitb.ac.in#Computer_Science_Research">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>Computer Science Research</rdfs:label>
+      </cse:Researcharea>
+    </cse:C_excelsIn>
+    <cse:C_hasFacultyExpertiseIn>
+      <cse:Researcharea rdf:about="https://cse.iiitb.ac.in#Theory_And_Applied_Computer_Science">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>Theory And Applied Computer Science</rdfs:label>
+      </cse:Researcharea>
+    </cse:C_hasFacultyExpertiseIn>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:label>Department of Computer Science and Engineering</rdfs:label>
+    <cse:C_providesEducationAt>Postgraduate Level</cse:C_providesEducationAt>
+    <cse:C_providesEducationAt>Undergraduate Level</cse:C_providesEducationAt>
+    <cse:C_extractedFromSection>About the Department</cse:C_extractedFromSection>
+    <cse:C_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</cse:C_hasConfidence>
+    <cse:C_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.85</cse:C_hasConfidence>
+  </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#advances">
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Fieldofstudy"/>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:label>advances</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#offersOpportunitiesIn">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>offersOpportunitiesIn</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Internationalinstitute"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Careeropportunity"/>
+  </owl:ObjectProperty>
+  <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#Meenakshi">
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in#Professor"/>
+    <cse:C_extractedFromSection>Events &amp; News</cse:C_extractedFromSection>
+    <cse:C_offersCourseOn>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#NPTEL">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Platform"/>
+        <rdfs:label>NPTEL</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_offersCourseOn>
+    <cse:C_teachesCourse>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#Algorithms">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Course"/>
+        <rdfs:label>Algorithms</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_teachesCourse>
+    <cse:C_teachesCourse>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#Graph_Theory">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Course"/>
+        <rdfs:label>Graph Theory</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_teachesCourse>
+    <cse:C_teachesCourse>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#Automata_Theory_and_Computability">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Course"/>
+        <rdfs:label>Automata Theory and Computability</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_teachesCourse>
+    <cse:C_isHeadOf>
+      <cse:Department rdf:about="https://cse.iiitb.ac.in#Department_of_Computer_Science">
+        <rdfs:label>Department of Computer Science</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </cse:Department>
+    </cse:C_isHeadOf>
+    <cse:C_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</cse:C_hasConfidence>
+    <rdfs:label>Meenakshi</rdfs:label>
+  </owl:NamedIndividual>
+  <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#Memcapacitor">
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in#Electroniccomponent"/>
+    <rdfs:label>Memcapacitor</rdfs:label>
+    <ece:E_extractedFromSection>Department News</ece:E_extractedFromSection>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.95</ece:E_hasConfidence>
+    <ece:E_isTypeOf>
+      <ece:Devicecategory rdf:about="https://ece.iiitb.ac.in#Memory_Element">
+        <rdfs:label>Memory Element</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </ece:Devicecategory>
+    </ece:E_isTypeOf>
+  </owl:NamedIndividual>
+  <cse:Course rdf:about="https://cse.iiitb.ac.in#Meenakshi_s_Software_Testing_course">
+    <cse:C_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</cse:C_hasConfidence>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <cse:C_isOfferedSince>2017</cse:C_isOfferedSince>
+    <cse:C_extractedFromSection>Events &amp; News</cse:C_extractedFromSection>
+    <cse:C_hasEnrollmentCount>57000</cse:C_hasEnrollmentCount>
+    <rdfs:label>Meenakshi's Software Testing course</rdfs:label>
+  </cse:Course>
+  <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#IIITB">
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in#Institute"/>
+    <ece:E_hasPincode>560100</ece:E_hasPincode>
+    <ece:E_locatedIn>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#Bengaluru">
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#City"/>
+        <rdfs:label>Bengaluru</rdfs:label>
+      </owl:NamedIndividual>
+    </ece:E_locatedIn>
+    <ece:E_hasAddress>26/C, Opposite of Infosys gate 1, Electronics City Phase 1, Hosur Road Bengaluru – 560100</ece:E_hasAddress>
+    <ece:E_partOf>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#Electronics_City_Phase_1">
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Industrialarea"/>
+        <rdfs:label>Electronics City Phase 1</rdfs:label>
+      </owl:NamedIndividual>
+    </ece:E_partOf>
+    <ece:E_extractedFromSection>Address</ece:E_extractedFromSection>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</ece:E_hasConfidence>
+    <rdfs:label>IIITB</rdfs:label>
+    <ece:E_situatedOn>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#Hosur_Road">
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Road"/>
+        <rdfs:label>Hosur Road</rdfs:label>
+      </owl:NamedIndividual>
+    </ece:E_situatedOn>
+  </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#locatedIn">
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#City"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>locatedIn</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Institute"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#isPioneerIn">
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Researcharea"/>
+    <rdfs:label>isPioneerIn</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Educationalinstitution"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://cse.iiitb.ac.in#hasMission">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:label>hasMission</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Institute"/>
+  </owl:DatatypeProperty>
+  <cse:Academicdepartment rdf:about="https://cse.iiitb.ac.in#Department_of_Computer_Science_Engineering">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Department of Computer Science &amp; Engineering</rdfs:label>
+    <cse:C_focusesOnArea>
+      <cse:Researcharea rdf:about="https://cse.iiitb.ac.in#Computer_Science_Education">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>Computer Science Education</rdfs:label>
+      </cse:Researcharea>
+    </cse:C_focusesOnArea>
+    <cse:C_conductsResearchIn>
+      <cse:Researchfield rdf:about="https://cse.iiitb.ac.in#Theory">
+        <rdfs:label>Theory</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </cse:Researchfield>
+    </cse:C_conductsResearchIn>
+    <cse:C_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</cse:C_hasConfidence>
+    <cse:C_exploresInterdisciplinaryArea>
+      <cse:Researcharea rdf:about="https://cse.iiitb.ac.in#Inter-disciplinary_areas">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>Inter-disciplinary areas</rdfs:label>
+      </cse:Researcharea>
+    </cse:C_exploresInterdisciplinaryArea>
+    <cse:C_investigatesField>
+      <cse:Researchfield rdf:about="https://cse.iiitb.ac.in#Systems">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>Systems</rdfs:label>
+      </cse:Researchfield>
+    </cse:C_investigatesField>
+    <cse:C_hasMissionStatement>To excel and lead in Computer Science Education and Research</cse:C_hasMissionStatement>
+    <cse:C_extractedFromSection>Department of Computer Science &amp; Engineering</cse:C_extractedFromSection>
+  </cse:Academicdepartment>
+  <owl:Ontology rdf:about="https://ece.iiitb.ac.in#">
+    <rdfs:comment>Auto-generated from https://ece.iiitb.ac.in/ via Groq LLM (llama-3.3-70b-versatile). 24 raw triples collected.</rdfs:comment>
+    <rdfs:label>Knowledge Graph — https://ece.iiitb.ac.in/</rdfs:label>
+    <ece:E_sourceURL>https://ece.iiitb.ac.in/</ece:E_sourceURL>
+    <ece:E_tripleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">24</ece:E_tripleCount>
+  </owl:Ontology>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#investigatesField">
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:label>investigatesField</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Researchfield"/>
+  </owl:ObjectProperty>
+  <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#Dr_B_Thangaraju">
+    <cse:C_extractedFromSection>Events &amp; News</cse:C_extractedFromSection>
+    <cse:C_hasExperienceIn>
+      <cse:Researcharea rdf:about="https://cse.iiitb.ac.in#Operating_Systems_Internals">
+        <rdfs:label>Operating Systems Internals</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </cse:Researcharea>
+    </cse:C_hasExperienceIn>
+    <cse:C_hasExperienceIn>
+      <cse:Researcharea rdf:about="https://cse.iiitb.ac.in#Embedded_and_Real-Time_Linux">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>Embedded and Real-Time Linux</rdfs:label>
+      </cse:Researcharea>
+    </cse:C_hasExperienceIn>
+    <cse:C_hasExperienceIn>
+      <cse:Researcharea rdf:about="https://cse.iiitb.ac.in#DevOps">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>DevOps</rdfs:label>
+      </cse:Researcharea>
+    </cse:C_hasExperienceIn>
+    <cse:C_hasExperienceIn>
+      <cse:Researcharea rdf:about="https://cse.iiitb.ac.in#Linux_System_and_Kernel_Programming">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>Linux System and Kernel Programming</rdfs:label>
+      </cse:Researcharea>
+    </cse:C_hasExperienceIn>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in#Professor"/>
+    <rdfs:label>Dr. B. Thangaraju</rdfs:label>
+    <cse:C_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</cse:C_hasConfidence>
+    <cse:C_teachesAt>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#IIIT-B">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Institution"/>
+        <cse:C_extractedFromSection>Events &amp; News</cse:C_extractedFromSection>
+        <cse:C_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</cse:C_hasConfidence>
+        <cse:C_offersCourse rdf:resource="https://cse.iiitb.ac.in#Cryptography"/>
+        <cse:C_offersCourse rdf:resource="https://cse.iiitb.ac.in#Software_Testing"/>
+        <rdfs:label>IIIT-B</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_teachesAt>
+  </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#nurturesPartnershipsWith">
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Sector"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>nurturesPartnershipsWith</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Academicdepartment"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://ece.iiitb.ac.in#hasPincode">
+    <rdfs:label>hasPincode</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Institute"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <ece:Devicecategory rdf:about="https://ece.iiitb.ac.in#Memory_Elements">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</ece:E_hasConfidence>
+    <ece:E_extractedFromSection>Department News</ece:E_extractedFromSection>
+    <rdfs:label>Memory Elements</rdfs:label>
+    <ece:E_areUsedIn>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#Memcomputing">
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Researchfield"/>
+        <rdfs:label>Memcomputing</rdfs:label>
+      </owl:NamedIndividual>
+    </ece:E_areUsedIn>
+  </ece:Devicecategory>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#isPartOf">
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>isPartOf</rdfs:label>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Educationalinstitution"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#delivers">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Educationalservice"/>
+    <rdfs:label>delivers</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Academicdepartment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#providesOpportunitiesFor">
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Internationalinstitute"/>
+    <rdfs:label>providesOpportunitiesFor</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Researchopportunity"/>
+  </owl:ObjectProperty>
+  <ece:Electroniccomponent rdf:about="https://ece.iiitb.ac.in#Meminductor">
+    <rdfs:label>Meminductor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ece:E_extractedFromSection>Department News</ece:E_extractedFromSection>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.95</ece:E_hasConfidence>
+    <ece:E_isTypeOf rdf:resource="https://ece.iiitb.ac.in#Memory_Element"/>
+  </ece:Electroniccomponent>
+  <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#Prof_Kurian">
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in#Facultymember"/>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</ece:E_hasConfidence>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.85</ece:E_hasConfidence>
+    <ece:E_extractedFromSection>Department News</ece:E_extractedFromSection>
+    <rdfs:label>Prof. Kurian</rdfs:label>
+    <ece:E_presentsResearchOn>
+      <ece:Researchtopic rdf:about="https://ece.iiitb.ac.in#Physical_Unclonable_Function">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>Physical Unclonable Function</rdfs:label>
+      </ece:Researchtopic>
+    </ece:E_presentsResearchOn>
+    <ece:E_investigatesSecurityOf>
+      <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#IoT_Hardware_Nodes">
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Researcharea"/>
+        <rdfs:label>IoT Hardware Nodes</rdfs:label>
+      </owl:NamedIndividual>
+    </ece:E_investigatesSecurityOf>
+  </owl:NamedIndividual>
+  <ece:Facultymember rdf:about="https://ece.iiitb.ac.in#Prof_Amrita">
+    <ece:E_extractedFromSection>Department News</ece:E_extractedFromSection>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <ece:E_advancesBeamTrainingIn>
+      <ece:Researchtopic rdf:about="https://ece.iiitb.ac.in#mmWave_Communication_Systems">
+        <rdfs:label>mmWave Communication Systems</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdf:type rdf:resource="https://ece.iiitb.ac.in#Researcharea"/>
+      </ece:Researchtopic>
+    </ece:E_advancesBeamTrainingIn>
+    <rdfs:label>Prof. Amrita</rdfs:label>
+    <ece:E_presentsResearchOn rdf:resource="https://ece.iiitb.ac.in#mmWave_Communication_Systems"/>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</ece:E_hasConfidence>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.85</ece:E_hasConfidence>
+  </ece:Facultymember>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#presentsResearchOn">
+    <rdfs:label>presentsResearchOn</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Researchtopic"/>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Facultymember"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#hasFacultyExpertiseIn">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>hasFacultyExpertiseIn</rdfs:label>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Researcharea"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Academicdepartment"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#teachesCourse">
+    <rdfs:label>teachesCourse</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Professor"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Course"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#pursuesExcellenceIn">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Researcharea"/>
+    <rdfs:label>pursuesExcellenceIn</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Institute"/>
+  </owl:ObjectProperty>
+  <owl:AnnotationProperty rdf:about="https://cse.iiitb.ac.in#hasConfidence">
+    <rdfs:comment>LLM confidence score 0–1 for this assertion</rdfs:comment>
+    <rdfs:label>hasConfidence</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:NamedIndividual rdf:about="https://ece.iiitb.ac.in#Memristor">
+    <rdfs:label>Memristor</rdfs:label>
+    <ece:E_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.95</ece:E_hasConfidence>
+    <ece:E_isTypeOf rdf:resource="https://ece.iiitb.ac.in#Memory_Element"/>
+    <rdf:type rdf:resource="https://ece.iiitb.ac.in#Electroniccomponent"/>
+    <ece:E_extractedFromSection>Department News</ece:E_extractedFromSection>
+  </owl:NamedIndividual>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#teachesAt">
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Institution"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Professor"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>teachesAt</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#isTypeOf">
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Devicecategory"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>isTypeOf</rdfs:label>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Electroniccomponent"/>
+  </owl:ObjectProperty>
+  <owl:Ontology rdf:about="http://iiitb.ac.in/ontology/departments#">
+    <rdfs:label xml:lang="en">Integrated Departments Knowledge Graph</rdfs:label>
+    <rdfs:comment xml:lang="en">A semantically merged ontology of IIITB CSE and ECE departments with distinct relationship namespaces.</rdfs:comment>
+  </owl:Ontology>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#conducts">
+    <rdfs:label>conducts</rdfs:label>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Researchactivity"/>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#investigatesSecurityOf">
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Facultymember"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Researcharea"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>investigatesSecurityOf</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#situatedOn">
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Institute"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Road"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>situatedOn</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://cse.iiitb.ac.in#hasEnrollmentCount">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Course"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>hasEnrollmentCount</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:AnnotationProperty rdf:about="https://ece.iiitb.ac.in#lowConfidenceFlag">
+    <rdfs:label>lowConfidenceFlag</rdfs:label>
+    <rdfs:comment>True when LLM confidence &lt; 0.5 — treat with caution</rdfs:comment>
+  </owl:AnnotationProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#locatedOn">
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Road"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Institute"/>
+    <rdfs:label>locatedOn</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#exploresInterdisciplinaryArea">
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Researcharea"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:label>exploresInterdisciplinaryArea</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#focusesOnArea">
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Researcharea"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>focusesOnArea</rdfs:label>
+  </owl:ObjectProperty>
+  <cse:Institute rdf:about="https://cse.iiitb.ac.in#IIITB">
+    <cse:C_providesOpportunitiesFor>
+      <cse:Researchopportunity rdf:about="https://cse.iiitb.ac.in#Research">
+        <rdfs:label>Research</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+      </cse:Researchopportunity>
+    </cse:C_providesOpportunitiesFor>
+    <cse:C_near>
+      <cse:Company rdf:about="https://cse.iiitb.ac.in#Infosys">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>Infosys</rdfs:label>
+      </cse:Company>
+    </cse:C_near>
+    <cse:C_offersOpportunitiesIn>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#CareerDevelopment">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Careeropportunity"/>
+        <rdfs:label>CareerDevelopment</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_offersOpportunitiesIn>
+    <cse:C_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.9</cse:C_hasConfidence>
+    <cse:C_hasConfidence rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.8</cse:C_hasConfidence>
+    <cse:C_pursuesExcellenceIn>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#education">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Researcharea"/>
+        <rdfs:label>education</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_pursuesExcellenceIn>
+    <cse:C_pursuesExcellenceIn>
+      <cse:Researcharea rdf:about="https://cse.iiitb.ac.in#research">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+        <rdfs:label>research</rdfs:label>
+      </cse:Researcharea>
+    </cse:C_pursuesExcellenceIn>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="https://cse.iiitb.ac.in#Internationalinstitute"/>
+    <rdfs:label>IIITB</rdfs:label>
+    <cse:C_hasAddress>26/C, Opposite of Infosys gate 1 Electronics City Phase 1, Hosur Road Bengaluru – 560100</cse:C_hasAddress>
+    <cse:C_extractedFromSection>Address</cse:C_extractedFromSection>
+    <cse:C_extractedFromSection>About Us</cse:C_extractedFromSection>
+    <cse:C_extractedFromSection>Opportunities</cse:C_extractedFromSection>
+    <cse:C_locatedOn>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#Hosur_Road">
+        <rdfs:label>Hosur Road</rdfs:label>
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Road"/>
+      </owl:NamedIndividual>
+    </cse:C_locatedOn>
+    <cse:C_fostersLearningOpportunitiesIn>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#DynamicCommunity">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Learningenvironment"/>
+        <rdfs:label>DynamicCommunity</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_fostersLearningOpportunitiesIn>
+    <cse:C_partOf>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#Electronics_City_Phase_1">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#Industrialarea"/>
+        <rdfs:label>Electronics City Phase 1</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_partOf>
+    <cse:C_hasMission>shaping the future of computer science and technology</cse:C_hasMission>
+    <cse:C_locatedIn>
+      <owl:NamedIndividual rdf:about="https://cse.iiitb.ac.in#Bengaluru">
+        <rdf:type rdf:resource="https://cse.iiitb.ac.in#City"/>
+        <rdfs:label>Bengaluru</rdfs:label>
+      </owl:NamedIndividual>
+    </cse:C_locatedIn>
+  </cse:Institute>
+  <owl:AnnotationProperty rdf:about="https://cse.iiitb.ac.in#lowConfidenceFlag">
+    <rdfs:comment>True when LLM confidence &lt; 0.5 — treat with caution</rdfs:comment>
+    <rdfs:label>lowConfidenceFlag</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#conductsResearchIn">
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:label>conductsResearchIn</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Researchfield"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://cse.iiitb.ac.in#isOfferedSince">
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Course"/>
+    <rdfs:label>isOfferedSince</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#locatedIn">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#City"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Institute"/>
+    <rdfs:label>locatedIn</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#excelsIn">
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Researcharea"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>excelsIn</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#partOf">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Institute"/>
+    <rdfs:label>partOf</rdfs:label>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Industrialarea"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#areUsedIn">
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Researchfield"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Devicecategory"/>
+    <rdfs:label>areUsedIn</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:Ontology rdf:about="https://cse.iiitb.ac.in#">
+    <cse:C_tripleCount rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">36</cse:C_tripleCount>
+    <cse:C_sourceURL>https://cse.iiitb.ac.in/</cse:C_sourceURL>
+    <rdfs:comment>Auto-generated from https://cse.iiitb.ac.in/ via Groq LLM (llama-3.3-70b-versatile). 36 raw triples collected.</rdfs:comment>
+    <rdfs:label>Knowledge Graph — https://cse.iiitb.ac.in/</rdfs:label>
+  </owl:Ontology>
+  <owl:AnnotationProperty rdf:about="https://cse.iiitb.ac.in#extractedFromSection">
+    <rdfs:comment>Page section heading this triple was extracted from</rdfs:comment>
+    <rdfs:label>extractedFromSection</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#isLocatedAt">
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Institution"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>isLocatedAt</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#fosters">
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Desirabletrait"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>fosters</rdfs:label>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#near">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>near</rdfs:label>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Company"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Institute"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="https://cse.iiitb.ac.in#providesEducationAt">
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:label>providesEducationAt</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+  </owl:DatatypeProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#partOf">
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Institute"/>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Industrialarea"/>
+    <rdfs:label>partOf</rdfs:label>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="https://ece.iiitb.ac.in#hasMission">
+    <rdfs:label>hasMission</rdfs:label>
+    <rdfs:range rdf:resource="https://ece.iiitb.ac.in#Educationalphilosophy"/>
+    <rdfs:domain rdf:resource="https://ece.iiitb.ac.in#Academicdepartment"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:AnnotationProperty rdf:about="https://ece.iiitb.ac.in#hasConfidence">
+    <rdfs:label>hasConfidence</rdfs:label>
+    <rdfs:comment>LLM confidence score 0–1 for this assertion</rdfs:comment>
+  </owl:AnnotationProperty>
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#offersCourse">
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Course"/>
+    <rdfs:label>offersCourse</rdfs:label>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Institution"/>
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+  </owl:ObjectProperty>
+  <owl:AnnotationProperty rdf:about="https://ece.iiitb.ac.in#extractedFromSection">
+    <rdfs:comment>Page section heading this triple was extracted from</rdfs:comment>
+    <rdfs:label>extractedFromSection</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:DatatypeProperty rdf:about="https://cse.iiitb.ac.in#hasMissionStatement">
+    <rdfs:comment>Auto-generated property from LLM extraction</rdfs:comment>
+    <rdfs:label>hasMissionStatement</rdfs:label>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:domain rdf:resource="https://cse.iiitb.ac.in#Academicdepartment"/>
+  </owl:DatatypeProperty>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Fieldofstudy">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Fieldofstudy</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Researcharea">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Researcharea</rdfs:label>
+  </owl:Class>
+  <cse:Course rdf:about="https://cse.iiitb.ac.in#Software_Testing">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Software Testing</rdfs:label>
+  </cse:Course>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Company">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>Company</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Learningenvironment">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Learningenvironment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Platform">
+    <rdfs:label>Platform</rdfs:label>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Educationalinstitution">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Educationalinstitution</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Internationalinstitute">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Internationalinstitute</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Road">
+    <rdfs:label>Road</rdfs:label>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Researchopportunity">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>Researchopportunity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Researchtopic">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Researchtopic</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Institute">
+    <rdfs:label>Institute</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Road">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Road</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Researchfield">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Researchfield</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Researchfield">
+    <rdfs:label>Researchfield</rdfs:label>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Course">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>Course</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Industrialarea">
+    <rdfs:label>Industrialarea</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Department">
+    <rdfs:label>Department</rdfs:label>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Professor">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>Professor</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Devicecategory">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Devicecategory</rdfs:label>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Institution">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>Institution</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Institute">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>Institute</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Educationalservice">
+    <rdfs:label>Educationalservice</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Industrialarea">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>Industrialarea</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Educationalphilosophy">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Educationalphilosophy</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Institution">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Institution</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#City">
+    <rdfs:label>City</rdfs:label>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Academicdepartment">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>Academicdepartment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Electroniccomponent">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>Electroniccomponent</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Facultymember">
+    <rdfs:label>Facultymember</rdfs:label>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#City">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>City</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Researcharea">
+    <rdfs:label>Researcharea</rdfs:label>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  </owl:Class>
+  <cse:Course rdf:about="https://cse.iiitb.ac.in#Cryptography">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label>Cryptography</rdfs:label>
+  </cse:Course>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Academicdepartment">
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:label>Academicdepartment</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Desirabletrait">
+    <rdfs:label>Desirabletrait</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Researchactivity">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Researchactivity</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Socialissue">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Socialissue</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Sector">
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://ece.iiitb.ac.in/</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:label>Sector</rdfs:label>
+  </owl:Class>
+  <cse:Researcharea rdf:about="https://cse.iiitb.ac.in#Information_Technology_Education">
+    <rdfs:label>Information Technology Education</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </cse:Researcharea>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Careeropportunity">
+    <rdfs:label>Careeropportunity</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    <rdfs:comment>Dynamically discovered class from LLM extraction of https://cse.iiitb.ac.in/</rdfs:comment>
+  </owl:Class>
+</rdf:RDF>

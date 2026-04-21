@@ -1,267 +1,267 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
-   xml:base="http://iiitb.ac.in/ontology/autonomous#"
+   xml:base="http://iiitb.ac.in/ontology/faculty#"
    xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:onto="http://iiitb.ac.in/ontology/autonomous#"
+   xmlns:onto="http://iiitb.ac.in/ontology/faculty#"
    xmlns:owl="http://www.w3.org/2002/07/owl#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 >
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#supervises">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#supervises">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhDStudent"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#PhDStudent"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Professor">
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#Professor">
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#GovernmentDepartment">
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#Organization"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#GovernmentDepartment">
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/faculty#Organization"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#FacultyMember">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#FacultyMember">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ChandrashekarRamanathan">
-    <onto:isRecognizedBy rdf:resource="http://iiitb.ac.in/ontology/autonomous#Top10DataScienceAcademiciansOfIndia2019"/>
-    <onto:isRecognizedBy rdf:resource="http://iiitb.ac.in/ontology/autonomous#Top10DataScienceAcademiciansOfIndia2018"/>
-    <onto:heads rdf:resource="http://iiitb.ac.in/ontology/autonomous#CTRI-DG"/>
-    <onto:heads rdf:resource="http://iiitb.ac.in/ontology/autonomous#MINRO"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#ChandrashekarRamanathan">
+    <onto:isRecognizedBy rdf:resource="http://iiitb.ac.in/ontology/faculty#Top10DataScienceAcademiciansOfIndia2019"/>
+    <onto:isRecognizedBy rdf:resource="http://iiitb.ac.in/ontology/faculty#Top10DataScienceAcademiciansOfIndia2018"/>
+    <onto:heads rdf:resource="http://iiitb.ac.in/ontology/faculty#CTRI-DG"/>
+    <onto:heads rdf:resource="http://iiitb.ac.in/ontology/faculty#MINRO"/>
     <onto:hasBio rdf:datatype="xsd:string">Professor Chandrashekar Ramanathan is a faculty member at IIIT-B (International Institute of Information Technology Bangalore) since 2007 serving as professor, researcher and administrator. He has been working in the field of Computing for over 25 years in various capacities across industry and academia. He has been associated with IIITB for over 15 years where he has been teaching and carrying out research in diverse areas. His expertise lies in the fields of data science, software engineering, and large scale application development. He holds a Ph.D. degree from Mississippi State University, with his research focused on object-oriented databases. His teaching interests are in the areas of data modeling, data analytics, database design, and software architecture. His current research focus is Data Science, Model-based Software Engineering, and Technology for Education. He has authored several research papers and supervised thesis work of four PhD students, who have now graduated from IIIT-B under his guidance. He is currently heading Machine Intelligence and Robotics Center (MINRO) and Center for Technology Research and Innovation – Digital Governance (CTRI-DG), both of which are funded by Government of Karnataka. He is passionate about the use of technology for improving the quality of education. He serves on the Technical Advisory Panels of many departments of the Government of Karnataka including the Department of Education, Finance, and Center for Smart Governance. He also serves as a subject-matter expert on the Board of Studies of several HEI (Higher Educational Institutions). Dr. Chandrashekar was a Board member in the “Board for IT Education Standards (BITES)” between 2013 and 2023. He was recognized in the list of “Top 10 Data Science academicians of India” by the Analytics India magazine for the year 2018 and again in 2019.</onto:hasBio>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Dean"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Professor"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#Dean"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#Professor"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <onto:researchesIn rdf:resource="http://iiitb.ac.in/ontology/autonomous#ModelBasedSoftwareEngineering"/>
-    <onto:researchesIn rdf:resource="http://iiitb.ac.in/ontology/autonomous#DataScience"/>
-    <onto:researchesIn rdf:resource="http://iiitb.ac.in/ontology/autonomous#TechnologyForEducation"/>
-    <onto:hasTitle rdf:resource="http://iiitb.ac.in/ontology/autonomous#ProfessorAndDeanAcademics"/>
-    <onto:teaches rdf:resource="http://iiitb.ac.in/ontology/autonomous#DatabaseDesign"/>
-    <onto:teaches rdf:resource="http://iiitb.ac.in/ontology/autonomous#DataAnalytics"/>
-    <onto:teaches rdf:resource="http://iiitb.ac.in/ontology/autonomous#DataModeling"/>
-    <onto:teaches rdf:resource="http://iiitb.ac.in/ontology/autonomous#SoftwareArchitecture"/>
-    <onto:worksAt rdf:resource="http://iiitb.ac.in/ontology/autonomous#IIITB"/>
-    <onto:advises rdf:resource="http://iiitb.ac.in/ontology/autonomous#DepartmentOfFinance"/>
-    <onto:advises rdf:resource="http://iiitb.ac.in/ontology/autonomous#DepartmentOfEducation"/>
-    <onto:advises rdf:resource="http://iiitb.ac.in/ontology/autonomous#CenterForSmartGovernance"/>
-    <onto:hasExpertiseIn rdf:resource="http://iiitb.ac.in/ontology/autonomous#DataScience"/>
-    <onto:hasExpertiseIn rdf:resource="http://iiitb.ac.in/ontology/autonomous#LargeScaleApplicationDevelopment"/>
-    <onto:hasExpertiseIn rdf:resource="http://iiitb.ac.in/ontology/autonomous#SoftwareEngineering"/>
-    <onto:supervises rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhDStudent1"/>
-    <onto:supervises rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhDStudent2"/>
-    <onto:supervises rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhDStudent3"/>
-    <onto:supervises rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhDStudent4"/>
-    <onto:servesOn rdf:resource="http://iiitb.ac.in/ontology/autonomous#BoardOfStudies"/>
+    <onto:researchesIn rdf:resource="http://iiitb.ac.in/ontology/faculty#ModelBasedSoftwareEngineering"/>
+    <onto:researchesIn rdf:resource="http://iiitb.ac.in/ontology/faculty#DataScience"/>
+    <onto:researchesIn rdf:resource="http://iiitb.ac.in/ontology/faculty#TechnologyForEducation"/>
+    <onto:hasTitle rdf:resource="http://iiitb.ac.in/ontology/faculty#ProfessorAndDeanAcademics"/>
+    <onto:teaches rdf:resource="http://iiitb.ac.in/ontology/faculty#DatabaseDesign"/>
+    <onto:teaches rdf:resource="http://iiitb.ac.in/ontology/faculty#DataAnalytics"/>
+    <onto:teaches rdf:resource="http://iiitb.ac.in/ontology/faculty#DataModeling"/>
+    <onto:teaches rdf:resource="http://iiitb.ac.in/ontology/faculty#SoftwareArchitecture"/>
+    <onto:worksAt rdf:resource="http://iiitb.ac.in/ontology/faculty#IIITB"/>
+    <onto:advises rdf:resource="http://iiitb.ac.in/ontology/faculty#DepartmentOfFinance"/>
+    <onto:advises rdf:resource="http://iiitb.ac.in/ontology/faculty#DepartmentOfEducation"/>
+    <onto:advises rdf:resource="http://iiitb.ac.in/ontology/faculty#CenterForSmartGovernance"/>
+    <onto:hasExpertiseIn rdf:resource="http://iiitb.ac.in/ontology/faculty#DataScience"/>
+    <onto:hasExpertiseIn rdf:resource="http://iiitb.ac.in/ontology/faculty#LargeScaleApplicationDevelopment"/>
+    <onto:hasExpertiseIn rdf:resource="http://iiitb.ac.in/ontology/faculty#SoftwareEngineering"/>
+    <onto:supervises rdf:resource="http://iiitb.ac.in/ontology/faculty#PhDStudent1"/>
+    <onto:supervises rdf:resource="http://iiitb.ac.in/ontology/faculty#PhDStudent2"/>
+    <onto:supervises rdf:resource="http://iiitb.ac.in/ontology/faculty#PhDStudent3"/>
+    <onto:supervises rdf:resource="http://iiitb.ac.in/ontology/faculty#PhDStudent4"/>
+    <onto:servesOn rdf:resource="http://iiitb.ac.in/ontology/faculty#BoardOfStudies"/>
     <onto:hasEmail rdf:datatype="xsd:string">rc@iiitb.ac.in</onto:hasEmail>
-    <onto:hasRole rdf:resource="http://iiitb.ac.in/ontology/autonomous#Academician"/>
+    <onto:hasRole rdf:resource="http://iiitb.ac.in/ontology/faculty#Academician"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ModelBasedSoftwareEngineering">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#ModelBasedSoftwareEngineering">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#FieldOfStudy"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#HigherEducationalInstitution">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#HigherEducationalInstitution">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#Organization"/>
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/faculty#Organization"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#heads">
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#ResearchCenter"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#heads">
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#ResearchCenter"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#MINRO">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#MINRO">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#ResearchCenter"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#ResearchCenter"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#GovernmentAdvisor">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#CenterForSmartGovernance">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#GovernmentDepartment"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasExpertiseIn">
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Researcher">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#GovernmentAdvisor">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ProfessorAndDeanAcademics">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Title"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#CenterForSmartGovernance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#GovernmentDepartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#hasExpertiseIn">
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#FieldOfStudy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#Researcher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#ProfessorAndDeanAcademics">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#Title"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#advises">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#advises">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#GovernmentDepartment"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#GovernmentDepartment"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#isRecognizedBy">
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Award"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#isRecognizedBy">
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#Award"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasEmail">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#hasEmail">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
     <rdfs:range rdf:resource="xsd:string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasRole">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#hasRole">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Role"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#Role"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DepartmentOfEducation">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#DepartmentOfEducation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#GovernmentDepartment"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#GovernmentDepartment"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#University">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#University">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#HigherEducationalInstitution"/>
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/faculty#HigherEducationalInstitution"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasTitle">
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Title"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#hasTitle">
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#Title"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#IIITB">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#IIITB">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#University"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#University"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#CTRI-DG">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#ResearchCenter"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#PhDStudent2">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhDStudent"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#CTRI-DG">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#ResearchCenter"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#SoftwareEngineering">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#PhDStudent2">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#PhDStudent"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DepartmentOfFinance">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#SoftwareEngineering">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#GovernmentDepartment"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#FieldOfStudy"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#teaches">
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#DepartmentOfFinance">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#GovernmentDepartment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#teaches">
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Course"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#Course"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#worksAt">
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Organization"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#worksAt">
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#Organization"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DataScientist">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#DataScientist">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#BoardOfStudies">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Board"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#BoardOfStudies">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#Board"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DatabaseDesign">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#DatabaseDesign">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Course"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#Course"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <dc:title xml:lang="en">Autonomous Institutional Knowledge Graph</dc:title>
     <dc:description xml:lang="en">Emergent OWL ontology generated by autonomous pipeline.</dc:description>
     <owl:versionInfo>3.0-emergent</owl:versionInfo>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#hasBio">
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#hasBio">
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
     <rdfs:range rdf:resource="xsd:string"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#LargeScaleApplicationDevelopment">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#LargeScaleApplicationDevelopment">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#FieldOfStudy"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#TechnologyForEducation">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#TechnologyForEducation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#FieldOfStudy"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Top10DataScienceAcademiciansOfIndia2019">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Award"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#Top10DataScienceAcademiciansOfIndia2019">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#Award"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#CenterHead">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#CenterHead">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#researchesIn">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#researchesIn">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#FieldOfStudy"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#servesOn">
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/autonomous#Board"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#servesOn">
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/faculty#Board"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#PhDStudent3">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhDStudent"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#PhDStudent3">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#PhDStudent"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#PhDStudent1">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhDStudent"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#PhDStudent1">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#PhDStudent"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Educationist">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#Educationist">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Administrator">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#Administrator">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DataAnalytics">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Course"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#DataAnalytics">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#Course"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Top10DataScienceAcademiciansOfIndia2018">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#Top10DataScienceAcademiciansOfIndia2018">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Award"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#Award"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Awardee">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#Awardee">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#SoftwareArchitecture">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Course"/>
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#ResearchCenter">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#Organization"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#SoftwareEngineer">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#BoardMember">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#PhDStudent4">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#PhDStudent"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Academician">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DataModeling">
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#Course"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#SoftwareArchitecture">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#Course"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#DataScience">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/autonomous#FieldOfStudy"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#ResearchCenter">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/faculty#Organization"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Dean">
-    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/autonomous#FacultyMember"/>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#SoftwareEngineer">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/autonomous#Organization">
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#BoardMember">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#PhDStudent4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#PhDStudent"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#Academician">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#DataModeling">
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#Course"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#DataScience">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://iiitb.ac.in/ontology/faculty#FieldOfStudy"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#Dean">
+    <rdfs:subClassOf rdf:resource="http://iiitb.ac.in/ontology/faculty#FacultyMember"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/faculty#Organization">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
 </rdf:RDF>

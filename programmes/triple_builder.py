@@ -11,7 +11,7 @@ from rdflib import (Graph, Namespace, URIRef, Literal,
 from rdflib.namespace import DC, FOAF, SKOS
 
 # ── Namespaces ────────────────────────────────────────────
-BASE_URI = "http://iiitb.ac.in/ontology/autonomous#"
+BASE_URI = "http://iiitb.ac.in/ontology/programmes#"
 ONTO = Namespace(BASE_URI)
 SCHEMA = Namespace("https://schema.org/")
 

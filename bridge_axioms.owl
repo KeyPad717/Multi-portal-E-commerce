@@ -1,0 +1,54 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:cse="https://cse.iiitb.ac.in#"
+    xmlns:ece="https://ece.iiitb.ac.in#"
+    xmlns:dept="http://iiitb.ac.in/ontology/departments#"
+    xmlns:prog="http://iiitb.ac.in/ontology/programmes#"
+    xmlns:bridge="http://iiitb.ac.in/ontology/bridge#">
+
+  <!-- owl:equivalentClass -->
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Department">
+    <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/departments#Department"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Institute">
+    <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/departments#Institute"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Researchfield">
+    <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/programmes#FieldOfStudy"/>
+  </owl:Class>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Researchfield">
+    <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/programmes#FieldOfStudy"/>
+  </owl:Class>
+
+  <!-- owl:sameAs -->
+  <rdf:Description rdf:about="https://cse.iiitb.ac.in#Educationalinstitution">
+    <owl:sameAs rdf:resource="http://iiitb.ac.in/ontology/departments#Institute"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://ece.iiitb.ac.in#Institute">
+    <owl:sameAs rdf:resource="http://iiitb.ac.in/ontology/departments#Institute"/>
+  </rdf:Description>
+
+  <!-- custom ObjectProperties -->
+  <rdf:Property rdf:about="http://iiitb.ac.in/ontology/bridge#managedBy">
+    <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
+    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/departments#Department"/>
+  </rdf:Property>
+
+  <!-- linking Programmes to Departments -->
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#M_Tech_CSE">
+    <bridge:managedBy rdf:resource="https://cse.iiitb.ac.in#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#M_Tech_ECE">
+    <bridge:managedBy rdf:resource="https://ece.iiitb.ac.in#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#B_Tech_CSE">
+    <bridge:managedBy rdf:resource="https://cse.iiitb.ac.in#Department"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#IMTechECE">
+    <bridge:managedBy rdf:resource="https://ece.iiitb.ac.in#Department"/>
+  </rdf:Description>
+
+</rdf:RDF>

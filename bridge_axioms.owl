@@ -9,12 +9,12 @@
     xmlns:prog="http://iiitb.ac.in/ontology/programmes#"
     xmlns:bridge="http://iiitb.ac.in/ontology/bridge#">
 
-  <!-- owl:equivalentClass -->
+  <!-- Equivalent Classes -->
   <owl:Class rdf:about="https://cse.iiitb.ac.in#Department">
-    <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/departments#Department"/>
+    <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/programmes#Department"/>
   </owl:Class>
-  <owl:Class rdf:about="https://ece.iiitb.ac.in#Institute">
-    <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/departments#Institute"/>
+  <owl:Class rdf:about="https://ece.iiitb.ac.in#Fieldofstudy">
+    <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/programmes#FieldOfStudy"/>
   </owl:Class>
   <owl:Class rdf:about="https://cse.iiitb.ac.in#Researchfield">
     <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/programmes#FieldOfStudy"/>
@@ -22,33 +22,33 @@
   <owl:Class rdf:about="https://ece.iiitb.ac.in#Researchfield">
     <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/programmes#FieldOfStudy"/>
   </owl:Class>
+  <owl:Class rdf:about="https://cse.iiitb.ac.in#Educationalinstitution">
+    <owl:equivalentClass rdf:resource="http://iiitb.ac.in/ontology/programmes#Institution"/>
+  </owl:Class>
 
-  <!-- owl:sameAs -->
-  <rdf:Description rdf:about="https://cse.iiitb.ac.in#Educationalinstitution">
-    <owl:sameAs rdf:resource="http://iiitb.ac.in/ontology/departments#Institute"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://ece.iiitb.ac.in#Institute">
-    <owl:sameAs rdf:resource="http://iiitb.ac.in/ontology/departments#Institute"/>
-  </rdf:Description>
+  <!-- Equivalent Properties -->
+  <owl:ObjectProperty rdf:about="https://cse.iiitb.ac.in#hasResearchArea">
+    <owl:equivalentProperty rdf:resource="http://iiitb.ac.in/ontology/programmes#hasFieldOfStudy"/>
+  </owl:ObjectProperty>
 
-  <!-- custom ObjectProperties -->
-  <rdf:Property rdf:about="http://iiitb.ac.in/ontology/bridge#managedBy">
+  <!-- Custom ObjectProperties -->
+  <owl:ObjectProperty rdf:about="http://iiitb.ac.in/ontology/bridge#managedBy">
     <rdfs:domain rdf:resource="http://iiitb.ac.in/ontology/programmes#AcademicProgramme"/>
-    <rdfs:range rdf:resource="http://iiitb.ac.in/ontology/departments#Department"/>
-  </rdf:Property>
+    <rdfs:range rdf:resource="https://cse.iiitb.ac.in#Department"/>
+  </owl:ObjectProperty>
 
-  <!-- linking Programmes to Departments -->
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#M_Tech_CSE">
-    <bridge:managedBy rdf:resource="https://cse.iiitb.ac.in#Department"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#M_Tech_ECE">
+  <!-- Links between Programmes and Departments -->
+  <prog:IMTechECE rdf:about="http://iiitb.ac.in/ontology/programmes#IMTechECE">
     <bridge:managedBy rdf:resource="https://ece.iiitb.ac.in#Department"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#B_Tech_CSE">
+  </prog:IMTechECE>
+  <prog:B_Tech_CSE rdf:about="http://iiitb.ac.in/ontology/programmes#B_Tech_CSE">
     <bridge:managedBy rdf:resource="https://cse.iiitb.ac.in#Department"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="http://iiitb.ac.in/ontology/programmes#IMTechECE">
+  </prog:B_Tech_CSE>
+  <prog:M_Tech_ECE rdf:about="http://iiitb.ac.in/ontology/programmes#M_Tech_ECE">
     <bridge:managedBy rdf:resource="https://ece.iiitb.ac.in#Department"/>
-  </rdf:Description>
+  </prog:M_Tech_ECE>
+  <prog:M_Tech_AIDS rdf:about="http://iiitb.ac.in/ontology/programmes#M_Tech_AIDS">
+    <bridge:managedBy rdf:resource="https://cse.iiitb.ac.in#Department"/>
+  </prog:M_Tech_AIDS>
 
 </rdf:RDF>

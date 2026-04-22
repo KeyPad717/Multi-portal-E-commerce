@@ -40,19 +40,48 @@ def extract_ontology_signature(owl_path):
         label = g.value(s, RDFS.label)
         domain = g.value(s, RDFS.domain)
         range_ = g.value(s, RDFS.range)
+
+        # Grounding: Sample up to 3 triples
+        examples = []
+        count = 0
+        for subj, obj in g.subject_objects(s):
+            if count >= 3: break
+            s_types = [str(t).split('#')[-1] for t in g.objects(subj, RDF.type) if str(t) != str(OWL.NamedIndividual)]
+            o_types = [str(t).split('#')[-1] for t in g.objects(obj, RDF.type) if str(t) != str(OWL.NamedIndividual)]
+            examples.append({
+                "from_class": s_types[0] if s_types else "Unknown",
+                "to_class": o_types[0] if o_types else "Unknown"
+            })
+            count += 1
+
         signature["object_properties"].append({
             "uri": str(s),
             "label": str(label) if label else "",
-            "domain": str(domain) if domain else "Thing",
-            "range": str(range_) if range_ else "Thing"
+            "domain": str(domain).split('#')[-1] if domain else "Thing",
+            "range": str(range_).split('#')[-1] if range_ else "Thing",
+            "examples": examples
         })
 
     # Extract Datatype Properties
     for s in g.subjects(RDF.type, OWL.DatatypeProperty):
         label = g.value(s, RDFS.label)
+        
+        # Grounding: Sample up to 3 literals
+        examples = []
+        count = 0
+        for subj, lit in g.subject_objects(s):
+            if count >= 3: break
+            s_types = [str(t).split('#')[-1] for t in g.objects(subj, RDF.type) if str(t) != str(OWL.NamedIndividual)]
+            examples.append({
+                "from_class": s_types[0] if s_types else "Unknown",
+                "value": str(lit)[:100] # truncate long strings
+            })
+            count += 1
+
         signature["datatype_properties"].append({
             "uri": str(s),
-            "label": str(label) if label else ""
+            "label": str(label) if label else "",
+            "examples": examples
         })
 
     # Extract Individuals (Sample of 15)

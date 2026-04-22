@@ -26,9 +26,12 @@ SYSTEM B (Programmes):
 GOAL:
 Generate a set of OWL/RDF triples that bridge these two systems.
 1. Use owl:equivalentClass for classes that represent the exact same concept.
-2. Use owl:sameAs for individuals that represent the exact same entity (e.g. the Institute itself).
-3. Create custom ObjectProperties to link Programmes to Departments (e.g. onto:managedBy department).
-4. Identify which Programmes belong to which Departments based on titles (CSE vs ECE).
+2. Use owl:equivalentProperty for ObjectProperties and DatatypeProperties. 
+   - REASONING: Compare property labels, but prioritize the 'domain', 'range', and 'examples' provided in the signature.
+   - If two properties connect the same or equivalent classes and have similar sample values, they are likely equivalent.
+3. Use owl:sameAs for individuals that represent the exact same entity.
+4. Create custom ObjectProperties to link Programmes to Departments (e.g. onto:managedBy).
+5. Identify which Programmes belong to which Departments based on titles (CSE vs ECE).
 
 NAMESPACES:
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -43,7 +46,7 @@ NAMESPACES:
 
 OUTPUT REQUIREMENTS:
 Return ONLY a valid RDF/XML block inside <rdf:RDF> tags. 
-No explanations.
+No other explanations.
 """
 
 def generate_bridge():

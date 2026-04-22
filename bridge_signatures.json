@@ -191,264 +191,310 @@
       {
         "uri": "https://cse.iiitb.ac.in#offersCourseOn",
         "label": "offersCourseOn",
-        "domain": "https://cse.iiitb.ac.in#Professor",
-        "range": "https://cse.iiitb.ac.in#Platform"
+        "domain": "Professor",
+        "range": "Platform",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#hasExperienceIn",
         "label": "hasExperienceIn",
-        "domain": "https://cse.iiitb.ac.in#Professor",
-        "range": "https://cse.iiitb.ac.in#Researcharea"
+        "domain": "Professor",
+        "range": "Researcharea",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#fostersLearningOpportunitiesIn",
         "label": "fostersLearningOpportunitiesIn",
-        "domain": "https://cse.iiitb.ac.in#Internationalinstitute",
-        "range": "https://cse.iiitb.ac.in#Learningenvironment"
+        "domain": "Internationalinstitute",
+        "range": "Learningenvironment",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#advancesBeamTrainingIn",
         "label": "advancesBeamTrainingIn",
-        "domain": "https://ece.iiitb.ac.in#Facultymember",
-        "range": "https://ece.iiitb.ac.in#Researcharea"
+        "domain": "Facultymember",
+        "range": "Researcharea",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#isHeadOf",
         "label": "isHeadOf",
-        "domain": "https://cse.iiitb.ac.in#Professor",
-        "range": "https://cse.iiitb.ac.in#Department"
+        "domain": "Professor",
+        "range": "Department",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#addresses",
         "label": "addresses",
-        "domain": "https://ece.iiitb.ac.in#Academicdepartment",
-        "range": "https://ece.iiitb.ac.in#Socialissue"
+        "domain": "Academicdepartment",
+        "range": "Socialissue",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#advances",
         "label": "advances",
-        "domain": "https://ece.iiitb.ac.in#Academicdepartment",
-        "range": "https://ece.iiitb.ac.in#Fieldofstudy"
+        "domain": "Academicdepartment",
+        "range": "Fieldofstudy",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#offersOpportunitiesIn",
         "label": "offersOpportunitiesIn",
-        "domain": "https://cse.iiitb.ac.in#Internationalinstitute",
-        "range": "https://cse.iiitb.ac.in#Careeropportunity"
+        "domain": "Internationalinstitute",
+        "range": "Careeropportunity",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#locatedIn",
         "label": "locatedIn",
-        "domain": "https://ece.iiitb.ac.in#Institute",
-        "range": "https://ece.iiitb.ac.in#City"
+        "domain": "Institute",
+        "range": "City",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#isPioneerIn",
         "label": "isPioneerIn",
-        "domain": "https://cse.iiitb.ac.in#Educationalinstitution",
-        "range": "https://cse.iiitb.ac.in#Researcharea"
+        "domain": "Educationalinstitution",
+        "range": "Researcharea",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#investigatesField",
         "label": "investigatesField",
-        "domain": "https://cse.iiitb.ac.in#Academicdepartment",
-        "range": "https://cse.iiitb.ac.in#Researchfield"
+        "domain": "Academicdepartment",
+        "range": "Researchfield",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#nurturesPartnershipsWith",
         "label": "nurturesPartnershipsWith",
-        "domain": "https://ece.iiitb.ac.in#Academicdepartment",
-        "range": "https://ece.iiitb.ac.in#Sector"
+        "domain": "Academicdepartment",
+        "range": "Sector",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#isPartOf",
         "label": "isPartOf",
-        "domain": "https://cse.iiitb.ac.in#Academicdepartment",
-        "range": "https://cse.iiitb.ac.in#Educationalinstitution"
+        "domain": "Academicdepartment",
+        "range": "Educationalinstitution",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#delivers",
         "label": "delivers",
-        "domain": "https://ece.iiitb.ac.in#Academicdepartment",
-        "range": "https://ece.iiitb.ac.in#Educationalservice"
+        "domain": "Academicdepartment",
+        "range": "Educationalservice",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#providesOpportunitiesFor",
         "label": "providesOpportunitiesFor",
-        "domain": "https://cse.iiitb.ac.in#Internationalinstitute",
-        "range": "https://cse.iiitb.ac.in#Researchopportunity"
+        "domain": "Internationalinstitute",
+        "range": "Researchopportunity",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#presentsResearchOn",
         "label": "presentsResearchOn",
-        "domain": "https://ece.iiitb.ac.in#Facultymember",
-        "range": "https://ece.iiitb.ac.in#Researchtopic"
+        "domain": "Facultymember",
+        "range": "Researchtopic",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#hasFacultyExpertiseIn",
         "label": "hasFacultyExpertiseIn",
-        "domain": "https://cse.iiitb.ac.in#Academicdepartment",
-        "range": "https://cse.iiitb.ac.in#Researcharea"
+        "domain": "Academicdepartment",
+        "range": "Researcharea",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#teachesCourse",
         "label": "teachesCourse",
-        "domain": "https://cse.iiitb.ac.in#Professor",
-        "range": "https://cse.iiitb.ac.in#Course"
+        "domain": "Professor",
+        "range": "Course",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#pursuesExcellenceIn",
         "label": "pursuesExcellenceIn",
-        "domain": "https://cse.iiitb.ac.in#Institute",
-        "range": "https://cse.iiitb.ac.in#Researcharea"
+        "domain": "Institute",
+        "range": "Researcharea",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#teachesAt",
         "label": "teachesAt",
-        "domain": "https://cse.iiitb.ac.in#Professor",
-        "range": "https://cse.iiitb.ac.in#Institution"
+        "domain": "Professor",
+        "range": "Institution",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#isTypeOf",
         "label": "isTypeOf",
-        "domain": "https://ece.iiitb.ac.in#Electroniccomponent",
-        "range": "https://ece.iiitb.ac.in#Devicecategory"
+        "domain": "Electroniccomponent",
+        "range": "Devicecategory",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#conducts",
         "label": "conducts",
-        "domain": "https://ece.iiitb.ac.in#Academicdepartment",
-        "range": "https://ece.iiitb.ac.in#Researchactivity"
+        "domain": "Academicdepartment",
+        "range": "Researchactivity",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#investigatesSecurityOf",
         "label": "investigatesSecurityOf",
-        "domain": "https://ece.iiitb.ac.in#Facultymember",
-        "range": "https://ece.iiitb.ac.in#Researcharea"
+        "domain": "Facultymember",
+        "range": "Researcharea",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#situatedOn",
         "label": "situatedOn",
-        "domain": "https://ece.iiitb.ac.in#Institute",
-        "range": "https://ece.iiitb.ac.in#Road"
+        "domain": "Institute",
+        "range": "Road",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#locatedOn",
         "label": "locatedOn",
-        "domain": "https://cse.iiitb.ac.in#Institute",
-        "range": "https://cse.iiitb.ac.in#Road"
+        "domain": "Institute",
+        "range": "Road",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#exploresInterdisciplinaryArea",
         "label": "exploresInterdisciplinaryArea",
-        "domain": "https://cse.iiitb.ac.in#Academicdepartment",
-        "range": "https://cse.iiitb.ac.in#Researcharea"
+        "domain": "Academicdepartment",
+        "range": "Researcharea",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#focusesOnArea",
         "label": "focusesOnArea",
-        "domain": "https://cse.iiitb.ac.in#Academicdepartment",
-        "range": "https://cse.iiitb.ac.in#Researcharea"
+        "domain": "Academicdepartment",
+        "range": "Researcharea",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#conductsResearchIn",
         "label": "conductsResearchIn",
-        "domain": "https://cse.iiitb.ac.in#Academicdepartment",
-        "range": "https://cse.iiitb.ac.in#Researchfield"
+        "domain": "Academicdepartment",
+        "range": "Researchfield",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#locatedIn",
         "label": "locatedIn",
-        "domain": "https://cse.iiitb.ac.in#Institute",
-        "range": "https://cse.iiitb.ac.in#City"
+        "domain": "Institute",
+        "range": "City",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#excelsIn",
         "label": "excelsIn",
-        "domain": "https://cse.iiitb.ac.in#Academicdepartment",
-        "range": "https://cse.iiitb.ac.in#Researcharea"
+        "domain": "Academicdepartment",
+        "range": "Researcharea",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#partOf",
         "label": "partOf",
-        "domain": "https://ece.iiitb.ac.in#Institute",
-        "range": "https://ece.iiitb.ac.in#Industrialarea"
+        "domain": "Institute",
+        "range": "Industrialarea",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#areUsedIn",
         "label": "areUsedIn",
-        "domain": "https://ece.iiitb.ac.in#Devicecategory",
-        "range": "https://ece.iiitb.ac.in#Researchfield"
+        "domain": "Devicecategory",
+        "range": "Researchfield",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#isLocatedAt",
         "label": "isLocatedAt",
-        "domain": "https://ece.iiitb.ac.in#Academicdepartment",
-        "range": "https://ece.iiitb.ac.in#Institution"
+        "domain": "Academicdepartment",
+        "range": "Institution",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#fosters",
         "label": "fosters",
-        "domain": "https://ece.iiitb.ac.in#Academicdepartment",
-        "range": "https://ece.iiitb.ac.in#Desirabletrait"
+        "domain": "Academicdepartment",
+        "range": "Desirabletrait",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#near",
         "label": "near",
-        "domain": "https://cse.iiitb.ac.in#Institute",
-        "range": "https://cse.iiitb.ac.in#Company"
+        "domain": "Institute",
+        "range": "Company",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#partOf",
         "label": "partOf",
-        "domain": "https://cse.iiitb.ac.in#Institute",
-        "range": "https://cse.iiitb.ac.in#Industrialarea"
+        "domain": "Institute",
+        "range": "Industrialarea",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#hasMission",
         "label": "hasMission",
-        "domain": "https://ece.iiitb.ac.in#Academicdepartment",
-        "range": "https://ece.iiitb.ac.in#Educationalphilosophy"
+        "domain": "Academicdepartment",
+        "range": "Educationalphilosophy",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#offersCourse",
         "label": "offersCourse",
-        "domain": "https://cse.iiitb.ac.in#Institution",
-        "range": "https://cse.iiitb.ac.in#Course"
+        "domain": "Institution",
+        "range": "Course",
+        "examples": []
       }
     ],
     "datatype_properties": [
       {
         "uri": "https://ece.iiitb.ac.in#hasAddress",
-        "label": "hasAddress"
+        "label": "hasAddress",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#hasAddress",
-        "label": "hasAddress"
+        "label": "hasAddress",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#hasMission",
-        "label": "hasMission"
+        "label": "hasMission",
+        "examples": []
       },
       {
         "uri": "https://ece.iiitb.ac.in#hasPincode",
-        "label": "hasPincode"
+        "label": "hasPincode",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#hasEnrollmentCount",
-        "label": "hasEnrollmentCount"
+        "label": "hasEnrollmentCount",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#isOfferedSince",
-        "label": "isOfferedSince"
+        "label": "isOfferedSince",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#providesEducationAt",
-        "label": "providesEducationAt"
+        "label": "providesEducationAt",
+        "examples": []
       },
       {
         "uri": "https://cse.iiitb.ac.in#hasMissionStatement",
-        "label": "hasMissionStatement"
+        "label": "hasMissionStatement",
+        "examples": []
       }
     ],
     "individuals_sample": [
@@ -636,82 +682,217 @@
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasDegree",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#AcademicProgramme",
-        "range": "http://iiitb.ac.in/ontology/programmes#Degree"
+        "domain": "AcademicProgramme",
+        "range": "Degree",
+        "examples": [
+          {
+            "from_class": "AcademicProgramme",
+            "to_class": "Degree"
+          },
+          {
+            "from_class": "AcademicProgramme",
+            "to_class": "Degree"
+          },
+          {
+            "from_class": "AcademicProgramme",
+            "to_class": "Degree"
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasName",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#AcademicProgram",
-        "range": "xsd:string"
+        "domain": "AcademicProgram",
+        "range": "xsd:string",
+        "examples": [
+          {
+            "from_class": "AcademicProgramme",
+            "to_class": "Unknown"
+          },
+          {
+            "from_class": "Degree",
+            "to_class": "Unknown"
+          },
+          {
+            "from_class": "Degree",
+            "to_class": "Unknown"
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasInstitution",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#AcademicProgramme",
-        "range": "http://iiitb.ac.in/ontology/programmes#Institution"
+        "domain": "AcademicProgramme",
+        "range": "Institution",
+        "examples": [
+          {
+            "from_class": "AcademicProgramme",
+            "to_class": "Institution"
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasStudent",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#AcademicProgramme",
-        "range": "http://iiitb.ac.in/ontology/programmes#Student"
+        "domain": "AcademicProgramme",
+        "range": "Student",
+        "examples": []
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasGoal",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#AcademicProgram",
-        "range": "http://iiitb.ac.in/ontology/programmes#Goal"
+        "domain": "AcademicProgram",
+        "range": "Goal",
+        "examples": [
+          {
+            "from_class": "PostgraduateProgram",
+            "to_class": "EducationGoal"
+          },
+          {
+            "from_class": "PostgraduateProgramme",
+            "to_class": "EducationGoal"
+          },
+          {
+            "from_class": "PostgraduateProgramme",
+            "to_class": "EducationGoal"
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#offeredBy",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#AcademicProgramme",
-        "range": "http://iiitb.ac.in/ontology/programmes#Institution"
+        "domain": "AcademicProgramme",
+        "range": "Institution",
+        "examples": [
+          {
+            "from_class": "AcademicProgramme",
+            "to_class": "Institution"
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasFacultyMember",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#AcademicProgramme",
-        "range": "http://iiitb.ac.in/ontology/programmes#FacultyMember"
+        "domain": "AcademicProgramme",
+        "range": "FacultyMember",
+        "examples": [
+          {
+            "from_class": "AcademicProgramme",
+            "to_class": "FacultyMember"
+          },
+          {
+            "from_class": "AcademicProgramme",
+            "to_class": "FacultyMember"
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasResearchArea",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#FacultyMember",
-        "range": "http://iiitb.ac.in/ontology/programmes#ResearchArea"
+        "domain": "FacultyMember",
+        "range": "ResearchArea",
+        "examples": [
+          {
+            "from_class": "FacultyMember",
+            "to_class": "ResearchArea"
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasSection",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#AcademicProgram",
-        "range": "http://iiitb.ac.in/ontology/programmes#Section"
+        "domain": "AcademicProgram",
+        "range": "Section",
+        "examples": [
+          {
+            "from_class": "PostgraduateProgram",
+            "to_class": "Section"
+          },
+          {
+            "from_class": "PostgraduateProgramme",
+            "to_class": "Section"
+          },
+          {
+            "from_class": "PostgraduateProgram",
+            "to_class": "Section"
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasFieldOfStudy",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#AcademicProgram",
-        "range": "http://iiitb.ac.in/ontology/programmes#FieldOfStudy"
+        "domain": "AcademicProgram",
+        "range": "FieldOfStudy",
+        "examples": [
+          {
+            "from_class": "Degree",
+            "to_class": "FieldOfStudy"
+          },
+          {
+            "from_class": "Degree",
+            "to_class": "FieldOfStudy"
+          },
+          {
+            "from_class": "Degree",
+            "to_class": "FieldOfStudy"
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#involvedIn",
         "label": "",
-        "domain": "http://iiitb.ac.in/ontology/programmes#FacultyMember",
-        "range": "http://iiitb.ac.in/ontology/programmes#ResearchArea"
+        "domain": "FacultyMember",
+        "range": "ResearchArea",
+        "examples": [
+          {
+            "from_class": "FacultyMember",
+            "to_class": "ResearchArea"
+          }
+        ]
       }
     ],
     "datatype_properties": [
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasName",
-        "label": ""
+        "label": "",
+        "examples": [
+          {
+            "from_class": "AcademicProgramme",
+            "value": "Integrated M.Tech (Computer Science and Engineering)"
+          },
+          {
+            "from_class": "Degree",
+            "value": "B.Tech. (Computer Science and Engineering)"
+          },
+          {
+            "from_class": "Degree",
+            "value": "B.Tech. (Artificial Intelligence & Data Science)"
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasBio",
-        "label": ""
+        "label": "",
+        "examples": [
+          {
+            "from_class": "AcademicProgramme",
+            "value": "IIIT-B introduced a 5-year Integrated M.Tech. (I.M.Tech.) programme from 2012 onwards. The Integrate"
+          },
+          {
+            "from_class": "AcademicProgramme",
+            "value": "IIIT-B introduced a 5-year Integrated M.Tech. (I.M.Tech.) programme in 2012. The Integrated M.Tech. "
+          }
+        ]
       },
       {
         "uri": "http://iiitb.ac.in/ontology/programmes#hasTitle",
-        "label": ""
+        "label": "",
+        "examples": [
+          {
+            "from_class": "AcademicProgramme",
+            "value": "Integrated M.Tech. (Electronics and Communication Engineering)"
+          }
+        ]
       }
     ],
     "individuals_sample": [

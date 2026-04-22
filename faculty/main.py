@@ -1,5 +1,5 @@
 """
-main.py — Pipeline orchestrator.
+main.py -- Pipeline orchestrator.
 Runs: Scrape → Chunk → LLM Enrich → RDF Triples → OWL
 Supports full pause/resume via checkpoint.json.
 
@@ -20,26 +20,26 @@ env_path = Path(__file__).resolve().parent / ".env"
 load_dotenv(dotenv_path=env_path)
 
 
-# ── Validate env before importing heavy modules ───────────
+# -- Validate env before importing heavy modules -----------
 def _check_env():
     key = os.getenv("OPENROUTER_API_KEY", "")
     
     if not key:
-        print("\n❌  ERROR: OPENROUTER_API_KEY not set in .env file")
+        print("\nERROR  ERROR: OPENROUTER_API_KEY not set in .env file")
         print("   Get key at: https://openrouter.ai/keys")
         print("   Then set: OPENROUTER_API_KEY=your_key\n")
         sys.exit(1)
 
     url = os.getenv("TARGET_URL", "")
     if not url:
-        print("\n❌  ERROR: TARGET_URL not set in .env file\n")
+        print("\nERROR  ERROR: TARGET_URL not set in .env file\n")
         sys.exit(1)
 
 
 def _show_status():
     from checkpoint import load
     cp = load()
-    print("\n── Pipeline Status ──────────────────────────────")
+    print("\n-- Pipeline Status ------------------------------")
     print(f"  Stage        : {cp.get('stage', 'Not started')}")
     print(f"  Tokens used  : {cp.get('tokens_used', 0)}")
     print(f"  Paused       : {cp.get('paused', False)}")
@@ -49,7 +49,7 @@ def _show_status():
     data = cp.get("data", {})
     if data:
         print(f"  Cached data  : {list(data.keys())}")
-    print("─────────────────────────────────────────────────\n")
+    print("-------------------------------------------------\n")
 
 
 def run():
@@ -68,9 +68,9 @@ def run():
 
     cp = load()
 
-    # ── Handle paused state ───────────────────────────────
+    # -- Handle paused state -------------------------------
     if cp.get("paused"):
-        print(f"\n⚠   Pipeline was previously paused.")
+        print(f"\nWARNING   Pipeline was previously paused.")
         print(f"    Reason: {cp['pause_reason']}")
         print(f"    Tokens used so far: {cp['tokens_used']}")
         ans = input("\n  Resume now? (y/n): ").strip().lower()
@@ -82,7 +82,7 @@ def run():
         save(cp)
 
     print(f"\n{'='*58}")
-    print(f"  OWL PIPELINE — IIITB Faculty Profile")
+    print(f"  OWL PIPELINE -- IIITB Faculty Profile")
     print(f"{'='*58}")
     print(f"  URL         : {URL}")
     print(f"  Token limit : {TOKEN_LIMIT:,}")
@@ -97,11 +97,11 @@ def run():
               if cp["stage"] in STAGES else -1
         completed_stages = STAGES[:idx+1]
 
-    # ──────────────────────────────────────────────────────
+    # ------------------------------------------------------
     # STAGE 1: SCRAPE
-    # ──────────────────────────────────────────────────────
+    # ------------------------------------------------------
     if "scraped" not in completed_stages:
-        print("► STAGE 1: Scraping webpage...")
+        print(" STAGE 1: Scraping webpage...")
         raw_data = scrape(URL)
         mark_stage(cp, "scraped", "raw", raw_data)
 
@@ -114,14 +114,14 @@ def run():
               f"output/scraped_data.json")
     else:
         raw_data = cp["data"]["raw"]
-        print(f"► STAGE 1: Scrape (cached) ✓")
+        print(f" STAGE 1: Scrape (cached) ✓")
         print(f"  Fields: {list(raw_data.keys())}")
 
-    # ──────────────────────────────────────────────────────
+    # ------------------------------------------------------
     # STAGE 2: CHUNK
-    # ──────────────────────────────────────────────────────
+    # ------------------------------------------------------
     if "chunked" not in completed_stages:
-        print("\n► STAGE 2: Tokenising and chunking...")
+        print("\n STAGE 2: Tokenising and chunking...")
         chunks = chunk_data(raw_data, CHUNK_SIZE)
         mark_stage(cp, "chunked", "chunks", chunks)
 
@@ -134,14 +134,14 @@ def run():
         chunks = cp["data"].get("chunks")
         if not chunks:
             chunks = chunk_data(raw_data, CHUNK_SIZE)
-        print(f"► STAGE 2: Chunk (cached) ✓  "
+        print(f" STAGE 2: Chunk (cached) ✓  "
               f"({len(chunks)} chunks)")
 
-    # ──────────────────────────────────────────────────────
+    # ------------------------------------------------------
     # STAGE 3: LLM ENRICHMENT
-    # ──────────────────────────────────────────────────────
+    # ------------------------------------------------------
     if "enriched" not in completed_stages:
-        print("\n► STAGE 3: LLM semantic enrichment (OpenRouter Llama3)"
+        print("\n STAGE 3: LLM semantic enrichment (OpenRouter Llama3)"
               "(Gemini Flash)...")
         enriched = enrich_all_chunks(
             chunks, cp, TOKEN_LIMIT)
@@ -162,34 +162,34 @@ def run():
               f"output/enriched_data.json")
     else:
         enriched = cp["data"]["enriched"]
-        print(f"► STAGE 3: Enrichment (cached) ✓  "
+        print(f" STAGE 3: Enrichment (cached) ✓  "
               f"({len(enriched)} chunks)")
 
-    # ──────────────────────────────────────────────────────
+    # ------------------------------------------------------
     # STAGE 4: BUILD RDF TRIPLES
-    # ──────────────────────────────────────────────────────
+    # ------------------------------------------------------
     if "triples" not in completed_stages:
-        print("\n► STAGE 4: Building RDF triples...")
+        print("\n STAGE 4: Building RDF triples...")
         g = build_graph(enriched)
         mark_stage(cp, "triples",
                    "triple_count", len(g))
     else:
-        print(f"► STAGE 4: Triples (rebuilding from cache)...")
+        print(f" STAGE 4: Triples (rebuilding from cache)...")
         enriched = cp["data"].get("enriched", enriched)
         g = build_graph(enriched)
         print(f"  (cached triple count was "
               f"{cp['data'].get('triple_count', '?')})")
 
-    # ──────────────────────────────────────────────────────
+    # ------------------------------------------------------
     # STAGE 5: WRITE OWL FILE
-    # ──────────────────────────────────────────────────────
-    print("\n► STAGE 5: Writing OWL file...")
+    # ------------------------------------------------------
+    print("\n STAGE 5: Writing OWL file...")
     owl_path = save_owl(g, "output/faculty_RC_sir")
     mark_stage(cp, "owl", "owl_path", owl_path)
 
-    # ── Final summary ─────────────────────────────────────
+    # -- Final summary -------------------------------------
     print(f"\n{'='*58}")
-    print(f"  ✅  PIPELINE COMPLETE")
+    print(f"  DONE  PIPELINE COMPLETE")
     print(f"{'='*58}")
     print(f"  OWL file   : {owl_path}")
     print(f"  Turtle     : output/faculty_RC_sir.ttl")

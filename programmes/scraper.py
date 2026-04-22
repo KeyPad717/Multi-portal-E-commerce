@@ -1,5 +1,5 @@
 """
-scraper.py — Fetch and parse the IIITB faculty profile page.
+scraper.py -- Fetch and parse the IIITB faculty profile page.
 Extracts structured JSON with typed sections for high-quality
 semantic enrichment downstream.
 """
@@ -32,7 +32,7 @@ def scrape(url: str) -> dict:
 
     soup = BeautifulSoup(r.text, "lxml")
 
-    # ── Remove script/style noise ──────────────────────────
+    # -- Remove script/style noise --------------------------
     for tag in soup(["script", "style", "nav",
                      "footer", "header", "noscript"]):
         tag.decompose()

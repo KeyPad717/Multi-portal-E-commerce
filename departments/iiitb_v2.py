@@ -20,7 +20,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-#  CONFIG  — only things you should ever need to change
+#  CONFIG  -- only things you should ever need to change
 
 TARGET_URL   = "https://ece.iiitb.ac.in/"
 GROQ_API_KEY = os.environ.get("GROQ_API_KEY", "")
@@ -36,7 +36,7 @@ MAX_TRIPLES_PER_SEC = 25   # max triples to request per section
 # Scraper quality
 MIN_SECTION_CHARS = 80     # skip sections shorter than this
 
-# ── Derive everything else from TARGET_URL — nothing else is hardcoded ──
+# -- Derive everything else from TARGET_URL -- nothing else is hardcoded --
 _parsed      = urllib.parse.urlparse(TARGET_URL)
 _domain_slug = re.sub(r'[^a-z0-9]', '_', _parsed.netloc.lower()).strip('_')
 
@@ -48,12 +48,12 @@ ONT_NS          = f"{TARGET_URL.rstrip('/')}#"
 ONT_PREFIX      = _domain_slug[:8]   # short prefix for Turtle serialisation
 
 
-#  PYDANTIC SCHEMA  — fully open, LLM decides all type names
+#  PYDANTIC SCHEMA  -- fully open, LLM decides all type names
 
 class EnrichedTriple(BaseModel):
     subject: str = Field(
         description=(
-            "The source named entity — a person, programme, lab, concept, "
+            "The source named entity -- a person, programme, lab, concept, "
             "or any real-world thing. Keep it a concise noun phrase."
         )
     )
@@ -62,7 +62,7 @@ class EnrichedTriple(BaseModel):
             "A camelCase verb phrase describing the relationship, e.g. "
             "teachesCourse, conductsResearchIn, isPartOf, offersProgram, "
             "collaboratesWith, supervisesStudent, receivedAward, locatedIn. "
-            "Invent whatever predicate best captures the relationship — do NOT "
+            "Invent whatever predicate best captures the relationship -- do NOT "
             "limit yourself to any fixed list."
         )
     )
@@ -76,7 +76,7 @@ class EnrichedTriple(BaseModel):
         description=(
             "The most specific OWL class name that describes the subject. "
             "Invent a meaningful PascalCase class name based on what the entity "
-            "actually is — e.g. AssistantProfessor, PhDScholar, VLSILab, "
+            "actually is -- e.g. AssistantProfessor, PhDScholar, VLSILab, "
             "MTechProgramme, ResearchGroup, JournalPublication, InternationalConference. "
             "Do NOT restrict yourself to any predefined list."
         )
@@ -92,7 +92,7 @@ class EnrichedTriple(BaseModel):
     confidence: float = Field(
         description=(
             "Your confidence that this triple is factually correct, from 0.0 to 1.0. "
-            "Be strict — only assign above 0.8 for clearly stated facts."
+            "Be strict -- only assign above 0.8 for clearly stated facts."
         )
     )
     source_section: str = Field(
@@ -106,13 +106,13 @@ class OntologyData(BaseModel):
 
 
 
-#  For shutdown — Ctrl+C saves and exits cleanly
+#  For shutdown -- Ctrl+C saves and exits cleanly
 
 _shutdown_requested = False
 
 def _handle_sigint(sig, frame):
     global _shutdown_requested
-    print("\n\n  Interrupt received — finishing current section then saving…")
+    print("\n\n  Interrupt received -- finishing current section then saving...")
     _shutdown_requested = True
 
 signal.signal(signal.SIGINT, _handle_sigint)
@@ -125,7 +125,7 @@ def load_checkpoint() -> dict:
     if os.path.exists(CHECKPOINT_FILE):
         with open(CHECKPOINT_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
-        print(f" Checkpoint loaded — {len(data.get('processed_sections', []))} sections already done.")
+        print(f" Checkpoint loaded -- {len(data.get('processed_sections', []))} sections already done.")
         return data
     return {"processed_sections": [], "triples": []}
 
@@ -139,7 +139,7 @@ def save_triples_json(triples: list):
 
 
 
-#  Seq. 1 — SCRAPE & STRUCTURE THE TARGET PAGE
+#  Seq. 1 -- SCRAPE & STRUCTURE THE TARGET PAGE
 
 def scrape_single_page(url: str) -> dict:
     """
@@ -184,7 +184,7 @@ def scrape_single_page(url: str) -> dict:
 
     soup = BeautifulSoup(resp.text, "lxml")
 
-    # Strip boilerplate — everything that is not content
+    # Strip boilerplate -- everything that is not content
     for tag in soup(["script", "style", "nav", "footer", "header",
                      "aside", "noscript", "iframe", "form", "button"]):
         tag.decompose()
@@ -238,13 +238,13 @@ def scrape_single_page(url: str) -> dict:
 
 
 
-#  STAGE 2 — LLM TRIPLE EXTRACTION  
+#  STAGE 2 -- LLM TRIPLE EXTRACTION  
 
 
 def _build_system_prompt() -> str:
     """
     Builds the full system prompt at runtime.
-    No class names or predicate examples are hardcoded here —
+    No class names or predicate examples are hardcoded here --
     the schema's own field descriptions guide the LLM completely.
     """
     schema_str = json.dumps(OntologyData.model_json_schema(), indent=2)
@@ -256,7 +256,7 @@ TRIPLE STRUCTURE:
   subject  ->  predicate  ->  object
 
 STRICT RULES:
-1. subjects and objects must be concise named entities — real people, programmes,
+1. subjects and objects must be concise named entities -- real people, programmes,
    labs, courses, research areas, awards, events, publications, departments, etc.
    Never use a full sentence as a subject or object.
 
@@ -274,7 +274,7 @@ STRICT RULES:
 5. Extract up to {MAX_TRIPLES_PER_SEC} triples. Every triple must add NEW information.
    No duplicate or near-duplicate triples.
 
-6. Output ONLY valid JSON conforming exactly to this schema — no markdown, no preamble:
+6. Output ONLY valid JSON conforming exactly to this schema -- no markdown, no preamble:
 
 {schema_str}
 """
@@ -294,7 +294,7 @@ def call_groq_with_retry(section_title: str, text: str, client: Groq) -> List[di
         if _shutdown_requested:
             return []
         try:
-            print(f"   Groq call (attempt {attempt}/{MAX_RETRIES})…", end=" ", flush=True)
+            print(f"   Groq call (attempt {attempt}/{MAX_RETRIES})...", end=" ", flush=True)
             response = client.chat.completions.create(
                 model=GROQ_MODEL,
                 messages=[
@@ -325,12 +325,12 @@ def call_groq_with_retry(section_title: str, text: str, client: Groq) -> List[di
             print(f"  {e}")
 
             if any(kw in err_str for kw in ["429", "rate_limit", "rate limit", "quota", "token"]):
-                print(f"\nRATE / TOKEN LIMIT — pausing {RATE_LIMIT_PAUSE}s")
+                print(f"\nRATE / TOKEN LIMIT -- pausing {RATE_LIMIT_PAUSE}s")
                 print("   Progress is saved. Ctrl+C now to exit and resume later.")
                 for remaining in range(RATE_LIMIT_PAUSE, 0, -10):
                     if _shutdown_requested:
                         return []
-                    print(f"    {remaining}s…", end="\r", flush=True)
+                    print(f"    {remaining}s...", end="\r", flush=True)
                     time.sleep(10)
                 print()
             else:
@@ -353,11 +353,11 @@ def run_llm_extraction(sections: dict, checkpoint: dict) -> dict:
     total     = len(sections)
     done      = len(processed)
 
-    print(f"\n LLM Extraction — {done}/{total} done, {len(remaining)} remaining\n")
+    print(f"\n LLM Extraction -- {done}/{total} done, {len(remaining)} remaining\n")
 
     for i, (sec_key, sec_val) in enumerate(remaining, start=1):
         if _shutdown_requested:
-            print(" Shutdown — saving and stopping.")
+            print(" Shutdown -- saving and stopping.")
             break
 
         print(f"[{done+i}/{total}]  \"{sec_val['title']}\"  ({sec_val['char_count']} chars)")
@@ -384,7 +384,7 @@ def run_llm_extraction(sections: dict, checkpoint: dict) -> dict:
     return checkpoint
 
 
-#  STAGE 3 — BUILD FULLY DYNAMIC OWL FROM TRIPLES
+#  STAGE 3 -- BUILD FULLY DYNAMIC OWL FROM TRIPLES
 
 
 def _to_safe_uri(ns: Namespace, text: str) -> URIRef:
@@ -410,13 +410,13 @@ def build_owl(triples: list, output_file: str):
     Builds a fully dynamic OWL ontology.
 
     Every class and every property is created on-the-fly from what the LLM
-    returned — no hardcoded lists anywhere. Three passes:
+    returned -- no hardcoded lists anywhere. Three passes:
 
-    Pass 1 — Collect all unique type strings -> declare OWL Classes
-    Pass 2 — Collect all unique predicates   -> declare OWL Properties with domain/range
-    Pass 3 — Insert all individuals and assertions with annotations
+    Pass 1 -- Collect all unique type strings -> declare OWL Classes
+    Pass 2 -- Collect all unique predicates   -> declare OWL Properties with domain/range
+    Pass 3 -- Insert all individuals and assertions with annotations
     """
-    print(f"\n Building OWL ontology from {len(triples)} triples…")
+    print(f"\n Building OWL ontology from {len(triples)} triples...")
 
     g   = Graph()
     ONT = Namespace(ONT_NS)
@@ -429,7 +429,7 @@ def build_owl(triples: list, output_file: str):
     #  Ontology-level metadata 
     ont_uri = URIRef(ONT_NS)
     g.add((ont_uri, RDF.type,     OWL.Ontology))
-    g.add((ont_uri, RDFS.label,   Literal(f"Knowledge Graph — {TARGET_URL}")))
+    g.add((ont_uri, RDFS.label,   Literal(f"Knowledge Graph -- {TARGET_URL}")))
     g.add((ont_uri, RDFS.comment, Literal(
         f"Auto-generated from {TARGET_URL} via Groq LLM ({GROQ_MODEL}). "
         f"{len(triples)} raw triples collected."
@@ -441,7 +441,7 @@ def build_owl(triples: list, output_file: str):
     conf_prop = ONT["hasConfidence"]
     g.add((conf_prop, RDF.type,    OWL.AnnotationProperty))
     g.add((conf_prop, RDFS.label,  Literal("hasConfidence")))
-    g.add((conf_prop, RDFS.comment, Literal("LLM confidence score 0–1 for this assertion")))
+    g.add((conf_prop, RDFS.comment, Literal("LLM confidence score 0-1 for this assertion")))
 
     sec_prop = ONT["extractedFromSection"]
     g.add((sec_prop, RDF.type,    OWL.AnnotationProperty))
@@ -451,7 +451,7 @@ def build_owl(triples: list, output_file: str):
     low_conf_prop = ONT["lowConfidenceFlag"]
     g.add((low_conf_prop, RDF.type,    OWL.AnnotationProperty))
     g.add((low_conf_prop, RDFS.label,  Literal("lowConfidenceFlag")))
-    g.add((low_conf_prop, RDFS.comment, Literal("True when LLM confidence < 0.5 — treat with caution")))
+    g.add((low_conf_prop, RDFS.comment, Literal("True when LLM confidence < 0.5 -- treat with caution")))
 
     # Pass 1: declare all OWL Classes from type strings 
     all_type_strings = set()
@@ -574,7 +574,7 @@ def main():
     print(f"  Namespace  : {ONT_NS}")
     print(f"  Checkpoint : {CHECKPOINT_FILE}")
     print(f"  OWL output : {OWL_FILE}")
-    print(f"\n  Press Ctrl+C at any time — all progress is saved.\n")
+    print(f"\n  Press Ctrl+C at any time -- all progress is saved.\n")
 
     if not GROQ_API_KEY:
         print(" GROQ_API_KEY not set. Add it to a .env file or export it.")
@@ -582,7 +582,7 @@ def main():
 
     #  Stage 1: Scrape 
     if os.path.exists(RAW_JSON_FILE):
-        print(f" Raw JSON found — skipping scrape.")
+        print(f" Raw JSON found -- skipping scrape.")
         with open(RAW_JSON_FILE, "r", encoding="utf-8") as f:
             sections = json.load(f)
         print(f"   {len(sections)} sections loaded from {RAW_JSON_FILE}")
@@ -597,7 +597,7 @@ def main():
     all_processed = set(checkpoint.get("processed_sections", []))
 
     if all_processed >= set(sections.keys()):
-        print("\n All sections already processed — skipping LLM stage.")
+        print("\n All sections already processed -- skipping LLM stage.")
     else:
         checkpoint = run_llm_extraction(sections, checkpoint)
 

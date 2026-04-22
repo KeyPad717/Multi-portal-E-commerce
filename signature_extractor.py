@@ -116,7 +116,7 @@ def main():
     with open(output_json, "w") as f:
         json.dump(total_sig, f, indent=2)
     
-    print(f"✅ Signatures saved to {output_json}")
+    print(f"DONE Signatures saved to {output_json}")
 
 if __name__ == "__main__":
     main()

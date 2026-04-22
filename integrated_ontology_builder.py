@@ -38,7 +38,7 @@ def build_final_integrated_graph():
 
     # Save
     g_master.serialize(destination=MASTER_OWL, format="pretty-xml")
-    print(f"✅ Integrated graph saved to {MASTER_OWL}")
+    print(f"DONE Integrated graph saved to {MASTER_OWL}")
     print(f"Final triple count: {len(g_master)}")
 
 if __name__ == "__main__":

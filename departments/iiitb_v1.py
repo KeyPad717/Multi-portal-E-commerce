@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 from typing import List, Optional
 
 
-#  CONFIG  — edit these to tune behaviour
+#  CONFIG  -- edit these to tune behaviour
 
 TARGET_URL        = "https://ece.iiitb.ac.in/"
 
@@ -44,28 +44,28 @@ ONT_NS = "https://ece.iiitb.ac.in/ontology#"
 
 
 
-#  PYDANTIC SCHEMA  — enriched triple with extra fields
+#  PYDANTIC SCHEMA  -- enriched triple with extra fields
 
 class EnrichedTriple(BaseModel):
-    subject:         str  = Field(description="Named entity — person, programme, lab, concept (concise noun phrase)")
+    subject:         str  = Field(description="Named entity -- person, programme, lab, concept (concise noun phrase)")
     predicate:       str  = Field(description="camelCase relationship verb, e.g. teachesCourse, belongsToDepartment, hasResearchArea")
     object:          str  = Field(description="Target entity or literal value")
     subject_type:    str  = Field(description="OWL class for the subject: Faculty | Student | Course | Lab | Center | Department | ResearchArea | Programme | Publication | Event | Institute | Organization | GovernmentBody | Other")
     object_type:     str  = Field(description="OWL class for the object: Faculty | Student | Course | Lab | Center | Department | ResearchArea | Programme | Publication | Event | Institute | Organization | GovernmentBody | Literal | Other")
-    confidence:      float = Field(description="Confidence score 0.0–1.0 for this triple")
+    confidence:      float = Field(description="Confidence score 0.0-1.0 for this triple")
     source_section:  str  = Field(description="Section heading from which this triple was extracted")
 
 class OntologyData(BaseModel):
     triples: List[EnrichedTriple] = Field(description="List of enriched semantic triples")
 
 
-#  GRACEFUL SHUTDOWN  — Ctrl+C saves and exits cleanly
+#  GRACEFUL SHUTDOWN  -- Ctrl+C saves and exits cleanly
 
 _shutdown_requested = False
 
 def _handle_sigint(sig, frame):
     global _shutdown_requested
-    print("\n\n  Interrupt received. Finishing current section then saving…")
+    print("\n\n  Interrupt received. Finishing current section then saving...")
     _shutdown_requested = True
 
 signal.signal(signal.SIGINT, _handle_sigint)
@@ -79,7 +79,7 @@ def load_checkpoint() -> dict:
     if os.path.exists(CHECKPOINT_FILE):
         with open(CHECKPOINT_FILE, "r", encoding="utf-8") as f:
             data = json.load(f)
-        print(f" Checkpoint loaded — {len(data.get('processed_sections', []))} sections already done.")
+        print(f" Checkpoint loaded -- {len(data.get('processed_sections', []))} sections already done.")
         return data
     return {"processed_sections": [], "triples": []}
 
@@ -92,7 +92,7 @@ def save_triples_json(triples: list):
         json.dump(triples, f, indent=2, ensure_ascii=False)
 
 
-#  STAGE 1 — SCRAPE & STRUCTURE THE SINGLE TARGET PAGE
+#  STAGE 1 -- SCRAPE & STRUCTURE THE SINGLE TARGET PAGE
 
 def scrape_single_page(url: str) -> dict:
     """
@@ -220,7 +220,7 @@ def scrape_single_page(url: str) -> dict:
 
     return sections
 
-#  STAGE 2 — LLM TRIPLE EXTRACTION (section by section)
+#  STAGE 2 -- LLM TRIPLE EXTRACTION (section by section)
 
 
 SYSTEM_PROMPT = f"""You are an expert Semantic Web knowledge engineer specialising in university ontologies.
@@ -234,8 +234,8 @@ CRITICAL INSTRUCTIONS FOR ACCURACY:
 4. Predicates MUST be exact camelCase verbs that accurately reflect the text (e.g., headsCenter, fundedBy, servesOnAdvisoryPanel, hasSpecialisation). Avoid vague predicates if the text provides specific roles.
 5. subjects and objects must be concise named entities (not sentences)
 6. subject_type and object_type must be one of: Faculty | Student | Course | Lab | Center | Department | ResearchArea | Programme | Publication | Event | Institute | Organization | GovernmentBody | Literal | Other
-7. confidence must reflect how certain you are this relationship is correct (0.0–1.0)
-8. Extract up to {MAX_TRIPLES_PER_SEC} triples — precision and accuracy are your top priority.
+7. confidence must reflect how certain you are this relationship is correct (0.0-1.0)
+8. Extract up to {MAX_TRIPLES_PER_SEC} triples -- precision and accuracy are your top priority.
 9. Output ONLY valid JSON, no preamble, no markdown fences.
 """
 
@@ -258,7 +258,7 @@ def call_groq_with_retry(section_key: str, section_title: str, text: str, client
             return []
 
         try:
-            print(f"    Calling Groq (attempt {attempt}/{MAX_RETRIES})…", end=" ", flush=True)
+            print(f"    Calling Groq (attempt {attempt}/{MAX_RETRIES})...", end=" ", flush=True)
             response = client.chat.completions.create(
                 model=GROQ_MODEL,
                 messages=[
@@ -266,7 +266,7 @@ def call_groq_with_retry(section_key: str, section_title: str, text: str, client
                     {"role": "user",   "content": user_msg}
                 ],
                 response_format={"type": "json_object"},
-                temperature=0.05,   # very low — we want deterministic, factual output
+                temperature=0.05,   # very low -- we want deterministic, factual output
                 max_tokens=2048
             )
 
@@ -291,12 +291,12 @@ def call_groq_with_retry(section_key: str, section_title: str, text: str, client
 
             # Detect rate-limit / quota errors
             if "429" in err_str or "rate" in err_str or "quota" in err_str or "tokens" in err_str:
-                print(f"\n TOKEN / RATE LIMIT HIT — pausing for {RATE_LIMIT_PAUSE}s")
+                print(f"\n TOKEN / RATE LIMIT HIT -- pausing for {RATE_LIMIT_PAUSE}s")
                 print("   All progress has been saved. You can Ctrl+C now and resume later.")
                 for remaining in range(RATE_LIMIT_PAUSE, 0, -10):
                     if _shutdown_requested:
                         return []
-                    print(f"    Resuming in {remaining}s…", end="\r", flush=True)
+                    print(f"    Resuming in {remaining}s...", end="\r", flush=True)
                     time.sleep(10)
                 print()  # newline after countdown
                 # retry after pause
@@ -321,11 +321,11 @@ def run_llm_extraction(sections: dict, checkpoint: dict) -> dict:
     total = len(sections)
     done  = len(processed)
 
-    print(f"\n LLM Extraction — {done}/{total} sections already done, {len(remaining)} remaining\n")
+    print(f"\n LLM Extraction -- {done}/{total} sections already done, {len(remaining)} remaining\n")
 
     for i, (sec_key, sec_val) in enumerate(remaining, start=1):
         if _shutdown_requested:
-            print(" Shutdown requested — saving and exiting.")
+            print(" Shutdown requested -- saving and exiting.")
             break
 
         print(f"[{done+i}/{total}] Section: \"{sec_val['title']}\" ({sec_val['char_count']} chars)")
@@ -354,7 +354,7 @@ def run_llm_extraction(sections: dict, checkpoint: dict) -> dict:
     return checkpoint
 
 
-#  STAGE 3 — BUILD ENRICHED OWL FROM TRIPLES
+#  STAGE 3 -- BUILD ENRICHED OWL FROM TRIPLES
 
 
 # Map string type names → OWL class URIs (created inside the graph)
@@ -391,7 +391,7 @@ def build_owl(triples: list, output_file: str):
       - predicate → rdfs:label  → human-readable label
       - triple   → confidence annotation
     """
-    print(f"\n  Building OWL ontology from {len(triples)} triples…")
+    print(f"\n  Building OWL ontology from {len(triples)} triples...")
 
     g   = Graph()
     ONT = Namespace(ONT_NS)
@@ -401,7 +401,7 @@ def build_owl(triples: list, output_file: str):
     g.bind("rdfs", RDFS)
     g.bind("xsd",  XSD)
 
-    # ── Ontology header ─────────────────────────────────────
+    # -- Ontology header -------------------------------------
     ont_uri = URIRef(ONT_NS)
     g.add((ont_uri, RDF.type,            OWL.Ontology))
     g.add((ont_uri, RDFS.label,          Literal("ECE IIITB Knowledge Graph")))
@@ -409,7 +409,7 @@ def build_owl(triples: list, output_file: str):
     g.add((ont_uri, URIRef(ONT_NS + "generatedBy"),  Literal("ece_iiitb_pipeline.py")))
     g.add((ont_uri, URIRef(ONT_NS + "tripleCount"),  Literal(len(triples), datatype=XSD.integer)))
 
-    # ── Define OWL Classes ──────────────────────────────────
+    # -- Define OWL Classes ----------------------------------
     class_uris = {}
     for label in CLASS_LABELS:
         c_uri = ONT[label]
@@ -418,20 +418,20 @@ def build_owl(triples: list, output_file: str):
         g.add((c_uri, RDFS.subClassOf, OWL.Thing))
         class_uris[label] = c_uri
 
-    # ── Confidence annotation property ──────────────────────
+    # -- Confidence annotation property ----------------------
     conf_prop = ONT["hasConfidence"]
     g.add((conf_prop, RDF.type,   OWL.AnnotationProperty))
     g.add((conf_prop, RDFS.label, Literal("hasConfidence")))
-    g.add((conf_prop, RDFS.comment, Literal("Confidence score (0–1) assigned by the LLM")))
+    g.add((conf_prop, RDFS.comment, Literal("Confidence score (0-1) assigned by the LLM")))
 
     source_prop = ONT["extractedFromSection"]
     g.add((source_prop, RDF.type,   OWL.AnnotationProperty))
     g.add((source_prop, RDFS.label, Literal("extractedFromSection")))
 
-    # ── Track declared predicates to avoid duplicate declarations ──
+    # -- Track declared predicates to avoid duplicate declarations --
     declared_predicates = set()
 
-    # ── Process each triple ─────────────────────────────────
+    # -- Process each triple ---------------------------------
     skipped = 0
     for t in triples:
         subj_text  = str(t.get("subject",      "")).strip()
@@ -453,13 +453,13 @@ def build_owl(triples: list, output_file: str):
         subj_uri = safe_uri(ONT, subj_text)
         pred_uri = safe_predicate(ONT, pred_text)
 
-        # ── Subject individual ───────────────────────────────
+        # -- Subject individual -------------------------------
         g.add((subj_uri, RDF.type,   OWL.NamedIndividual))
         g.add((subj_uri, RDFS.label, Literal(subj_text)))
         if subj_type in class_uris:
             g.add((subj_uri, RDF.type, class_uris[subj_type]))
 
-        # ── Predicate declaration ────────────────────────────
+        # -- Predicate declaration ----------------------------
         if pred_uri not in declared_predicates:
             is_literal_obj = (obj_type == "Literal")
             prop_type = OWL.DatatypeProperty if is_literal_obj else OWL.ObjectProperty
@@ -472,7 +472,7 @@ def build_owl(triples: list, output_file: str):
                 g.add((pred_uri, RDFS.range, class_uris[obj_type]))
             declared_predicates.add(pred_uri)
 
-        # ── Object: NamedIndividual or Literal ──────────────
+        # -- Object: NamedIndividual or Literal --------------
         if obj_type == "Literal":
             g.add((subj_uri, pred_uri, Literal(obj_text)))
         else:
@@ -483,12 +483,12 @@ def build_owl(triples: list, output_file: str):
                 g.add((obj_uri, RDF.type, class_uris[obj_type]))
             g.add((subj_uri, pred_uri, obj_uri))
 
-        # ── Annotations on the triple's subject ─────────────
+        # -- Annotations on the triple's subject -------------
         g.add((subj_uri, conf_prop,   Literal(round(confidence, 3), datatype=XSD.decimal)))
         if src_sec:
             g.add((subj_uri, source_prop, Literal(src_sec)))
 
-    # ── Serialize ────────────────────────────────────────────
+    # -- Serialize --------------------------------------------
     g.serialize(destination=output_file, format="xml")
 
     total_stmts = len(g)
@@ -507,9 +507,9 @@ def main():
     print(f"Checkpoint: {CHECKPOINT_FILE}")
     print(f"Press Ctrl+C at any time to pause safely.\n")
 
-    # ── Stage 1: Scrape ─────────────────────────────────────
+    # -- Stage 1: Scrape -------------------------------------
     if os.path.exists(RAW_JSON_FILE):
-        print(f" Raw JSON found ({RAW_JSON_FILE}) — skipping scrape.")
+        print(f" Raw JSON found ({RAW_JSON_FILE}) -- skipping scrape.")
         with open(RAW_JSON_FILE, "r", encoding="utf-8") as f:
             sections = json.load(f)
         print(f"   Loaded {len(sections)} sections.")
@@ -519,12 +519,12 @@ def main():
             json.dump(sections, f, indent=2, ensure_ascii=False)
         print(f" Raw JSON saved → {RAW_JSON_FILE}")
 
-    # ── Stage 2: LLM Extraction ─────────────────────────────
+    # -- Stage 2: LLM Extraction -----------------------------
     checkpoint = load_checkpoint()
 
     all_processed = set(checkpoint.get("processed_sections", []))
     if all_processed == set(sections.keys()):
-        print("\n All sections already processed — skipping LLM stage.")
+        print("\n All sections already processed -- skipping LLM stage.")
     else:
         checkpoint = run_llm_extraction(sections, checkpoint)
 
@@ -535,11 +535,11 @@ def main():
         print("  No triples found. Cannot generate OWL. Run again after token limits reset.")
         sys.exit(0)
 
-    # ── Stage 3: OWL Generation ─────────────────────────────
+    # -- Stage 3: OWL Generation -----------------------------
     # Always regenerate OWL from whatever triples we have
     build_owl(final_triples, OWL_FILE)
 
-    # ── Summary ──────────────────────────────────────────────
+    # -- Summary ----------------------------------------------
     print("\n" + "=" * 60)
     print("  Pipeline Complete  ")
     print("=" * 60)

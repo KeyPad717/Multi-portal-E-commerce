@@ -1,5 +1,5 @@
 """
-triple_builder.py — Convert enriched entities + relationships
+triple_builder.py -- Convert enriched entities + relationships
 into an rdflib Graph with proper OWL class hierarchy,
 object properties (with domain/range), and datatype properties.
 Produces a Protege-ready OWL ontology.
@@ -10,7 +10,7 @@ from rdflib import (Graph, Namespace, URIRef, Literal,
                     RDF, RDFS, OWL, XSD)
 from rdflib.namespace import DC, FOAF, SKOS
 
-# ── Namespaces ────────────────────────────────────────────
+# -- Namespaces --------------------------------------------
 BASE_URI = "http://iiitb.ac.in/ontology/faculty#"
 ONTO = Namespace(BASE_URI)
 SCHEMA = Namespace("https://schema.org/")
@@ -102,7 +102,7 @@ def build_graph(enriched_list: list) -> Graph:
                     try:
                         temp_g.parse(data=item, format="xml", **parse_kwargs)
                     except Exception as xml_err:
-                        print(f"    [triples] ⚠ Chunk {i+1} parse failed:")
+                        print(f"    [triples] WARNING Chunk {i+1} parse failed:")
                         print(f"      - XML error:    {str(xml_err).strip()}")
                         fail_count += 1
                         continue
@@ -141,13 +141,13 @@ def build_graph(enriched_list: list) -> Graph:
                 
                 success_count += 1
             except Exception as e:
-                print(f"    [triples] ⚠ Chunk {i+1} unexpected error: {e}")
+                print(f"    [triples] WARNING Chunk {i+1} unexpected error: {e}")
                 fail_count += 1
         elif isinstance(item, dict):
-            print(f"    [triples] ⚠ Chunk {i+1} skipped (LLM error: {item.get('error', 'unknown')})")
+            print(f"    [triples] WARNING Chunk {i+1} skipped (LLM error: {item.get('error', 'unknown')})")
             fail_count += 1
 
-    # ── Ensure Ontology Header ──────────────────────────
+    # -- Ensure Ontology Header --------------------------
     onto_uri = URIRef(BASE_URI)
     if (onto_uri, RDF.type, OWL.Ontology) not in master_graph:
         master_graph.add((onto_uri, RDF.type, OWL.Ontology))

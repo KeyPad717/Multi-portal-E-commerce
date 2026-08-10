@@ -2,11 +2,14 @@ import os
 import sys
 import json
 import time
+from pathlib import Path
 from openai import OpenAI
 from dotenv import load_dotenv
 
+REPO_ROOT = Path(__file__).resolve().parent
+
 # Load API Key
-load_dotenv(dotenv_path="/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/programmes/.env")
+load_dotenv(dotenv_path=REPO_ROOT / "programmes" / ".env")
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
@@ -51,8 +54,8 @@ No explanations.
 
 def generate_bridge():
     # Load raw content instead of signatures
-    dept_path = "/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/departments/departments_combined.owl"
-    prog_path = "/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/programmes/output/programmes_combined.owl"
+    dept_path = REPO_ROOT / "departments" / "departments_combined.owl"
+    prog_path = REPO_ROOT / "programmes" / "output" / "programmes_combined.owl"
     
     with open(dept_path, "r") as f:
         dept_content = f.read()
@@ -99,7 +102,7 @@ def generate_bridge():
         g = Graph()
         try:
             g.parse(data=turtle_code, format="turtle")
-            output_path = "/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/bridge_axioms.owl"
+            output_path = REPO_ROOT / "bridge_axioms.owl"
             g.serialize(destination=output_path, format="pretty-xml")
             print(f"DONE Bridge axioms generated and validated at {output_path}")
         except Exception as parse_err:

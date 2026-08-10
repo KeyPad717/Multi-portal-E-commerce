@@ -8,7 +8,6 @@ import os
 import sys
 import signal
 import urllib.parse
-import urllib3
 from groq import Groq
 from rdflib import Graph, Literal, RDF, RDFS, OWL, URIRef, Namespace, XSD
 from pydantic import BaseModel, Field
@@ -147,7 +146,6 @@ def scrape_single_page(url: str) -> dict:
     Returns dict: section_key -> {title, clean_text, char_count}
     """
     print(f"\n Scraping: {url}")
-    urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     session = requests.Session()
     retry_strategy = Retry(
@@ -171,7 +169,7 @@ def scrape_single_page(url: str) -> dict:
     for attempt_url in [url, url.replace("http://", "https://")]:
         try:
             resp = session.get(attempt_url, headers=headers,
-                               timeout=(30, 120), allow_redirects=True, verify=False)
+                               timeout=(30, 120), allow_redirects=True)
             resp.raise_for_status()
             print(f"    Fetched: {attempt_url}")
             break

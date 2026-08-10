@@ -2,6 +2,9 @@ import rdflib
 from rdflib import Graph, RDF, RDFS, OWL
 import json
 import os
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parent
 
 def extract_ontology_signature(owl_path):
     """
@@ -98,9 +101,9 @@ def extract_ontology_signature(owl_path):
     return signature
 
 def main():
-    depts_owl = "/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/departments/departments_combined.owl"
-    progs_owl = "/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/programmes/output/programmes_combined.owl"
-    output_json = "/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/bridge_signatures.json"
+    depts_owl = REPO_ROOT / "departments" / "departments_combined.owl"
+    progs_owl = REPO_ROOT / "programmes" / "output" / "programmes_combined.owl"
+    output_json = REPO_ROOT / "bridge_signatures.json"
 
     print(f"Extracting signature from: {os.path.basename(depts_owl)}")
     dept_sig = extract_ontology_signature(depts_owl)

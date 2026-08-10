@@ -133,8 +133,7 @@ def scrape_single_page(url: str) -> dict:
             url,
             headers=headers,
             timeout=(30, 120),
-            allow_redirects=True,
-            verify=False
+            allow_redirects=True
         )
         resp.raise_for_status()
 
@@ -149,8 +148,7 @@ def scrape_single_page(url: str) -> dict:
                 fallback_url,
                 headers=headers,
                 timeout=(30, 120),
-                allow_redirects=True,
-                verify=False
+                allow_redirects=True
             )
             resp.raise_for_status()
             print(f" Fallback worked: {fallback_url}")

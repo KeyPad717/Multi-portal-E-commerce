@@ -1,13 +1,16 @@
 import rdflib
 from rdflib import Graph, Namespace, RDF, OWL, Literal
 import os
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).resolve().parent
 
 def build_final_integrated_graph():
     # Paths
-    DEPTS_OWL = "/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/departments/departments_combined.owl"
-    PROGS_OWL = "/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/programmes/output/programmes_combined.owl"
-    BRIDGE_OWL = "/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/bridge_axioms.owl"
-    MASTER_OWL = "/home/iiitb/Desktop/Semantic-Integration-of-Institutional-Data/integrated_institutional_graph.owl"
+    DEPTS_OWL = REPO_ROOT / "departments" / "departments_combined.owl"
+    PROGS_OWL = REPO_ROOT / "programmes" / "output" / "programmes_combined.owl"
+    BRIDGE_OWL = REPO_ROOT / "bridge_axioms.owl"
+    MASTER_OWL = REPO_ROOT / "integrated_institutional_graph.owl"
 
     # Merge target
     g_master = Graph()

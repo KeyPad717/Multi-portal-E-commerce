@@ -39,8 +39,9 @@ faculty/output/
 programmes/output/
 scratch/
 
-# ---- Project report ----
+# ---- Project report & docs ----
 PROJECT_REPORT.md
+docs/
 
 # ---- Logs ----
 *.log

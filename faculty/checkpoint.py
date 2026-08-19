@@ -1,5 +1,5 @@
 """
-checkpoint.py — Save/load pipeline state so the pipeline
+checkpoint.py -- Save/load pipeline state so the pipeline
 can be paused and resumed at any stage without data loss.
 """
 
@@ -27,7 +27,7 @@ def load() -> dict:
             cp = json.load(f)
         print(f"[checkpoint] Loaded existing checkpoint. Stage: {cp.get('stage', 'None')}")
         return cp
-    print("[checkpoint] No checkpoint found — starting fresh.")
+    print("[checkpoint] No checkpoint found -- starting fresh.")
     return {
         "stage": None,
         "tokens_used": 0,
@@ -84,6 +84,6 @@ def reset():
     """Delete checkpoint to start from scratch."""
     if os.path.exists(CHECKPOINT_FILE):
         os.remove(CHECKPOINT_FILE)
-        print("[checkpoint] Reset complete — deleted checkpoint.")
+        print("[checkpoint] Reset complete -- deleted checkpoint.")
     else:
         print("[checkpoint] Nothing to reset.")

@@ -1,5 +1,5 @@
 """
-owl_writer.py — Serialize the rdflib Graph to OWL/XML and Turtle.
+owl_writer.py -- Serialize the rdflib Graph to OWL/XML and Turtle.
 The .owl (RDF/XML) file can be opened directly in Protégé.
 The .ttl (Turtle) file is human-readable for debugging.
 """
@@ -7,7 +7,7 @@ The .ttl (Turtle) file is human-readable for debugging.
 import os
 from rdflib import Graph
 
-# Ontology base URI — must match triple_builder.BASE_URI
+# Ontology base URI -- must match triple_builder.BASE_URI
 OWL_BASE = "http://iiitb.ac.in/ontology/autonomous#"
 
 
@@ -17,8 +17,8 @@ def _patch_rdf_header(owl_path: str) -> None:
     <rdf:RDF> header.  Without xml:base, Protégé resolves every relative
     #-fragment URI against the file:// path instead of the ontology
     namespace, so property declarations (e.g. #teaches resolved to
-    file://…#teaches) and property usages (onto:teaches) appear as
-    *different* entities — making the Property Assertions panel empty.
+    file://...#teaches) and property usages (onto:teaches) appear as
+    *different* entities -- making the Property Assertions panel empty.
 
     This function patches the serialized file to add:
       xml:base="<OWL_BASE>"
@@ -51,8 +51,8 @@ def save_owl(g: Graph,
              base_path: str = "output/faculty_RC_sir") -> str:
     """
     Save the graph in two formats:
-    - RDF/XML (.owl) — for Protégé
-    - Turtle (.ttl) — human-readable
+    - RDF/XML (.owl) -- for Protégé
+    - Turtle (.ttl) -- human-readable
     Returns path to the .owl file.
     """
     os.makedirs(os.path.dirname(base_path)
@@ -62,12 +62,12 @@ def save_owl(g: Graph,
     owl_path    = base_path + ".owl"
     turtle_path = base_path + ".ttl"
 
-    # ── RDF/XML (Protégé native format) ──────────────────
+    # -- RDF/XML (Protégé native format) ------------------
     g.serialize(destination=owl_path, format="xml")
     _patch_rdf_header(owl_path)          # inject xml:base + xmlns:xsd
     owl_size = os.path.getsize(owl_path) / 1024
 
-    # ── Turtle (human-readable) ───────────────────────────
+    # -- Turtle (human-readable) ---------------------------
     g.serialize(destination=turtle_path, format="turtle")
     ttl_size = os.path.getsize(turtle_path) / 1024
 

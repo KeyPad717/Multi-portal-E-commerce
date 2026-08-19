@@ -1,4 +1,4 @@
-# OWL Semantic Pipeline — IIITB Faculty Profile
+# OWL Semantic Pipeline -- IIITB Faculty Profile
 **Single-page scrape → LLM enrichment → RDF triples → OWL (Protégé-ready)**
 
 Target: `https://www.iiitb.ac.in/faculty/debabrata-das`
@@ -9,36 +9,36 @@ Target: `https://www.iiitb.ac.in/faculty/debabrata-das`
 
 ```
 DM_API/
-├── main.py            # Orchestrator (run this)
-├── scraper.py         # Fetch + parse faculty page
-├── chunker.py         # Token-aware data splitter
-├── enricher.py        # Gemini LLM enrichment
-├── triple_builder.py  # RDF triple + OWL graph builder
-├── owl_writer.py      # Serialize to .owl and .ttl
-├── checkpoint.py      # Save/resume pipeline state
-├── verify.py          # Pre-run sanity checks
-├── requirements.txt
-├── .env               # Your API key goes here
-└── output/
-    ├── checkpoint.json       # Pipeline state (auto-created)
-    ├── scraped_data.json     # Raw extracted data
-    ├── chunks.json           # Token-split chunks
-    ├── enriched_data.json    # LLM-enriched entities + rels
-    ├── faculty_RC_sir.owl       # ← Open this in Protégé
-    └── faculty_RC_sir.ttl       # Human-readable Turtle
+├-- main.py            # Orchestrator (run this)
+├-- scraper.py         # Fetch + parse faculty page
+├-- chunker.py         # Token-aware data splitter
+├-- enricher.py        # Gemini LLM enrichment
+├-- triple_builder.py  # RDF triple + OWL graph builder
+├-- owl_writer.py      # Serialize to .owl and .ttl
+├-- checkpoint.py      # Save/resume pipeline state
+├-- verify.py          # Pre-run sanity checks
+├-- requirements.txt
+├-- .env               # Your API key goes here
+└-- output/
+    ├-- checkpoint.json       # Pipeline state (auto-created)
+    ├-- scraped_data.json     # Raw extracted data
+    ├-- chunks.json           # Token-split chunks
+    ├-- enriched_data.json    # LLM-enriched entities + rels
+    ├-- faculty_RC_sir.owl       # ← Open this in Protégé
+    └-- faculty_RC_sir.ttl       # Human-readable Turtle
 ```
 
 ---
 
 ## Step-by-Step: How to Run
 
-### Step 1 — Open terminal and go to project folder
+### Step 1 -- Open terminal and go to project folder
 
 ```bash
 cd ~/Desktop/dm/DM_API
 ```
 
-### Step 2 — Install all dependencies
+### Step 2 -- Install all dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -49,14 +49,14 @@ If you get permission errors, try:
 pip install --user -r requirements.txt
 ```
 
-### Step 3 — Get a FREE Gemini API key
+### Step 3 -- Get a FREE Gemini API key
 
 1. Open browser → go to: https://aistudio.google.com/app/apikey
 2. Sign in with Google account
 3. Click **"Create API key"**
 4. Copy the key (starts with `AIza...`)
 
-### Step 4 — Set your API key in .env
+### Step 4 -- Set your API key in .env
 
 Open `.env` file in any text editor:
 ```bash
@@ -73,16 +73,16 @@ CHUNK_SIZE=2000
 
 Save: `Ctrl+O` → Enter → `Ctrl+X`
 
-### Step 5 — Run verification checks (recommended)
+### Step 5 -- Run verification checks (recommended)
 
 ```bash
 python verify.py
 ```
 
 This checks: API key, all packages, URL reachability, scraper, chunker, Gemini connection.
-You should see: `✅ ALL CHECKS PASSED`
+You should see: `DONE ALL CHECKS PASSED`
 
-### Step 6 — Run the full pipeline
+### Step 6 -- Run the full pipeline
 
 ```bash
 python main.py
@@ -90,21 +90,21 @@ python main.py
 
 You will see output like:
 ```
-══════════════════════════════════════════════════════════
-  OWL PIPELINE — IIITB Faculty Profile
-══════════════════════════════════════════════════════════
-► STAGE 1: Scraping webpage...
-► STAGE 2: Tokenising and chunking...
-► STAGE 3: LLM semantic enrichment (Gemini Flash)...
-► STAGE 4: Building RDF triples...
-► STAGE 5: Writing OWL file...
-══════════════════════════════════════════════════════════
-  ✅  PIPELINE COMPLETE
+========================================================══
+  OWL PIPELINE -- IIITB Faculty Profile
+========================================================══
+ STAGE 1: Scraping webpage...
+ STAGE 2: Tokenising and chunking...
+ STAGE 3: LLM semantic enrichment (Gemini Flash)...
+ STAGE 4: Building RDF triples...
+ STAGE 5: Writing OWL file...
+========================================================══
+  DONE  PIPELINE COMPLETE
   OWL file : output/faculty_RC_sir.owl
-══════════════════════════════════════════════════════════
+========================================================══
 ```
 
-### Step 7 — Open OWL in Protégé
+### Step 7 -- Open OWL in Protégé
 
 1. Open Protégé
 2. **File → Open...**
@@ -152,7 +152,7 @@ python main.py
 
 | Class | Description |
 |-------|-------------|
-| `Faculty` | subClassOf Person — the professor |
+| `Faculty` | subClassOf Person -- the professor |
 | `Person` | any human entity |
 | `ResearchArea` | research topic/domain |
 | `Publication` | journal/conference paper |

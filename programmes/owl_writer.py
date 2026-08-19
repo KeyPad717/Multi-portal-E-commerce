@@ -1,5 +1,5 @@
 """
-owl_writer.py — Serialize the rdflib Graph to OWL/XML and Turtle.
+owl_writer.py -- Serialize the rdflib Graph to OWL/XML and Turtle.
 The .owl (RDF/XML) file can be opened directly in Protégé.
 The .ttl (Turtle) file is human-readable for debugging.
 """
@@ -7,7 +7,7 @@ The .ttl (Turtle) file is human-readable for debugging.
 import os
 from rdflib import Graph
 
-# Ontology base URI — must match triple_builder.BASE_URI
+# Ontology base URI -- must match triple_builder.BASE_URI
 OWL_BASE = "http://iiitb.ac.in/ontology/autonomous#"
 
 
@@ -39,8 +39,8 @@ def save_owl(g: Graph,
              base_path: str = "output/faculty_RC_sir") -> str:
     """
     Save the graph in two formats:
-    - RDF/XML (.owl) — for Protégé
-    - Turtle (.ttl) — human-readable
+    - RDF/XML (.owl) -- for Protégé
+    - Turtle (.ttl) -- human-readable
     Returns path to the .owl file.
     """
     os.makedirs(os.path.dirname(base_path)

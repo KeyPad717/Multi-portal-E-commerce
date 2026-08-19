@@ -1,5 +1,5 @@
 """
-chunker.py — Token counting and data chunking.
+chunker.py -- Token counting and data chunking.
 Splits scraped JSON into token-bounded chunks so each
 LLM call stays within rate limits while preserving context.
 """

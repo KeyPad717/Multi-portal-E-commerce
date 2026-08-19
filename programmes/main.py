@@ -33,7 +33,7 @@ def run():
     from owl_writer import save_owl
 
     print(f"\n{'='*58}")
-    print(f"  OWL PIPELINE — IIITB Programmes")
+    print(f"  OWL PIPELINE -- IIITB Programmes")
     print(f"{'='*58}")
     print(f"  URLs        : {len(URLS)} detected")
     print(f"{'='*58}\n")
@@ -55,11 +55,11 @@ def run():
         # Scraping
         scraped_file = f"output/scraped_{url_slug}.json"
         if os.path.exists(scraped_file):
-            print(f"► STAGE 1: Scrape (cached) ✓")
+            print(f" STAGE 1: Scrape (cached) ✓")
             with open(scraped_file, "r") as f:
                 raw_data = json.load(f)
         else:
-            print("► STAGE 1: Scraping webpage...")
+            print(" STAGE 1: Scraping webpage...")
             raw_data = scrape(url)
             with open(scraped_file, "w", encoding="utf-8") as f:
                 json.dump(raw_data, f, indent=2, ensure_ascii=False)
@@ -67,11 +67,11 @@ def run():
         # Chunking
         chunks_file = f"output/chunks_{url_slug}.json"
         if os.path.exists(chunks_file):
-            print(f"► STAGE 2: Chunk (cached) ✓")
+            print(f" STAGE 2: Chunk (cached) ✓")
             with open(chunks_file, "r") as f:
                 chunks = json.load(f)
         else:
-            print("► STAGE 2: Tokenising and chunking...")
+            print(" STAGE 2: Tokenising and chunking...")
             chunks = chunk_data(raw_data, CHUNK_SIZE)
             with open(chunks_file, "w", encoding="utf-8") as f:
                 json.dump(chunks, f, indent=2, ensure_ascii=False)
@@ -79,11 +79,11 @@ def run():
         # Enriching
         enriched_file = f"output/enriched_{url_slug}.json"
         if os.path.exists(enriched_file):
-            print(f"► STAGE 3: Enrichment (cached) ✓")
+            print(f" STAGE 3: Enrichment (cached) ✓")
             with open(enriched_file, "r") as f:
                 enriched = json.load(f)
         else:
-            print("► STAGE 3: LLM semantic enrichment...")
+            print(" STAGE 3: LLM semantic enrichment...")
             # clear partial_enriched for each new url so chunk resuming works properly
             cp["data"]["partial_enriched"] = []
             enriched = enrich_all_chunks(chunks, cp, TOKEN_LIMIT)
@@ -99,16 +99,16 @@ def run():
         # separating Triples & OWL
         owl_file = f"output/{url_slug}.owl"
         if not os.path.exists(owl_file):
-            print(f"\n► STAGE 4 & 5: Building and writing INDIVIDUAL OWL -> {url_slug}.owl ...")
+            print(f"\n STAGE 4 & 5: Building and writing INDIVIDUAL OWL -> {url_slug}.owl ...")
             g = build_graph(enriched)
             save_owl(g, f"output/{url_slug}")
         else:
-            print(f"► STAGE 4 & 5: Individual OWL exists -> {owl_file}")
+            print(f" STAGE 4 & 5: Individual OWL exists -> {owl_file}")
 
     print(f"\n\n{'='*58}")
     print(f"  COMBINED PROGRAMMES ONTOLOGY")
     print(f"{'='*58}")
-    print("► Building COMBINED RDF triples...")
+    print(" Building COMBINED RDF triples...")
     g_comb = build_graph(all_enriched)
     comb_owl_path = save_owl(g_comb, "output/programmes_combined")
     print(f"  Created combined ontology -> {comb_owl_path}")

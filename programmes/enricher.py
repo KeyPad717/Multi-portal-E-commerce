@@ -5,7 +5,7 @@ import re
 from openai import OpenAI
 from chunker import count_tokens
 
-# ── Configure OpenRouter ────────────────────────────────
+# -- Configure OpenRouter --------------------------------
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
     api_key=os.getenv("OPENROUTER_API_KEY"),
@@ -71,7 +71,7 @@ Only the final RDF/XML.
 
 
 
-# ── Extract RDF/XML safely ───────────────────────────────
+# -- Extract RDF/XML safely -------------------------------
 def sanitize_xml_block(xml_text):
     # Escape ampersands that aren't already part of an entity
     xml_text = re.sub(r"&(?!(?:amp|lt|gt|quot|apos);)", "&amp;", xml_text)
@@ -101,7 +101,7 @@ def extract_rdfxml(text):
     return None
 
 
-# ── LLM Call ────────────────────────────────────────────
+# -- LLM Call --------------------------------------------
 def call_llm(prompt, retries=3):
     for attempt in range(retries):
         try:
@@ -121,7 +121,7 @@ def call_llm(prompt, retries=3):
     return None
 
 
-# ── Enrich single chunk ─────────────────────────────────
+# -- Enrich single chunk ---------------------------------
 def enrich_chunk(chunk, cp, token_limit):
 
     clean_text = f"""
@@ -156,7 +156,7 @@ def enrich_chunk(chunk, cp, token_limit):
         print(f"    [enricher] ✓ Semantic RDF/XML extracted ({len(result)} chars)")
         return result
     else:
-        print("    [enricher] ⚠ RDF/XML extraction failed")
+        print("    [enricher] WARNING RDF/XML extraction failed")
         print(f"    [debug] Raw output start: {raw[:100]}...")
 
         return {
@@ -165,7 +165,7 @@ def enrich_chunk(chunk, cp, token_limit):
         }
 
 
-# ── Enrich all chunks ───────────────────────────────────
+# -- Enrich all chunks -----------------------------------
 def enrich_all_chunks(chunks, cp, token_limit):
 
     results = list(cp["data"].get("partial_enriched", []))
@@ -176,7 +176,7 @@ def enrich_all_chunks(chunks, cp, token_limit):
 
     for i, chunk in enumerate(chunks[start_idx:], start=start_idx):
 
-        print(f"\n  [enricher] ── Chunk {i+1}/{len(chunks)} ──")
+        print(f"\n  [enricher] -- Chunk {i+1}/{len(chunks)} --")
 
         enriched = enrich_chunk(chunk, cp, token_limit)
 
